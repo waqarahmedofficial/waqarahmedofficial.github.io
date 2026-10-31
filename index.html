@@ -37,6 +37,15 @@
   .card p{font-size:14.5px;color:var(--muted)}
   .price{display:inline-block;margin-top:12px;font-weight:700;color:var(--navy);background:#f3ead0;border:1px solid var(--gold);padding:2px 10px;border-radius:6px;font-size:13.5px}
   .proof{display:block;margin-top:10px;font-size:14px;font-weight:600}
+  .pgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:18px}
+  .pcard{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--gold);border-radius:12px;padding:24px;box-shadow:0 1px 3px rgba(14,34,64,.05)}
+  .pcard h4{font-size:17.5px;color:var(--navy);margin-bottom:8px}
+  .pcard p{font-size:14.5px;color:var(--muted)}
+  .pcard .lbl{font-size:12.5px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;color:var(--navy);margin:14px 0 4px}
+  .pcard ul{margin:2px 0 0 18px;color:var(--muted);font-size:14.5px}
+  .pcard li{margin-bottom:2px}
+  .scope{margin-top:12px;font-size:13.5px;color:var(--ink);background:#eef2f7;border:1px solid var(--line);border-radius:8px;padding:8px 12px}
+  .verified{display:inline-block;font-size:12px;font-weight:700;color:#7a5b00;background:#fdf6dd;border:1px solid var(--gold);border-radius:999px;padding:2px 10px;margin-bottom:10px}
   .facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px;margin-top:6px}
   .fact{background:var(--navy);color:#fff;border-radius:12px;padding:20px}
   .fact b{display:block;font-size:22px;color:var(--gold-soft)}
@@ -60,6 +69,7 @@
     <p>Seven years of spreadsheet and data work for clients worldwide. Every service I offer is on this one page — with fixed starting prices and, for my specialist services, the working proof published openly on GitHub. Inspect everything before you ever pay a cent.</p>
     <div class="cta">
       <a class="btn btn-gold" href="mailto:mrworld3598@gmail.com">Email me a project</a>
+      <a class="btn btn-ghost" href="#premium">Premium services — verified 100/100</a>
       <a class="btn btn-ghost" href="https://github.com/waqarahmedofficial">See the proof on GitHub</a>
     </div>
   </div>
@@ -117,6 +127,202 @@
         <span class="price">Fixed scope per store</span>
         <a class="proof" href="https://github.com/waqarahmedofficial/ecommerce-settlement-reconciliation">View the working project →</a>
       </div>
+    </div>
+  </div>
+</section>
+
+<section id="premium">
+  <div class="wrap">
+    <h3 class="sec">Premium services — every one verified 100/100 before it was offered</h3>
+    <p class="sec-sub">These are my main services. Before any of them appeared here, I built a complete practice project for it and put that project through an independent, check-by-check verification — all 11 scored 100/100. The verified result for each service is stated on its card, exactly as measured. You can also <a href="https://datastudio.google.com/u/5/reporting/eb9d2c8a-d89c-47d3-8fef-23873be965ae">open a live sample dashboard</a> and <a href="https://contra.com/p/UbYvgYMZ-messy-sheet-to-clean-deduped-file-real-work-on-screen">watch real cleanup work on screen</a>. Fixed written quote before any work starts — no surprises, no calls needed.</p>
+    <div class="pgrid">
+
+      <div class="pcard">
+        <span class="verified">Verified 100/100 — proven live in n8n and Make</span>
+        <h4>AI Workflow Automation (n8n &amp; Make)</h4>
+        <p>Your repetitive hand-offs between apps — leads arriving, records updating, people being notified — built into an automatic workflow that runs the same way every time, with duplicates stopped before they ever reach your sheet or CRM.</p>
+        <p class="lbl">What you get</p>
+        <ul>
+          <li>A working automation built in n8n or Make, connected to your tools</li>
+          <li>De-duplication and validation built in, so bad or repeated data never passes silently</li>
+          <li>Tested end-to-end with batch data before handover, with the run results shown to you</li>
+          <li>A clear runbook: what it does, what it watches, and what to check if it stops</li>
+        </ul>
+        <p class="lbl">How it works</p>
+        <p>You describe the hand-off in writing and share access to the tools involved. I build it, test it on real-shaped sample batches, show you the results, then switch it on with you.</p>
+        <span class="price">$30–$60/hr · complex builds $100+/hr</span>
+        <p style="margin-top:10px;font-size:14px;color:var(--muted)">Verified on a lead-intake build run live in both tools: batch of 8 submissions → 6 added, 2 duplicates skipped; second batch of 5 → 2 added, 3 skipped — every count exact.</p>
+      </div>
+
+      <div class="pcard">
+        <span class="verified">Verified 100/100 — 30/30 test questions, 12/12 unseen spot-checks</span>
+        <h4>AI Chatbot / FAQ Bot for Your Website</h4>
+        <p>A chatbot that answers your customers' questions from your own approved business information — your services, prices, policies and FAQs — and says so honestly instead of guessing when a question falls outside what you provided.</p>
+        <p class="lbl">What you get</p>
+        <ul>
+          <li>A working bot built on a structured knowledge base of your approved content (the verified sample used a 45-entry knowledge base)</li>
+          <li>A written instruction block defining its identity, scope and hard limits — it never invents prices, policies or facts</li>
+          <li>A full test report: every test question, the bot's answer, and the check against your source material</li>
+          <li>Deployment where your customers already are — your website, inbox or social account</li>
+        </ul>
+        <p class="lbl">How it works</p>
+        <p>You supply the information the bot may use. I build the knowledge base, write its rules, test it question-by-question — including questions designed to catch it guessing — and hand over the test report with the bot.</p>
+        <span class="price">$500–$2,000 per project</span>
+      </div>
+
+      <div class="pcard">
+        <span class="verified">Verified 100/100 — live Looker Studio build, figure-by-figure validation</span>
+        <h4>BI Dashboards (Looker Studio)</h4>
+        <p>Your spreadsheet or sales data turned into a live business dashboard — revenue, margins, trends and breakdowns that refresh from your data instead of being re-typed into slides every month.</p>
+        <p class="lbl">What you get</p>
+        <ul>
+          <li>A live Looker Studio dashboard built on your data (the verified sample build: 4 pages, 8 data sources)</li>
+          <li>Every headline figure validated one by one against the source data before delivery</li>
+          <li>Filters and breakdowns your team can actually use — by period, product, channel or region</li>
+          <li>A short written guide to reading and refreshing the dashboard</li>
+        </ul>
+        <p class="lbl">How it works</p>
+        <p>You share the data file or sheet. I clean and model it, build the dashboard, then validate every figure on it against the source and show you the validation results.</p>
+        <span class="price">$85/hr average band · UK contract median £500/day</span>
+        <a class="proof" href="https://datastudio.google.com/u/5/reporting/eb9d2c8a-d89c-47d3-8fef-23873be965ae">Open the live verified sample dashboard →</a>
+      </div>
+
+      <div class="pcard">
+        <span class="verified">Verified 100/100 — 35/35 independent checks on a 1,000-contact migration</span>
+        <h4>CRM Migration &amp; RevOps Data Services</h4>
+        <p>Moving between CRMs — or rescuing the data inside the one you have — starts with the data itself: cleaned, de-duplicated, standardised and shaped to the target system's fields, so the import lands clean instead of importing years of mess.</p>
+        <p class="lbl">What you get</p>
+        <ul>
+          <li>An import-ready contact file for the target CRM (verified sample: 1,000 exported contacts → 905 import-ready)</li>
+          <li>Duplicates caught three ways — exact, fuzzy on email, fuzzy on phone + name — and merged safely</li>
+          <li>Phones standardised to international (E.164) format, addresses and company names normalised, dates standardised</li>
+          <li>A separate review file for every record that needs a human decision, with the reason stated (110 rows in the sample) — nothing silently dropped: 905 + 95 excluded = the full 1,000, reconciled exactly</li>
+        </ul>
+        <p class="lbl">How it works</p>
+        <p>You export your current CRM data and share it. I run the cleanup and shaping, reconcile every record in and out, and deliver the import-ready file plus the review file and validation report.</p>
+        <div class="scope"><strong>Scope, stated plainly:</strong> this is the data layer — cleaning, de-duplication, standardisation and shaping. The verified sample is a preparation pack with a validation report; the import itself and CRM configuration are separate work.</div>
+        <span class="price">Data-layer entry $500–$2,500 · full consultant-tier migrations run $4,000–$12,000</span>
+      </div>
+
+      <div class="pcard">
+        <span class="verified">Verified 100/100 — 26/26 independent checks on a complete docs set</span>
+        <h4>Technical Documentation &amp; SaaS Help Centres</h4>
+        <p>Documentation your users and support team can actually rely on: API references, getting-started guides and step-by-step SOPs, written to a defined style sheet and mechanically cross-checked so every example, field name and error code agrees across every page.</p>
+        <p class="lbl">What you get</p>
+        <ul>
+          <li>A style sheet that fixes terminology, formatting and tone for the whole set</li>
+          <li>API reference documentation (verified sample: 10 endpoints, 8 object tables, 8 error codes — every use cross-verified)</li>
+          <li>A step-by-step getting-started guide (6 steps in the sample)</li>
+          <li>Operational SOPs (sample: a failed-webhook-delivery procedure, 12 steps with a 3-level escalation path)</li>
+          <li>Every code example parsed and checked — in the sample, all 17 JSON examples valid, all invoice arithmetic exact</li>
+        </ul>
+        <p class="lbl">How it works</p>
+        <p>You share your product details, existing docs or API spec. I agree the style sheet first, then write the set and run mechanical cross-checks over the whole thing before delivery.</p>
+        <span class="price">$75–$126/hr · knowledge-base retainers $1,500–$5,000/mo</span>
+      </div>
+
+      <div class="pcard">
+        <span class="verified">Verified 100/100 — 36/36 independent checks</span>
+        <h4>AI-Assisted Micro-Tool Builds (fixed scope)</h4>
+        <p>One small, sharp tool that does one job perfectly — like the verified sample, a CSV cleaner that runs entirely in a single HTML file: drop in a messy CSV, get a cleaned file and a report of everything that was fixed and flagged.</p>
+        <p class="lbl">What you get</p>
+        <ul>
+          <li>A single-file tool that works offline in the browser — no installation, no server, nothing to maintain</li>
+          <li>A live demo run on sample data, with counts you can check (sample: 20 rows in → 16 out; 14 dates standardised across 5 formats; 3 invalid emails flagged)</li>
+          <li>A README stating exactly what the tool does — and its honest limits</li>
+          <li>The tool is genuinely reusable: the sample CSV Cleaner is one I use in my own client spreadsheet work</li>
+        </ul>
+        <p class="lbl">How it works</p>
+        <p>You describe the one job in writing. I agree the fixed scope, build the tool, and verify its output against an independent re-calculation before delivery.</p>
+        <div class="scope"><strong>Honest limits (from the sample tool):</strong> exact duplicates only — no fuzzy matching; dates read day-first; email checks are format-only. Your tool's limits are stated the same way, up front.</div>
+        <span class="price">Fixed-scope builds · programming market ~$100/hr, AI specialists median $125/hr</span>
+      </div>
+
+      <div class="pcard">
+        <span class="verified">Verified 100/100 — 24/24 checks · deadline 30 Dec 2026</span>
+        <h4>EUDR Supplier Traceability Data Preparation</h4>
+        <p>The EU Deforestation Regulation requires due-diligence data on suppliers, production plots and shipments. I prepare that data — collected, cleaned, geolocation-checked and structured into due-diligence-ready files — for commodity supply chains such as cocoa and coffee.</p>
+        <p class="lbl">What you get</p>
+        <ul>
+          <li>A supplier-data pack on your chain (verified sample: 15 suppliers, 45 plots as GeoJSON, 23 consignments)</li>
+          <li>Every planted error class in the sample caught and classified — missing geolocation, invalid coordinates, duplicate suppliers, broken consignment links and more</li>
+          <li>Files structured for your compliance team or DDS tooling to pick up directly</li>
+          <li>Timing that respects the regulation: it applies from 30 Dec 2026 for large/medium operators and downstream, and 30 Jun 2027 for micro/small</li>
+        </ul>
+        <p class="lbl">How it works</p>
+        <p>You share your supplier, plot and shipment records. I validate, clean and structure them, flag every gap with its reason, and deliver the pack with a validation report.</p>
+        <div class="scope"><strong>Scope, stated plainly:</strong> data preparation and validation only — not legal advice, and not submission of your due-diligence statement.</div>
+        <span class="price">Mapping sprint from ~$1,110 · full DDS data package from ~$2,780</span>
+      </div>
+
+      <div class="pcard">
+        <span class="verified">Verified 100/100 — 26/26 independent checks</span>
+        <h4>Financial Modelling — Data Work (your assumptions, exact mechanics)</h4>
+        <p>A three-statement financial model built or audited purely as a data machine: every calculation a live formula linked to your assumptions, balance sheet balancing to the cent, cash tying out, and an audit that finds hard-coded plugs and broken links wherever someone hid them.</p>
+        <p class="lbl">What you get</p>
+        <ul>
+          <li>A 3-statement model (sample: FY2024 actuals + FY2025–27 forecast) with 188 of 188 calculation cells as formulas linked to the inputs — no hard-coded answers</li>
+          <li>An audit report: the clean model passed 9/9 structural checks (balance sheet balances in all 4 periods, cash tie-out, retained-earnings roll-forward, debt and depreciation ties)</li>
+          <li>Break-finding proven: the audit caught the sample's 2 deliberately planted breaks exactly, with their knock-on amounts</li>
+          <li>An independent rebuild from your assumptions file, diffed figure-by-figure against the model</li>
+        </ul>
+        <p class="lbl">How it works</p>
+        <p>You provide the assumptions — they are always yours. I build or audit the mechanics, run the structural checks, and report every break found with its size.</p>
+        <div class="scope"><strong>Scope, stated plainly:</strong> modelling mechanics only — no financial judgement, no valuation, no investment or finance advice.</div>
+        <span class="price">3-statement model $1,500–$3,500 · fundraising models $3,000–$6,000</span>
+      </div>
+
+      <div class="pcard">
+        <span class="verified">Verified 100/100 — 45/45 independent checks</span>
+        <h4>Airtable &amp; Notion Workspace Builds</h4>
+        <p>A working operating system for a small team, designed and delivered as a complete build pack: an Airtable base and a Notion workspace covering the same business — clients, projects, tasks and invoices — with every relationship, formula and total checked.</p>
+        <p class="lbl">What you get</p>
+        <ul>
+          <li>Airtable: full schema (sample: 4 tables, 12 views, formulas), ready-to-import CSVs, and an import guide</li>
+          <li>Notion: workspace blueprint (4 databases, relations, 3 page templates), matching CSVs, and a setup guide</li>
+          <li>One consistent dataset across both (sample: 8 clients, 12 projects, 30 tasks, 15 invoices — 65 records identical field-by-field in both packs)</li>
+          <li>Totals independently recomputed: billed 27,850 · paid 23,150 · outstanding 4,700 in the sample data</li>
+        </ul>
+        <p class="lbl">How it works</p>
+        <p>You describe how your team works in writing. I design the schema, build the pack, verify every link and total, and deliver it with step-by-step import/setup guides.</p>
+        <div class="scope"><strong>Stated plainly:</strong> the verified sample is a build pack plus guides — schema, data files and instructions you can import in minutes — rather than a build inside a live client account.</div>
+        <span class="price">$150–$400 per setup</span>
+      </div>
+
+      <div class="pcard">
+        <span class="verified">Verified 100/100 — 37/37 independent checks, reconciliation difference $0.00</span>
+        <h4>Bookkeeping Cleanup — Support for QuickBooks / Xero Users</h4>
+        <p>Months of messy transactions turned into a reconciled workbook: bank and books cleaned side by side, duplicates removed, every difference hunted down and listed with its reason — so your bookkeeper or accountant starts from numbers that tie to the cent.</p>
+        <p class="lbl">What you get</p>
+        <ul>
+          <li>A cleanup workbook: cleaned bank sheet, cleaned books sheet, a live-formula reconciliation, and an exceptions list</li>
+          <li>Sample result (3 months, fictional business): bank 90 lines and books 85 records cleaned; every planted mess caught exactly — duplicates 4 + 6, entries missing from books 8, bank-only fees/interest 5, outstanding items 6, digit-transposition typos 5, wrong dates 5, payee name variants 12, wrong categories 7</li>
+          <li>Reconciliation tying exactly to the bank's closing balance — difference $0.00 — with 73 matched pairs and 44 exceptions, each with a stated reason and next step</li>
+          <li>Personal-looking expenses flagged for your decision — never judged, never quietly reclassified (5 flagged in the sample)</li>
+        </ul>
+        <p class="lbl">How it works</p>
+        <p>You share the bank export and the books export. I clean, match and reconcile them, account for every raw row exactly once, and deliver the workbook plus a plain-language cleanup report.</p>
+        <div class="scope"><strong>Scope, stated plainly:</strong> cleanup support only. I am never your bookkeeper of record — nothing is posted to your QuickBooks/Xero, nothing is filed, and no tax advice is given. Every decision item is flagged for you or your bookkeeper to confirm.</div>
+        <span class="price">Cleanups $500–$5,000, by backlog size</span>
+      </div>
+
+      <div class="pcard">
+        <span class="verified">Verified 100/100 — 22/22 independent checks on our own published episode</span>
+        <h4>Podcast &amp; YouTube Written Repurposing Pack</h4>
+        <p>One episode of your podcast or channel turned into a complete written pack — show notes, chapters and ready-to-post social content — built only from your episode's own words. Nothing invented, nothing padded: every quote is verbatim and every number traces back to the episode itself.</p>
+        <p class="lbl">What you get</p>
+        <ul>
+          <li>Show notes: 3 title options, a short and a long summary, key takeaways and topics list</li>
+          <li>YouTube chapters in standard format, timed proportionally from the narration script and labelled as estimates</li>
+          <li>Social posts written for each platform: a LinkedIn post, an X thread (every post within the 280-character limit), an Instagram/Threads caption and a Facebook post</li>
+          <li>Verbatim quotable moments, an SEO keyword list drawn from the episode's own terms, and a short blog/newsletter version</li>
+          <li>Sample pack, from our own EIDOS episode: 5 chapters, 6-post X thread, 6 verbatim quotes, 10 keywords, 377-word blog version — numbers audit clean</li>
+        </ul>
+        <p class="lbl">How it works</p>
+        <p>You share the episode's script or transcript. I extract, structure and write the pack, then verify every quote and number against your source before delivery.</p>
+        <span class="price">Our pack $40–$90 per episode · market rate for show notes $30–$100/ep</span>
+      </div>
+
     </div>
   </div>
 </section>
