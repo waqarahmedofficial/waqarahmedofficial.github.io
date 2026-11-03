@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free Sample Ad Redesign — Plummer Pet Hospital</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: "Segoe UI", Arial, Helvetica, sans-serif; background:#eef2f5; color:#1c2b33; line-height:1.55; }
+  .wrap { max-width:1080px; margin:0 auto; padding:36px 20px 48px; }
+  header.top { text-align:center; margin-bottom:8px; }
+  header.top .kicker { font-size:13px; letter-spacing:2px; text-transform:uppercase; color:#b9551d; font-weight:700; }
+  header.top h1 { font-size:32px; margin:8px 0 6px; color:#4a2c14; }
+  header.top p { color:#45606a; font-size:16px; }
+  .sample-tag { display:inline-block; margin-top:14px; background:#fff3cd; color:#7a5b00; border:1px solid #e3c65c;
+    padding:5px 14px; border-radius:20px; font-size:13px; font-weight:600; }
+  .note { max-width:820px; margin:18px auto 30px; background:#ffffff; border:1px solid #d7e0e5; border-left:5px solid #b9551d;
+    padding:14px 18px; border-radius:8px; font-size:14px; color:#3d545f; }
+  .cols { display:grid; grid-template-columns:1fr 1fr; gap:28px; }
+  @media (max-width:820px){ .cols { grid-template-columns:1fr; } }
+  .col h2 { font-size:19px; margin-bottom:12px; text-align:center; padding:8px; border-radius:8px; }
+  .col.before h2 { background:#f3d9d9; color:#8c2f2f; }
+  .col.after h2 { background:#d3ecdc; color:#1e6b3c; }
+  .adcard { background:#fff; border:1px solid #d7e0e5; border-radius:12px; overflow:hidden; box-shadow:0 4px 14px rgba(18,60,68,.08); }
+  .ad-head { display:flex; align-items:center; gap:10px; padding:12px 14px; }
+  .avatar { width:40px; height:40px; border-radius:50%; background:#b9cdd4; display:flex; align-items:center; justify-content:center;
+    font-weight:700; color:#33565f; font-size:15px; flex:none; }
+  .avatar.after-av { background:#b9551d; color:#fff; }
+  .ad-head .name { font-weight:700; font-size:15px; }
+  .ad-head .meta { font-size:12px; color:#7a8b93; }
+  .primary { padding:0 14px 12px; font-size:14.5px; color:#33454e; }
+  .creative { position:relative; }
+  .creative svg { display:block; width:100%; height:auto; }
+  .creative .photo-label { position:absolute; bottom:8px; left:10px; background:rgba(0,0,0,.55); color:#fff;
+    font-size:11.5px; padding:3px 9px; border-radius:4px; }
+  .linkbar { display:flex; justify-content:space-between; align-items:center; gap:12px; background:#f4f7f9;
+    border-top:1px solid #e2eaee; padding:12px 14px; }
+  .linkbar .hl { font-weight:700; font-size:15px; color:#22333b; }
+  .linkbar .dom { font-size:12px; color:#7a8b93; text-transform:uppercase; letter-spacing:.5px; }
+  .btn { flex:none; border:none; border-radius:6px; padding:9px 16px; font-size:14px; font-weight:600; cursor:default; }
+  .btn.grey { background:#e2e8ec; color:#54666f; }
+  .btn.accent { background:#b9551d; color:#fff; }
+  .weak-list, .fix-list { margin-top:14px; background:#fff; border:1px solid #d7e0e5; border-radius:10px; padding:16px 18px; }
+  .weak-list h3, .fix-list h3 { font-size:15.5px; margin-bottom:8px; }
+  .weak-list li, .fix-list li { margin-left:18px; margin-bottom:7px; font-size:14.5px; color:#3d545f; }
+  section.changed { margin-top:38px; background:#ffffff; border:1px solid #d7e0e5; border-radius:12px; padding:26px 30px; }
+  section.changed h2 { font-size:22px; color:#4a2c14; margin-bottom:6px; }
+  section.changed p.sub { color:#45606a; margin-bottom:14px; font-size:15px; }
+  section.changed table { width:100%; border-collapse:collapse; font-size:14.5px; }
+  section.changed th, section.changed td { text-align:left; padding:10px 12px; border-bottom:1px solid #e6edf0; vertical-align:top; }
+  section.changed th { background:#f0f5f7; color:#4a2c14; }
+  .offer { margin-top:30px; background:#4a2c14; color:#eaf4f6; border-radius:12px; padding:26px 30px; text-align:center; }
+  .offer h2 { font-size:22px; margin-bottom:8px; color:#fff; }
+  .offer p { font-size:15.5px; color:#cfe3e8; max-width:720px; margin:0 auto 6px; }
+  .offer a { color:#9fd8e0; font-weight:600; }
+  footer { text-align:center; margin-top:26px; font-size:13px; color:#7a8b93; }
+  .placeholder { background:#fff8e1; border:1px dashed #d9a400; border-radius:6px; padding:2px 8px; font-weight:600; color:#7a5b00; }
+  .offerstrip { margin:12px 14px 0; background:#e8f6ec; border:1px solid #9fd3ae; border-radius:8px; padding:10px 12px; font-size:14.5px; color:#1e6b3c; font-weight:600; text-align:center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <div class="kicker">Free Sample &middot; Ad Creative Redesign</div>
+    <h1>Plummer Pet Hospital &mdash; Ad Redesign Sample</h1>
+    <p>St. Petersburg, Florida &middot; Prepared from your live Facebook / Instagram ad (running since October 11, 2023)</p>
+    <div class="sample-tag">FREE SAMPLE &mdash; no charge, no obligation</div>
+  </header>
+
+  <div class="note">
+    <strong>How to read this page:</strong> the &ldquo;Before&rdquo; panel is a <strong>summary of your current ad&rsquo;s visible
+    weaknesses</strong>, prepared from the live Ads Library creative &mdash; it is not a copy of your ad, and your ad&rsquo;s wording,
+    images and logo are not reproduced. The &ldquo;After&rdquo; panel is an original redesign made for this sample.
+    The offer shown in the redesign is <strong>the $55 fee your own website already publishes</strong> &mdash; your ad simply never mentions it. We have not invented any other price, discount, or rating.
+  </div>
+
+  <div class="cols">
+
+    <!-- ================= BEFORE ================= -->
+    <div class="col before">
+      <h2>BEFORE &mdash; Your Current Ad (weakness summary)</h2>
+      <div class="adcard">
+        <div class="ad-head">
+          <div class="avatar">Pl</div>
+          <div>
+            <div class="name">Plummer Pet Hospital</div>
+            <div class="meta">Sponsored &middot; St. Petersburg, FL</div>
+          </div>
+        </div>
+        <div class="primary">Summary of the live copy: general credential text &mdash; AAHA-accredited, family-owned &mdash; with no offer, no price, and nothing addressed to a pet owner&rsquo;s actual worries. (Weakness summary only.)</div>
+        <div class="creative">
+          <svg viewBox="0 0 600 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Generic creative representation">
+            <rect width="600" height="340" fill="#cfd8dc"/>
+            <rect x="0" y="238" width="600" height="102" fill="#b0bec5"/>
+            <circle cx="300" cy="150" r="58" fill="#90a4ae"/>
+            <rect x="150" y="216" width="300" height="16" rx="8" fill="#78909c"/>
+            <text x="300" y="70" text-anchor="middle" font-family="Arial" font-size="21" fill="#546e7a">Generic clinic photo</text>
+            <text x="300" y="98" text-anchor="middle" font-family="Arial" font-size="15" fill="#607d8b">no pet in focus &middot; no offer &middot; no headline on the image</text>
+          </svg>
+          <div class="photo-label">Creative: generic image (summary representation)</div>
+        </div>
+        <div class="linkbar">
+          <div>
+            <div class="dom">Meta Ads Library listing</div>
+            <div class="hl">AAHA-accredited veterinary care</div>
+          </div>
+          <button class="btn grey">Call Now</button>
+        </div>
+      </div>
+      <div class="weak-list">
+        <h3>What a scrolling reader sees (and misses)</h3>
+        <ul><li><strong>Credentials are not a message</strong> &mdash; AAHA accreditation is real proof, but on its own it tells a worried pet owner nothing about what happens next.</li>
+          <li><strong>No offer or price in the ad</strong> &mdash; yet your own website publishes a $55 fee. The most concrete fact you have is missing from the ad.</li>
+          <li><strong>Nothing written to the pet owner</strong> &mdash; the copy talks about the hospital, not about the animal the reader loves.</li>
+          <li><strong>Running since October 2023</strong> &mdash; two years on the same generic copy is a long time for an ad to go unrefreshed.</li></ul>
+      </div>
+    </div>
+
+    <!-- ================= AFTER ================= -->
+    <div class="col after">
+      <h2>AFTER &mdash; Our Redesign (original sample)</h2>
+      <div class="adcard">
+        <div class="ad-head">
+          <div class="avatar after-av">Pl</div>
+          <div>
+            <div class="name">Plummer Pet Hospital</div>
+            <div class="meta">Sponsored &middot; St. Petersburg, FL</div>
+          </div>
+        </div>
+        <div class="primary">Your pet cannot tell you what is wrong &mdash; we will. Plummer Pet Hospital is an AAHA-accredited, family-owned hospital in St. Petersburg, and our website-published $55 fee makes a first visit easy to plan.</div>
+        <div class="creative">
+          <svg viewBox="0 0 600 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Redesigned creative: paw print graphic with headline overlay">
+            <rect width="600" height="340" fill="#b9551d"/>
+            <circle cx="508" cy="52" r="110" fill="#4a2c14" opacity="0.45"/>
+            <g fill="#ffffff">
+              <ellipse cx="300" cy="180" rx="72" ry="56"/>
+              <ellipse cx="196" cy="118" rx="26" ry="36" transform="rotate(-18 196 118)"/>
+              <ellipse cx="258" cy="88" rx="26" ry="38"/>
+              <ellipse cx="342" cy="88" rx="26" ry="38"/>
+              <ellipse cx="404" cy="118" rx="26" ry="36" transform="rotate(18 404 118)"/>
+            </g>
+            <text x="300" y="282" text-anchor="middle" font-family="Arial" font-size="27" font-weight="bold" fill="#ffffff">Care Your Pet Deserves</text>
+            <text x="300" y="312" text-anchor="middle" font-family="Arial" font-size="16" fill="#fdf0e6">AAHA-accredited &middot; family-owned &middot; St. Petersburg, FL</text>
+          </svg>
+          <div class="photo-label">Creative: original design for this sample</div>
+        </div>
+        <div class="offerstrip">Your own published fee, now in the ad: $55 fee (as listed on your website)</div>
+        <div class="linkbar" style="margin-top:12px;">
+          <div>
+            <div class="dom">Meta Ads Library listing</div>
+            <div class="hl">Book Your Pet&rsquo;s Visit in St. Petersburg</div>
+          </div>
+          <button class="btn accent">Call Now</button>
+        </div>
+      </div>
+      <div class="fix-list">
+        <h3>What the redesign does differently</h3>
+        <ul><li><strong>Your published $55 fee, in the ad</strong> &mdash; it already exists on your website; the redesign puts it where pet owners scroll.</li>
+          <li><strong>Credentials become the proof, not the headline</strong> &mdash; AAHA and family-owned now back up a benefit instead of replacing one.</li>
+          <li><strong>Text written to the pet owner</strong> &mdash; about their animal, in their language.</li>
+          <li><strong>Creative that says &ldquo;vet&rdquo; instantly</strong> &mdash; an original pet-led design with the headline on the image.</li></ul>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ================= WHAT CHANGED ================= -->
+  <section class="changed">
+    <h2>What we changed &mdash; and why</h2>
+    <p class="sub">Every change below is about what a reader can see in the ad itself: the words, the image, and the button. Nothing here assumes anything about your results &mdash; only about how the ad reads.</p>
+    <table>
+      <tr><th style="width:26%;">Element</th><th style="width:33%;">Before</th><th>After &mdash; and the reason</th></tr>
+      <tr><td><strong>Headline</strong></td><td>Credential-led (AAHA-accredited, family-owned) with no benefit</td><td>A benefit headline for the pet owner, with the credentials as supporting proof. Proof persuades most when it answers a promise.</td></tr>
+      <tr><td><strong>Offer</strong></td><td>No offer or price in the ad, although the website publishes a $55 fee</td><td>The hospital&rsquo;s own published $55 fee, placed in the ad. The fact already existed &mdash; it was invisible where the audience is.</td></tr>
+      <tr><td><strong>Main text</strong></td><td>General text about the hospital</td><td>Text written to the reader about their pet, ending in one clear call step.</td></tr>
+      <tr><td><strong>Call to action</strong></td><td>&ldquo;Call Now&rdquo; under copy that gives no reason to call</td><td>The same direct button, now earned by a benefit, a proof point, and a concrete fee.</td></tr>
+      <tr><td><strong>Creative</strong></td><td>Generic clinic photo</td><td>Original pet-led design in a consistent hospital colour, headline on the image itself.</td></tr>
+    </table>
+  </section>
+
+  <div class="offer">
+    <h2>This sample is free.</h2>
+    <p>If you would like your live ads redesigned to this standard, a single creative is <strong>$50&ndash;$150</strong>
+    depending on scope (a set of 3 is $120&ndash;$300), with a clear fixed price agreed before any work starts &mdash;
+    and clean, correct work with free fixes after delivery.</p>
+    <p>See more of our work: <a href="https://waqarahmedofficial.github.io">waqarahmedofficial.github.io</a></p>
+  </div>
+
+  <footer>
+    Free sample prepared for Plummer Pet Hospital &middot; Original design and copy &middot; No results, budget, or performance claims are made or implied.
+  </footer>
+
+</div>
+</body>
+</html>

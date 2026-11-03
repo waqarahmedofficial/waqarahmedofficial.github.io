@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free Sample Ad Redesign — Sala Family Dentistry</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: "Segoe UI", Arial, Helvetica, sans-serif; background:#eef2f5; color:#1c2b33; line-height:1.55; }
+  .wrap { max-width:1080px; margin:0 auto; padding:36px 20px 48px; }
+  header.top { text-align:center; margin-bottom:8px; }
+  header.top .kicker { font-size:13px; letter-spacing:2px; text-transform:uppercase; color:#6d4c9f; font-weight:700; }
+  header.top h1 { font-size:32px; margin:8px 0 6px; color:#3d2b5c; }
+  header.top p { color:#45606a; font-size:16px; }
+  .sample-tag { display:inline-block; margin-top:14px; background:#fff3cd; color:#7a5b00; border:1px solid #e3c65c;
+    padding:5px 14px; border-radius:20px; font-size:13px; font-weight:600; }
+  .note { max-width:820px; margin:18px auto 30px; background:#ffffff; border:1px solid #d7e0e5; border-left:5px solid #6d4c9f;
+    padding:14px 18px; border-radius:8px; font-size:14px; color:#3d545f; }
+  .cols { display:grid; grid-template-columns:1fr 1fr; gap:28px; }
+  @media (max-width:820px){ .cols { grid-template-columns:1fr; } }
+  .col h2 { font-size:19px; margin-bottom:12px; text-align:center; padding:8px; border-radius:8px; }
+  .col.before h2 { background:#f3d9d9; color:#8c2f2f; }
+  .col.after h2 { background:#d3ecdc; color:#1e6b3c; }
+  .adcard { background:#fff; border:1px solid #d7e0e5; border-radius:12px; overflow:hidden; box-shadow:0 4px 14px rgba(18,60,68,.08); }
+  .ad-head { display:flex; align-items:center; gap:10px; padding:12px 14px; }
+  .avatar { width:40px; height:40px; border-radius:50%; background:#b9cdd4; display:flex; align-items:center; justify-content:center;
+    font-weight:700; color:#33565f; font-size:15px; flex:none; }
+  .avatar.after-av { background:#6d4c9f; color:#fff; }
+  .ad-head .name { font-weight:700; font-size:15px; }
+  .ad-head .meta { font-size:12px; color:#7a8b93; }
+  .primary { padding:0 14px 12px; font-size:14.5px; color:#33454e; }
+  .creative { position:relative; }
+  .creative svg { display:block; width:100%; height:auto; }
+  .creative .photo-label { position:absolute; bottom:8px; left:10px; background:rgba(0,0,0,.55); color:#fff;
+    font-size:11.5px; padding:3px 9px; border-radius:4px; }
+  .linkbar { display:flex; justify-content:space-between; align-items:center; gap:12px; background:#f4f7f9;
+    border-top:1px solid #e2eaee; padding:12px 14px; }
+  .linkbar .hl { font-weight:700; font-size:15px; color:#22333b; }
+  .linkbar .dom { font-size:12px; color:#7a8b93; text-transform:uppercase; letter-spacing:.5px; }
+  .btn { flex:none; border:none; border-radius:6px; padding:9px 16px; font-size:14px; font-weight:600; cursor:default; }
+  .btn.grey { background:#e2e8ec; color:#54666f; }
+  .btn.accent { background:#6d4c9f; color:#fff; }
+  .weak-list, .fix-list { margin-top:14px; background:#fff; border:1px solid #d7e0e5; border-radius:10px; padding:16px 18px; }
+  .weak-list h3, .fix-list h3 { font-size:15.5px; margin-bottom:8px; }
+  .weak-list li, .fix-list li { margin-left:18px; margin-bottom:7px; font-size:14.5px; color:#3d545f; }
+  section.changed { margin-top:38px; background:#ffffff; border:1px solid #d7e0e5; border-radius:12px; padding:26px 30px; }
+  section.changed h2 { font-size:22px; color:#3d2b5c; margin-bottom:6px; }
+  section.changed p.sub { color:#45606a; margin-bottom:14px; font-size:15px; }
+  section.changed table { width:100%; border-collapse:collapse; font-size:14.5px; }
+  section.changed th, section.changed td { text-align:left; padding:10px 12px; border-bottom:1px solid #e6edf0; vertical-align:top; }
+  section.changed th { background:#f0f5f7; color:#3d2b5c; }
+  .offer { margin-top:30px; background:#3d2b5c; color:#eaf4f6; border-radius:12px; padding:26px 30px; text-align:center; }
+  .offer h2 { font-size:22px; margin-bottom:8px; color:#fff; }
+  .offer p { font-size:15.5px; color:#cfe3e8; max-width:720px; margin:0 auto 6px; }
+  .offer a { color:#9fd8e0; font-weight:600; }
+  footer { text-align:center; margin-top:26px; font-size:13px; color:#7a8b93; }
+  .placeholder { background:#fff8e1; border:1px dashed #d9a400; border-radius:6px; padding:2px 8px; font-weight:600; color:#7a5b00; }
+  .offerstrip { margin:12px 14px 0; background:#e8f6ec; border:1px solid #9fd3ae; border-radius:8px; padding:10px 12px; font-size:14.5px; color:#1e6b3c; font-weight:600; text-align:center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <div class="kicker">Free Sample &middot; Ad Creative Redesign</div>
+    <h1>Sala Family Dentistry &mdash; Ad Redesign Sample</h1>
+    <p>Reno, Nevada &middot; Prepared from your live Facebook / Instagram ad (running since May 12, 2025)</p>
+    <div class="sample-tag">FREE SAMPLE &mdash; no charge, no obligation</div>
+  </header>
+
+  <div class="note">
+    <strong>How to read this page:</strong> the &ldquo;Before&rdquo; panel is a <strong>summary of your current ad&rsquo;s visible
+    weaknesses</strong>, prepared from the live Ads Library creative &mdash; it is not a copy of your ad, and your ad&rsquo;s wording,
+    images and logo are not reproduced. The &ldquo;After&rdquo; panel is an original redesign made for this sample.
+    The marked offer line is a <strong>placeholder</strong> &mdash; your real offer belongs there; we have not invented any price, discount, or rating for your business.
+  </div>
+
+  <div class="cols">
+
+    <!-- ================= BEFORE ================= -->
+    <div class="col before">
+      <h2>BEFORE &mdash; Your Current Ad (weakness summary)</h2>
+      <div class="adcard">
+        <div class="ad-head">
+          <div class="avatar">Sa</div>
+          <div>
+            <div class="name">Sala Family Dentistry</div>
+            <div class="meta">Sponsored &middot; Reno, NV</div>
+          </div>
+        </div>
+        <div class="primary">Summary of the live copy: generic urgency lines &mdash; &ldquo;Same Day Appointments Available! Take charge of your oral health&hellip;&rdquo; &mdash; with no specific treatment, benefit or offer. (Weakness summary only.)</div>
+        <div class="creative">
+          <svg viewBox="0 0 600 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Generic creative representation">
+            <rect width="600" height="340" fill="#cfd8dc"/>
+            <rect x="0" y="238" width="600" height="102" fill="#b0bec5"/>
+            <circle cx="300" cy="150" r="58" fill="#90a4ae"/>
+            <rect x="150" y="216" width="300" height="16" rx="8" fill="#78909c"/>
+            <text x="300" y="70" text-anchor="middle" font-family="Arial" font-size="21" fill="#546e7a">Generic dental photo</text>
+            <text x="300" y="98" text-anchor="middle" font-family="Arial" font-size="15" fill="#607d8b">no treatment shown &middot; no offer &middot; no headline on the image</text>
+          </svg>
+          <div class="photo-label">Creative: generic image (summary representation)</div>
+        </div>
+        <div class="linkbar">
+          <div>
+            <div class="dom">salafamilydentistry.com</div>
+            <div class="hl">Family dentistry in Reno</div>
+          </div>
+          <button class="btn grey">Contact us</button>
+        </div>
+      </div>
+      <div class="weak-list">
+        <h3>What a scrolling reader sees (and misses)</h3>
+        <ul><li><strong>Generic urgency</strong> &mdash; &ldquo;take charge of your oral health&rdquo; could belong to any dentist anywhere; it names no treatment and no specific benefit.</li>
+          <li><strong>The best fact is buried</strong> &mdash; same-day appointments are a genuine reason to call, but the copy treats them as decoration instead of the headline.</li>
+          <li><strong>No offer or price</strong> &mdash; nothing concrete for a new patient to act on.</li>
+          <li><strong>&ldquo;Contact us&rdquo; button</strong> &mdash; the most passive call to action there is; it asks for effort without naming the reward.</li></ul>
+      </div>
+    </div>
+
+    <!-- ================= AFTER ================= -->
+    <div class="col after">
+      <h2>AFTER &mdash; Our Redesign (original sample)</h2>
+      <div class="adcard">
+        <div class="ad-head">
+          <div class="avatar after-av">Sa</div>
+          <div>
+            <div class="name">Sala Family Dentistry</div>
+            <div class="meta">Sponsored &middot; Reno, NV</div>
+          </div>
+        </div>
+        <div class="primary">Toothache today? You should not have to wait a week. Sala Family Dentistry in Reno offers same-day appointments &mdash; call this morning, and be seen today.</div>
+        <div class="creative">
+          <svg viewBox="0 0 600 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Redesigned creative: bright smile graphic with headline overlay">
+            <rect width="600" height="340" fill="#6d4c9f"/>
+            <circle cx="492" cy="58" r="120" fill="#3d2b5c"/>
+            <circle cx="96" cy="306" r="100" fill="#3d2b5c" opacity="0.55"/>
+            <g>
+              <path d="M205 118 q95 108 190 0 q-14 96 -95 96 q-81 0 -95 -96z" fill="#ffffff"/>
+              <path d="M205 118 q95 108 190 0" fill="none" stroke="#ffd9d9" stroke-width="7"/>
+              <g stroke="#dfe9ec" stroke-width="3">
+                <line x1="262" y1="140" x2="260" y2="196"/>
+                <line x1="300" y1="150" x2="300" y2="208"/>
+                <line x1="338" y1="140" x2="340" y2="196"/>
+              </g>
+            </g>
+            <text x="300" y="272" text-anchor="middle" font-family="Arial" font-size="27" font-weight="bold" fill="#ffffff">Toothache Today? Be Seen Today.</text>
+            <text x="300" y="304" text-anchor="middle" font-family="Arial" font-size="16" fill="#e6f4f6">Same-day appointments in Reno, NV</text>
+          </svg>
+          <div class="photo-label">Creative: original design for this sample</div>
+        </div>
+        <div style="padding:12px 14px 0;"><span class="placeholder">[ Your offer here &mdash; e.g. your new-patient special ]</span></div>
+        <div class="linkbar" style="margin-top:12px;">
+          <div>
+            <div class="dom">salafamilydentistry.com</div>
+            <div class="hl">Get a Same-Day Appointment in Reno</div>
+          </div>
+          <button class="btn accent">Book Now</button>
+        </div>
+      </div>
+      <div class="fix-list">
+        <h3>What the redesign does differently</h3>
+        <ul><li><strong>Your own strongest fact becomes the headline</strong> &mdash; same-day availability, promoted from a throwaway line to the whole message.</li>
+          <li><strong>Specific, treatment-led text</strong> &mdash; written for someone in pain today, not for everyone in general.</li>
+          <li><strong>A clear offer position</strong> &mdash; ready for your real new-patient offer (placeholder in this sample).</li>
+          <li><strong>A direct booking button</strong> &mdash; &ldquo;Book Now&rdquo; instead of the passive &ldquo;Contact us&rdquo;.</li></ul>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ================= WHAT CHANGED ================= -->
+  <section class="changed">
+    <h2>What we changed &mdash; and why</h2>
+    <p class="sub">Every change below is about what a reader can see in the ad itself: the words, the image, and the button. Nothing here assumes anything about your results &mdash; only about how the ad reads.</p>
+    <table>
+      <tr><th style="width:26%;">Element</th><th style="width:33%;">Before</th><th>After &mdash; and the reason</th></tr>
+      <tr><td><strong>Headline</strong></td><td>Generic urgency (&ldquo;take charge of your oral health&rdquo;)</td><td>The practice&rsquo;s own same-day promise as the headline. Urgency works when it is specific: a person in pain needs a time, not a slogan.</td></tr>
+      <tr><td><strong>Main text</strong></td><td>General motivational copy, no treatment or benefit named</td><td>Short text aimed at one reader with one problem, ending in the booking step.</td></tr>
+      <tr><td><strong>Offer</strong></td><td>No offer or price</td><td>A clear offer position (placeholder here &mdash; your real offer goes in). Specific beats loud: an offer is a reason, urgency alone is not.</td></tr>
+      <tr><td><strong>Call to action</strong></td><td>&ldquo;Contact us&rdquo;</td><td>&ldquo;Book Now&rdquo;. The button should name the action the business actually wants &mdash; an appointment.</td></tr>
+      <tr><td><strong>Creative</strong></td><td>Generic photo, no message on it</td><td>Original smile-led design in a consistent practice colour, headline on the image itself.</td></tr>
+    </table>
+  </section>
+
+  <div class="offer">
+    <h2>This sample is free.</h2>
+    <p>If you would like your live ads redesigned to this standard, a single creative is <strong>$50&ndash;$150</strong>
+    depending on scope (a set of 3 is $120&ndash;$300), with a clear fixed price agreed before any work starts &mdash;
+    and clean, correct work with free fixes after delivery.</p>
+    <p>See more of our work: <a href="https://waqarahmedofficial.github.io">waqarahmedofficial.github.io</a></p>
+  </div>
+
+  <footer>
+    Free sample prepared for Sala Family Dentistry &middot; Original design and copy &middot; No results, budget, or performance claims are made or implied.
+  </footer>
+
+</div>
+</body>
+</html>

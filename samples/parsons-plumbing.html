@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free Sample Ad Redesign — Parsons Plumbing</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: "Segoe UI", Arial, Helvetica, sans-serif; background:#eef2f5; color:#1c2b33; line-height:1.55; }
+  .wrap { max-width:1080px; margin:0 auto; padding:36px 20px 48px; }
+  header.top { text-align:center; margin-bottom:8px; }
+  header.top .kicker { font-size:13px; letter-spacing:2px; text-transform:uppercase; color:#d96c1e; font-weight:700; }
+  header.top h1 { font-size:32px; margin:8px 0 6px; color:#1f3a4d; }
+  header.top p { color:#45606a; font-size:16px; }
+  .sample-tag { display:inline-block; margin-top:14px; background:#fff3cd; color:#7a5b00; border:1px solid #e3c65c;
+    padding:5px 14px; border-radius:20px; font-size:13px; font-weight:600; }
+  .note { max-width:820px; margin:18px auto 30px; background:#ffffff; border:1px solid #d7e0e5; border-left:5px solid #d96c1e;
+    padding:14px 18px; border-radius:8px; font-size:14px; color:#3d545f; }
+  .cols { display:grid; grid-template-columns:1fr 1fr; gap:28px; }
+  @media (max-width:820px){ .cols { grid-template-columns:1fr; } }
+  .col h2 { font-size:19px; margin-bottom:12px; text-align:center; padding:8px; border-radius:8px; }
+  .col.before h2 { background:#f3d9d9; color:#8c2f2f; }
+  .col.after h2 { background:#d3ecdc; color:#1e6b3c; }
+  .adcard { background:#fff; border:1px solid #d7e0e5; border-radius:12px; overflow:hidden; box-shadow:0 4px 14px rgba(18,60,68,.08); }
+  .ad-head { display:flex; align-items:center; gap:10px; padding:12px 14px; }
+  .avatar { width:40px; height:40px; border-radius:50%; background:#b9cdd4; display:flex; align-items:center; justify-content:center;
+    font-weight:700; color:#33565f; font-size:15px; flex:none; }
+  .avatar.after-av { background:#d96c1e; color:#fff; }
+  .ad-head .name { font-weight:700; font-size:15px; }
+  .ad-head .meta { font-size:12px; color:#7a8b93; }
+  .primary { padding:0 14px 12px; font-size:14.5px; color:#33454e; }
+  .creative { position:relative; }
+  .creative svg { display:block; width:100%; height:auto; }
+  .creative .photo-label { position:absolute; bottom:8px; left:10px; background:rgba(0,0,0,.55); color:#fff;
+    font-size:11.5px; padding:3px 9px; border-radius:4px; }
+  .linkbar { display:flex; justify-content:space-between; align-items:center; gap:12px; background:#f4f7f9;
+    border-top:1px solid #e2eaee; padding:12px 14px; }
+  .linkbar .hl { font-weight:700; font-size:15px; color:#22333b; }
+  .linkbar .dom { font-size:12px; color:#7a8b93; text-transform:uppercase; letter-spacing:.5px; }
+  .btn { flex:none; border:none; border-radius:6px; padding:9px 16px; font-size:14px; font-weight:600; cursor:default; }
+  .btn.grey { background:#e2e8ec; color:#54666f; }
+  .btn.accent { background:#d96c1e; color:#fff; }
+  .weak-list, .fix-list { margin-top:14px; background:#fff; border:1px solid #d7e0e5; border-radius:10px; padding:16px 18px; }
+  .weak-list h3, .fix-list h3 { font-size:15.5px; margin-bottom:8px; }
+  .weak-list li, .fix-list li { margin-left:18px; margin-bottom:7px; font-size:14.5px; color:#3d545f; }
+  section.changed { margin-top:38px; background:#ffffff; border:1px solid #d7e0e5; border-radius:12px; padding:26px 30px; }
+  section.changed h2 { font-size:22px; color:#1f3a4d; margin-bottom:6px; }
+  section.changed p.sub { color:#45606a; margin-bottom:14px; font-size:15px; }
+  section.changed table { width:100%; border-collapse:collapse; font-size:14.5px; }
+  section.changed th, section.changed td { text-align:left; padding:10px 12px; border-bottom:1px solid #e6edf0; vertical-align:top; }
+  section.changed th { background:#f0f5f7; color:#1f3a4d; }
+  .offer { margin-top:30px; background:#1f3a4d; color:#eaf4f6; border-radius:12px; padding:26px 30px; text-align:center; }
+  .offer h2 { font-size:22px; margin-bottom:8px; color:#fff; }
+  .offer p { font-size:15.5px; color:#cfe3e8; max-width:720px; margin:0 auto 6px; }
+  .offer a { color:#9fd8e0; font-weight:600; }
+  footer { text-align:center; margin-top:26px; font-size:13px; color:#7a8b93; }
+  .placeholder { background:#fff8e1; border:1px dashed #d9a400; border-radius:6px; padding:2px 8px; font-weight:600; color:#7a5b00; }
+  .offerstrip { margin:12px 14px 0; background:#e8f6ec; border:1px solid #9fd3ae; border-radius:8px; padding:10px 12px; font-size:14.5px; color:#1e6b3c; font-weight:600; text-align:center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <div class="kicker">Free Sample &middot; Ad Creative Redesign</div>
+    <h1>Parsons Plumbing &mdash; Ad Redesign Sample</h1>
+    <p>Eastlake, Ohio &middot; Prepared from your live Facebook / Instagram ad (running since December 6, 2023)</p>
+    <div class="sample-tag">FREE SAMPLE &mdash; no charge, no obligation</div>
+  </header>
+
+  <div class="note">
+    <strong>How to read this page:</strong> the &ldquo;Before&rdquo; panel is a <strong>summary of your current ad&rsquo;s visible
+    weaknesses</strong>, prepared from the live Ads Library creative &mdash; it is not a copy of your ad, and your ad&rsquo;s wording,
+    images and logo are not reproduced. The &ldquo;After&rdquo; panel is an original redesign made for this sample.
+    The marked offer line is a <strong>placeholder</strong> &mdash; your real offer belongs there; we have not invented any price, discount, or rating for your business.
+  </div>
+
+  <div class="cols">
+
+    <!-- ================= BEFORE ================= -->
+    <div class="col before">
+      <h2>BEFORE &mdash; Your Current Ad (weakness summary)</h2>
+      <div class="adcard">
+        <div class="ad-head">
+          <div class="avatar">PP</div>
+          <div>
+            <div class="name">Parsons Plumbing</div>
+            <div class="meta">Sponsored &middot; Eastlake, OH</div>
+          </div>
+        </div>
+        <div class="primary">Summary of the live copy: it is only a list of services &mdash; remodeling, sewer and water lines, water heaters, drain cleaning &mdash; plus a phone number. Nothing else. (Weakness summary only.)</div>
+        <div class="creative">
+          <svg viewBox="0 0 600 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Generic creative representation">
+            <rect width="600" height="340" fill="#cfd8dc"/>
+            <rect x="0" y="238" width="600" height="102" fill="#b0bec5"/>
+            <circle cx="300" cy="150" r="58" fill="#90a4ae"/>
+            <rect x="150" y="216" width="300" height="16" rx="8" fill="#78909c"/>
+            <text x="300" y="70" text-anchor="middle" font-family="Arial" font-size="21" fill="#546e7a">Generic trade photo</text>
+            <text x="300" y="98" text-anchor="middle" font-family="Arial" font-size="15" fill="#607d8b">no headline on the image &middot; no offer &middot; no reason to choose them</text>
+          </svg>
+          <div class="photo-label">Creative: generic image (summary representation)</div>
+        </div>
+        <div class="linkbar">
+          <div>
+            <div class="dom">Meta Ads Library listing</div>
+            <div class="hl">Plumbing services in Eastlake</div>
+          </div>
+          <button class="btn grey">Book now</button>
+        </div>
+      </div>
+      <div class="weak-list">
+        <h3>What a scrolling reader sees (and misses)</h3>
+        <ul><li><strong>A service list is not an ad</strong> &mdash; every plumber in Ohio offers the same four services; a list gives no reason to choose Parsons.</li>
+          <li><strong>No offer</strong> &mdash; no estimate, no guarantee, no first-visit reason of any kind is mentioned.</li>
+          <li><strong>No benefit or outcome</strong> &mdash; the copy says what the company does, never what the homeowner gets.</li>
+          <li><strong>Almost two years on the same copy</strong> &mdash; an ad running since December 2023 with list-only text is easy for scrollers to become blind to.</li></ul>
+      </div>
+    </div>
+
+    <!-- ================= AFTER ================= -->
+    <div class="col after">
+      <h2>AFTER &mdash; Our Redesign (original sample)</h2>
+      <div class="adcard">
+        <div class="ad-head">
+          <div class="avatar after-av">PP</div>
+          <div>
+            <div class="name">Parsons Plumbing</div>
+            <div class="meta">Sponsored &middot; Eastlake, OH</div>
+          </div>
+        </div>
+        <div class="primary">One call handles it all &mdash; from drain cleaning and water heaters to full remodels and sewer lines. Parsons Plumbing in Eastlake: tell us the problem, and consider it handled.</div>
+        <div class="creative">
+          <svg viewBox="0 0 600 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Redesigned creative: bold water drop graphic with headline overlay">
+            <rect width="600" height="340" fill="#d96c1e"/>
+            <circle cx="96" cy="52" r="110" fill="#1f3a4d" opacity="0.5"/>
+            <circle cx="520" cy="310" r="110" fill="#1f3a4d" opacity="0.5"/>
+            <path d="M300 42 C300 42 218 158 218 214 a82 82 0 0 0 164 0 C382 158 300 42 300 42z" fill="#ffffff"/>
+            <ellipse cx="272" cy="212" rx="20" ry="30" fill="#d96c1e" opacity="0.35"/>
+            <text x="300" y="282" text-anchor="middle" font-family="Arial" font-size="27" font-weight="bold" fill="#ffffff">One Call. Every Job Handled.</text>
+            <text x="300" y="312" text-anchor="middle" font-family="Arial" font-size="16" fill="#e6f4f6">Plumbing &amp; remodeling in Eastlake, OH</text>
+          </svg>
+          <div class="photo-label">Creative: original design for this sample</div>
+        </div>
+        <div style="padding:12px 14px 0;"><span class="placeholder">[ Your offer here &mdash; e.g. a free estimate or first-service special ]</span></div>
+        <div class="linkbar" style="margin-top:12px;">
+          <div>
+            <div class="dom">Meta Ads Library listing</div>
+            <div class="hl">Book a Plumber in Eastlake</div>
+          </div>
+          <button class="btn accent">Book Now</button>
+        </div>
+      </div>
+      <div class="fix-list">
+        <h3>What the redesign does differently</h3>
+        <ul><li><strong>An outcome headline</strong> &mdash; the full service range becomes one memorable promise instead of a bullet list.</li>
+          <li><strong>Services become proof, not the message</strong> &mdash; they support the headline instead of carrying the whole ad.</li>
+          <li><strong>A clear offer position</strong> &mdash; ready for a real first-step offer (placeholder in this sample).</li>
+          <li><strong>Creative with a message on it</strong> &mdash; an original design a homeowner understands in one second.</li></ul>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ================= WHAT CHANGED ================= -->
+  <section class="changed">
+    <h2>What we changed &mdash; and why</h2>
+    <p class="sub">Every change below is about what a reader can see in the ad itself: the words, the image, and the button. Nothing here assumes anything about your results &mdash; only about how the ad reads.</p>
+    <table>
+      <tr><th style="width:26%;">Element</th><th style="width:33%;">Before</th><th>After &mdash; and the reason</th></tr>
+      <tr><td><strong>Headline</strong></td><td>None &mdash; the service list is the whole ad</td><td>An outcome headline that turns the range of services into a single promise. A list informs; a promise persuades.</td></tr>
+      <tr><td><strong>Main text</strong></td><td>Remodeling, sewer and water lines, water heaters, drain cleaning &mdash; and a phone number</td><td>Benefit-led text written to the homeowner, with the services as supporting proof and one clear next step.</td></tr>
+      <tr><td><strong>Offer</strong></td><td>No offer of any kind</td><td>A clear offer position (placeholder here &mdash; your real offer goes in). The first step has to feel easy and safe to take.</td></tr>
+      <tr><td><strong>Call to action</strong></td><td>&ldquo;Book now&rdquo; under copy that gives no reason to book</td><td>The same direct button, now earned by a headline and offer that make booking feel worthwhile.</td></tr>
+      <tr><td><strong>Creative</strong></td><td>Generic image with no text or branding</td><td>Original design in a consistent company colour, headline on the image itself.</td></tr>
+    </table>
+  </section>
+
+  <div class="offer">
+    <h2>This sample is free.</h2>
+    <p>If you would like your live ads redesigned to this standard, a single creative is <strong>$50&ndash;$150</strong>
+    depending on scope (a set of 3 is $120&ndash;$300), with a clear fixed price agreed before any work starts &mdash;
+    and clean, correct work with free fixes after delivery.</p>
+    <p>See more of our work: <a href="https://waqarahmedofficial.github.io">waqarahmedofficial.github.io</a></p>
+  </div>
+
+  <footer>
+    Free sample prepared for Parsons Plumbing &middot; Original design and copy &middot; No results, budget, or performance claims are made or implied.
+  </footer>
+
+</div>
+</body>
+</html>
