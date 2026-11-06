@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GreenScape Lawn & Landscape — Landscaper in San Marcos, TX | Sample Demo Website</title>
+<meta name="description" content="Sample demo website layout for a landscaping business in San Marcos, Texas. Fictional business name — layout preview.">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; color:#1f2937; line-height:1.55; background:#f8fafc; }
+  .demo-banner { background:#111827; color:#fbbf24; text-align:center; padding:10px 14px; font-size:13px; letter-spacing:.4px; font-weight:600; }
+  header { background:#1d4023; color:#fff; position:sticky; top:0; z-index:10; box-shadow:0 2px 10px rgba(0,0,0,.18); }
+  .nav { max-width:1080px; margin:auto; display:flex; justify-content:space-between; align-items:center; padding:14px 20px; flex-wrap:wrap; gap:10px; }
+  .logo { font-size:22px; font-weight:800; letter-spacing:.3px; }
+  .logo span { color:#ffc53d; }
+  .call-btn { background:#ffc53d; color:#111827; font-weight:700; padding:10px 18px; border-radius:8px; text-decoration:none; font-size:15px; }
+  .call-btn:hover { opacity:.9; }
+  .hero { background:linear-gradient(135deg, #1d4023 0%, #2e7d32 100%); color:#fff; padding:64px 20px 56px; text-align:center; }
+  .hero h1 { font-size:40px; line-height:1.15; max-width:760px; margin:0 auto 14px; }
+  .hero p { font-size:18px; max-width:620px; margin:0 auto 26px; color:#e5e7eb; }
+  .hero .cta { display:inline-block; background:#ffc53d; color:#111827; font-weight:800; padding:14px 28px; border-radius:10px; text-decoration:none; font-size:17px; margin:4px; }
+  .hero .cta.secondary { background:transparent; color:#fff; border:2px solid #fff; }
+  .stars { color:#ffc53d; font-size:20px; letter-spacing:2px; margin-bottom:10px; }
+  .trust { display:flex; justify-content:center; gap:26px; flex-wrap:wrap; margin-top:30px; font-size:14px; color:#d1d5db; }
+  section { max-width:1080px; margin:auto; padding:52px 20px 8px; }
+  h2 { font-size:28px; text-align:center; margin-bottom:8px; color:#1d4023; }
+  .sub { text-align:center; color:#6b7280; margin-bottom:30px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:18px; }
+  .card { background:#fff; border-radius:12px; padding:24px; box-shadow:0 2px 10px rgba(0,0,0,.06); border-top:4px solid #ffc53d; }
+  .card .icon { font-size:30px; margin-bottom:10px; }
+  .card h3 { font-size:17px; margin-bottom:6px; }
+  .card p { font-size:14px; color:#4b5563; }
+  .why { background:#fff; border-radius:12px; padding:30px; box-shadow:0 2px 10px rgba(0,0,0,.06); }
+  .why ul { list-style:none; display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:14px; }
+  .why li { font-size:15px; padding-left:26px; position:relative; }
+  .why li::before { content:"✓"; position:absolute; left:0; color:#2e7d32; font-weight:800; }
+  .reviews .card { border-top:4px solid #2e7d32; }
+  .reviews .who { font-weight:700; margin-top:10px; font-size:14px; }
+  .sample-note { font-size:12px; color:#9ca3af; text-align:center; margin-top:12px; }
+  .contact { text-align:center; background:#1d4023; color:#fff; border-radius:14px; padding:40px 24px; margin-bottom:52px; }
+  .contact h2 { color:#fff; }
+  .contact p { color:#d1d5db; margin-bottom:20px; }
+  footer { background:#111827; color:#9ca3af; text-align:center; padding:22px 16px; font-size:13px; }
+  footer a { color:#ffc53d; text-decoration:none; }
+  @media (max-width:600px) { .hero h1 { font-size:29px; } .hero { padding:44px 16px 40px; } }
+</style>
+</head>
+<body>
+<div class="demo-banner">SAMPLE DEMO WEBSITE — Fictional business name. This page shows the layout and design only; it is not a real business website.</div>
+<header>
+  <div class="nav">
+    <div class="logo">GreenScape <span>Lawn & Landscape</span></div>
+    <a class="call-btn" href="tel:+15125550134">📞 Call (512) 555-0134</a>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="stars">★★★★★</div>
+  <h1>San Marcos Landscaping — Yards That Make Neighbors Jealous</h1>
+  <p>Design, installation, and reliable maintenance for homes and businesses. We turn ordinary Texas yards into outdoor spaces you'll actually use.</p>
+  <a class="cta" href="tel:+15125550134">Call (512) 555-0134</a>
+  <a class="cta secondary" href="#services">See Our Services</a>
+  <div class="trust"><span>✔ Licensed &amp; Insured</span><span>✔ Upfront Flat Pricing</span><span>✔ Same-Day Service</span><span>✔ Locally Owned in San Marcos, TX</span></div>
+</div>
+
+<section id="services">
+  <h2>Our Services</h2>
+  <p class="sub">Fast, honest landscaping work for homes and small businesses across the San Marcos area.</p>
+  <div class="grid">
+    <div class="card"><div class="icon">🌱</div><h3>Landscape Design & Install</h3><p>Custom designs built for Central Texas heat, soil, and water — beautiful and practical.</p></div>
+    <div class="card"><div class="icon">✂️</div><h3>Lawn Care & Maintenance</h3><p>Mowing, edging, fertilizing, and seasonal cleanup on a schedule you can count on.</p></div>
+    <div class="card"><div class="icon">💧</div><h3>Irrigation & Sprinklers</h3><p>Sprinkler installation and repair that keeps your lawn green without wasting water.</p></div>
+    <div class="card"><div class="icon">🌳</div><h3>Tree & Shrub Care</h3><p>Planting, pruning, and removal by people who know Texas native plants.</p></div>
+    <div class="card"><div class="icon">🧱</div><h3>Patios & Hardscaping</h3><p>Stone patios, walkways, and retaining walls built to last.</p></div>
+    <div class="card"><div class="icon">🍂</div><h3>Seasonal Cleanups</h3><p>Leaf removal, mulch refresh, and storm debris cleanup across San Marcos.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Why Homeowners Choose Us</h2>
+  <p class="sub">One call, one visit, one fair price — done right the first time.</p>
+  <div class="why">
+    <ul>
+      <li>Locally owned in San Marcos, fully insured</li>
+      <li>Free on-site estimates with a written quote</li>
+      <li>Native, drought-smart plant choices</li>
+      <li>Reliable weekly service — we show up when promised</li>
+    </ul>
+  </div>
+</section>
+
+<section class="reviews">
+  <h2>What Customers Say</h2>
+  <p class="sub">Sample review text shown for layout purposes.</p>
+  <div class="grid">
+    <div class="card"><div class="stars" style="font-size:16px;">★★★★★</div><p>“Transformed our backyard into the space we live in all summer.”</p><div class="who">— Sample Customer, San Marcos</div></div>
+    <div class="card"><div class="stars" style="font-size:16px;">★★★★★</div><p>“Reliable every single week. The yard has never looked better.”</p><div class="who">— Sample Customer, Kyle</div></div>
+    <div class="card"><div class="stars" style="font-size:16px;">★★★★★</div><p>“Fair price, great communication, beautiful result.”</p><div class="who">— Sample Customer, San Marcos</div></div>
+  </div>
+  <p class="sample-note">Reviews above are placeholder sample text on this demo page.</p>
+</section>
+
+<section>
+  <div class="contact">
+    <h2>Need a Landscaper Today?</h2>
+    <p>Call now and talk to a real local technician — no call centers, no runaround.</p>
+    <a class="cta call-btn" style="font-size:18px; padding:14px 30px;" href="tel:+15125550134">📞 (512) 555-0134</a>
+    <p style="margin-top:16px; font-size:14px;">Serving San Marcos and surrounding communities in Central Texas.</p>
+  </div>
+</section>
+
+<footer>
+  <p><strong>GreenScape Lawn & Landscape</strong> — sample demo business, San Marcos, Texas.</p>
+  <p>Demo website designed by <a href="https://waqarahmedofficial.github.io">Waqar Ahmed</a> · Portfolio: waqarahmedofficial.github.io</p>
+</footer>
+</body>
+</html>
