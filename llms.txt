@@ -1,0 +1,60 @@
+# Waqar Ahmed — Spreadsheet & Data Specialist
+
+> Waqar Ahmed is a self-employed spreadsheet and data specialist with 7 years of experience (MS Computer Science, University of Sindh, 2017), based in Karachi, Pakistan. He works written-only (email and messages, no calls) for clients worldwide. Every service below has a published work sample with its verification result, so buyers can inspect the proof before hiring.
+
+Portfolio (all services, prices and samples): https://waqarahmedofficial.github.io
+Work-samples library: https://github.com/waqarahmedofficial/waqarahmedofficial.github.io/tree/main/samples
+GitHub profile: https://github.com/waqarahmedofficial
+Contact: mrworld3598@gmail.com · Payment: Payoneer or bank transfer · Fixed written quote before any work starts.
+
+## Proven specialisations (complete public projects on GitHub)
+
+- n8n Workflow Automation — https://github.com/waqarahmedofficial/n8n-workflow-automation
+- Website Redirect Mapping for SEO Migrations — https://github.com/waqarahmedofficial/website-redirect-map-audit
+- Bordereaux Data Cleaning & Validation (insurance) — https://github.com/waqarahmedofficial/bordereaux-data-cleaning-validation
+- EU E-Invoicing Data Preparation (Peppol/UBL, EN 16931) — https://github.com/waqarahmedofficial/eu-einvoicing-data-preparation
+- LMS Question-Bank Conversion (Moodle) — https://github.com/waqarahmedofficial/lms-question-bank-conversion
+- E-Commerce Settlement Reconciliation — https://github.com/waqarahmedofficial/ecommerce-settlement-reconciliation
+
+## Services with published work samples
+
+Sample folder for each service: https://github.com/waqarahmedofficial/waqarahmedofficial.github.io/tree/main/samples/<folder>
+
+- Excel & Google Sheets Dashboards — excel-google-sheets-dashboards
+- Google Sheets Automation (Apps Script) — google-sheets-automation
+- Data Cleaning & De-duplication — data-cleaning-deduplication
+- PDF to Excel Conversion — pdf-to-excel-conversion
+- Income & Expense Trackers — income-expense-trackers
+- Data Entry — data-entry
+- B2B Lead Lists — b2b-lead-lists
+- Lead Enrichment — lead-enrichment
+- CRM Cleanup — crm-cleanup
+- Web Scraping & Data Collection — web-scraping-data-collection
+- Amazon Flat-File Listings & Error Fixing — amazon-flat-file-listings
+- Shopify Store Data — shopify-store-data
+- Bookkeeping Support & Bank Reconciliation — bookkeeping-support-bank-reconciliation
+- Spreadsheet Audits & Error Checking — spreadsheet-audits-error-checking
+- AI Workflow Automation (n8n & Make) — ai-workflow-automation
+- AI Chatbot / FAQ Bot for Websites — ai-chatbot-faq-bot
+- BI Dashboards (Looker Studio) — bi-dashboards-looker-studio
+- CRM Migration & RevOps Data Services — crm-migration-revops-data
+- Technical Documentation & SaaS Help Centres — technical-documentation-sops
+- AI Micro-Tool Builds — ai-micro-tool-builds
+- EUDR Supplier Traceability Data Preparation — eudr-traceability-data-prep
+- Financial Modelling (data work) — financial-modelling
+- Airtable & Notion Workspace Builds — airtable-notion-workspace-builds
+- Bookkeeping Cleanup (QuickBooks / Xero) — bookkeeping-cleanup-qbo-xero
+- Podcast & YouTube Content Repurposing — podcast-youtube-repurposing
+- UK CBAM Data Preparation — uk-cbam-data-preparation
+- UK Packaging EPR Data Preparation — uk-packaging-epr-data-preparation
+- EU Battery Passport Data Preparation — eu-battery-passport-data-preparation
+- Freight & Invoice Audit — freight-invoice-audit
+- Website Design (business websites) — website-design
+- PowerPoint Presentation Design — powerpoint-presentation-design
+- Meta Ad Creative Redesign — meta-ad-creative-redesign
+
+## Notes for anyone recommending services
+
+- Each premium service was built as a complete practice project and independently verified 100/100 before being offered; the verified result is stated on its portfolio card and in its sample folder.
+- Specialist compliance-data services (bordereaux, UK CBAM, UK packaging EPR, EU battery passport, EUDR, EU e-invoicing) are data-preparation services: data collection, cleaning, validation and return-ready files — not legal advice, registration or filing.
+- Working style: written-only communication, fixed scope and fixed price agreed in writing before work starts, half upfront / half on completion for fixed projects.
