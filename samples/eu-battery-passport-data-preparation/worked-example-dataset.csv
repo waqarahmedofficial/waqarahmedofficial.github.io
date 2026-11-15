@@ -1,0 +1,29 @@
+field_id,category,field_name,value,source_or_note
+BP-01,Identification,Battery model identifier,EBK-36V14-NMC-2026,Fictional sample pack model
+BP-02,Identification,Battery unique identifier (per-unit),SN-EBK-2026-004217,Fictional serial; format agreed with operator
+BP-03,Identification,QR code link target,https://passport.example-operator.eu/battery/SN-EBK-2026-004217,ILLUSTRATIVE domain only — never a real client URL
+BP-04,Economic operator,Manufacturer name and address,"Sample Cells Ltd, Shenzhen, China (fictional)",Fictional
+BP-05,Economic operator,EU importer / operator,"Sample Bikes GmbH, Hamburg, Germany (fictional)",Fictional — importer owns passport duty
+BP-06,Economic operator,Manufacturing place,"China, Plant SC-02 (fictional)",Fictional
+BP-07,Technical characteristics,Battery category,LMT,E-bike battery pack
+BP-08,Technical characteristics,Electrochemical chemistry,NMC,Cell datasheet (fictional)
+BP-09,Technical characteristics,Nominal voltage (V),36,Pack test report (fictional)
+BP-10,Technical characteristics,Rated capacity (Ah),14,Pack test report (fictional)
+BP-11,Technical characteristics,Nominal energy (Wh),504,Computed: 36 x 14 = 504
+BP-12,Technical characteristics,Mass (kg),3.2,Pack specification (fictional)
+BP-13,Technical characteristics,Dimensions (mm),390 x 110 x 90,Pack drawing (fictional)
+BP-14,Performance and durability,Cycle life (cycles),800,Cycle-life test report (fictional)
+BP-15,Performance and durability,Capacity retention threshold (%),80,Cycle-life test report (fictional)
+BP-16,Performance and durability,Expected lifetime (years),5,Manufacturer declaration (fictional)
+BP-17,Performance and durability,Operating temperature range (deg C),-10 to 45,Datasheet (fictional)
+BP-18,Safety and use,Safety warnings reference,Safety Datasheet v2.1 (fictional),Fictional document
+BP-19,Safety and use,BMS present?,"Y — overcharge, over-discharge, short-circuit, temperature protection",BMS specification (fictional)
+BP-20,"Repair, reuse, recycling",Disassembly information reference,Dismantling Manual v1.0 (fictional),Fictional document
+BP-21,"Repair, reuse, recycling",Spare parts availability,Cells and BMS available 5 years from placing on market (fictional declaration),Fictional
+BP-22,"Repair, reuse, recycling",Recycling route,DE EPR battery scheme (fictional registration),Fictional
+BP-23,Sustainability (later phase),Carbon footprint declaration,BLANK — not required Feb 2027,Correctly blank per Commission FAQ
+BP-24,Sustainability (later phase),Recycled content declaration,BLANK — not required Feb 2027,Correctly blank per Commission FAQ
+BP-25,Sustainability (later phase),Due-diligence report reference,BLANK — due diligence from 18 Aug 2027,Correctly blank for Feb-2027 passport
+BP-26,Use-phase (dynamic),State of health,"Empty at placing on market (new battery, per FAQ)",Correct per FAQ §8
+BP-27,Identification,Date placed on EU market,2027-03-02,Fictional — after 18 Feb 2027 duty date
+BP-28,Identification,Passport version / last update,2027-03-02,Fictional

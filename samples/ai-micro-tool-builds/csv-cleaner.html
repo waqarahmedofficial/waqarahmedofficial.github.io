@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CSV Cleaner — micro-tool</title>
+<style>
+  body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+         margin: 2rem auto; max-width: 880px; padding: 0 1rem; color: #1c2733; }
+  h1 { font-size: 1.5rem; margin-bottom: 0.25rem; }
+  p.sub { color: #5a6a78; margin-top: 0; }
+  #drop { border: 2px dashed #9db4c6; border-radius: 8px; padding: 1.5rem;
+          text-align: center; color: #40566b; background: #f4f8fb; }
+  #drop.over { background: #e2eefc; border-color: #3f7fbf; }
+  fieldset { border: 1px solid #cfdce7; border-radius: 8px; margin-top: 1rem; }
+  legend { font-weight: 600; }
+  label { display: block; margin: 0.35rem 0; }
+  select { margin-left: 0.5rem; }
+  button { background: #2266aa; color: #fff; border: 0; border-radius: 6px;
+           padding: 0.55rem 1.1rem; font-size: 1rem; cursor: pointer; }
+  button:disabled { background: #9db4c6; cursor: default; }
+  button.secondary { background: #40566b; }
+  table { border-collapse: collapse; margin: 0.75rem 0; font-size: 0.85rem;
+          display: block; overflow-x: auto; }
+  th, td { border: 1px solid #cfdce7; padding: 0.3rem 0.55rem;
+           text-align: left; white-space: nowrap; }
+  th { background: #eef3f8; }
+  td.bad { background: #fde8e8; }
+  .counts td:first-child { font-weight: 600; }
+  .hidden { display: none; }
+  .row { margin-top: 1rem; }
+  span.note { color: #5a6a78; font-size: 0.85rem; }
+</style>
+</head>
+<body>
+<h1>CSV Cleaner</h1>
+<p class="sub">Drop in a messy CSV, choose the cleaning operations, download the
+cleaned file and a report of exactly what changed. Everything runs locally in
+your browser — the file never leaves your machine.</p>
+
+<div id="drop">
+  <p>Drag &amp; drop a CSV file here, or</p>
+  <input type="file" id="file" accept=".csv,text/csv">
+</div>
+
+<fieldset id="controls" class="hidden">
+  <legend>Cleaning operations</legend>
+  <label><input type="checkbox" id="opt-headers" checked>
+    Standardize column headers (trim, lowercase, spaces → underscores)</label>
+  <label><input type="checkbox" id="opt-trim" checked>
+    Trim whitespace in every cell</label>
+  <label><input type="checkbox" id="opt-empty" checked>
+    Remove fully empty rows</label>
+  <label><input type="checkbox" id="opt-dates" checked>
+    Standardize a date column to ISO (YYYY-MM-DD)
+    <select id="date-col"></select></label>
+  <label><input type="checkbox" id="opt-emails" checked>
+    Normalize an email column (lowercase, flag invalid — adds an
+    <code>email_valid</code> column)
+    <select id="email-col"></select></label>
+  <label><input type="checkbox" id="opt-dupes" checked>
+    Remove exact duplicate rows (compared after the steps above)</label>
+  <div class="row">
+    <button id="run" type="button">Clean the CSV</button>
+    <span class="note">Dates written with slashes or dashes are read
+    day-first (DD/MM/YYYY).</span>
+  </div>
+</fieldset>
+
+<div id="input-preview" class="hidden">
+  <h2>Input preview <span class="note">(first 10 rows)</span></h2>
+  <div id="input-table"></div>
+</div>
+
+<div id="results" class="hidden">
+  <h2>Result</h2>
+  <table class="counts"><tbody id="counts-body"></tbody></table>
+  <div class="row">
+    <button id="dl-csv" class="secondary" type="button">Download cleaned CSV</button>
+    <button id="dl-report" class="secondary" type="button">Download cleaning report</button>
+  </div>
+  <h3>Cleaned preview <span class="note">(first 10 rows)</span></h3>
+  <div id="output-table"></div>
+</div>
+
+<script src="csv-clean.js"></script>
+<script>
+(function () {
+  'use strict';
+  var rawText = null;
+  var lastResult = null;
+  var baseName = 'cleaned';
+
+  var $ = function (id) { return document.getElementById(id); };
+
+  function fillColumnSelects(headers) {
+    ['date-col', 'email-col'].forEach(function (id) {
+      var sel = $(id);
+      sel.innerHTML = '';
+      headers.forEach(function (h) {
+        var opt = document.createElement('option');
+        opt.value = h;
+        opt.textContent = h;
+        sel.appendChild(opt);
+      });
+    });
+    // Sensible defaults: first header that looks like a date / an email.
+    headers.forEach(function (h, i) {
+      var s = CSVClean.standardizeHeader(h);
+      if (/date|joined|created|signup/.test(s)) { $('date-col').selectedIndex = i; }
+      if (/mail/.test(s)) { $('email-col').selectedIndex = i; }
+    });
+  }
+
+  function renderPreview(containerId, rows, badEmailCol) {
+    var table = document.createElement('table');
+    rows.slice(0, 11).forEach(function (cells, r) {
+      var tr = document.createElement('tr');
+      cells.forEach(function (cell, c) {
+        var td = document.createElement(r === 0 ? 'th' : 'td');
+        td.textContent = cell;
+        if (r > 0 && c === badEmailCol && cell === 'FALSE') {
+          td.className = 'bad';
+        }
+        tr.appendChild(td);
+      });
+      table.appendChild(tr);
+    });
+    var box = $(containerId);
+    box.innerHTML = '';
+    box.appendChild(table);
+  }
+
+  function loadFile(file) {
+    if (!file) { return; }
+    baseName = file.name.replace(/\.csv$/i, '');
+    var reader = new FileReader();
+    reader.onload = function () {
+      rawText = String(reader.result);
+      var parsed;
+      try {
+        parsed = CSVClean.parseCSV(rawText);
+      } catch (e) {
+        alert('Could not parse that file: ' + e.message);
+        return;
+      }
+      if (parsed.length === 0) {
+        alert('That file appears to be empty.');
+        return;
+      }
+      fillColumnSelects(parsed[0]);
+      renderPreview('input-table', parsed, -1);
+      $('controls').className = '';
+      $('input-preview').className = '';
+      $('results').className = 'hidden';
+      lastResult = null;
+    };
+    reader.readAsText(file);
+  }
+
+  $('file').addEventListener('change', function () {
+    loadFile(this.files[0]);
+  });
+  var drop = $('drop');
+  drop.addEventListener('dragover', function (e) {
+    e.preventDefault();
+    drop.className = 'over';
+  });
+  drop.addEventListener('dragleave', function () { drop.className = ''; });
+  drop.addEventListener('drop', function (e) {
+    e.preventDefault();
+    drop.className = '';
+    loadFile(e.dataTransfer.files[0]);
+  });
+
+  $('run').addEventListener('click', function () {
+    if (rawText === null) { return; }
+    var options = {
+      standardizeHeaders: $('opt-headers').checked,
+      trimWhitespace: $('opt-trim').checked,
+      removeEmptyRows: $('opt-empty').checked,
+      removeDuplicates: $('opt-dupes').checked,
+      dateColumn: $('opt-dates').checked ? $('date-col').value : null,
+      emailColumn: $('opt-emails').checked ? $('email-col').value : null
+    };
+    try {
+      lastResult = CSVClean.cleanCSV(rawText, options);
+    } catch (e) {
+      alert('Cleaning failed: ' + e.message);
+      return;
+    }
+    var c = lastResult.counts;
+    var rows = [
+      ['Rows in', c.rows_in],
+      ['Rows out', c.rows_out],
+      ['Header cells standardized', c.headers_changed],
+      ['Data cells trimmed', c.cells_trimmed],
+      ['Empty rows removed', c.empty_rows_removed]
+    ];
+    if (c.date_column) {
+      rows.push(['Dates standardized', c.dates_standardized]);
+      rows.push(['Dates already ISO, unchanged', c.dates_already_iso]);
+      rows.push(['Dates unparseable, left unchanged', c.dates_unparseable]);
+    }
+    if (c.email_column) {
+      rows.push(['Emails lowercased', c.emails_lowercased]);
+      rows.push(['Invalid emails flagged', c.invalid_emails]);
+    }
+    rows.push(['Duplicate rows removed', c.duplicates_removed]);
+    var body = $('counts-body');
+    body.innerHTML = '';
+    rows.forEach(function (pair) {
+      var tr = document.createElement('tr');
+      var a = document.createElement('td');
+      var b = document.createElement('td');
+      a.textContent = pair[0];
+      b.textContent = pair[1];
+      tr.appendChild(a);
+      tr.appendChild(b);
+      body.appendChild(tr);
+    });
+    var outRows = CSVClean.parseCSV(lastResult.csv);
+    var emailValidIdx = outRows[0].indexOf('email_valid');
+    renderPreview('output-table', outRows, emailValidIdx);
+    $('results').className = '';
+  });
+
+  function download(filename, text, type) {
+    var blob = new Blob([text], { type: type });
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement('a');
+    a.href = url;
+    a.download = filename;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    setTimeout(function () { URL.revokeObjectURL(url); }, 500);
+  }
+
+  $('dl-csv').addEventListener('click', function () {
+    if (lastResult) { download(baseName + '-cleaned.csv', lastResult.csv, 'text/csv'); }
+  });
+  $('dl-report').addEventListener('click', function () {
+    if (lastResult) {
+      download(baseName + '-report.txt',
+        CSVClean.formatReport(lastResult.counts), 'text/plain');
+    }
+  });
+})();
+</script>
+</body>
+</html>

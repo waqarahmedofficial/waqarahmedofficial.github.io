@@ -1,0 +1,12 @@
+organisation_id,subsidiary_id,organisation_size,submission_period,packaging_activity,packaging_type,packaging_class,packaging_material,material_subtype,from_country,to_country,weight_kg,units,transitional_packaging,ram_rag_rating
+123456,,L,2026-H2,PF,HH,primary,plastic,PET,GB,GB,12400,,,amber
+123456,,L,2026-H2,PF,HH,primary,plastic,LDPE flexible film,GB,GB,8600,,,red
+123456,,L,2026-H2,PF,HH,primary,glass,clear glass,GB,GB,21300,,,green
+123456,,L,2026-H2,PF,HH,primary,paper and board,cardboard carton,GB,GB,15700,,,amber
+123456,,L,2026-H2,PF,HH,primary,aluminium,aluminium can,GB,GB,4200,,,green
+123456,,L,2026-H2,PF,HH,primary,steel,steel lid,GB,GB,1800,,,amber
+123456,,L,2026-H2,PF,HH,primary,fibre-based composite,beverage carton,GB,GB,3100,,,red
+123456,,L,2026-H2,PF,NH,secondary,paper and board,corrugated transit box,GB,GB,9800,,,,
+123456,,L,2026-H2,PF,NH,tertiary,plastic,LDPE stretch wrap,GB,GB,2400,,,,
+123456,,L,2026-H2,PF,NH,tertiary,wood,wooden pallet,GB,GB,6500,,,,
+123456,,L,2026-H2,PF,NH,tertiary,steel,steel strapping,GB,GB,350,,,,

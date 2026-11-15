@@ -1,0 +1,14 @@
+CSV cleaning report
+===================
+Rows in: 20
+Rows out: 16
+Header cells standardized: 6
+Data cells trimmed: 9
+Empty rows removed: 2
+Dates standardized (column "signup_date"): 14
+Dates already ISO, unchanged: 4
+Dates unparseable, left unchanged: 0
+Emails lowercased (column "email"): 4
+Invalid emails flagged: 3
+Invalid email input rows: 5, 9, 16
+Duplicate rows removed: 2

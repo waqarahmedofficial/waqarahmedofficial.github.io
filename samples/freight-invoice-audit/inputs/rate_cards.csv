@@ -1,0 +1,76 @@
+carrier,lane_origin,lane_destination,weight_band,band_min_kg,band_max_kg,base_rate_usd,fuel_surcharge_pct_aug_2026,fuel_surcharge_pct_sep_2026,fuel_surcharge_pct_oct_2026,detention_free_hours,detention_per_hour_after_free_usd,liftgate_fee_usd,residential_delivery_fee_usd,reweigh_fee_usd
+TransGlobal Freight,Shanghai,Los Angeles,0-100 kg,0,100,405.00,17.0,18.0,18.5,2,70.00,85.00,55.00,40.00
+TransGlobal Freight,Shanghai,Los Angeles,101-500 kg,101,500,675.00,17.0,18.0,18.5,2,70.00,85.00,55.00,40.00
+TransGlobal Freight,Shanghai,Los Angeles,501-1000 kg,501,1000,900.00,17.0,18.0,18.5,2,70.00,85.00,55.00,40.00
+TransGlobal Freight,Shanghai,Los Angeles,1001-2500 kg,1001,2500,1395.00,17.0,18.0,18.5,2,70.00,85.00,55.00,40.00
+TransGlobal Freight,Shanghai,Los Angeles,2501-5000 kg,2501,5000,2070.00,17.0,18.0,18.5,2,70.00,85.00,55.00,40.00
+TransGlobal Freight,Los Angeles,Dallas,0-100 kg,0,100,202.50,17.0,18.0,18.5,2,70.00,85.00,55.00,40.00
+TransGlobal Freight,Los Angeles,Dallas,101-500 kg,101,500,337.50,17.0,18.0,18.5,2,70.00,85.00,55.00,40.00
+TransGlobal Freight,Los Angeles,Dallas,501-1000 kg,501,1000,450.00,17.0,18.0,18.5,2,70.00,85.00,55.00,40.00
+TransGlobal Freight,Los Angeles,Dallas,1001-2500 kg,1001,2500,697.50,17.0,18.0,18.5,2,70.00,85.00,55.00,40.00
+TransGlobal Freight,Los Angeles,Dallas,2501-5000 kg,2501,5000,1035.00,17.0,18.0,18.5,2,70.00,85.00,55.00,40.00
+TransGlobal Freight,Chicago,New York,0-100 kg,0,100,234.00,17.0,18.0,18.5,2,70.00,85.00,55.00,40.00
+TransGlobal Freight,Chicago,New York,101-500 kg,101,500,390.00,17.0,18.0,18.5,2,70.00,85.00,55.00,40.00
+TransGlobal Freight,Chicago,New York,501-1000 kg,501,1000,520.00,17.0,18.0,18.5,2,70.00,85.00,55.00,40.00
+TransGlobal Freight,Chicago,New York,1001-2500 kg,1001,2500,806.00,17.0,18.0,18.5,2,70.00,85.00,55.00,40.00
+TransGlobal Freight,Chicago,New York,2501-5000 kg,2501,5000,1196.00,17.0,18.0,18.5,2,70.00,85.00,55.00,40.00
+TransGlobal Freight,Seattle,Denver,0-100 kg,0,100,171.00,17.0,18.0,18.5,2,70.00,85.00,55.00,40.00
+TransGlobal Freight,Seattle,Denver,101-500 kg,101,500,285.00,17.0,18.0,18.5,2,70.00,85.00,55.00,40.00
+TransGlobal Freight,Seattle,Denver,501-1000 kg,501,1000,380.00,17.0,18.0,18.5,2,70.00,85.00,55.00,40.00
+TransGlobal Freight,Seattle,Denver,1001-2500 kg,1001,2500,589.00,17.0,18.0,18.5,2,70.00,85.00,55.00,40.00
+TransGlobal Freight,Seattle,Denver,2501-5000 kg,2501,5000,874.00,17.0,18.0,18.5,2,70.00,85.00,55.00,40.00
+TransGlobal Freight,Los Angeles,Chicago,0-100 kg,0,100,270.00,17.0,18.0,18.5,2,70.00,85.00,55.00,40.00
+TransGlobal Freight,Los Angeles,Chicago,101-500 kg,101,500,450.00,17.0,18.0,18.5,2,70.00,85.00,55.00,40.00
+TransGlobal Freight,Los Angeles,Chicago,501-1000 kg,501,1000,600.00,17.0,18.0,18.5,2,70.00,85.00,55.00,40.00
+TransGlobal Freight,Los Angeles,Chicago,1001-2500 kg,1001,2500,930.00,17.0,18.0,18.5,2,70.00,85.00,55.00,40.00
+TransGlobal Freight,Los Angeles,Chicago,2501-5000 kg,2501,5000,1380.00,17.0,18.0,18.5,2,70.00,85.00,55.00,40.00
+PacificLane Logistics,Shanghai,Los Angeles,0-100 kg,0,100,380.70,15.5,16.5,17.0,2,65.00,95.00,60.00,45.00
+PacificLane Logistics,Shanghai,Los Angeles,101-500 kg,101,500,634.50,15.5,16.5,17.0,2,65.00,95.00,60.00,45.00
+PacificLane Logistics,Shanghai,Los Angeles,501-1000 kg,501,1000,846.00,15.5,16.5,17.0,2,65.00,95.00,60.00,45.00
+PacificLane Logistics,Shanghai,Los Angeles,1001-2500 kg,1001,2500,1311.30,15.5,16.5,17.0,2,65.00,95.00,60.00,45.00
+PacificLane Logistics,Shanghai,Los Angeles,2501-5000 kg,2501,5000,1945.80,15.5,16.5,17.0,2,65.00,95.00,60.00,45.00
+PacificLane Logistics,Los Angeles,Dallas,0-100 kg,0,100,190.35,15.5,16.5,17.0,2,65.00,95.00,60.00,45.00
+PacificLane Logistics,Los Angeles,Dallas,101-500 kg,101,500,317.25,15.5,16.5,17.0,2,65.00,95.00,60.00,45.00
+PacificLane Logistics,Los Angeles,Dallas,501-1000 kg,501,1000,423.00,15.5,16.5,17.0,2,65.00,95.00,60.00,45.00
+PacificLane Logistics,Los Angeles,Dallas,1001-2500 kg,1001,2500,655.65,15.5,16.5,17.0,2,65.00,95.00,60.00,45.00
+PacificLane Logistics,Los Angeles,Dallas,2501-5000 kg,2501,5000,972.90,15.5,16.5,17.0,2,65.00,95.00,60.00,45.00
+PacificLane Logistics,Chicago,New York,0-100 kg,0,100,219.96,15.5,16.5,17.0,2,65.00,95.00,60.00,45.00
+PacificLane Logistics,Chicago,New York,101-500 kg,101,500,366.60,15.5,16.5,17.0,2,65.00,95.00,60.00,45.00
+PacificLane Logistics,Chicago,New York,501-1000 kg,501,1000,488.80,15.5,16.5,17.0,2,65.00,95.00,60.00,45.00
+PacificLane Logistics,Chicago,New York,1001-2500 kg,1001,2500,757.64,15.5,16.5,17.0,2,65.00,95.00,60.00,45.00
+PacificLane Logistics,Chicago,New York,2501-5000 kg,2501,5000,1124.24,15.5,16.5,17.0,2,65.00,95.00,60.00,45.00
+PacificLane Logistics,Seattle,Denver,0-100 kg,0,100,160.74,15.5,16.5,17.0,2,65.00,95.00,60.00,45.00
+PacificLane Logistics,Seattle,Denver,101-500 kg,101,500,267.90,15.5,16.5,17.0,2,65.00,95.00,60.00,45.00
+PacificLane Logistics,Seattle,Denver,501-1000 kg,501,1000,357.20,15.5,16.5,17.0,2,65.00,95.00,60.00,45.00
+PacificLane Logistics,Seattle,Denver,1001-2500 kg,1001,2500,553.66,15.5,16.5,17.0,2,65.00,95.00,60.00,45.00
+PacificLane Logistics,Seattle,Denver,2501-5000 kg,2501,5000,821.56,15.5,16.5,17.0,2,65.00,95.00,60.00,45.00
+PacificLane Logistics,Los Angeles,Chicago,0-100 kg,0,100,253.80,15.5,16.5,17.0,2,65.00,95.00,60.00,45.00
+PacificLane Logistics,Los Angeles,Chicago,101-500 kg,101,500,423.00,15.5,16.5,17.0,2,65.00,95.00,60.00,45.00
+PacificLane Logistics,Los Angeles,Chicago,501-1000 kg,501,1000,564.00,15.5,16.5,17.0,2,65.00,95.00,60.00,45.00
+PacificLane Logistics,Los Angeles,Chicago,1001-2500 kg,1001,2500,874.20,15.5,16.5,17.0,2,65.00,95.00,60.00,45.00
+PacificLane Logistics,Los Angeles,Chicago,2501-5000 kg,2501,5000,1297.20,15.5,16.5,17.0,2,65.00,95.00,60.00,45.00
+Continental Cargo Lines,Shanghai,Los Angeles,0-100 kg,0,100,429.30,18.0,19.0,19.5,2,75.00,75.00,50.00,35.00
+Continental Cargo Lines,Shanghai,Los Angeles,101-500 kg,101,500,715.50,18.0,19.0,19.5,2,75.00,75.00,50.00,35.00
+Continental Cargo Lines,Shanghai,Los Angeles,501-1000 kg,501,1000,954.00,18.0,19.0,19.5,2,75.00,75.00,50.00,35.00
+Continental Cargo Lines,Shanghai,Los Angeles,1001-2500 kg,1001,2500,1478.70,18.0,19.0,19.5,2,75.00,75.00,50.00,35.00
+Continental Cargo Lines,Shanghai,Los Angeles,2501-5000 kg,2501,5000,2194.20,18.0,19.0,19.5,2,75.00,75.00,50.00,35.00
+Continental Cargo Lines,Los Angeles,Dallas,0-100 kg,0,100,214.65,18.0,19.0,19.5,2,75.00,75.00,50.00,35.00
+Continental Cargo Lines,Los Angeles,Dallas,101-500 kg,101,500,357.75,18.0,19.0,19.5,2,75.00,75.00,50.00,35.00
+Continental Cargo Lines,Los Angeles,Dallas,501-1000 kg,501,1000,477.00,18.0,19.0,19.5,2,75.00,75.00,50.00,35.00
+Continental Cargo Lines,Los Angeles,Dallas,1001-2500 kg,1001,2500,739.35,18.0,19.0,19.5,2,75.00,75.00,50.00,35.00
+Continental Cargo Lines,Los Angeles,Dallas,2501-5000 kg,2501,5000,1097.10,18.0,19.0,19.5,2,75.00,75.00,50.00,35.00
+Continental Cargo Lines,Chicago,New York,0-100 kg,0,100,248.04,18.0,19.0,19.5,2,75.00,75.00,50.00,35.00
+Continental Cargo Lines,Chicago,New York,101-500 kg,101,500,413.40,18.0,19.0,19.5,2,75.00,75.00,50.00,35.00
+Continental Cargo Lines,Chicago,New York,501-1000 kg,501,1000,551.20,18.0,19.0,19.5,2,75.00,75.00,50.00,35.00
+Continental Cargo Lines,Chicago,New York,1001-2500 kg,1001,2500,854.36,18.0,19.0,19.5,2,75.00,75.00,50.00,35.00
+Continental Cargo Lines,Chicago,New York,2501-5000 kg,2501,5000,1267.76,18.0,19.0,19.5,2,75.00,75.00,50.00,35.00
+Continental Cargo Lines,Seattle,Denver,0-100 kg,0,100,181.26,18.0,19.0,19.5,2,75.00,75.00,50.00,35.00
+Continental Cargo Lines,Seattle,Denver,101-500 kg,101,500,302.10,18.0,19.0,19.5,2,75.00,75.00,50.00,35.00
+Continental Cargo Lines,Seattle,Denver,501-1000 kg,501,1000,402.80,18.0,19.0,19.5,2,75.00,75.00,50.00,35.00
+Continental Cargo Lines,Seattle,Denver,1001-2500 kg,1001,2500,624.34,18.0,19.0,19.5,2,75.00,75.00,50.00,35.00
+Continental Cargo Lines,Seattle,Denver,2501-5000 kg,2501,5000,926.44,18.0,19.0,19.5,2,75.00,75.00,50.00,35.00
+Continental Cargo Lines,Los Angeles,Chicago,0-100 kg,0,100,286.20,18.0,19.0,19.5,2,75.00,75.00,50.00,35.00
+Continental Cargo Lines,Los Angeles,Chicago,101-500 kg,101,500,477.00,18.0,19.0,19.5,2,75.00,75.00,50.00,35.00
+Continental Cargo Lines,Los Angeles,Chicago,501-1000 kg,501,1000,636.00,18.0,19.0,19.5,2,75.00,75.00,50.00,35.00
+Continental Cargo Lines,Los Angeles,Chicago,1001-2500 kg,1001,2500,985.80,18.0,19.0,19.5,2,75.00,75.00,50.00,35.00
+Continental Cargo Lines,Los Angeles,Chicago,2501-5000 kg,2501,5000,1462.80,18.0,19.0,19.5,2,75.00,75.00,50.00,35.00

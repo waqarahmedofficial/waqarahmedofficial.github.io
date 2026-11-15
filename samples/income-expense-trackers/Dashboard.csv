@@ -1,0 +1,14 @@
+Dashboard — your money at a glance,,,
+"All numbers below are live formulas from Invoices, Payments and Expenses. Do not type over them.",,,
+,,Received by client,
+Total invoiced,"=SUMIFS(Invoices!H:H,Invoices!I:I,""<>Cancelled"",Invoices!H:H,""<>"")",Acme Studio,"=SUMIF(Payments!B:B,""Acme Studio"",Payments!D:D)"
+Total received (Payments),=SUM(Payments!D:D),Northwind Media,"=SUMIF(Payments!B:B,""Northwind Media"",Payments!D:D)"
+Outstanding balance,"=SUMIFS(Invoices!K:K,Invoices!I:I,""<>Cancelled"",Invoices!I:I,""<>Paid"",Invoices!I:I,""<>"")","Tip: add a row per client here, copying the formula and changing the client name to match Clients exactly.",
+Overdue balance,"=SUMIFS(Invoices!K:K,Invoices!I:I,""Overdue"")",,
+Total expenses,=SUM(Expenses!D:D),,
+Net income (received − expenses),=B5-B8,,
+Monthly income goal,=Settings!B9,,
+Invoices paid,"=COUNTIF(Invoices!I:I,""Paid"")",,
+Invoices waiting,"=COUNTIFS(Invoices!I:I,""Unpaid"")+COUNTIFS(Invoices!I:I,""Partial"")+COUNTIFS(Invoices!I:I,""Overdue"")",,
+,,,
+How to read this: Outstanding = what clients still owe you. Overdue = past due date. Net = cash actually received minus expenses.,,,

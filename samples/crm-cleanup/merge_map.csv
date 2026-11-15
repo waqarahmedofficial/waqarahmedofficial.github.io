@@ -1,0 +1,56 @@
+surviving_record_id,merged_record_id,match_reason,type
+CRM-100587,CRM-100335,same name + company,near duplicate
+CRM-100584,CRM-100446,same name + company,near duplicate
+CRM-100584,CRM-100546,same name + company,near duplicate
+CRM-100202,CRM-100547,same email; same name + company; same phone,exact duplicate
+CRM-100004,CRM-100548,same email; same name + company; same phone,exact duplicate
+CRM-100345,CRM-100549,same email; same name + company; same phone,exact duplicate
+CRM-100018,CRM-100550,same email; same name + company; same phone,exact duplicate
+CRM-100387,CRM-100551,same email; same name + company; same phone,exact duplicate
+CRM-100048,CRM-100552,same email; same name + company; same phone,exact duplicate
+CRM-100349,CRM-100553,same email; same name + company; same phone,exact duplicate
+CRM-100478,CRM-100554,same email; same name + company; same phone,exact duplicate
+CRM-100252,CRM-100555,same email; same name + company; same phone,exact duplicate
+CRM-100521,CRM-100556,same email; same name + company; same phone,exact duplicate
+CRM-100431,CRM-100557,same email; same name + company; same phone,exact duplicate
+CRM-100088,CRM-100558,same email; same name + company; same phone,exact duplicate
+CRM-100374,CRM-100559,same email; same name + company; same phone,exact duplicate
+CRM-100461,CRM-100560,same email; same name + company; same phone,exact duplicate
+CRM-100512,CRM-100561,same email; same name + company; same phone,exact duplicate
+CRM-100108,CRM-100562,same email; same name + company; same phone,exact duplicate
+CRM-100414,CRM-100563,same email; same name + company; same phone,exact duplicate
+CRM-100316,CRM-100564,same email; same name + company; same phone,exact duplicate
+CRM-100209,CRM-100565,same email; same name + company; same phone,exact duplicate
+CRM-100155,CRM-100566,same email; same name + company; same phone,exact duplicate
+CRM-100541,CRM-100567,same email; same name + company; same phone,exact duplicate
+CRM-100033,CRM-100568,same email; same name + company; same phone,exact duplicate
+CRM-100138,CRM-100569,same email; same name + company; same phone,exact duplicate
+CRM-100534,CRM-100570,same email; same name + company; same phone,exact duplicate
+CRM-100094,CRM-100571,same email; same name + company,exact duplicate
+CRM-100324,CRM-100572,same email; same name + company; same phone,exact duplicate
+CRM-100503,CRM-100573,same email; same name + company,exact duplicate
+CRM-100182,CRM-100574,same email; same name + company; same phone,exact duplicate
+CRM-100480,CRM-100575,same email; same name + company; same phone,exact duplicate
+CRM-100119,CRM-100576,same name + company,near duplicate
+CRM-100494,CRM-100577,same name + company; same phone,near duplicate
+CRM-100247,CRM-100578,same name + company; same phone,near duplicate
+CRM-100250,CRM-100579,same name + company; same phone,near duplicate
+CRM-100217,CRM-100580,same name + company; same phone,near duplicate
+CRM-100175,CRM-100581,same name + company; same phone,near duplicate
+CRM-100092,CRM-100582,same name + company; same phone,near duplicate
+CRM-100109,CRM-100583,same name + company; same phone,near duplicate
+CRM-100030,CRM-100585,same name + company; same phone,near duplicate
+CRM-100165,CRM-100586,same name + company; same phone,near duplicate
+CRM-100393,CRM-100588,same name + company; same phone,near duplicate
+CRM-100288,CRM-100589,same name + company; same phone,near duplicate
+CRM-100226,CRM-100590,same name + company; same phone,near duplicate
+CRM-100264,CRM-100591,same name + company; same phone,near duplicate
+CRM-100488,CRM-100592,same name + company; same phone,near duplicate
+CRM-100127,CRM-100593,same name + company; same phone,near duplicate
+CRM-100140,CRM-100594,same name + company; same phone,near duplicate
+CRM-100504,CRM-100595,same name + company; same phone,near duplicate
+CRM-100093,CRM-100596,same name + company; same phone,near duplicate
+CRM-100341,CRM-100597,same name + company; same phone,near duplicate
+CRM-100230,CRM-100598,same name + company; same phone,near duplicate
+CRM-100067,CRM-100599,same name + company; same phone,near duplicate
+CRM-100352,CRM-100600,same name + company; same phone,near duplicate

@@ -1,0 +1,21 @@
+ First Name ,Last Name, EMAIL ,Signup Date, City ,Plan
+ Ayesha ,Khan,Ayesha.Khan@Example.COM,15/03/2025,Lahore,Pro
+Bilal,Ahmed,bilal.ahmed@example.net,2025-03-16,Karachi,Free
+Chen,Wei,CHEN.WEI@Example.org,5 Jan 2025,Beijing,Pro
+Dana,Smith,dana.smith@example.com,"Jan 6, 2025","Springfield, IL",Team
+Omar,Farouk,not-an-email,07/01/2025,Cairo,Free
+Priya,Nair,priya.nair@example.in,2025/01/08,Mumbai,Pro
+Jonas,Weber,jonas.weber@example.de,09-01-2025,Berlin,Team
+Maria,Garcia,MARIA.GARCIA@EXAMPLE.ES,10/01/2025,Madrid,Free
+Tom,Baker,tom.baker@,11/01/2025,London,Free
+Sana, Iqbal ,sana.iqbal@example.pk,12 Jan 2025, Karachi ,Pro
+
+ , , , , , 
+Bilal,Ahmed,bilal.ahmed@example.net,2025-03-16,Karachi,Free
+Ayesha,Khan,ayesha.khan@example.com,2025-03-15,Lahore,Pro
+Ken,Watanabe,ken.watanabe@example.jp,13/01/2025,Osaka,Team
+Lena,Fischer,lena.fischer@@example.de,14/01/2025,Munich,Free
+Ali,Raza,,15/01/2025,Multan,Free
+Zoe,Laurent,zoe.laurent@example.fr,16 January 2025,Paris,Pro
+Ivan,Petrov,ivan.petrov@example.ru,2025-01-17,Sofia,Team
+Nia,Owens,NIA.OWENS@Example.com,18/01/2025,Accra,Free

@@ -1,0 +1,36 @@
+# UK CBAM worked example — validation checks
+# Run 2026-11-11 by re-computing every figure in worked-example-dataset.csv
+# from its own inputs (mass x intensity x rate) and cross-checking the TOTAL row.
+# Method: Python csv re-computation; tolerance 0.01 (1 penny / 0.01 tCO2e).
+
+PASS - C1 actual emissions = mass x intensity (200.00 x 1.850 = 370.00 tCO2e)
+PASS - C1 default emissions = mass x default (200.00 x 3.468 = 693.60 tCO2e)
+PASS - C1 actual liability = emissions x rate (370.00 x 9.69 = GBP 3,585.30)
+PASS - C1 default liability = emissions x rate (693.60 x 9.69 = GBP 6,720.98)
+PASS - C1 saving = default - actual liability (GBP 3,135.68)
+PASS - C1 actual intensity < default (saving exists)
+PASS - C2 actual emissions = mass x intensity (120.00 x 2.100 = 252.00 tCO2e)
+PASS - C2 default emissions = mass x default (120.00 x 3.040 = 364.80 tCO2e)
+PASS - C2 actual liability = emissions x rate (252.00 x 9.69 = GBP 2,441.88)
+PASS - C2 default liability = emissions x rate (364.80 x 9.69 = GBP 3,534.91)
+PASS - C2 saving = default - actual liability (GBP 1,093.03)
+PASS - C2 actual intensity < default (saving exists)
+PASS - C3 actual emissions = mass x intensity (500.00 x 0.950 = 475.00 tCO2e)
+PASS - C3 default emissions = mass x default (500.00 x 1.375 = 687.50 tCO2e)
+PASS - C3 actual liability = emissions x rate (475.00 x 8.78 = GBP 4,170.50)
+PASS - C3 default liability = emissions x rate (687.50 x 8.78 = GBP 6,036.25)
+PASS - C3 saving = default - actual liability (GBP 1,865.75)
+PASS - C3 actual intensity < default (saving exists)
+PASS - Total mass = 820.00 t
+PASS - Total value = GBP 251,000
+PASS - Total actual emissions = 1,097.00 tCO2e
+PASS - Total default emissions = 1,745.90 tCO2e
+PASS - Total actual liability = GBP 10,197.68
+PASS - Total default liability = GBP 16,292.15
+PASS - Total saving = GBP 6,094.47
+PASS - Threshold: 251,000 >= 50,000 -> LIABLE (register by 31 Jan 2028; first return 31 May 2028)
+PASS - Saving is 37.4% of default bill (6,094.47 / 16,292.15)
+PASS - Template has 24 fields
+PASS - Template field numbers 1..24 sequential
+
+29/29 checks PASS — 2026-11-11

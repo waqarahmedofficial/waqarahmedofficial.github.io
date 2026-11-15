@@ -1,0 +1,15 @@
+BATTERY PASSPORT SAMPLE PACK — MACHINE VALIDATION
+Run: 2026-11-03 (Round C). All checks must read PASS.
+
+- Template rows: 28 (expected 28)
+- Worked-example rows: 28 (expected 28)
+- Field IDs match template <-> example: True
+- Energy arithmetic: 36.0 V x 14.0 Ah = 504.0 Wh; stated 504.0 Wh -> PASS
+- Mass > 0: 3.2 kg -> PASS
+- Category in scope for passport: LMT (LMT has no capacity threshold) -> PASS
+- Industrial >2kWh threshold check: example is LMT, threshold n/a; stated energy 504.0 Wh = 0.504 kWh
+- Feb-2027-expected fields: 24; filled in example: 24 -> PASS (all filled)
+- Phase-2 fields correctly blank (not fabricated): True -> PASS
+- Placing-on-market date after duty date: 2027-03-02 > 2027-02-18 -> PASS
+- No real client, real URL, or real company used: all values marked fictional/illustrative -> PASS (manual check)
+- Annex XIII verbatim list NOT claimed: template categories follow Commission summary/guidance structure, labelled as such.

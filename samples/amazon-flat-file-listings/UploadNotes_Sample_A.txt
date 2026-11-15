@@ -1,0 +1,26 @@
+UPLOAD NOTES — Sample A (NorthPeak Home, fictional demonstration data)
+======================================================================
+WHAT YOU RECEIVED
+- Sample_A_FlatFile_Completed.xlsx — 11 listings ready to upload:
+  1 variation parent + 4 children (2 colors x 2 sizes) and 7 standalone products.
+
+BEFORE YOU UPLOAD (Seller Central)
+1. Inventory -> Add Products via Upload -> download a fresh copy of the
+   category template if your account uses a newer version, and tell me —
+   I will re-map this file to the new template free of charge.
+2. Upload the Template sheet as-is (tab-delimited .txt or .xlsx as your
+   Seller Central requires). Processing usually completes in 5-30 minutes.
+3. Download the processing report and check the "successful" count = 11.
+
+DECISIONS MADE (so you can check my work)
+- Parent SKU carries no price, quantity or product ID — children carry them.
+  This is required for variations to attach correctly.
+- Search Terms kept under 250 bytes per listing, no repeated words,
+  no commas — per Amazon's backend search-term rules.
+- Image URLs point to 2000x2000 white-background files (replace the
+  example.com links with your live image locations before upload).
+
+IF ANYTHING FAILS
+Send me the processing report — error fixes for rows in this file are
+included in your package. I return a ChangeLog showing every correction
+(SKU, field, old value, new value, reason), like Sample B.

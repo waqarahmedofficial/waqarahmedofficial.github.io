@@ -1,0 +1,314 @@
+{
+  "base_name": "Northlight Studio \u2014 Operations",
+  "expected_counts": {
+    "Clients": 8,
+    "Invoices": 15,
+    "Projects": 12,
+    "Tasks": 30
+  },
+  "pack": "Airtable base pack \u2014 Northlight Studio (CLEARLY FICTIONAL)",
+  "tables": [
+    {
+      "csv": "clients.csv",
+      "fields": [
+        {
+          "name": "Client ID",
+          "primary": true,
+          "type": "singleLineText"
+        },
+        {
+          "name": "Client Name",
+          "type": "singleLineText"
+        },
+        {
+          "name": "Contact Name",
+          "type": "singleLineText"
+        },
+        {
+          "name": "Email",
+          "type": "email"
+        },
+        {
+          "name": "Industry",
+          "options": [
+            "Beauty & Wellness",
+            "Food & Beverage",
+            "Retail",
+            "Professional Services",
+            "Health & Fitness"
+          ],
+          "type": "singleSelect"
+        },
+        {
+          "name": "Status",
+          "options": [
+            "Active",
+            "Prospect",
+            "Past Client"
+          ],
+          "type": "singleSelect"
+        },
+        {
+          "name": "Country",
+          "type": "singleLineText"
+        },
+        {
+          "name": "Client Since",
+          "type": "date"
+        }
+      ],
+      "name": "Clients",
+      "primary_key": "Client ID",
+      "views": [
+        {
+          "name": "All Clients",
+          "type": "grid"
+        },
+        {
+          "filter": "Status = Active",
+          "name": "Active Clients",
+          "type": "grid"
+        },
+        {
+          "filter": "Status = Prospect",
+          "name": "Prospects",
+          "type": "grid"
+        }
+      ]
+    },
+    {
+      "csv": "projects.csv",
+      "fields": [
+        {
+          "name": "Project ID",
+          "primary": true,
+          "type": "singleLineText"
+        },
+        {
+          "name": "Project Name",
+          "type": "singleLineText"
+        },
+        {
+          "links_to": "Clients",
+          "name": "Client ID",
+          "type": "link"
+        },
+        {
+          "name": "Service Type",
+          "options": [
+            "Brand Identity",
+            "Website Design",
+            "Content Retainer",
+            "Social Media Pack"
+          ],
+          "type": "singleSelect"
+        },
+        {
+          "name": "Status",
+          "options": [
+            "Discovery",
+            "Design",
+            "In Review",
+            "Delivered",
+            "On Hold"
+          ],
+          "type": "singleSelect"
+        },
+        {
+          "name": "Start Date",
+          "type": "date"
+        },
+        {
+          "name": "Due Date",
+          "type": "date"
+        },
+        {
+          "name": "Fee",
+          "type": "currency"
+        },
+        {
+          "computed_from": "Tasks.Project ID",
+          "definition": "COUNT of linked Tasks records",
+          "name": "Tasks Count",
+          "type": "rollup"
+        },
+        {
+          "computed_from": "Tasks.Hours via Tasks.Project ID",
+          "definition": "SUM of {Hours} over linked Tasks records",
+          "name": "Total Task Hours",
+          "type": "rollup"
+        },
+        {
+          "computed_from": "Invoices.Amount via Invoices.Project ID, excluding Status = Draft",
+          "definition": "SUM of {Amount} over linked Invoices where Status is not Draft",
+          "name": "Billed Total",
+          "type": "rollup"
+        },
+        {
+          "computed_from": "Invoices.Amount Paid via Invoices.Project ID",
+          "definition": "SUM of {Amount Paid} over linked Invoices",
+          "name": "Paid Total",
+          "type": "rollup"
+        },
+        {
+          "definition": "{Billed Total} - {Paid Total}",
+          "name": "Outstanding",
+          "type": "formula"
+        }
+      ],
+      "name": "Projects",
+      "primary_key": "Project ID",
+      "views": [
+        {
+          "group_by": "Status",
+          "name": "Delivery Board",
+          "type": "kanban"
+        },
+        {
+          "name": "All Projects",
+          "type": "grid"
+        },
+        {
+          "filter": "Outstanding > 0",
+          "name": "With Outstanding Balance",
+          "type": "grid"
+        }
+      ]
+    },
+    {
+      "csv": "tasks.csv",
+      "fields": [
+        {
+          "name": "Task ID",
+          "primary": true,
+          "type": "singleLineText"
+        },
+        {
+          "name": "Task Title",
+          "type": "singleLineText"
+        },
+        {
+          "links_to": "Projects",
+          "name": "Project ID",
+          "type": "link"
+        },
+        {
+          "name": "Assignee",
+          "options": [
+            "Amara Reyes",
+            "Ben Okafor",
+            "Priya Nair",
+            "Tom Becker"
+          ],
+          "type": "singleSelect"
+        },
+        {
+          "name": "Status",
+          "options": [
+            "To Do",
+            "In Progress",
+            "Done"
+          ],
+          "type": "singleSelect"
+        },
+        {
+          "name": "Due Date",
+          "type": "date"
+        },
+        {
+          "name": "Hours",
+          "type": "number"
+        }
+      ],
+      "name": "Tasks",
+      "primary_key": "Task ID",
+      "views": [
+        {
+          "name": "All Tasks",
+          "type": "grid"
+        },
+        {
+          "filter": "Status != Done",
+          "name": "Open Tasks",
+          "type": "grid"
+        },
+        {
+          "group_by": "Assignee",
+          "name": "By Assignee",
+          "type": "grid"
+        }
+      ]
+    },
+    {
+      "csv": "invoices.csv",
+      "fields": [
+        {
+          "name": "Invoice ID",
+          "primary": true,
+          "type": "singleLineText"
+        },
+        {
+          "links_to": "Projects",
+          "name": "Project ID",
+          "type": "link"
+        },
+        {
+          "links_to": "Clients",
+          "name": "Client ID",
+          "rule": "Must equal the Client ID of the linked Project",
+          "type": "link"
+        },
+        {
+          "name": "Issue Date",
+          "type": "date"
+        },
+        {
+          "name": "Due Date",
+          "type": "date"
+        },
+        {
+          "name": "Amount",
+          "type": "currency"
+        },
+        {
+          "name": "Amount Paid",
+          "rule": "0 <= Amount Paid <= Amount; Status = Paid implies Amount Paid = Amount; Status = Draft implies Amount Paid = 0",
+          "type": "currency"
+        },
+        {
+          "name": "Status",
+          "options": [
+            "Draft",
+            "Sent",
+            "Paid",
+            "Overdue"
+          ],
+          "type": "singleSelect"
+        },
+        {
+          "definition": "{Amount} - {Amount Paid}",
+          "name": "Outstanding",
+          "type": "formula"
+        }
+      ],
+      "name": "Invoices",
+      "primary_key": "Invoice ID",
+      "views": [
+        {
+          "name": "All Invoices",
+          "type": "grid"
+        },
+        {
+          "filter": "Status = Sent or Status = Overdue",
+          "name": "Unpaid",
+          "type": "grid"
+        },
+        {
+          "filter": "Status = Draft",
+          "name": "Drafts",
+          "type": "grid"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,601 @@
+record_id,first_name,last_name,email,phone,company,job_title,status,last_contact,city
+CRM-100062,Mary,Taylor,mary.taylor@rapidlabssystems.example.com,5550000072,RAPIDLABS SYSTEMS INC,Sales Director,in progress,2/25/2026,Miami
+CRM-100092,Karen,Sanchez,karen.sanchez@brightlinesystems.example.com,+1 (555) 000-0102,BrightLine Systems Ltd,General Manager,Client,7/27/2026,Atlanta
+CRM-100097,George,Torres,george.torres@solidpathhealth.example.com,+1 555 000 0107,SolidPath Health,Sales Director,Qualifed,18-Oct-2026,Denver
+CRM-100500,Kevin,Baker,kevin.baker@brightwavelogistics.example.com,555.000.0510,BrightWave Logistics Inc,CEO,WORKING,2026-01-08,Phoenix
+CRM-100437,Amanda,Baker,amanda.baker@goldenbridgelogistics.example.com,5550000447,GoldenBridge Logistics,Marketing Manager,customer,27 Jan 2026,Seattle
+CRM-100167,Joseph,Turner,joseph.turner@goldenbridgelogistics.example.com,+1 555 000 0177,GOLDENBRIDGE LOGISTICS,Marketing Manager,dormant,2026-04-10,Chicago
+CRM-100296,MARK,MITCHELL,mark.mitchell@truebridgelogistics.example.com,+1 555 000 0306,TrueBridge Logistics Inc,Founder,Qualifed,12 Oct 2025,Denver
+CRM-100249,JEFFREY,MITCHELL,jeffrey.mitchell@clearbridgehealth.example.com,5550000259,CLEARBRIDGE HEALTH,General Manager,Client,"July 4, 2025",Houston
+CRM-100505,amy,diaz,amy.diaz@goldenpathlogistics.example.com,555-000-0515,GoldenPath Logistics Inc,General Manager,New Lead,"July 8, 2026",Dallas
+CRM-100107,Mark,Thomas,mark.thomas@clearlabshealth.example.com,5550000117,CLEARLABS HEALTH LTD,Marketing Manager,working,4/25/2026,Chicago
+CRM-100542,  Thomas , Scott  ,thomas.scott@brightlinesystems.example.com,+1 555 000 0552,BRIGHTLINE SYSTEMS LTD,Founder,Dormant,19 Jul 2026,Phoenix
+CRM-100042,anthony,clark,Anthony.Clark@Summitlabssystems.Example.Com,555.000.0052,SummitLabs Systems,Business Development Lead,qualified,2025-11-21,Portland
+CRM-100392,Cynthia,Baker,cynthia.baker@brightworkssystems.example.com,+1 (555) 000-0402,BrightWorks Systems Limited,Sales Director,inactive,16-Feb-2026,Chicago
+CRM-100589,PATRICIA,MARTIN,pmartin@primebridgehealth.example.com,555-000-0298,PrimeBridge Health Inc,Operations Manager,working,2025-12-05,Houston
+CRM-100053,Joseph,Scott,joseph.scott@summitpointconsulting.example.com,+1 (555) 000-0063,SummitPoint Consulting Inc.,Founder,in progress,12 Apr 2026,Boston
+CRM-100370,Karen,Moore,Karen.Moore@Rapidlinesystems.Example.Com,555.000.0380,RAPIDLINE SYSTEMS LLC,Operations Manager,Active Customer,"March 10, 2025",Houston
+CRM-100289,James,Hernandez,,+1 (555) 000-0299,BlueBridge Health Inc,Marketing Manager,Client,3/12/2026,Chicago
+CRM-100562,Ashley,King,ashley.king@primebridgehealth.example.com,5550000118,PrimeBridge Health Inc,CEO,CLIENT,1-Aug-2026,Denver
+CRM-100446,Ronald,Hill,Ronald.Hill@Everlabshealth.Example.Com,,EVERLABS HEALTH,Sales Director,Working,7/22/2025,Atlanta
+CRM-100204,Deborah,Jones,Deborah.Jones@Clearbridgeconsulting.Example.Com,+1 (555) 000-0214,  ClearBridge Consulting ,Founder,Lead,"July 23, 2025",Boston
+CRM-100119,Steven,Turner,steven.turner@trueworkslogistics.example.com,555.000.0129,TRUEWORKS LOGISTICS LTD,Marketing Manager,New lead,"November 4, 2026",Nashville
+CRM-100491,James,Lee,james.lee@everpointhealth.example.com,555-000-0501,EVERPOINT HEALTH,Office Manager,in progress,"May 27, 2026",Portland
+CRM-100498,  Paul , Garcia  ,paul.garcia@novaworksconsulting.example.com,,NovaWorks Consulting,Marketing Manager,customer,8-Nov-2025,Atlanta
+CRM-100023,James,Wilson,james.wilson@goldenlinelogistics.example.com,(555) 000-0033,  GoldenLine Logistics Inc ,Office Manager,Qualifed,10-May-2025,Portland
+CRM-100178,Jessica,Rivera,jessica.rivera@bluestonelogistics.example.com,555-000-0188,BLUESTONE LOGISTICS LLC,Office Manager,inactive,18-Apr-2026,Portland
+CRM-100156,Emily,Walker,emily.walker@rapidworkslogistics.example.com,+1 555 000 0166,RapidWorks Logistics Inc.,Owner,qualified,5/27/2026,Austin
+CRM-100473,Andrew,Smith,andrew.smith@goldenlinelogistics.example.com,(555) 000-0483,GoldenLine Logistics Inc,Office Manager,lead,14-Nov-2025,Denver
+CRM-100286,melissa,nelson,melissa.nelson@everbridgesystems.example.com,555.000.0296,EverBridge Systems Ltd,Founder, new Lead ,"December 28, 2026",Seattle
+CRM-100164,Mark,Green,mark.green@everlabslogistics.example.com,+1 (555) 000-0174,EverLabs Logistics Ltd,Office Manager,New lead,4 Feb 2025,Atlanta
+CRM-100272,  Dorothy , Nelson  ,dorothy.nelson@brightlinesystems.example.com,555.000.0282,BRIGHTLINE SYSTEMS LTD,CEO,Working,7 Dec 2026,Boston
+CRM-100007,Margaret,Lee,margaret.lee@solidpathhealth.example.com,+1 (555) 000-0017,SolidPath Health,Marketing Manager,Qualifed,2025-11-16,Denver
+CRM-100219,ANDREW,LOPEZ,andrew.lopez@blueworkshealth.example.com,+1 555 000 0229,BLUEWORKS HEALTH INC,Owner,dormant,12/7/2026,Phoenix
+CRM-100332,Brian,Anderson,brian.anderson@rapidlabssystems.example.com,+1 555 000 0342,RapidLabs Systems Inc,General Manager, new Lead ,1/11/2026,Atlanta
+CRM-100398,Kevin,Walker,kevin.walker@brightworkslogistics.example.com,+1 (555) 000-0408,BRIGHTWORKS LOGISTICS LTD,Marketing Manager,working,"February 16, 2025",Portland
+CRM-100592,ASHLEY,PEREZ,aperez@brightworkslogistics.example.com,(555) 000-0498,BrightWorks Logistics Ltd,Sales Director,QUALIFIED,10 Feb 2025,Atlanta
+CRM-100199,Kevin,Diaz,Kevin.Diaz@Bluebridgehealth.Example.Com,(555) 000-0209,BlueBridge Health Inc.,General Manager,Active Customer,7/25/2026,Houston
+CRM-100265,Jennifer,Nelson,jennifer.nelson@primestonesystems.example.com,(555) 000-0275,PRIMESTONE SYSTEMS LTD,Founder,QUALIFIED,22-Jun-2025,Boston
+CRM-100150,Sandra,Carter,sandra.carter@truewaveconsulting.example.com,5550000160,TRUEWAVE CONSULTING LTD,Marketing Manager,Inactive,2026-12-18,Phoenix
+CRM-100117,David,Lee,david.lee@clearworkssystems.example.com,(555) 000-0127,CLEARWORKS SYSTEMS LTD,Marketing Manager,dormant,2025-07-20,Houston
+CRM-100155,SHARON,BROWN,sharon.brown@clearworksconsulting.example.com,5550000165,ClearWorks Consulting Inc,Sales Director,customer,"August 19, 2026",Austin
+CRM-100035,donald,jones,donald.jones@rapidbridgesystems.example.com,555-000-0045,RapidBridge Systems,CEO,customer,19-May-2026,Austin
+CRM-100032,Jacob,Martinez,jacob.martinez@brightworkssystems.example.com,5550000042,  BrightWorks Systems Ltd ,Operations Manager,in progress,7-May-2025,Chicago
+CRM-100330,RONALD,THOMPSON,ronald.thompson@truewaveconsulting.example.com,+1 (555) 000-0340,TRUEWAVE CONSULTING LTD,Business Development Lead,inactive,10/7/2025,Phoenix
+CRM-100412,Kimberly,Moore,kimberly.moore@novastonesystems.example.com,555.000.0422,NOVASTONE SYSTEMS LTD,Business Development Lead,Inactive,27 Jul 2025,Denver
+CRM-100247,Charles,Hernandez,charles.hernandez@harborpointsystems.example.com,(555) 000-0257,HARBORPOINT SYSTEMS INC,Business Development Lead,CLIENT,2026-09-17,Denver
+CRM-100300,sandra,white,sandra.white@solidfieldsystems.example.com,(555) 000-0310,  SolidField Systems Ltd ,CEO,dormant,2025-12-18,Seattle
+CRM-100037,Lisa,Diaz,Lisa.Diaz@Rapidworksconsulting.Example.Com,(555) 000-0047,RAPIDWORKS CONSULTING LTD,Operations Manager,qualified,10/20/2025,Dallas
+CRM-100210,MELISSA,HARRIS,melissa.harris@solidfieldsystems.example.com,555.000.0220,SolidField Systems Ltd,Sales Director,In Progress,2026-05-09,Phoenix
+CRM-100319,  Sandra , Brown  ,sandra.brown@primewaveconsulting.example.com,5550000329,PRIMEWAVE CONSULTING,Business Development Lead,working,13-Dec-2026,Phoenix
+CRM-100009,  Lisa , Evans  ,lisa.evans@blueridgelogistics.example.com,555-000-0019,BlueRidge Logistics Ltd,General Manager,in progress,18-Oct-2025,Dallas
+CRM-100067,Kimberly,Scott,kimberly.scott@harborpointsystems.example.com,(555) 000-0077,HarborPoint Systems Inc,General Manager,Dormant,28-Jul-2025,Phoenix
+CRM-100018,William,White,william.white@primebridgehealth.example.com,+1 (555) 000-0028,PrimeBridge Health Inc,Marketing Manager,QUALIFIED,"January 5, 2025",Chicago
+CRM-100540,betty,nguyen,betty.nguyen@clearbridgesystems.example.com,+1 (555) 000-0550,ClearBridge Systems,Founder,New Lead,2025-07-17,Denver
+CRM-100429,Kimberly,Wright,Kimberly.Wright@Clearbridgehealth.Example.Com,+1 (555) 000-0439,ClearBridge Health,Operations Manager,dormant,"November 24, 2026",Seattle
+CRM-100287,patricia,thomas,patricia.thomas@clearlabshealth.example.com,5550000297,ClearLabs Health Ltd,Procurement Manager,new lead,20 Aug 2025,Atlanta
+CRM-100526,sarah,hall,Sarah.Hall@Summitpointhealth.Example.Com,+1 (555) 000-0536,SummitPoint Health,Office Manager,CLIENT,"September 26, 2026",Dallas
+CRM-100257,Jeffrey,Diaz,jeffrey.diaz@goldenbridgelogistics.example.com,5550000267,GOLDENBRIDGE LOGISTICS,CEO,Active Customer,"October 21, 2025",Miami
+CRM-100172,Elizabeth,Evans,elizabeth.evans@blueworkssystems.example.com,+1 (555) 000-0182,BLUEWORKS SYSTEMS LTD,Owner,customer,7/18/2026,Dallas
+CRM-100239,Dorothy,Hill,dorothy.hill@primewavesystems.example.com,555-000-0249,PrimeWave Systems Ltd,Sales Director, new Lead ,2/8/2026,Miami
+CRM-100512,Robert,Nguyen,robert.nguyen@rapidlabssystems.example.com,555-000-0522,RapidLabs Systems Inc.,Owner,Working,5/6/2025,Dallas
+CRM-100165,Robert,Robinson,Robert.Robinson@Rapidworkssystems.Example.Com,(555) 000-0175,RAPIDWORKS SYSTEMS LLC,Owner,dormant,"December 2, 2025",Nashville
+CRM-100228,  Michael , Jackson  ,Michael.Jackson@Novaworksconsulting.Example.Com,+1 (555) 000-0238,NOVAWORKS CONSULTING,Operations Manager,Customer,5 Dec 2025,Portland
+CRM-100233,GEORGE,LOPEZ,george.lopez@summitpointconsulting.example.com,(555) 000-0243,SummitPoint Consulting Inc,Procurement Manager,Working,1/24/2026,Atlanta
+CRM-100115,Jeffrey,Martinez,Jeffrey.Martinez@Bluelabsconsulting.Example.Com,5550000125,BlueLabs Consulting Limited,Business Development Lead,In Progress,2026-09-02,Austin
+CRM-100467,Nancy,Perez,nancy.perez@clearlabshealth.example.com,(555) 000-0477,ClearLabs Health Ltd,Founder,Qualified,10/17/2025,Phoenix
+CRM-100106,Donald,Thomas,Donald.Thomas@Everbridgesystems.Example.Com,+1 (555) 000-0116,EverBridge Systems Ltd,Operations Manager,in progress,13 May 2025,Atlanta
+CRM-100405,KAREN,JACKSON,Karen.Jackson@Goldenlabslogistics.Example.Com,5550000415,GOLDENLABS LOGISTICS,General Manager,Client,22-Jul-2026,Chicago
+CRM-100378,MICHELLE,TORRES,michelle.torres@primebridgehealth.example.com,(555) 000-0388,PRIMEBRIDGE HEALTH INC,Marketing Manager,Qualifed,24-May-2025,Houston
+CRM-100489,John,Gonzalez,john.gonzalez@blueworkshealth.example.com,+1 555 000 0499,BlueWorks Health Inc,CEO,Qualifed,6/20/2026,Boston
+CRM-100470,Anthony,Taylor,anthony.taylor@summitfieldhealth.example.com,555-000-0480,SummitField Health Limited,Founder,Dormant,"September 27, 2025",Portland
+CRM-100091,KEVIN,WHITE,kevin.white@brightridgehealth.example.com,555-000-0101,BrightRidge Health Ltd,General Manager,Client,"October 3, 2025",Denver
+CRM-100451,David,Campbell,david.campbell@brightridgehealth.example.com,+1 555 000 0461,BrightRidge Health Ltd,General Manager,In Progress,12/4/2026,Portland
+CRM-100020,Ashley,Flores,ashley.flores@summitfieldhealth.example.com,+1 555 000 0030,SummitField Health Ltd,Procurement Manager,Client,25 Apr 2026,Dallas
+CRM-100469,Dorothy,Green,dorothy.green@bluebridgehealth.example.com,+1 555 000 0479,BlueBridge Health Inc,Owner,In Progress,26 Jul 2026,Denver
+CRM-100335,Timothy,Sanchez,Timothy.Sanchez@Clearworksconsulting.Example.Com,,ClearWorks Consulting Inc.,Operations Manager,inactive,"May 11, 2026",Chicago
+CRM-100365,ELIZABETH,NGUYEN,,(555) 000-0375,  BrightBridge Health LLC ,Business Development Lead,inactive,2025-02-19,Denver
+CRM-100120,Michelle,Martin,michelle.martin@solidfieldsystems.example.com,555-000-0130,SolidField Systems Ltd,Business Development Lead,New Lead,"May 21, 2026",Atlanta
+CRM-100297,PAUL,HALL,paul.hall@clearworkssystems.example.com,(555) 000-0307,ClearWorks Systems Ltd,Sales Director,New Lead,9/2/2025,Nashville
+CRM-100455,thomas,martinez,thomas.martinez@brightbridgehealth.example.com,5550000465,BrightBridge Health LLC,Founder,LEAD,"September 2, 2025",Portland
+CRM-100260,james,gomez,james.gomez@silverlabsconsulting.example.com,5550000270,SilverLabs Consulting,CEO,New lead,2026-02-26,Dallas
+CRM-100408,Linda,White,linda.white@novaworksconsulting.example.com,+1 555 000 0418,NOVAWORKS CONSULTING,Procurement Manager,New lead,20 Sep 2026,Austin
+CRM-100438,Gary,Walker,gary.walker@summitpointsystems.example.com,,SummitPoint Systems,General Manager,QUALIFIED,22 Dec 2026,Portland
+CRM-100393,REBECCA,TAYLOR,rebecca.taylor@rapidbridgeconsulting.example.com,555-000-0403,RAPIDBRIDGE CONSULTING LTD,Sales Director,dormant,3-Nov-2026,Seattle
+CRM-100463,Deborah,Martinez,deborah.martinez@silverstonesystems.example.com,+1 (555) 000-0473,SilverStone Systems Inc,Sales Director,new lead,2 Oct 2026,Boston
+CRM-100160,ANTHONY,GARCIA,anthony.garcia@silverwaveconsulting.example.com,5550000170,SilverWave Consulting,Sales Director,INACTIVE,6 Feb 2026,Dallas
+CRM-100471,Paul,Evans,paul.evans@brightstonelogistics.example.com,555.000.0481,BrightStone Logistics Inc,CEO,Inactive,10-Jan-2026,Boston
+CRM-100318,richard,nelson,richard.nelson@novaworksconsulting.example.com,(555) 000-0328,NOVAWORKS CONSULTING,Sales Director,customer,"June 4, 2025",Austin
+CRM-100329,Barbara,Thomas,barbara.thomas@primewavesystems.example.com,5550000339,PrimeWave Systems Ltd,Marketing Manager,dormant,2026-10-01,Houston
+CRM-100101,George,Johnson,george.johnson@trueridgehealth.example.com,,TrueRidge Health Inc,General Manager,CLIENT,10-Nov-2026,Phoenix
+CRM-100081,Lisa,King,Lisa.King@Harborstonesystems.Example.Com,+1 (555) 000-0091,HarborStone Systems Ltd,Owner,WORKING,2025-10-22,Phoenix
+CRM-100403,Richard,Johnson,richard.johnson@novafieldconsulting.example.com,(555) 000-0413,  NovaField Consulting LLC ,Office Manager,LEAD,"December 12, 2025",Miami
+CRM-100134,JESSICA,THOMAS,Jessica.Thomas@Novapointhealth.Example.Com,(555) 000-0144,NovaPoint Health Limited,General Manager,New Lead,2025-11-08,Austin
+CRM-100012,Paul,Wilson,paul.wilson@goldenbridgeconsulting.example.com,+1 (555) 000-0022,GoldenBridge Consulting Ltd,CEO,Working,2/12/2025,Dallas
+CRM-100556,ryan,gomez,ryan.gomez@clearlinehealth.example.com,+1 555 000 0531,ClearLine Health,Marketing Manager,customer,5-Jul-2025,Miami
+CRM-100448,SARAH,SANCHEZ,sarah.sanchez@bluestonelogistics.example.com,+1 555 000 0458,BlueStone Logistics LLC,Founder,Qualified,"March 5, 2026",Nashville
+CRM-100482,Melissa,Phillips,melissa.phillips@brightworkssystems.example.com,+1 (555) 000-0492,BrightWorks Systems Ltd,Owner,QUALIFIED,2-Feb-2025,Austin
+CRM-100579,CYNTHIA,NELSON,cnelson@silverwaveconsulting.example.com,5550000260,SilverWave Consulting,Founder,In Progress,"August 9, 2025",Portland
+CRM-100242,Amanda,Lopez,amanda.lopez@rapidlabssystems.example.com,,RapidLabs Systems Inc,Sales Director,inactive,"May 5, 2026",Chicago
+CRM-100173,David,Harris,David.Harris@Harborridgelogistics.Example.Com,(555) 000-0183,HarborRidge Logistics Inc,Founder,In Progress,"June 21, 2025",Denver
+CRM-100415,  Deborah , Clark  ,deborah.clark@goldenpathlogistics.example.com,5550000425,GoldenPath Logistics Inc.,Sales Director,Qualifed,2025-09-16,Seattle
+CRM-100388,Amy,Brown,Amy.Brown@Harborbridgeconsulting.Example.Com,+1 (555) 000-0398,HarborBridge Consulting,Procurement Manager,inactive,5 Nov 2026,Houston
+CRM-100387,Deborah,Nelson,deborah.nelson@clearworkssystems.example.com,(555) 000-0397,ClearWorks Systems Ltd,Office Manager,QUALIFIED,"September 25, 2025",Seattle
+CRM-100076,Ashley,White,ashley.white@summitpointhealth.example.com,555-000-0086,SummitPoint Health,Founder,Dormant,12/14/2025,Denver
+CRM-100231,LINDA,JOHNSON,linda.johnson@rapidpointsystems.example.com,(555) 000-0241,RAPIDPOINT SYSTEMS LLC,Operations Manager,QUALIFIED,"December 8, 2025",Dallas
+CRM-100450,George,Wilson,george.wilson@clearbridgesystems.example.com,,  ClearBridge Systems ,Office Manager,in progress,11/12/2026,Boston
+CRM-100109,Betty,King,betty.king@bluebridgehealth.example.com,555.000.0119,BlueBridge Health Inc,Office Manager,Customer,"October 12, 2025",Austin
+CRM-100104,  Elizabeth , Lee  ,Elizabeth.Lee@Apexpathsystems.Example.Com,+1 (555) 000-0114,ApexPath Systems LLC,Marketing Manager,Qualifed,2026-03-25,Portland
+CRM-100095,Kathleen,Brown,kathleen.brown@brightbridgehealth.example.com,+1 555 000 0105,BRIGHTBRIDGE HEALTH LLC,General Manager,lead,5/6/2025,Chicago
+CRM-100124,Ronald,Wilson,,5550000134,SilverField Health,General Manager,CLIENT,"December 24, 2026",Austin
+CRM-100130,SARAH,JACKSON,sarah.jackson@primepointsystems.example.com,5550000140,PrimePoint Systems,Business Development Lead,Lead,7/27/2026,Portland
+CRM-100259,Betty,King,Betty.King@Solidridgesystems.Example.Com,+1 (555) 000-0269,SolidRidge Systems,Marketing Manager,qualified,2026-08-11,Atlanta
+CRM-100111,Gary,Miller,gary.miller@brightstonelogistics.example.com,,BrightStone Logistics Inc,Sales Director,Client,12 Dec 2026,Nashville
+CRM-100099,  Jason , Flores  ,jason.flores@blueridgelogistics.example.com,+1 (555) 000-0109,BlueRidge Logistics Ltd,Business Development Lead,Qualified,3 Jan 2025,Austin
+CRM-100355,Lisa,Lopez,lisa.lopez@primestonesystems.example.com,(555) 000-0365,PRIMESTONE SYSTEMS LTD,Owner,CLIENT,8/15/2026,Miami
+CRM-100214,Betty,Perez,betty.perez@silverfieldhealth.example.com,555.000.0224,SILVERFIELD HEALTH,Procurement Manager,INACTIVE,11-Aug-2026,Nashville
+CRM-100406,nancy,allen,,555.000.0416,TRUEPOINT LOGISTICS LLC,Office Manager,QUALIFIED,1-Jul-2025,Seattle
+CRM-100533,Dorothy,Nelson,dorothy.nelson@harborridgelogistics.example.com,+1 (555) 000-0543,HarborRidge Logistics Inc.,Founder,dormant,"March 21, 2025",Phoenix
+CRM-100278,Ryan,Phillips,ryan.phillips@summitfieldsystems.example.com,+1 555 000 0288,SummitField Systems,CEO,In Progress,2/8/2026,Phoenix
+CRM-100015,Sarah,Johnson,sarah.johnson@novawavehealth.example.com,5550000025,NOVAWAVE HEALTH LTD,Founder,WORKING,12-Jun-2026,Austin
+CRM-100447,BRIAN,LEE,Brian.Lee@Trueworkshealth.Example.Com,+1 555 000 0457,TrueWorks Health,Procurement Manager,Inactive,23 Oct 2026,Seattle
+CRM-100043,John,Perez,john.perez@novafieldconsulting.example.com,555-000-0053,NOVAFIELD CONSULTING LLC,General Manager,New Lead,5/9/2026,Houston
+CRM-100432,  Daniel , Thomas  ,daniel.thomas@harborfieldlogistics.example.com,555-000-0442,HarborField Logistics,Founder,Qualified,2025-09-08,Dallas
+CRM-100063,Jessica,Martin,jessica.martin@silverlinesystems.example.com,5550000073,SilverLine Systems Ltd,Owner, new Lead ,21-Jul-2025,Atlanta
+CRM-100420,Daniel,Lewis,daniel.lewis@truewaveconsulting.example.com,+1 555 000 0430,TRUEWAVE CONSULTING LTD,Operations Manager,New Lead,"January 28, 2025",Chicago
+CRM-100279,George,Flores,george.flores@blueridgelogistics.example.com,5550000289,BlueRidge Logistics Ltd,General Manager,New lead,"June 11, 2025",Chicago
+CRM-100478,Andrew,Smith,Andrew.Smith@Harborbridgeconsulting.Example.Com,555-000-0488,HarborBridge Consulting,Operations Manager,inactive,12/28/2025,Denver
+CRM-100334,ELIZABETH,HILL,elizabeth.hill@brightlabssystems.example.com,+1 (555) 000-0344,BrightLabs Systems Inc,Operations Manager,In Progress,"February 12, 2026",Houston
+CRM-100026,ROBERT,LEWIS,robert.lewis@truebridgelogistics.example.com,+1 555 000 0036,  TrueBridge Logistics Inc ,CEO,New lead,19 Jun 2025,Nashville
+CRM-100143,ryan,jackson,ryan.jackson@summitpointconsulting.example.com,5550000153,SummitPoint Consulting Inc.,Office Manager,Dormant,28-Oct-2025,Boston
+CRM-100594,BRIAN,MILLER,bmiller@brightwavelogistics.example.com,+1 (555) 000-0150,BRIGHTWAVE LOGISTICS INC,Founder,qualified,"November 18, 2026",Dallas
+CRM-100481,Joseph,Rodriguez,,555-000-0491,SilverWave Logistics Limited,General Manager,Customer,"November 5, 2026",Miami
+CRM-100568,Brian,Martinez,brian.martinez@rapidbridgeconsulting.example.com,+1 (555) 000-0043,RAPIDBRIDGE CONSULTING LTD,Sales Director,LEAD,25-Aug-2026,Atlanta
+CRM-100477,George,Sanchez,,5550000487,ClearWorks Systems Ltd,Marketing Manager,CLIENT,"July 22, 2025",Denver
+CRM-100148,Sandra,Martin,sandra.martin@harborbridgesystems.example.com,(555) 000-0158,HarborBridge Systems LLC,Procurement Manager,in progress,"December 4, 2026",Boston
+CRM-100570,Donald,Smith,donald.smith@everridgeconsulting.example.com,(555) 000-0544,EverRidge Consulting Inc,General Manager,in progress,2-Apr-2026,Atlanta
+CRM-100011,Kathleen,Mitchell,kathleen.mitchell@trueridgehealth.example.com,(555) 000-0021,TrueRidge Health Inc,Founder, new Lead ,6/4/2026,Atlanta
+CRM-100244,David,Gonzalez,david.gonzalez@brightlabssystems.example.com,+1 (555) 000-0254,BrightLabs Systems Inc,General Manager,Active Customer,"July 22, 2026",Phoenix
+CRM-100013,Lisa,Davis,lisa.davis@silverstonesystems.example.com,555.000.0023,SilverStone Systems Inc,Business Development Lead,Qualifed,28-Jul-2025,Dallas
+CRM-100082,ROBERT,RODRIGUEZ,robert.rodriguez@blueworkssystems.example.com,+1 555 000 0092,BLUEWORKS SYSTEMS LTD,Office Manager,New lead,2026-06-13,Atlanta
+CRM-100234,Nicholas,Gonzalez,nicholas.gonzalez@bluefieldsystems.example.com,5550000244,BlueField Systems Limited,Business Development Lead,Active Customer,7/1/2026,Houston
+CRM-100571,David,Diaz,david.diaz@truewavelogistics.example.com,,TrueWave Logistics Inc,Business Development Lead,INACTIVE,3/14/2025,Dallas
+CRM-100349,Amanda,Hernandez,amanda.hernandez@solidridgesystems.example.com,+1 (555) 000-0359,SolidRidge Systems,Procurement Manager,dormant,1/4/2025,Portland
+CRM-100435,amanda,johnson,amanda.johnson@rapidworkssystems.example.com,555-000-0445,RapidWorks Systems LLC,Procurement Manager,New lead,"January 18, 2026",Dallas
+CRM-100280,Anthony,Diaz,anthony.diaz@rapidlinesystems.example.com,(555) 000-0290,RapidLine Systems LLC,Procurement Manager,INACTIVE,22 Sep 2026,Chicago
+CRM-100386,STEVEN,JONES,steven.jones@truebridgelogistics.example.com,555.000.0396,TrueBridge Logistics Inc,Founder,QUALIFIED,2026-05-09,Boston
+CRM-100229,Karen,Perez,karen.perez@primewaveconsulting.example.com,(555) 000-0239,  PrimeWave Consulting ,Office Manager,Active Customer,6/16/2026,Denver
+CRM-100078,DANIEL,BAKER,daniel.baker@summitpointsystems.example.com,(555) 000-0088,SUMMITPOINT SYSTEMS,Founder,qualified,10/23/2026,Nashville
+CRM-100487,charles,baker,charles.baker@rapidworksconsulting.example.com,5550000497,RAPIDWORKS CONSULTING LTD,Founder,lead,24-Apr-2025,Atlanta
+CRM-100232,Barbara,Torres,barbara.torres@novastonesystems.example.com,(555) 000-0242,NovaStone Systems Ltd,Marketing Manager,In Progress,2026-08-08,Nashville
+CRM-100510,melissa,young,melissa.young@truewaveconsulting.example.com,+1 555 000 0520,  TrueWave Consulting Ltd ,Office Manager,customer,27-Nov-2025,Nashville
+CRM-100016,BARBARA,MARTINEZ,barbara.martinez@everbridgesystems.example.com,555-000-0026,EVERBRIDGE SYSTEMS LTD,Procurement Manager,dormant,3/24/2025,Boston
+CRM-100371,donald,gomez,Donald.Gomez@Trueridgehealth.Example.Com,555.000.0381,TrueRidge Health Inc,Founder,Qualifed,"October 21, 2026",Denver
+CRM-100583,BETTY,KING,bking@bluebridgehealth.example.com,+1 (555) 000-0119,BlueBridge Health Inc,Office Manager,customer,2025-10-12,Austin
+CRM-100353,Susan,Hernandez,susan.hernandez@harborridgelogistics.example.com,555.000.0363,HarborRidge Logistics Inc,Operations Manager,Qualified,10-Feb-2026,Nashville
+CRM-100535,Paul,Wright,paul.wright@primestonesystems.example.com,+1 (555) 000-0545,PrimeStone Systems Limited,Business Development Lead,working,"November 2, 2025",Portland
+CRM-100060,Cynthia,Campbell,cynthia.campbell@truewaveconsulting.example.com,5550000070,TrueWave Consulting Ltd,Sales Director,Qualifed,"January 10, 2025",Phoenix
+CRM-100294,ROBERT,PARKER,robert.parker@clearbridgeconsulting.example.com,+1 (555) 000-0304,ClearBridge Consulting,Office Manager,lead,12-Aug-2025,Nashville
+CRM-100135,Michael,Clark,michael.clark@goldenlabslogistics.example.com,5550000145,  GoldenLabs Logistics ,CEO,qualified,25-Nov-2025,Chicago
+CRM-100105,paul,torres,paul.torres@novawavehealth.example.com,+1 (555) 000-0115,NovaWave Health Ltd,Marketing Manager,New Lead,2025-08-04,Miami
+CRM-100266,WILLIAM,BROWN,william.brown@everlabshealth.example.com,5550000276,EverLabs Health,Founder,Client,2025-07-21,Denver
+CRM-100342,timothy,adams,timothy.adams@harborfieldlogistics.example.com,555-000-0352,  HarborField Logistics ,CEO,Qualifed,2025-05-07,Seattle
+CRM-100024,linda,smith,linda.smith@clearbridgeconsulting.example.com,555.000.0034,ClearBridge Consulting,Procurement Manager,Customer,2025-03-13,Dallas
+CRM-100565,mark,harris,mark.harris@trueworkslogistics.example.com,+1 555 000 0219,TRUEWORKS LOGISTICS LTD,General Manager,lead,2025-10-17,Chicago
+CRM-100521,ryan,gomez,ryan.gomez@clearlinehealth.example.com,+1 555 000 0531,ClearLine Health,Marketing Manager,customer,5-Jul-2025,Miami
+CRM-100479,Matthew,King,matthew.king@trueworkslogistics.example.com,555.000.0489,TrueWorks Logistics Ltd,Founder,New lead,"October 3, 2026",Miami
+CRM-100518,Barbara,Young,barbara.young@novaridgehealth.example.com,(555) 000-0528,NovaRidge Health Ltd,Business Development Lead,INACTIVE,2025-09-17,Denver
+CRM-100551,Deborah,Nelson,deborah.nelson@clearworkssystems.example.com,(555) 000-0397,ClearWorks Systems Ltd,Office Manager,QUALIFIED,"September 25, 2025",Seattle
+CRM-100050,David,Flores,david.flores@brightwavelogistics.example.com,5550000060,BrightWave Logistics Inc,Sales Director,Active Customer,"March 27, 2025",Houston
+CRM-100071,Sandra,Rivera,sandra.rivera@clearlinehealth.example.com,+1 555 000 0081,CLEARLINE HEALTH,Sales Director,Customer,23 Feb 2025,Phoenix
+CRM-100010,  Nancy , Baker  ,nancy.baker@rapidlinesystems.example.com,5550000020,RAPIDLINE SYSTEMS LLC,Procurement Manager,LEAD,25-Nov-2026,Nashville
+CRM-100237,Kimberly,Adams,kimberly.adams@blueridgehealth.example.com,5550000247,BLUERIDGE HEALTH LLC,Business Development Lead,QUALIFIED,10/13/2026,Atlanta
+CRM-100354,Steven,Allen,steven.allen@everridgeconsulting.example.com,555.000.0364,EVERRIDGE CONSULTING INC,Operations Manager,Qualified,"March 12, 2026",Nashville
+CRM-100476,emily,jones,emily.jones@truebridgelogistics.example.com,555-000-0486,  TrueBridge Logistics Inc ,Office Manager,inactive,13 Jul 2026,Phoenix
+CRM-100059,Jessica,Harris,jessica.harris@primewavesystems.example.com,5550000069,  PrimeWave Systems Ltd ,Marketing Manager,new lead,11 Jan 2025,Denver
+CRM-100424,Linda,Rodriguez,,555.000.0434,BrightLabs Systems Inc,Sales Director,lead,2025-07-19,Phoenix
+CRM-100461,barbara,lopez,barbara.lopez@trueridgehealth.example.com,5550000471,TrueRidge Health Inc,Operations Manager,inactive,1/14/2026,Miami
+CRM-100162,  Melissa , Mitchell  ,melissa.mitchell@harborfieldlogistics.example.com,(555) 000-0172,HARBORFIELD LOGISTICS,Procurement Manager,Inactive,4/8/2026,Phoenix
+CRM-100152,Deborah,White,deborah.white@rapidlabssystems.example.com,+1 (555) 000-0162,RapidLabs Systems Inc,Business Development Lead,Lead,27 Jan 2025,Dallas
+CRM-100475,Nancy,Williams,Nancy.Williams@Bluelabsconsulting.Example.Com,,BlueLabs Consulting Ltd,Operations Manager,lead,26-Mar-2025,Miami
+CRM-100400,Jeffrey,Gomez,Jeffrey.Gomez@Primepointsystems.Example.Com,+1 555 000 0410,PrimePoint Systems,Business Development Lead,Working,26-Aug-2025,Denver
+CRM-100560,barbara,lopez,barbara.lopez@trueridgehealth.example.com,5550000471,TrueRidge Health Inc,Operations Manager,inactive,1/14/2026,Miami
+CRM-100545,MELISSA,RIVERA,melissa.rivera@brightbridgehealth.example.com,555-000-0555,BRIGHTBRIDGE HEALTH LLC,Marketing Manager,in progress,"June 17, 2026",Dallas
+CRM-100191,KIMBERLY,MARTINEZ,kimberly.martinez@trueridgehealth.example.com,5550000201,TrueRidge Health Inc,Office Manager,In Progress,9-Jun-2026,Nashville
+CRM-100343,Ronald,Jones,Ronald.Jones@Apexridgeconsulting.Example.Com,+1 (555) 000-0353,APEXRIDGE CONSULTING LLC,Founder,Qualifed,"December 1, 2025",Austin
+CRM-100344,ANTHONY,ROBINSON,anthony.robinson@everlabslogistics.example.com,555-000-0354,EverLabs Logistics Ltd,Sales Director,customer,8/13/2026,Portland
+CRM-100122,Jason,Green,Jason.Green@Brightworkssystems.Example.Com,5550000132,BrightWorks Systems Ltd,Sales Director,Customer,19-Jan-2025,Houston
+CRM-100465,  Daniel , Wright  ,daniel.wright@novawavehealth.example.com,555-000-0475,NovaWave Health Ltd,Sales Director,in progress,6 Sep 2025,Nashville
+CRM-100323,Mark,Gonzalez,mark.gonzalez@summitpointconsulting.example.com,(555) 000-0333,  SummitPoint Consulting Inc ,Office Manager,inactive,"July 26, 2025",Houston
+CRM-100341,john,thomas,john.thomas@clearlinehealth.example.com,+1 (555) 000-0351,  ClearLine Health ,Marketing Manager,Qualifed,2025-11-03,Houston
+CRM-100227,Sandra,Gomez,sandra.gomez@bluewaveconsulting.example.com,+1 (555) 000-0237,BLUEWAVE CONSULTING,General Manager,Inactive,2025-06-01,Phoenix
+CRM-100575,  Jeffrey , Robinson  ,jeffrey.robinson@solidfieldsystems.example.com,+1 (555) 000-0490,SolidField Systems Limited,Procurement Manager,CLIENT,"August 6, 2025",Dallas
+CRM-100068,Robert,Adams,robert.adams@novaridgehealth.example.com,555-000-0078,NovaRidge Health Ltd,Marketing Manager,Active Customer,2026-12-01,Portland
+CRM-100315,Jessica,Miller,jessica.miller@goldenlabslogistics.example.com,+1 555 000 0325,GOLDENLABS LOGISTICS,Operations Manager,customer,1-Feb-2025,Austin
+CRM-100396,dorothy,jones,dorothy.jones@silverstoneconsulting.example.com,(555) 000-0406,SILVERSTONE CONSULTING,Office Manager,Active Customer,2025-11-13,Dallas
+CRM-100201,Joseph,Diaz,joseph.diaz@brightstonelogistics.example.com,555-000-0211,BrightStone Logistics Inc,Marketing Manager,new lead,6/1/2026,Boston
+CRM-100394,matthew,anderson,matthew.anderson@silverfieldhealth.example.com,+1 (555) 000-0404,SilverField Health,Procurement Manager,Qualified,9 Jun 2026,Atlanta
+CRM-100131,LAURA,EVANS,laura.evans@everpointhealth.example.com,+1 555 000 0141,EVERPOINT HEALTH,Founder,In Progress,23 May 2025,Denver
+CRM-100282,Robert,Brown,robert.brown@goldenbridgeconsulting.example.com,+1 (555) 000-0292,GOLDENBRIDGE CONSULTING LTD,General Manager,Active Customer,23 Nov 2026,Dallas
+CRM-100224,TIMOTHY,BAKER,timothy.baker@novapointhealth.example.com,+1 555 000 0234,NovaPoint Health Ltd,Sales Director,QUALIFIED,"October 21, 2025",Boston
+CRM-100159,BARBARA,GOMEZ,barbara.gomez@clearbridgehealth.example.com,+1 (555) 000-0169,CLEARBRIDGE HEALTH,Procurement Manager,In Progress,15 Jul 2026,Nashville
+CRM-100426,Kathleen,Hall,Kathleen.Hall@Rapidworkslogistics.Example.Com,555.000.0436,RapidWorks Logistics Inc,CEO,Working,"February 14, 2026",Phoenix
+CRM-100422,nicholas,mitchell,nicholas.mitchell@rapidlabssystems.example.com,+1 555 000 0432,RapidLabs Systems Inc.,Marketing Manager, new Lead ,4 Mar 2026,Nashville
+CRM-100340,Joseph,Adams,joseph.adams@silverwaveconsulting.example.com,5550000350,SILVERWAVE CONSULTING,Operations Manager,INACTIVE,3/11/2026,Houston
+CRM-100356,Joseph,Diaz,joseph.diaz@everlabshealth.example.com,+1 (555) 000-0366,EVERLABS HEALTH,Business Development Lead,QUALIFIED,"March 25, 2025",Houston
+CRM-100125,Deborah,Rodriguez,deborah.rodriguez@rapidbridgesystems.example.com,555.000.0135,RapidBridge Systems,Office Manager,INACTIVE,"November 16, 2026",Dallas
+CRM-100528,Matthew,Gomez,matthew.gomez@summitpointsystems.example.com,555-000-0538,SummitPoint Systems,Sales Director,CLIENT,8-Dec-2025,Phoenix
+CRM-100499,Melissa,Hernandez,melissa.hernandez@primewaveconsulting.example.com,+1 (555) 000-0509,PrimeWave Consulting,Sales Director,INACTIVE,3/6/2026,Atlanta
+CRM-100402,James,Williams,james.williams@summitlabssystems.example.com,555-000-0412,SummitLabs Systems,Office Manager,inactive,"January 11, 2026",Dallas
+CRM-100588,REBECCA,TAYLOR,rtaylor@rapidbridgeconsulting.example.com,+1 555 000 0403,  RapidBridge Consulting Ltd ,Sales Director,dormant,11/3/2026,Seattle
+CRM-100483,Kevin,Flores,Kevin.Flores@Rapidbridgeconsulting.Example.Com,5550000493,RAPIDBRIDGE CONSULTING LTD,General Manager,Active Customer,7 May 2025,Houston
+CRM-100189,James,Scott,james.scott@blueridgelogistics.example.com,(555) 000-0199,BLUERIDGE LOGISTICS LTD,Procurement Manager,Inactive,"January 17, 2025",Houston
+CRM-100310,SANDRA,LEE,sandra.lee@primepointsystems.example.com,(555) 000-0320,PrimePoint Systems,Operations Manager,CLIENT,15-Apr-2026,Miami
+CRM-100327,JOSEPH,HERNANDEZ,joseph.hernandez@blueridgehealth.example.com,555.000.0337,BlueRidge Health LLC,Office Manager,New Lead,18 May 2025,Houston
+CRM-100364,kathleen,smith,kathleen.smith@truewavelogistics.example.com,+1 (555) 000-0374,  TrueWave Logistics Inc ,Business Development Lead,Dormant,2026-02-14,Chicago
+CRM-100595,ANDREW,NGUYEN,anguyen@bluefieldsystems.example.com,+1 (555) 000-0514,  BlueField Systems Ltd ,Procurement Manager,In Progress,"June 19, 2026",Boston
+CRM-100336,William,Mitchell,william.mitchell@rapidworkslogistics.example.com,555.000.0346,  RapidWorks Logistics Inc ,CEO,Customer,2026-03-23,Dallas
+CRM-100014,laura,turner,Laura.Turner@Apexpathsystems.Example.Com,555-000-0024,ApexPath Systems LLC,Business Development Lead,Dormant,"October 22, 2025",Houston
+CRM-100333,RICHARD,EVANS,richard.evans@silverlinesystems.example.com,555-000-0343,SilverLine Systems Limited,Marketing Manager,In Progress,2025-06-02,Austin
+CRM-100572,Matthew,Young,matthew.young@bluefieldsystems.example.com,5550000334,BLUEFIELD SYSTEMS LTD,CEO,Inactive,10/17/2026,Portland
+CRM-100197,Sarah,Scott,Sarah.Scott@Clearlabshealth.Example.Com,+1 555 000 0207,  ClearLabs Health Ltd ,Owner,INACTIVE,1 Jun 2025,Seattle
+CRM-100290,Rebecca,Gomez,rebecca.gomez@summitfieldhealth.example.com,(555) 000-0300,SUMMITFIELD HEALTH LTD,Operations Manager,Qualifed,26 Jun 2025,Nashville
+CRM-100357,Timothy,Miller,timothy.miller@trueworkshealth.example.com,555-000-0367,  TrueWorks Health ,Marketing Manager,Lead,10/8/2026,Dallas
+CRM-100089,Amy,Martin,amy.martin@summitridgesystems.example.com,555-000-0099,SummitRidge Systems Inc,Sales Director,WORKING,8 Sep 2026,Denver
+CRM-100397,Karen,Clark,karen.clark@rapidworksconsulting.example.com,555.000.0407,  RapidWorks Consulting Ltd ,Sales Director,New lead,11 Apr 2025,Nashville
+CRM-100557,Paul,Parker,paul.parker@clearlinehealth.example.com,(555) 000-0441,ClearLine Health,CEO,CLIENT,2025-02-25,Phoenix
+CRM-100464,Dorothy,Diaz,Dorothy.Diaz@Apexpathsystems.Example.Com,555-000-0474,ApexPath Systems LLC,CEO,qualified,26 Feb 2026,Houston
+CRM-100539,Michelle,Thompson,michelle.thompson@summitridgesystems.example.com,(555) 000-0549,SummitRidge Systems Inc,Founder,Qualifed,2025-10-07,Phoenix
+CRM-100431,Paul,Parker,paul.parker@clearlinehealth.example.com,(555) 000-0441,ClearLine Health,CEO,CLIENT,2025-02-25,Phoenix
+CRM-100029,jessica,lewis,jessica.lewis@trueworkslogistics.example.com,+1 555 000 0039,TrueWorks Logistics Ltd,Procurement Manager,INACTIVE,28-Jul-2025,Miami
+CRM-100508,sarah,wilson,sarah.wilson@harborbridgesystems.example.com,555.000.0518,HARBORBRIDGE SYSTEMS LLC,Sales Director,Working,6/20/2025,Houston
+CRM-100100,AMANDA,GOMEZ,amanda.gomez@rapidlinesystems.example.com,555-000-0110,RAPIDLINE SYSTEMS LLC,Founder,INACTIVE,2025-10-14,Atlanta
+CRM-100584,RONALD,HILL,rhill@everlabshealth.example.com,+1 555 000 0456,EverLabs Health,Sales Director,WORKING,7/22/2025,Atlanta
+CRM-100525,  Amanda , Hill  ,amanda.hill@rapidworkssystems.example.com,+1 555 000 0535,RapidWorks Systems LLC,Founder,qualified,"October 12, 2026",Atlanta
+CRM-100428,Kimberly,Gomez,kimberly.gomez@novaridgehealth.example.com,+1 (555) 000-0438,NovaRidge Health Ltd,Business Development Lead,Dormant,11/28/2025,Portland
+CRM-100504,  Andrew , Nguyen  ,Andrew.Nguyen@Bluefieldsystems.Example.Com,(555) 000-0514,BlueField Systems Limited,Procurement Manager,working,2026-06-19,Boston
+CRM-100288,PATRICIA,MARTIN,patricia.martin@primebridgehealth.example.com,(555) 000-0298,PrimeBridge Health Inc.,Operations Manager,WORKING,"December 5, 2025",Houston
+CRM-100103,William,Robinson,william.robinson@silverstonesystems.example.com,555.000.0113,SilverStone Systems Inc,CEO,Active Customer,4/11/2026,Atlanta
+CRM-100226,JOSEPH,KING,joseph.king@truepointlogistics.example.com,555.000.0236,TRUEPOINT LOGISTICS LLC,General Manager,inactive,2025-08-12,Nashville
+CRM-100459,Richard,Green,Richard.Green@Blueridgelogistics.Example.Com,,BlueRidge Logistics Limited,Office Manager,Active Customer,2026-10-18,Houston
+CRM-100196,Susan,Rivera,susan.rivera@everbridgesystems.example.com,+1 (555) 000-0206,EverBridge Systems Ltd,CEO,dormant,1/3/2026,Boston
+CRM-100550,William,White,william.white@primebridgehealth.example.com,+1 (555) 000-0028,PrimeBridge Health Inc,Marketing Manager,QUALIFIED,"January 5, 2025",Chicago
+CRM-100084,Kevin,Rodriguez,,555.000.0094,EverRidge Consulting Inc.,Marketing Manager,INACTIVE,"June 21, 2026",Miami
+CRM-100033,Brian,Martinez,brian.martinez@rapidbridgeconsulting.example.com,+1 (555) 000-0043,RAPIDBRIDGE CONSULTING LTD,Sales Director,LEAD,25-Aug-2026,Atlanta
+CRM-100314,jacob,lopez,jacob.lopez@novapointhealth.example.com,+1 555 000 0324,NovaPoint Health Ltd,Procurement Manager,new lead,2026-09-24,Dallas
+CRM-100175,melissa,flores,melissa.flores@primestonesystems.example.com,+1 555 000 0185,PrimeStone Systems Limited,Owner,Dormant,26 Apr 2025,Atlanta
+CRM-100205,Elizabeth,Carter,elizabeth.carter@bluelabsconsulting.example.com,555-000-0215,  BlueLabs Consulting Ltd ,Marketing Manager,Active Customer,"February 3, 2026",Austin
+CRM-100127,laura,mitchell,laura.mitchell@rapidworksconsulting.example.com,5550000137,RapidWorks Consulting Ltd,Business Development Lead,qualified,8-Apr-2026,Miami
+CRM-100495,Gary,King,gary.king@goldenlabslogistics.example.com,+1 (555) 000-0505,GoldenLabs Logistics,Business Development Lead,lead,"October 7, 2026",Austin
+CRM-100573,Amanda,Lee,amanda.lee@summitpointconsulting.example.com,,SummitPoint Consulting Inc.,General Manager,lead,12/9/2026,Atlanta
+CRM-100108,Ashley,King,ashley.king@primebridgehealth.example.com,5550000118,PrimeBridge Health Inc,CEO,CLIENT,1-Aug-2026,Denver
+CRM-100031,Linda,Wright,linda.wright@silverwavelogistics.example.com,(555) 000-0041,SILVERWAVE LOGISTICS LTD,Office Manager,inactive,24 Jun 2026,Boston
+CRM-100441,AMY,HERNANDEZ,amy.hernandez@harborstonesystems.example.com,+1 555 000 0451,HarborStone Systems Ltd,Sales Director,Customer,9 Feb 2026,Atlanta
+CRM-100299,James,White,james.white@trueworkslogistics.example.com,555.000.0309,TrueWorks Logistics Ltd,Founder,WORKING,2026-12-20,Seattle
+CRM-100502,KIMBERLY,PHILLIPS,kimberly.phillips@novastonesystems.example.com,+1 555 000 0512,  NovaStone Systems Ltd ,Procurement Manager,Qualified,"August 2, 2026",Austin
+CRM-100256,DAVID,RIVERA,david.rivera@summitpointhealth.example.com,+1 (555) 000-0266,  SummitPoint Health ,Office Manager,Working,2025-12-11,Seattle
+CRM-100379,Jennifer,Jackson,jennifer.jackson@bluebridgehealth.example.com,555.000.0389,BlueBridge Health Inc,Procurement Manager,lead,28 Mar 2025,Atlanta
+CRM-100268,JOSEPH,WRIGHT,joseph.wright@bluestonelogistics.example.com,(555) 000-0278,BlueStone Logistics LLC,Owner,CLIENT,"December 11, 2025",Denver
+CRM-100427,Robert,Jones,robert.jones@harborpointsystems.example.com,+1 555 000 0437,HarborPoint Systems Inc,Marketing Manager,QUALIFIED,28-Dec-2025,Boston
+CRM-100017,Mary,Garcia,mary.garcia@clearlabshealth.example.com,+1 (555) 000-0027,CLEARLABS HEALTH LTD,Office Manager,Inactive,"July 15, 2026",Portland
+CRM-100170,Timothy,Harris,timothy.harris@silverlabsconsulting.example.com,5550000180,SilverLabs Consulting,Marketing Manager,Dormant,7/5/2026,Miami
+CRM-100216,RICHARD,YOUNG,richard.young@silverstoneconsulting.example.com,555-000-0226,SilverStone Consulting,Sales Director,qualified,10-Jun-2026,Houston
+CRM-100543,Laura,Thomas,laura.thomas@solidlabshealth.example.com,555-000-0553,SolidLabs Health Inc,CEO,Qualifed,"October 28, 2026",Austin
+CRM-100442,Richard,Gonzalez,richard.gonzalez@blueworkssystems.example.com,(555) 000-0452,BlueWorks Systems Ltd,Procurement Manager,lead,8/27/2025,Seattle
+CRM-100021,Linda,Thompson,linda.thompson@brightstonelogistics.example.com,555-000-0031,BrightStone Logistics Inc,Operations Manager,Client,2026-11-22,Atlanta
+CRM-100549,Andrew,Harris,andrew.harris@rapidworkssystems.example.com,555-000-0355,RAPIDWORKS SYSTEMS LLC,CEO,New Lead,15 Mar 2025,Denver
+CRM-100416,Ronald,Young,ronald.young@everfieldlogistics.example.com,(555) 000-0426,EVERFIELD LOGISTICS,Office Manager,QUALIFIED,1/22/2025,Denver
+CRM-100057,SARAH,ROBINSON,sarah.robinson@blueridgehealth.example.com,555.000.0067,  BlueRidge Health LLC ,Sales Director,dormant,2/8/2026,Phoenix
+CRM-100298,  John , Walker  ,john.walker@harborbridgeconsulting.example.com,555.000.0308,HarborBridge Consulting,Founder,Qualifed,2/18/2026,Phoenix
+CRM-100184,MELISSA,PEREZ,melissa.perez@truewavelogistics.example.com,5550000194,TrueWave Logistics Inc,CEO,QUALIFIED,6-Aug-2026,Houston
+CRM-100548,  Charles , Walker  ,charles.walker@truewavelogistics.example.com,+1 (555) 000-0014,TrueWave Logistics Inc.,Business Development Lead,Inactive,26 Feb 2026,Houston
+CRM-100223,Ronald,Evans,ronald.evans@novafieldconsulting.example.com,+1 (555) 000-0233,NOVAFIELD CONSULTING LLC,Business Development Lead,dormant,25 Feb 2025,Seattle
+CRM-100303,Jason,Martin,jason.martin@rapidbridgeconsulting.example.com,,  RapidBridge Consulting Ltd ,Office Manager, new Lead ,7/16/2025,Austin
+CRM-100072,  Robert , Jackson  ,robert.jackson@harborfieldlogistics.example.com,555-000-0082,HarborField Logistics,Owner,In Progress,11 Jan 2025,Miami
+CRM-100083,Robert,Flores,robert.flores@harborridgelogistics.example.com,555-000-0093,HarborRidge Logistics Inc.,CEO,In Progress,15 Jun 2026,Denver
+CRM-100527,Steven,Lopez,steven.lopez@goldenbridgelogistics.example.com,+1 555 000 0537,GOLDENBRIDGE LOGISTICS,General Manager,Qualified,"May 10, 2026",Atlanta
+CRM-100418,john,mitchell,john.mitchell@harborbridgesystems.example.com,555-000-0428,HARBORBRIDGE SYSTEMS LLC,Founder,Lead,10-Aug-2025,Miami
+CRM-100056,steven,white,,5550000066,EverField Logistics,Operations Manager,inactive,3 May 2025,Chicago
+CRM-100546,Ronald,Hill,Ronald.Hill@Everlabshealth.Example.Com,,EVERLABS HEALTH,Sales Director,Working,7/22/2025,Atlanta
+CRM-100275,ryan,rodriguez,ryan.rodriguez@brightbridgehealth.example.com,+1 555 000 0285,BRIGHTBRIDGE HEALTH LLC,Founder,in progress,4/18/2025,Atlanta
+CRM-100419,  Sandra , Brown  ,sandra.brown@primewavesystems.example.com,555.000.0429,PRIMEWAVE SYSTEMS LTD,Sales Director,LEAD,12 May 2025,Boston
+CRM-100411,Susan,Rivera,susan.rivera@rapidpointsystems.example.com,555.000.0421,  RapidPoint Systems LLC ,Founder, new Lead ,4-Nov-2026,Boston
+CRM-100187,CYNTHIA,ADAMS,cynthia.adams@solidpathhealth.example.com,+1 555 000 0197,SolidPath Health,Operations Manager,Working,2025-01-07,Dallas
+CRM-100331,andrew,martin,andrew.martin@goldenfieldhealth.example.com,+1 555 000 0341,GOLDENFIELD HEALTH,CEO,In Progress,2/2/2025,Seattle
+CRM-100338,RONALD,JACKSON,ronald.jackson@novaridgehealth.example.com,+1 555 000 0348,NovaRidge Health Ltd,Sales Director,WORKING,19 Dec 2025,Nashville
+CRM-100203,margaret,lopez,margaret.lopez@goldenlinelogistics.example.com,+1 (555) 000-0213,GOLDENLINE LOGISTICS INC,Procurement Manager,inactive,2025-10-10,Seattle
+CRM-100241,Kevin,Harris,,5550000251,GoldenField Health,Sales Director,CLIENT,18 Nov 2026,Houston
+CRM-100350,susan,gonzalez,susan.gonzalez@silverlabsconsulting.example.com,(555) 000-0360,SilverLabs Consulting,General Manager,Active Customer,10 Nov 2026,Miami
+CRM-100129,Deborah,Allen,deborah.allen@blueworkshealth.example.com,5550000139,  BlueWorks Health Inc ,CEO,QUALIFIED,"September 26, 2026",Houston
+CRM-100439,Deborah,Robinson,,+1 (555) 000-0449,SolidRidge Systems,Operations Manager,New Lead,11-Jan-2025,Portland
+CRM-100313,Jessica,Thompson,jessica.thompson@novafieldconsulting.example.com,+1 (555) 000-0323,NOVAFIELD CONSULTING LLC,General Manager,customer,"November 10, 2025",Miami
+CRM-100369,  Jessica , Brown  ,jessica.brown@blueridgelogistics.example.com,+1 555 000 0379,BlueRidge Logistics Ltd,Founder,Active Customer,11 Jan 2026,Miami
+CRM-100522,Steven,Gomez,steven.gomez@harborfieldlogistics.example.com,+1 555 000 0532,HarborField Logistics,Operations Manager,In Progress,"October 18, 2026",Nashville
+CRM-100211,ELIZABETH,JONES,elizabeth.jones@silverwavelogistics.example.com,(555) 000-0221,SILVERWAVE LOGISTICS LTD,Procurement Manager,Working,2026-07-10,Phoenix
+CRM-100079,William,Rivera,william.rivera@solidridgesystems.example.com,555-000-0089,  SolidRidge Systems ,Marketing Manager,Customer,"January 24, 2026",Portland
+CRM-100320,mary,harris,mary.harris@brightwavelogistics.example.com,+1 (555) 000-0330,BrightWave Logistics Inc.,Sales Director,Customer,6-Apr-2026,Miami
+CRM-100472,Richard,Lee,richard.lee@silverridgesystems.example.com,555.000.0482,SilverRidge Systems Inc.,Operations Manager,INACTIVE,"March 25, 2025",Dallas
+CRM-100390,Rebecca,Williams,rebecca.williams@solidfieldsystems.example.com,5550000400,SolidField Systems Ltd,Business Development Lead,Inactive,24-Jun-2025,Houston
+CRM-100554,Andrew,Smith,Andrew.Smith@Harborbridgeconsulting.Example.Com,555-000-0488,HarborBridge Consulting,Operations Manager,inactive,12/28/2025,Denver
+CRM-100252,MICHELLE,RIVERA,michelle.rivera@harborfieldlogistics.example.com,5550000262,HarborField Logistics,Business Development Lead,Qualifed,2026-03-20,Chicago
+CRM-100564,Cynthia,Gomez,cynthia.gomez@truepointlogistics.example.com,5550000326,TruePoint Logistics LLC,Sales Director,in progress,2025-07-12,Boston
+CRM-100052,JASON,THOMAS,Jason.Thomas@Novastonesystems.Example.Com,555-000-0062,NovaStone Systems Ltd,Business Development Lead,customer,2026-12-26,Phoenix
+CRM-100443,  Deborah , Perez  ,deborah.perez@harborridgelogistics.example.com,,HarborRidge Logistics Inc.,Procurement Manager,New Lead,27 Nov 2025,Boston
+CRM-100309,laura,gomez,laura.gomez@blueworkshealth.example.com,(555) 000-0319,BlueWorks Health Inc,Operations Manager,INACTIVE,2025-02-06,Phoenix
+CRM-100206,Karen,Robinson,karen.robinson@truebridgelogistics.example.com,,TrueBridge Logistics Inc,Founder,Qualifed,3 Mar 2025,Chicago
+CRM-100096,daniel,campbell,,(555) 000-0106,BrightBridge Consulting LLC,Marketing Manager,In Progress,2/9/2026,Seattle
+CRM-100180,  Paul , Allen  ,paul.allen@clearbridgesystems.example.com,,CLEARBRIDGE SYSTEMS,Operations Manager,Customer,7 Jun 2026,Portland
+CRM-100003,John,Rodriguez,john.rodriguez@solidlabshealth.example.com,555-000-0013,SolidLabs Health Inc,Business Development Lead,qualified,20 Jul 2026,Dallas
+CRM-100055,William,Turner,william.turner@goldenpathlogistics.example.com,+1 555 000 0065,GoldenPath Logistics Inc,Business Development Lead,Working,2 May 2025,Boston
+CRM-100417,linda,diaz,linda.diaz@blueridgehealth.example.com,+1 (555) 000-0427,BlueRidge Health LLC,CEO,dormant,25-Feb-2025,Dallas
+CRM-100153,Amy,King,amy.king@silverlinesystems.example.com,+1 (555) 000-0163,SilverLine Systems Ltd,Business Development Lead,WORKING,2025-03-11,Dallas
+CRM-100507,NICHOLAS,RODRIGUEZ,nicholas.rodriguez@blueridgehealth.example.com,+1 555 000 0517,  BlueRidge Health LLC ,Sales Director,Customer,"February 17, 2025",Boston
+CRM-100236,Daniel,Gonzalez,daniel.gonzalez@everfieldlogistics.example.com,+1 (555) 000-0246,  EverField Logistics ,Operations Manager,Client,"November 28, 2026",Phoenix
+CRM-100367,ASHLEY,NGUYEN,ashley.nguyen@solidpathhealth.example.com,(555) 000-0377,SolidPath Health,CEO,inactive,"March 9, 2025",Nashville
+CRM-100183,nancy,anderson,Nancy.Anderson@Solidlabshealth.Example.Com,5550000193,SolidLabs Health Inc,Business Development Lead,Client,18-Aug-2025,Boston
+CRM-100537,MATTHEW,BAKER,matthew.baker@trueworkshealth.example.com,555.000.0547,TrueWorks Health,Procurement Manager,CLIENT,1 Sep 2025,Houston
+CRM-100250,Cynthia,Nelson,cynthia.nelson@silverwaveconsulting.example.com,+1 555 000 0260,SilverWave Consulting,Founder,WORKING,8/9/2025,Portland
+CRM-100317,George,Nelson,george.nelson@bluewaveconsulting.example.com,+1 (555) 000-0327,BlueWave Consulting,Business Development Lead,new lead,"February 1, 2026",Denver
+CRM-100238,Linda,Thompson,linda.thompson@harborbridgesystems.example.com,(555) 000-0248,HarborBridge Systems LLC,CEO,QUALIFIED,"November 23, 2025",Miami
+CRM-100019,Jeffrey,Green,jeffrey.green@bluebridgehealth.example.com,555-000-0029,BlueBridge Health Inc.,Operations Manager,Lead,22-Aug-2026,Nashville
+CRM-100345,Andrew,Harris,andrew.harris@rapidworkssystems.example.com,555-000-0355,RAPIDWORKS SYSTEMS LLC,CEO,New Lead,15 Mar 2025,Denver
+CRM-100453,Charles,Parker,charles.parker@solidlabshealth.example.com,555.000.0463,SolidLabs Health Inc.,Owner,Client,2025-01-13,Chicago
+CRM-100112,Lisa,Williams,lisa.williams@silverridgesystems.example.com,(555) 000-0122,  SilverRidge Systems Inc ,Owner,Customer,6/18/2025,Miami
+CRM-100202,  Sarah , Phillips  ,sarah.phillips@silverridgesystems.example.com,+1 (555) 000-0212,SilverRidge Systems Inc.,CEO,customer,"June 18, 2025",Nashville
+CRM-100292,Lisa,Brown,lisa.brown@silverridgesystems.example.com,5550000302,SilverRidge Systems Inc.,Business Development Lead,Customer,6 Jun 2025,Miami
+CRM-100520,Kimberly,Clark,kimberly.clark@silverwaveconsulting.example.com,+1 (555) 000-0530,SILVERWAVE CONSULTING,Owner,qualified,4/26/2026,Phoenix
+CRM-100002,Michael,Allen,michael.allen@brightlinesystems.example.com,555.000.0012,BrightLine Systems Ltd,Operations Manager,customer,"June 20, 2025",Chicago
+CRM-100110,Patricia,Jackson,patricia.jackson@summitfieldhealth.example.com,+1 555 000 0120,SummitField Health Ltd,Business Development Lead,Active Customer,"May 18, 2026",Austin
+CRM-100136,james,torres,james.torres@truepointlogistics.example.com,+1 (555) 000-0146,TruePoint Logistics LLC,Procurement Manager,working,8/21/2026,Seattle
+CRM-100151,jeffrey,scott,jeffrey.scott@goldenfieldhealth.example.com,(555) 000-0161,GoldenField Health,Office Manager,working,"September 15, 2025",Dallas
+CRM-100248,Kevin,Davis,kevin.davis@novaridgehealth.example.com,555.000.0258,NovaRidge Health Ltd,General Manager,QUALIFIED,"September 27, 2026",Austin
+CRM-100154,Donald,Davis,donald.davis@brightlabssystems.example.com,5550000164,BrightLabs Systems Inc,Business Development Lead,in progress,2026-02-17,Phoenix
+CRM-100149,CHARLES,WHITE,charles.white@primewavesystems.example.com,+1 555 000 0159,PrimeWave Systems Ltd,Office Manager,INACTIVE,2025-03-16,Chicago
+CRM-100061,Ronald,Diaz,ronald.diaz@goldenfieldhealth.example.com,+1 555 000 0071,GoldenField Health,CEO,WORKING,1-Oct-2026,Denver
+CRM-100514,BRIAN,YOUNG,brian.young@brightlabssystems.example.com,555-000-0524,  BrightLabs Systems Inc ,Sales Director,customer,20 Jul 2025,Chicago
+CRM-100425,SHARON,NGUYEN,sharon.nguyen@clearworksconsulting.example.com,+1 (555) 000-0435,ClearWorks Consulting Inc.,Sales Director,Client,6/20/2026,Austin
+CRM-100174,Donald,Parker,donald.parker@everridgeconsulting.example.com,555-000-0184,EverRidge Consulting Inc.,Operations Manager,Qualifed,"January 9, 2025",Nashville
+CRM-100058,Nicholas,Thompson,nicholas.thompson@harborbridgesystems.example.com,555.000.0068,HARBORBRIDGE SYSTEMS LLC,Procurement Manager,LEAD,"July 17, 2025",Portland
+CRM-100192,Jennifer,White,Jennifer.White@Goldenbridgeconsulting.Example.Com,555-000-0202,GoldenBridge Consulting Ltd,CEO,CLIENT,2025-12-08,Miami
+CRM-100462,emily,taylor,emily.taylor@goldenbridgeconsulting.example.com,+1 (555) 000-0472,GoldenBridge Consulting Ltd,Sales Director,Working,11-Jan-2026,Phoenix
+CRM-100195,Amanda,Phillips,amanda.phillips@novawavehealth.example.com,,NovaWave Health Limited,Business Development Lead,QUALIFIED,2025-09-02,Seattle
+CRM-100516,Nancy,Walker,nancy.walker@rapidworkslogistics.example.com,555-000-0526,RapidWorks Logistics Inc,Business Development Lead,Dormant,13-Apr-2025,Nashville
+CRM-100217,Ronald,Adams,ronald.adams@rapidworksconsulting.example.com,555-000-0227,RAPIDWORKS CONSULTING LTD,Business Development Lead,Active Customer,6/13/2025,Miami
+CRM-100517,david,miller,david.miller@harborpointsystems.example.com,555-000-0527,HarborPoint Systems Inc,Office Manager,New lead,3/20/2026,Denver
+CRM-100181,Daniel,Clark,daniel.clark@brightridgehealth.example.com,+1 (555) 000-0191,BrightRidge Health Ltd,Business Development Lead,New Lead,5 Dec 2025,Austin
+CRM-100541,emily,jones,emily.jones@brightridgehealth.example.com,(555) 000-0551,BrightRidge Health Ltd,Founder,dormant,2026-02-26,Dallas
+CRM-100069,Ryan,Jones,Ryan.Jones@Clearbridgehealth.Example.Com,5550000079,CLEARBRIDGE HEALTH,Office Manager,qualified,24-Oct-2025,Portland
+CRM-100188,Sandra,White,sandra.white@summitfieldsystems.example.com,555.000.0198,SummitField Systems,Business Development Lead,New lead,"November 16, 2026",Austin
+CRM-100039,Amanda,Gonzalez,amanda.gonzalez@blueworkshealth.example.com,,BlueWorks Health Inc.,Business Development Lead,Qualified,5 Sep 2026,Austin
+CRM-100484,Rebecca,Mitchell,rebecca.mitchell@silverfieldhealth.example.com,(555) 000-0494,SILVERFIELD HEALTH,Office Manager,qualified,"November 28, 2026",Dallas
+CRM-100496,Emily,Taylor,emily.taylor@truepointlogistics.example.com,(555) 000-0506,TRUEPOINT LOGISTICS LLC,General Manager,Dormant,"November 25, 2026",Chicago
+CRM-100269,KATHLEEN,LEWIS,kathleen.lewis@summitridgesystems.example.com,(555) 000-0279,SummitRidge Systems Inc.,CEO,WORKING,2025-04-13,Denver
+CRM-100346,Sharon,Parker,sharon.parker@summitpointhealth.example.com,+1 555 000 0356,  SummitPoint Health ,Founder,Lead,2025-06-09,Denver
+CRM-100578,CHARLES,HERNANDEZ,chernandez@harborpointsystems.example.com,(555) 000-0257,HarborPoint Systems Inc.,Business Development Lead,Active Customer,"September 17, 2026",Denver
+CRM-100230,Donald,Mitchell,donald.mitchell@brightwavelogistics.example.com,555.000.0240,  BrightWave Logistics Inc ,Marketing Manager,Client,2025-05-02,Houston
+CRM-100311,Sandra,Taylor,sandra.taylor@everpointhealth.example.com,555-000-0321,EverPoint Health,Operations Manager,new lead,10 Nov 2025,Houston
+CRM-100022,ashley,wright,Ashley.Wright@Silverridgesystems.Example.Com,+1 555 000 0032,SILVERRIDGE SYSTEMS INC,Owner,Qualified,"July 20, 2025",Austin
+CRM-100423,betty,walker,betty.walker@silverlinesystems.example.com,555-000-0433,SILVERLINE SYSTEMS LTD,Procurement Manager,Qualifed,21 Jul 2026,Chicago
+CRM-100376,RICHARD,MOORE,richard.moore@everbridgesystems.example.com,+1 555 000 0386,EverBridge Systems Limited,CEO,qualified,4 Nov 2026,Boston
+CRM-100486,TIMOTHY,EVANS,timothy.evans@silverstoneconsulting.example.com,(555) 000-0496,SilverStone Consulting,Owner,INACTIVE,18-Nov-2026,Denver
+CRM-100339,Gary,Gomez,gary.gomez@clearbridgehealth.example.com,+1 555 000 0349,ClearBridge Health,Owner,Dormant,11-Oct-2025,Atlanta
+CRM-100587,TIMOTHY,SANCHEZ,tsanchez@clearworksconsulting.example.com,(555) 000-0345,ClearWorks Consulting Inc,Operations Manager,dormant,2026-05-11,Chicago
+CRM-100457,ANTHONY,THOMAS,anthony.thomas@solidpathhealth.example.com,(555) 000-0467,  SolidPath Health ,Founder,inactive,"July 13, 2025",Nashville
+CRM-100274,David,Roberts,david.roberts@truewavelogistics.example.com,+1 (555) 000-0284,TrueWave Logistics Inc.,Business Development Lead,New lead,14 Jun 2026,Portland
+CRM-100360,ROBERT,KING,robert.king@clearbridgesystems.example.com,+1 555 000 0370,ClearBridge Systems,General Manager,INACTIVE,25-Feb-2025,Phoenix
+CRM-100384,Karen,Hall,Karen.Hall@Clearbridgeconsulting.Example.Com,+1 555 000 0394,CLEARBRIDGE CONSULTING,Business Development Lead,dormant,10/4/2026,Austin
+CRM-100440,Cynthia,Adams,cynthia.adams@silverlabsconsulting.example.com,+1 555 000 0450,SILVERLABS CONSULTING,General Manager,Qualified,12/4/2026,Austin
+CRM-100004,  Charles , Walker  ,charles.walker@truewavelogistics.example.com,+1 (555) 000-0014,TrueWave Logistics Inc.,Business Development Lead,Inactive,26 Feb 2026,Houston
+CRM-100098,Paul,Nelson,paul.nelson@summitfieldsystems.example.com,555.000.0108,SummitField Systems,Business Development Lead,In Progress,22-Mar-2025,Atlanta
+CRM-100316,Cynthia,Gomez,cynthia.gomez@truepointlogistics.example.com,5550000326,TruePoint Logistics LLC,Sales Director,in progress,2025-07-12,Boston
+CRM-100008,Jennifer,Diaz,jennifer.diaz@summitfieldsystems.example.com,,SummitField Systems,Operations Manager,new lead,2026-02-24,Houston
+CRM-100208,Matthew,Torres,matthew.torres@harborbridgeconsulting.example.com,555.000.0218,HARBORBRIDGE CONSULTING,Business Development Lead,LEAD,7/1/2026,Miami
+CRM-100485,ELIZABETH,HERNANDEZ,elizabeth.hernandez@rapidbridgesystems.example.com,(555) 000-0495,RapidBridge Systems,Office Manager,in progress,4/4/2026,Chicago
+CRM-100358,Patricia,Diaz,Patricia.Diaz@Bluestonelogistics.Example.Com,(555) 000-0368,BLUESTONE LOGISTICS LLC,General Manager,Active Customer,"September 22, 2026",Phoenix
+CRM-100452,emily,young,Emily.Young@Brightlinesystems.Example.Com,+1 555 000 0462,BRIGHTLINE SYSTEMS LTD,Business Development Lead,Dormant,24-Nov-2026,Dallas
+CRM-100383,Sarah,Lewis,sarah.lewis@goldenlinelogistics.example.com,555-000-0393,GoldenLine Logistics Inc,Marketing Manager,customer,"May 7, 2026",Phoenix
+CRM-100511,MARY,THOMAS,mary.thomas@goldenfieldhealth.example.com,+1 (555) 000-0521,GOLDENFIELD HEALTH,Sales Director,Lead,2025-03-21,Dallas
+CRM-100264,james,lewis,james.lewis@everridgeconsulting.example.com,555.000.0274,EverRidge Consulting Inc,Sales Director,in progress,2026-03-28,Miami
+CRM-100590,JOSEPH,KING,jking@truepointlogistics.example.com,(555) 000-0236,  TruePoint Logistics LLC ,General Manager,inactive,"August 12, 2025",Nashville
+CRM-100246,RYAN,ROBERTS,ryan.roberts@rapidworkslogistics.example.com,5550000256,RapidWorks Logistics Inc,Founder,working,8 May 2025,Dallas
+CRM-100070,David,Williams,David.Williams@Silverwaveconsulting.Example.Com,+1 555 000 0080,SilverWave Consulting,General Manager,Qualified,11/6/2026,Boston
+CRM-100375,Cynthia,Brown,cynthia.brown@novawavehealth.example.com,+1 (555) 000-0385,NovaWave Health Ltd,Owner,In Progress,1/12/2026,Houston
+CRM-100566,SHARON,BROWN,sharon.brown@clearworksconsulting.example.com,5550000165,ClearWorks Consulting Inc,Sales Director,customer,"August 19, 2026",Austin
+CRM-100347,john,perez,john.perez@goldenbridgelogistics.example.com,(555) 000-0357,GoldenBridge Logistics,Procurement Manager,working,2025-12-03,Dallas
+CRM-100218,JACOB,PHILLIPS,jacob.phillips@brightworkslogistics.example.com,555.000.0228,BRIGHTWORKS LOGISTICS LTD,Marketing Manager,CLIENT,7-Oct-2025,Atlanta
+CRM-100494,Amy,Scott,amy.scott@novapointhealth.example.com,(555) 000-0504,NovaPoint Health Ltd,Founder,working,3-Dec-2025,Austin
+CRM-100253,RYAN,WILSON,ryan.wilson@apexridgeconsulting.example.com,+1 555 000 0263,  ApexRidge Consulting LLC ,Owner,working,9/9/2026,Atlanta
+CRM-100284,Dorothy,Martinez,dorothy.martinez@apexpathsystems.example.com,+1 555 000 0294,APEXPATH SYSTEMS LLC,Operations Manager,qualified,2026-02-17,Seattle
+CRM-100563,Ashley,Gonzalez,ashley.gonzalez@bluefieldsystems.example.com,555.000.0424,BLUEFIELD SYSTEMS LTD,Office Manager,dormant,7 Sep 2026,Portland
+CRM-100381,Paul,Johnson,paul.johnson@brightstonelogistics.example.com,555.000.0391,BrightStone Logistics Inc,CEO,New Lead,11/6/2025,Atlanta
+CRM-100044,GARY,BAKER,gary.baker@novapointhealth.example.com,+1 (555) 000-0054,NovaPoint Health Ltd,Sales Director,Dormant,2/19/2026,Boston
+CRM-100030,Rebecca,Perez,rebecca.perez@solidfieldsystems.example.com,555.000.0040,SOLIDFIELD SYSTEMS LTD,Marketing Manager,working,2/17/2025,Boston
+CRM-100295,Elizabeth,Lopez,Elizabeth.Lopez@Bluelabsconsulting.Example.Com,5550000305,BlueLabs Consulting Ltd,General Manager,new lead,11-Apr-2026,Seattle
+CRM-100085,Jessica,Davis,,5550000095,  PrimeStone Systems Ltd ,Sales Director,lead,13 Sep 2026,Dallas
+CRM-100567,emily,jones,emily.jones@brightridgehealth.example.com,(555) 000-0551,BrightRidge Health Ltd,Founder,dormant,2026-02-26,Dallas
+CRM-100123,linda,gonzalez,linda.gonzalez@rapidbridgeconsulting.example.com,5550000133,RapidBridge Consulting Limited,CEO,New lead,5 Jul 2026,Nashville
+CRM-100374,BETTY,RODRIGUEZ,betty.rodriguez@apexpathsystems.example.com,+1 (555) 000-0384,  ApexPath Systems LLC ,Business Development Lead,Dormant,"March 7, 2025",Seattle
+CRM-100040,Donald,Miller,donald.miller@primepointsystems.example.com,5550000050,PrimePoint Systems,Operations Manager,Qualified,8 Jan 2025,Houston
+CRM-100586,ROBERT,ROBINSON,rrobinson@rapidworkssystems.example.com,555.000.0175,RapidWorks Systems LLC,Owner,Dormant,12/2/2025,Nashville
+CRM-100325,anthony,moore,anthony.moore@goldenpathlogistics.example.com,555-000-0335,GoldenPath Logistics Inc,Owner,In Progress,8-Oct-2026,Austin
+CRM-100047,Melissa,Wright,melissa.wright@bluewaveconsulting.example.com,555.000.0057,BlueWave Consulting,Procurement Manager,Lead,12-Jan-2026,Miami
+CRM-100161,BETTY,WRIGHT,betty.wright@clearlinehealth.example.com,5550000171,CLEARLINE HEALTH,Office Manager,in progress,10 Jan 2025,Phoenix
+CRM-100395,Charles,Walker,charles.walker@rapidbridgesystems.example.com,555.000.0405,RapidBridge Systems,CEO,New Lead,19-Nov-2025,Atlanta
+CRM-100509,Jacob,Davis,jacob.davis@primewavesystems.example.com,+1 (555) 000-0519,PRIMEWAVE SYSTEMS LTD,Procurement Manager,in progress,12/4/2026,Phoenix
+CRM-100407,joseph,mitchell,joseph.mitchell@bluewaveconsulting.example.com,5550000417,BlueWave Consulting,Office Manager,Working,"October 17, 2025",Chicago
+CRM-100045,Elizabeth,Thompson,elizabeth.thompson@goldenlabslogistics.example.com,555.000.0055,GoldenLabs Logistics,Procurement Manager,QUALIFIED,"October 23, 2025",Denver
+CRM-100326,Amy,Evans,amy.evans@everfieldlogistics.example.com,555.000.0336,EverField Logistics,Owner,QUALIFIED,9/12/2026,Atlanta
+CRM-100480,  Jeffrey , Robinson  ,jeffrey.robinson@solidfieldsystems.example.com,+1 (555) 000-0490,SolidField Systems Limited,Procurement Manager,CLIENT,"August 6, 2025",Dallas
+CRM-100118,Cynthia,Martin,cynthia.martin@harborbridgeconsulting.example.com,5550000128,HARBORBRIDGE CONSULTING,Marketing Manager,Dormant,19-Dec-2026,Miami
+CRM-100544,Steven,Davis,steven.davis@truewavelogistics.example.com,(555) 000-0554,TrueWave Logistics Inc.,Operations Manager,Qualifed,11/26/2026,Seattle
+CRM-100538,Deborah,Jones,Deborah.Jones@Bluestonelogistics.Example.Com,555-000-0548,BlueStone Logistics LLC,General Manager, new Lead ,"December 27, 2026",Dallas
+CRM-100220,Sharon,Jackson,sharon.jackson@primepointsystems.example.com,,PrimePoint Systems,Procurement Manager,New lead,21 Mar 2026,Miami
+CRM-100142,NANCY,HERNANDEZ,nancy.hernandez@novastonesystems.example.com,+1 555 000 0152,NovaStone Systems Limited,Founder,CLIENT,"January 24, 2025",Portland
+CRM-100530,Sharon,Torres,sharon.torres@silverlabsconsulting.example.com,,SilverLabs Consulting,Owner,Inactive,7/21/2025,Austin
+CRM-100258,George,Clark,george.clark@summitpointsystems.example.com,(555) 000-0268,SUMMITPOINT SYSTEMS,CEO,Active Customer,2025-11-26,Denver
+CRM-100240,LINDA,LOPEZ,linda.lopez@truewaveconsulting.example.com,+1 555 000 0250,TrueWave Consulting Ltd,Sales Director,qualified,7/20/2026,Chicago
+CRM-100497,Lisa,Sanchez,lisa.sanchez@bluewaveconsulting.example.com,(555) 000-0507,  BlueWave Consulting ,Business Development Lead,In Progress,"March 15, 2026",Dallas
+CRM-100182,THOMAS,TORRES,thomas.torres@brightlinesystems.example.com,555-000-0192,BrightLine Systems Ltd,Business Development Lead,inactive,5-May-2026,Seattle
+CRM-100225,Amanda,Sanchez,,+1 555 000 0235,GoldenLabs Logistics,Procurement Manager,QUALIFIED,4 Jan 2025,Miami
+CRM-100094,David,Diaz,david.diaz@truewavelogistics.example.com,,TrueWave Logistics Inc,Business Development Lead,INACTIVE,3/14/2025,Dallas
+CRM-100235,Susan,Wilson,susan.wilson@goldenpathlogistics.example.com,,GoldenPath Logistics Inc,Operations Manager,Qualified,9/6/2025,Portland
+CRM-100362,melissa,lewis,melissa.lewis@brightlinesystems.example.com,(555) 000-0372,BRIGHTLINE SYSTEMS LTD,Sales Director,Working,2026-06-24,Denver
+CRM-100555,MICHELLE,RIVERA,michelle.rivera@harborfieldlogistics.example.com,5550000262,HarborField Logistics,Business Development Lead,Qualifed,2026-03-20,Chicago
+CRM-100561,Robert,Nguyen,robert.nguyen@rapidlabssystems.example.com,555-000-0522,RapidLabs Systems Inc.,Owner,Working,5/6/2025,Dallas
+CRM-100454,Patricia,Baker,patricia.baker@truewavelogistics.example.com,555.000.0464,TrueWave Logistics Inc,Office Manager,LEAD,10-Mar-2026,Boston
+CRM-100513,BETTY,FLORES,betty.flores@silverlinesystems.example.com,+1 555 000 0523,SilverLine Systems Ltd,Owner,dormant,2026-02-07,Phoenix
+CRM-100600,JAMES,LEWIS,jlewis@blueworkssystems.example.com,+1 555 000 0362,BLUEWORKS SYSTEMS LTD,Founder,new lead,4 Apr 2026,Austin
+CRM-100363,  Jennifer , Harris  ,,+1 555 000 0373,  SolidLabs Health Inc ,Procurement Manager,dormant,"May 17, 2026",Phoenix
+CRM-100190,Sarah,Scott,sarah.scott@rapidlinesystems.example.com,5550000200,RAPIDLINE SYSTEMS LLC,Owner,QUALIFIED,"March 4, 2026",Denver
+CRM-100506,Betty,Thompson,betty.thompson@everfieldlogistics.example.com,555.000.0516,EverField Logistics,CEO,Qualifed,"October 1, 2026",Dallas
+CRM-100372,RICHARD,ROBINSON,richard.robinson@goldenbridgeconsulting.example.com,+1 555 000 0382,GoldenBridge Consulting Ltd,Procurement Manager,WORKING,9/28/2026,Portland
+CRM-100028,william,evans,william.evans@harborbridgeconsulting.example.com,,HARBORBRIDGE CONSULTING,CEO,inactive,14-Feb-2026,Denver
+CRM-100137,jeffrey,jackson,,555.000.0147,BlueWave Consulting,Founder,QUALIFIED,21 Feb 2025,Atlanta
+CRM-100377,MARY,THOMAS,,5550000387,  ClearLabs Health Ltd ,CEO,qualified,28 Mar 2026,Phoenix
+CRM-100291,Sarah,Wright,sarah.wright@brightstonelogistics.example.com,555.000.0301,BrightStone Logistics Inc,Founder,Lead,"August 15, 2025",Dallas
+CRM-100490,Karen,Rivera,karen.rivera@primepointsystems.example.com,+1 (555) 000-0500,PRIMEPOINT SYSTEMS,Sales Director,inactive,2026-06-14,Chicago
+CRM-100074,richard,jackson,richard.jackson@everlabslogistics.example.com,(555) 000-0084,  EverLabs Logistics Ltd ,Owner,Qualifed,4-May-2026,Portland
+CRM-100065,JESSICA,CAMPBELL,jessica.campbell@clearworksconsulting.example.com,5550000075,ClearWorks Consulting Inc,Founder,In Progress,20 Jan 2026,Portland
+CRM-100337,ronald,green,ronald.green@harborpointsystems.example.com,5550000347,HarborPoint Systems Inc,Office Manager,Qualified,10 Jul 2025,Houston
+CRM-100515,Ryan,Hill,ryan.hill@clearworksconsulting.example.com,5550000525,  ClearWorks Consulting Inc ,Business Development Lead,Working,24 Mar 2026,Boston
+CRM-100366,ryan,jackson,ryan.jackson@brightbridgeconsulting.example.com,+1 (555) 000-0376,BrightBridge Consulting LLC,Marketing Manager,dormant,5/13/2026,Boston
+CRM-100580,RONALD,ADAMS,radams@rapidworksconsulting.example.com,+1 (555) 000-0227,  RapidWorks Consulting Ltd ,Business Development Lead,Customer,13 Jun 2025,Miami
+CRM-100352,JAMES,LEWIS,james.lewis@blueworkssystems.example.com,+1 (555) 000-0362,BlueWorks Systems Ltd,Founder,Lead,"April 4, 2026",Austin
+CRM-100005,Linda,Parker,linda.parker@brightbridgehealth.example.com,555.000.0015,BrightBridge Health LLC,Office Manager,INACTIVE,8/8/2026,Nashville
+CRM-100133,Sarah,Torres,sarah.torres@novafieldconsulting.example.com,+1 (555) 000-0143,NovaField Consulting LLC,Sales Director,Qualifed,24 Oct 2025,Atlanta
+CRM-100599,KIMBERLY,SCOTT,kscott@harborpointsystems.example.com,5550000077,HarborPoint Systems Inc,General Manager,dormant,7/28/2025,Phoenix
+CRM-100304,Elizabeth,Campbell,elizabeth.campbell@silverfieldhealth.example.com,+1 555 000 0314,SilverField Health,Operations Manager,Qualifed,28 Apr 2025,Dallas
+CRM-100245,  Mark , Campbell  ,mark.campbell@clearworksconsulting.example.com,,  ClearWorks Consulting Inc ,CEO,Customer,19-Feb-2025,Austin
+CRM-100207,Margaret,Robinson,margaret.robinson@clearworkssystems.example.com,(555) 000-0217,CLEARWORKS SYSTEMS LTD,General Manager,inactive,2026-02-01,Denver
+CRM-100531,sharon,garcia,sharon.garcia@harborstonesystems.example.com,555.000.0541,HARBORSTONE SYSTEMS LTD,CEO,working,2026-02-03,Miami
+CRM-100305,Mark,Rivera,mark.rivera@rapidbridgesystems.example.com,555-000-0315,RapidBridge Systems,CEO,QUALIFIED,"October 4, 2025",Dallas
+CRM-100534,Donald,Smith,donald.smith@everridgeconsulting.example.com,(555) 000-0544,EverRidge Consulting Inc,General Manager,in progress,2-Apr-2026,Atlanta
+CRM-100273,Rebecca,Martinez,rebecca.martinez@solidlabshealth.example.com,555-000-0283,SolidLabs Health Inc,Business Development Lead,Active Customer,2026-04-03,Denver
+CRM-100404,DAVID,MILLER,david.miller@novapointhealth.example.com,(555) 000-0414,NOVAPOINT HEALTH LTD,General Manager,CLIENT,2026-03-03,Austin
+CRM-100348,AMY,GARCIA,amy.garcia@summitpointsystems.example.com,5550000358,SUMMITPOINT SYSTEMS,Business Development Lead,Qualified,1-Dec-2026,Nashville
+CRM-100380,Laura,Wilson,Laura.Wilson@Summitfieldhealth.Example.Com,+1 555 000 0390,SummitField Health Ltd,Office Manager,Working,2025-05-21,Nashville
+CRM-100413,Paul,Mitchell,paul.mitchell@summitpointconsulting.example.com,,  SummitPoint Consulting Inc ,Operations Manager,dormant,2/26/2026,Denver
+CRM-100177,Karen,Smith,karen.smith@trueworkshealth.example.com,(555) 000-0187,TrueWorks Health,Office Manager,in progress,"December 25, 2025",Phoenix
+CRM-100093,Daniel,Nelson,daniel.nelson@solidlabshealth.example.com,555.000.0103,SOLIDLABS HEALTH INC,CEO,new lead,17 Nov 2026,Portland
+CRM-100200,DAVID,PHILLIPS,david.phillips@summitfieldhealth.example.com,+1 (555) 000-0210,  SummitField Health Ltd ,General Manager,Lead,2026-01-04,Nashville
+CRM-100385,PAUL,BAKER,paul.baker@bluelabsconsulting.example.com,+1 (555) 000-0395,BlueLabs Consulting Ltd,General Manager,Qualifed,5/22/2026,Denver
+CRM-100163,Matthew,Martinez,matthew.martinez@apexridgeconsulting.example.com,5550000173,APEXRIDGE CONSULTING LLC,Office Manager,Qualified,26 Jan 2025,Boston
+CRM-100088,Donald,Garcia,donald.garcia@bluestonelogistics.example.com,+1 555 000 0098,BlueStone Logistics LLC,Marketing Manager,QUALIFIED,"September 18, 2025",Miami
+CRM-100025,Deborah,Anderson,deborah.anderson@bluelabsconsulting.example.com,555.000.0035,BlueLabs Consulting Ltd,General Manager,dormant,"February 13, 2026",Houston
+CRM-100460,BRIAN,GONZALEZ,brian.gonzalez@rapidlinesystems.example.com,5550000470,RapidLine Systems LLC,Founder,Working,3/22/2026,Denver
+CRM-100493,Ashley,Torres,ashley.torres@novafieldconsulting.example.com,555.000.0503,NovaField Consulting LLC,Sales Director,LEAD,"May 28, 2025",Chicago
+CRM-100312,Ronald,Flores,ronald.flores@summitlabssystems.example.com,555.000.0322,SummitLabs Systems,Office Manager,New Lead,3/3/2026,Houston
+CRM-100139,Ryan,Allen,Ryan.Allen@Primewaveconsulting.Example.Com,,PrimeWave Consulting,Founder,Working,2025-01-10,Atlanta
+CRM-100283,laura,clark,laura.clark@silverstonesystems.example.com,+1 555 000 0293,  SilverStone Systems Inc ,Procurement Manager,CLIENT,"November 18, 2025",Dallas
+CRM-100145,Michael,Lopez,michael.lopez@goldenpathlogistics.example.com,+1 (555) 000-0155,GoldenPath Logistics Inc,CEO,WORKING,1 Apr 2026,Miami
+CRM-100444,Michelle,Davis,michelle.davis@everridgeconsulting.example.com,+1 555 000 0454,EverRidge Consulting Inc,CEO,Client,2025-08-01,Dallas
+CRM-100293,LAURA,MILLER,laura.miller@goldenlinelogistics.example.com,(555) 000-0303,GoldenLine Logistics Inc,Operations Manager,Dormant,"December 17, 2025",Austin
+CRM-100359,Kevin,Thomas,kevin.thomas@summitridgesystems.example.com,5550000369,SummitRidge Systems Inc,Founder,Customer,28 Jul 2025,Houston
+CRM-100179,Laura,Jackson,laura.jackson@summitridgesystems.example.com,,SummitRidge Systems Inc,CEO,Customer,"May 9, 2026",Portland
+CRM-100271,Anthony,Gomez,,+1 (555) 000-0281,BrightRidge Health Ltd,Sales Director,in progress,19-Sep-2025,Austin
+CRM-100049,john,jackson,john.jackson@primewaveconsulting.example.com,,  PrimeWave Consulting ,General Manager,LEAD,11/11/2025,Atlanta
+CRM-100251,Kathleen,Turner,kathleen.turner@clearlinehealth.example.com,555-000-0261,ClearLine Health,CEO,new lead,2025-04-07,Houston
+CRM-100414,Ashley,Gonzalez,ashley.gonzalez@bluefieldsystems.example.com,555.000.0424,BLUEFIELD SYSTEMS LTD,Office Manager,dormant,7 Sep 2026,Portland
+CRM-100421,TIMOTHY,NELSON,timothy.nelson@goldenfieldhealth.example.com,,GOLDENFIELD HEALTH,Marketing Manager,in progress,2026-08-20,Miami
+CRM-100302,Cynthia,Rivera,cynthia.rivera@brightworkssystems.example.com,+1 555 000 0312,BrightWorks Systems Limited,Marketing Manager,new lead,13 Nov 2025,Houston
+CRM-100157,Rebecca,Wilson,rebecca.wilson@harborpointsystems.example.com,+1 555 000 0167,HarborPoint Systems Inc,Operations Manager,inactive,7/12/2025,Houston
+CRM-100449,  Brian , Rivera  ,brian.rivera@summitridgesystems.example.com,5550000459,  SummitRidge Systems Inc ,Founder,Inactive,"December 24, 2026",Dallas
+CRM-100574,THOMAS,TORRES,thomas.torres@brightlinesystems.example.com,555-000-0192,BrightLine Systems Ltd,Business Development Lead,inactive,5-May-2026,Seattle
+CRM-100270,JASON,EVANS,jason.evans@clearbridgesystems.example.com,555.000.0280,ClearBridge Systems,Operations Manager,lead,6/10/2026,Chicago
+CRM-100582,KAREN,SANCHEZ,ksanchez@brightlinesystems.example.com,5550000102,  BrightLine Systems Ltd ,General Manager,CLIENT,2026-07-27,Atlanta
+CRM-100064,Sandra,Jones,sandra.jones@brightlabssystems.example.com,(555) 000-0074,BrightLabs Systems Inc,CEO,Lead,11/17/2025,Atlanta
+CRM-100474,Susan,Scott,Susan.Scott@Clearbridgeconsulting.Example.Com,555.000.0484,CLEARBRIDGE CONSULTING,Operations Manager,Customer,15-Jan-2025,Houston
+CRM-100401,David,Green,david.green@everpointhealth.example.com,5550000411,EVERPOINT HEALTH,Procurement Manager,CLIENT,"July 16, 2026",Nashville
+CRM-100054,kevin,robinson,kevin.robinson@bluefieldsystems.example.com,555-000-0064,  BlueField Systems Ltd ,Founder,Customer,"September 17, 2026",Nashville
+CRM-100488,Ashley,Perez,ashley.perez@brightworkslogistics.example.com,555.000.0498,BrightWorks Logistics Limited,Sales Director,Qualified,"February 10, 2025",Atlanta
+CRM-100492,David,Hall,david.hall@summitlabssystems.example.com,+1 555 000 0502,SUMMITLABS SYSTEMS,CEO,QUALIFIED,"August 12, 2026",Miami
+CRM-100114,LINDA,RODRIGUEZ,linda.rodriguez@clearbridgeconsulting.example.com,555.000.0124,ClearBridge Consulting,Procurement Manager,lead,"June 18, 2026",Portland
+CRM-100194,EMILY,YOUNG,emily.young@apexpathsystems.example.com,555.000.0204,  ApexPath Systems LLC ,Owner,LEAD,16 Feb 2025,Nashville
+CRM-100051,laura,green,laura.green@rapidpointsystems.example.com,5550000061,RAPIDPOINT SYSTEMS LLC,CEO,WORKING,2025-07-12,Boston
+CRM-100591,JAMES,LEWIS,jlewis@everridgeconsulting.example.com,555-000-0274,EverRidge Consulting Inc,Sales Director,Working,28-Mar-2026,Miami
+CRM-100141,  Ashley , Rodriguez  ,ashley.rodriguez@rapidpointsystems.example.com,555.000.0151,RapidPoint Systems LLC,CEO,INACTIVE,26 Apr 2026,Denver
+CRM-100116,Robert,Rodriguez,Robert.Rodriguez@Truebridgelogistics.Example.Com,(555) 000-0126,  TrueBridge Logistics Inc ,CEO,QUALIFIED,20-Mar-2026,Dallas
+CRM-100409,BRIAN,BROWN,brian.brown@primewaveconsulting.example.com,+1 (555) 000-0419,PRIMEWAVE CONSULTING,Owner, new Lead ,4-Dec-2025,Nashville
+CRM-100581,MELISSA,FLORES,mflores@primestonesystems.example.com,+1 (555) 000-0185,PrimeStone Systems Ltd,Owner,dormant,"April 26, 2025",Atlanta
+CRM-100075,  Margaret , Sanchez  ,margaret.sanchez@rapidworkssystems.example.com,,RAPIDWORKS SYSTEMS LLC,Procurement Manager,Client,16 Mar 2026,Houston
+CRM-100140,  Brian , Miller  ,brian.miller@brightwavelogistics.example.com,555.000.0150,  BrightWave Logistics Inc ,Founder,Qualifed,18 Nov 2026,Dallas
+CRM-100399,George,Lopez,george.lopez@blueworkshealth.example.com,5550000409,BlueWorks Health Inc.,Owner,qualified,"August 9, 2025",Seattle
+CRM-100171,Anthony,Lopez,anthony.lopez@harborstonesystems.example.com,(555) 000-0181,HarborStone Systems Ltd,CEO,dormant,4/10/2025,Houston
+CRM-100466,andrew,scott,andrew.scott@everbridgesystems.example.com,(555) 000-0476,  EverBridge Systems Ltd ,Operations Manager,Client,4/7/2026,Boston
+CRM-100593,LAURA,MITCHELL,lmitchell@rapidworksconsulting.example.com,+1 (555) 000-0137,RapidWorks Consulting Limited,Business Development Lead,Qualified,2026-04-08,Miami
+CRM-100553,Amanda,Hernandez,amanda.hernandez@solidridgesystems.example.com,+1 (555) 000-0359,SolidRidge Systems,Procurement Manager,dormant,1/4/2025,Portland
+CRM-100328,Patricia,Roberts,patricia.roberts@harborbridgesystems.example.com,555-000-0338,HarborBridge Systems LLC,Business Development Lead,working,2026-06-27,Chicago
+CRM-100169,MICHELLE,CARTER,michelle.carter@solidridgesystems.example.com,5550000179,SolidRidge Systems,Procurement Manager,Working,2026-01-12,Boston
+CRM-100034,Jeffrey,Hill,jeffrey.hill@silverfieldhealth.example.com,555.000.0044,SilverField Health,Business Development Lead,Customer,11-Nov-2026,Chicago
+CRM-100529,Ryan,Rivera,ryan.rivera@solidridgesystems.example.com,+1 (555) 000-0539,  SolidRidge Systems ,Operations Manager,Working,"September 13, 2025",Portland
+CRM-100281,Jeffrey,Young,jeffrey.young@trueridgehealth.example.com,5550000291,TrueRidge Health Inc,Owner,Lead,1/9/2025,Seattle
+CRM-100351,  Jessica , Miller  ,jessica.miller@harborstonesystems.example.com,+1 555 000 0361,HarborStone Systems Ltd,Procurement Manager, new Lead ,3/2/2026,Portland
+CRM-100113,John,Harris,john.harris@goldenlinelogistics.example.com,(555) 000-0123,GoldenLine Logistics Inc,CEO,INACTIVE,10/22/2026,Atlanta
+CRM-100577,AMY,SCOTT,ascott@novapointhealth.example.com,5550000504,NovaPoint Health Ltd,Founder,working,3 Dec 2025,Austin
+CRM-100277,Kimberly,Flores,,(555) 000-0287,SOLIDPATH HEALTH,Office Manager,INACTIVE,21 May 2026,Austin
+CRM-100080,Dorothy,Lewis,Dorothy.Lewis@Silverlabsconsulting.Example.Com,5550000090,SilverLabs Consulting,Owner,QUALIFIED,2025-11-21,Nashville
+CRM-100254,andrew,hernandez,andrew.hernandez@everlabslogistics.example.com,,EverLabs Logistics Ltd,Founder,QUALIFIED,"October 9, 2026",Dallas
+CRM-100027,Kevin,Sanchez,kevin.sanchez@clearworkssystems.example.com,+1 555 000 0037,CLEARWORKS SYSTEMS LTD,Founder,Customer,"July 1, 2025",Portland
+CRM-100389,MARY,NELSON,mary.nelson@trueworkslogistics.example.com,555.000.0399,TrueWorks Logistics Ltd,Founder,CLIENT,"July 13, 2026",Nashville
+CRM-100445,Rebecca,Brown,rebecca.brown@primestonesystems.example.com,555.000.0455,PRIMESTONE SYSTEMS LTD,Procurement Manager,Inactive,"September 25, 2026",Chicago
+CRM-100324,Matthew,Young,matthew.young@bluefieldsystems.example.com,5550000334,BLUEFIELD SYSTEMS LTD,CEO,Inactive,10/17/2026,Portland
+CRM-100158,JOHN,SCOTT,john.scott@novaridgehealth.example.com,+1 (555) 000-0168,NOVARIDGE HEALTH LTD,Operations Manager,lead,2026-01-10,Nashville
+CRM-100430,STEVEN,THOMPSON,,555.000.0440,SilverWave Consulting,Sales Director,CLIENT,"January 21, 2025",Chicago
+CRM-100559,BETTY,RODRIGUEZ,betty.rodriguez@apexpathsystems.example.com,+1 (555) 000-0384,  ApexPath Systems LLC ,Business Development Lead,Dormant,"March 7, 2025",Seattle
+CRM-100524,Amanda,Wilson,amanda.wilson@everlabslogistics.example.com,555-000-0534,EVERLABS LOGISTICS LTD,Procurement Manager,qualified,5-Feb-2026,Nashville
+CRM-100382,Sharon,Smith,sharon.smith@silverridgesystems.example.com,5550000392,  SilverRidge Systems Inc ,Founder,in progress,"December 23, 2026",Boston
+CRM-100198,MICHELLE,MARTINEZ,michelle.martinez@primebridgehealth.example.com,(555) 000-0208,PrimeBridge Health Inc,Operations Manager,Customer,"March 19, 2026",Seattle
+CRM-100276,Brian,Mitchell,brian.mitchell@brightbridgeconsulting.example.com,555.000.0286,BrightBridge Consulting LLC,Founder,Dormant,10-Nov-2025,Seattle
+CRM-100073,paul,sanchez,paul.sanchez@apexridgeconsulting.example.com,+1 (555) 000-0083,APEXRIDGE CONSULTING LLC,CEO,inactive,2026-01-25,Boston
+CRM-100209,mark,harris,mark.harris@trueworkslogistics.example.com,+1 555 000 0219,TRUEWORKS LOGISTICS LTD,General Manager,lead,2025-10-17,Chicago
+CRM-100147,KEVIN,SMITH,Kevin.Smith@Blueridgehealth.Example.Com,+1 (555) 000-0157,BLUERIDGE HEALTH LLC,Marketing Manager,Qualifed,22 Jan 2025,Denver
+CRM-100436,JAMES,TURNER,james.turner@summitpointhealth.example.com,555-000-0446,  SummitPoint Health ,Business Development Lead,new lead,18 Sep 2026,Seattle
+CRM-100261,Betty,Wilson,betty.wilson@harborstonesystems.example.com,555-000-0271,HARBORSTONE SYSTEMS LTD,Office Manager,Client,11-May-2026,Miami
+CRM-100086,linda,taylor,linda.taylor@everlabshealth.example.com,(555) 000-0096,EverLabs Health,CEO,QUALIFIED,10/10/2025,Houston
+CRM-100468,Emily,Turner,emily.turner@primebridgehealth.example.com,+1 555 000 0478,PrimeBridge Health Inc.,Operations Manager,lead,8-Aug-2026,Boston
+CRM-100410,DONALD,HARRIS,donald.harris@brightwavelogistics.example.com,+1 555 000 0420,BrightWave Logistics Inc.,General Manager,New Lead,"August 23, 2026",Chicago
+CRM-100168,Timothy,Wright,timothy.wright@summitpointsystems.example.com,,SUMMITPOINT SYSTEMS,Procurement Manager,working,2 May 2026,Dallas
+CRM-100391,Joseph,Hall,joseph.hall@silverwavelogistics.example.com,+1 (555) 000-0401,SilverWave Logistics Ltd,CEO,dormant,10 Sep 2026,Chicago
+CRM-100267,Deborah,Miller,deborah.miller@trueworkshealth.example.com,+1 (555) 000-0277,TrueWorks Health,Office Manager,lead,2/5/2026,Atlanta
+CRM-100262,nancy,torres,nancy.torres@blueworkssystems.example.com,5550000272,BlueWorks Systems Ltd,Sales Director,Inactive,6/22/2026,Austin
+CRM-100077,Margaret,Flores,margaret.flores@goldenbridgelogistics.example.com,,GoldenBridge Logistics,General Manager,working,4-Jun-2026,Denver
+CRM-100433,Amanda,Harris,amanda.harris@apexridgeconsulting.example.com,(555) 000-0443,ApexRidge Consulting LLC,Office Manager,Client,8/15/2025,Atlanta
+CRM-100585,REBECCA,PEREZ,rperez@solidfieldsystems.example.com,5550000040,SOLIDFIELD SYSTEMS LTD,Marketing Manager,In Progress,17-Feb-2025,Boston
+CRM-100285,SHARON,MARTINEZ,Sharon.Martinez@Novawavehealth.Example.Com,555-000-0295,NovaWave Health Limited,Marketing Manager,Dormant,10/21/2026,Boston
+CRM-100368,Elizabeth,Green,elizabeth.green@summitfieldsystems.example.com,555-000-0378,SummitField Systems,Procurement Manager,INACTIVE,2025-07-11,Houston
+CRM-100222,Steven,Hill,,555-000-0232,SummitLabs Systems,General Manager,Client,9/2/2026,Portland
+CRM-100138,joseph,scott,joseph.scott@novaworksconsulting.example.com,555-000-0148,NovaWorks Consulting,Sales Director,Lead,2 Mar 2026,Nashville
+CRM-100221,JESSICA,TAYLOR,jessica.taylor@everpointhealth.example.com,(555) 000-0231,EVERPOINT HEALTH,Procurement Manager,working,2026-02-15,Atlanta
+CRM-100307,jessica,jackson,jessica.jackson@rapidworksconsulting.example.com,555-000-0317,RapidWorks Consulting Ltd,Marketing Manager,QUALIFIED,"December 27, 2026",Houston
+CRM-100146,Anthony,Thomas,anthony.thomas@everfieldlogistics.example.com,+1 555 000 0156,EverField Logistics,Founder,customer,19 May 2026,Houston
+CRM-100193,Melissa,Turner,Melissa.Turner@Silverstonesystems.Example.Com,+1 (555) 000-0203,SilverStone Systems Inc,Owner,New Lead,7/13/2025,Nashville
+CRM-100038,Anthony,Walker,anthony.walker@brightworkslogistics.example.com,,BrightWorks Logistics Ltd,General Manager,inactive,"August 26, 2025",Atlanta
+CRM-100243,Daniel,Diaz,daniel.diaz@silverlinesystems.example.com,555.000.0253,SilverLine Systems Limited,Business Development Lead,Client,"June 1, 2025",Phoenix
+CRM-100046,Karen,Torres,,+1 (555) 000-0056,TruePoint Logistics LLC,Marketing Manager,Customer,"November 23, 2025",Houston
+CRM-100102,Jessica,Evans,jessica.evans@goldenbridgeconsulting.example.com,(555) 000-0112,  GoldenBridge Consulting Ltd ,Founder,customer,"February 23, 2026",Austin
+CRM-100215,JACOB,TURNER,jacob.turner@rapidbridgesystems.example.com,555-000-0225,RAPIDBRIDGE SYSTEMS,Sales Director,Inactive,20 Jun 2026,Houston
+CRM-100523,Thomas,Gonzalez,thomas.gonzalez@apexridgeconsulting.example.com,+1 555 000 0533,ApexRidge Consulting LLC,Owner,LEAD,"September 1, 2025",Nashville
+CRM-100597,JOHN,THOMAS,jthomas@clearlinehealth.example.com,555.000.0351,ClearLine Health,Marketing Manager,Qualifed,3-Nov-2025,Houston
+CRM-100361,barbara,hernandez,barbara.hernandez@brightridgehealth.example.com,5550000371,BrightRidge Health Limited,Office Manager,working,1/14/2025,Denver
+CRM-100536,JESSICA,NELSON,jessica.nelson@everlabshealth.example.com,+1 (555) 000-0546,EverLabs Health,Sales Director,LEAD,5/25/2025,Nashville
+CRM-100321,Sarah,Robinson,sarah.robinson@rapidpointsystems.example.com,+1 555 000 0331,RapidPoint Systems LLC,Owner,WORKING,"November 10, 2025",Phoenix
+CRM-100503,Amanda,Lee,amanda.lee@summitpointconsulting.example.com,,SummitPoint Consulting Inc.,General Manager,lead,12/9/2026,Atlanta
+CRM-100144,Amy,Sanchez,,5550000154,BLUEFIELD SYSTEMS LTD,General Manager,customer,13-Feb-2026,Boston
+CRM-100456,Jacob,Robinson,jacob.robinson@brightbridgeconsulting.example.com,555.000.0466,BrightBridge Consulting LLC,Business Development Lead,Lead,12/21/2025,Dallas
+CRM-100547,  Sarah , Phillips  ,sarah.phillips@silverridgesystems.example.com,+1 (555) 000-0212,SilverRidge Systems Inc.,CEO,customer,"June 18, 2025",Nashville
+CRM-100301,Elizabeth,Smith,elizabeth.smith@silverwavelogistics.example.com,+1 555 000 0311,SilverWave Logistics Ltd,Owner,Customer,12-Sep-2025,Boston
+CRM-100598,DONALD,MITCHELL,dmitchell@brightwavelogistics.example.com,555.000.0240,BrightWave Logistics Inc,Marketing Manager,CLIENT,"May 2, 2025",Houston
+CRM-100048,Barbara,Wilson,barbara.wilson@novaworksconsulting.example.com,555.000.0058,NovaWorks Consulting,CEO,qualified,"April 5, 2025",Chicago
+CRM-100308,Daniel,Lee,daniel.lee@brightworkslogistics.example.com,555-000-0318,BrightWorks Logistics Ltd,Founder,customer,2025-02-07,Chicago
+CRM-100255,Amy,Hall,Amy.Hall@Rapidworkssystems.Example.Com,,RapidWorks Systems LLC,Sales Director,New lead,"January 9, 2026",Boston
+CRM-100001,SANDRA,NELSON,sandra.nelson@brightridgehealth.example.com,+1 (555) 000-0011,BrightRidge Health Ltd,Owner,Lead,2026-07-14,Boston
+CRM-100434,DONALD,GARCIA,donald.garcia@everlabslogistics.example.com,555-000-0444,EverLabs Logistics Ltd,CEO,Client,2026-02-16,Houston
+CRM-100176,Jason,Baker,,+1 (555) 000-0186,EVERLABS HEALTH,Office Manager,INACTIVE,28 Apr 2026,Portland
+CRM-100558,Donald,Garcia,donald.garcia@bluestonelogistics.example.com,+1 555 000 0098,BlueStone Logistics LLC,Marketing Manager,QUALIFIED,"September 18, 2025",Miami
+CRM-100373,Jacob,Brown,jacob.brown@silverstonesystems.example.com,+1 (555) 000-0383,SilverStone Systems Inc.,Sales Director,dormant,"May 23, 2025",Dallas
+CRM-100306,David,Adams,david.adams@silverstoneconsulting.example.com,+1 555 000 0316,SilverStone Consulting,Operations Manager,Client,7/22/2025,Chicago
+CRM-100519,Jennifer,Young,jennifer.young@clearbridgehealth.example.com,555-000-0529,ClearBridge Health,Business Development Lead,in progress,21 Nov 2025,Nashville
+CRM-100596,DANIEL,NELSON,dnelson@solidlabshealth.example.com,5550000103,SolidLabs Health Inc,CEO,New Lead,2026-11-17,Portland
+CRM-100087,ASHLEY,GONZALEZ,ashley.gonzalez@trueworkshealth.example.com,+1 555 000 0097,TRUEWORKS HEALTH,Sales Director,New lead,6 Aug 2025,Houston
+CRM-100036,Matthew,King,matthew.king@silverstoneconsulting.example.com,+1 (555) 000-0046,SilverStone Consulting,Founder,Lead,2026-08-02,Austin
+CRM-100263,Robert,Miller,robert.miller@harborridgelogistics.example.com,555-000-0273,HarborRidge Logistics Inc,Owner,customer,15 Mar 2025,Phoenix
+CRM-100576,STEVEN,TURNER,sturner@trueworkslogistics.example.com,,TrueWorks Logistics Ltd,Marketing Manager,new lead,11/4/2026,Nashville
+CRM-100090,Richard,Phillips,richard.phillips@clearbridgesystems.example.com,+1 (555) 000-0100,ClearBridge Systems,Office Manager,working,12-Jan-2026,Dallas
+CRM-100166,Donald,Anderson,donald.anderson@summitpointhealth.example.com,5550000176,SummitPoint Health,Office Manager,Inactive,17 Mar 2025,Miami
+CRM-100212,Ryan,Jones,ryan.jones@brightworkssystems.example.com,555-000-0222,BrightWorks Systems Ltd,Founder,QUALIFIED,12/21/2025,Phoenix
+CRM-100132,MATTHEW,ROBINSON,matthew.robinson@summitlabssystems.example.com,5550000142,SummitLabs Systems,CEO,qualified,2025-04-27,Dallas
+CRM-100041,Donald,Robinson,donald.robinson@everpointhealth.example.com,(555) 000-0051,EverPoint Health,General Manager,inactive,2025-06-12,Miami
+CRM-100126,Anthony,Lee,anthony.lee@silverstoneconsulting.example.com,+1 (555) 000-0136,SILVERSTONE CONSULTING,CEO,in progress,2026-09-12,Boston
+CRM-100322,Mark,Torres,mark.torres@novastonesystems.example.com,555.000.0332,NovaStone Systems Ltd,Owner,CLIENT,13 May 2025,Chicago
+CRM-100458,Ryan,Hall,ryan.hall@summitfieldsystems.example.com,5550000468,SummitField Systems,General Manager,Qualifed,1/24/2025,Miami
+CRM-100569,joseph,scott,joseph.scott@novaworksconsulting.example.com,555-000-0148,NovaWorks Consulting,Sales Director,Lead,2 Mar 2026,Nashville
+CRM-100006,Nancy,Turner,nancy.turner@brightbridgeconsulting.example.com,555.000.0016,BrightBridge Consulting LLC,Procurement Manager,Active Customer,"December 4, 2026",Portland
+CRM-100185,RYAN,THOMPSON,ryan.thompson@brightbridgehealth.example.com,+1 555 000 0195,BrightBridge Health LLC,Sales Director,In Progress,2026-03-18,Boston
+CRM-100186,PATRICIA,WRIGHT,patricia.wright@brightbridgeconsulting.example.com,+1 555 000 0196,  BrightBridge Consulting LLC ,Operations Manager,New Lead,2025-01-14,Chicago
+CRM-100121,Kevin,Anderson,kevin.anderson@silverwavelogistics.example.com,+1 555 000 0131,SilverWave Logistics Limited,Business Development Lead,Lead,17-Mar-2026,Boston
+CRM-100213,Brian,Green,Brian.Green@Rapidbridgeconsulting.Example.Com,555-000-0223,RapidBridge Consulting Limited,CEO,working,2025-03-10,Austin
+CRM-100128,Emily,Martin,emily.martin@brightworkslogistics.example.com,555-000-0138,BRIGHTWORKS LOGISTICS LTD,Founder,In Progress,12/7/2026,Houston
+CRM-100552,Barbara,Wilson,barbara.wilson@novaworksconsulting.example.com,555.000.0058,NovaWorks Consulting,CEO,qualified,"April 5, 2025",Chicago
+CRM-100532,JOSEPH,WHITE,joseph.white@blueworkssystems.example.com,+1 (555) 000-0542,BLUEWORKS SYSTEMS LTD,Business Development Lead,New Lead,13 Dec 2025,Nashville
+CRM-100066,Jessica,Nguyen,jessica.nguyen@rapidworkslogistics.example.com,555-000-0076,RapidWorks Logistics Inc.,Sales Director,Active Customer,2025-09-12,Denver
+CRM-100501,Joseph,Jones,Joseph.Jones@Rapidpointsystems.Example.Com,+1 (555) 000-0511,RapidPoint Systems LLC,Marketing Manager,Qualifed,22-Jan-2025,Seattle

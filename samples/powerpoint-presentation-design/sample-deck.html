@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quarterly Sales Review — Q3 2026 — NorthPeak Home (Sample Deck)</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #26313d; font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif; padding: 32px 0 48px; }
+  .note { max-width: 1280px; margin: 0 auto 20px; color: #cfd8e0; font-size: 14px; text-align: center; }
+  .slide { position: relative; width: 1280px; height: 720px; margin: 0 auto 28px; background: #ffffff; overflow: hidden;
+           box-shadow: 0 10px 34px rgba(0,0,0,.45); page-break-after: always; }
+  .foot { position: absolute; left: 56px; right: 56px; bottom: 26px; display: flex; justify-content: space-between;
+          font-size: 12.5px; color: #8a97a3; border-top: 1px solid #e3e8ec; padding-top: 10px; }
+  h2.title { font-size: 40px; color: #12314e; margin: 48px 56px 6px; }
+  .rule { width: 74px; height: 5px; background: #e8a33d; margin: 10px 56px 26px; }
+  .sub { margin: 0 56px; color: #5c6d7a; font-size: 18px; }
+
+  /* Slide 1 */
+  .cover { background: linear-gradient(135deg, #0d2438 0%, #12314e 58%, #1b476b 100%); color: #fff; }
+  .cover .brand { margin: 64px 72px 0; font-size: 21px; letter-spacing: 4px; color: #e8a33d; font-weight: 700; }
+  .cover h1 { margin: 120px 72px 0; font-size: 68px; line-height: 1.08; font-weight: 800; }
+  .cover .period { margin: 22px 72px 0; font-size: 27px; color: #c9d8e4; }
+  .cover .meta { position: absolute; left: 72px; bottom: 64px; font-size: 16.5px; color: #9fb6c6; line-height: 1.65; }
+  .cover .band { position: absolute; right: 0; top: 0; width: 14px; height: 100%; background: #e8a33d; }
+  .cover .sampletag { position: absolute; right: 48px; bottom: 64px; font-size: 13px; color: #7e97a8;
+                      border: 1px solid #3c5a74; border-radius: 20px; padding: 6px 14px; }
+
+  /* Agenda */
+  .agenda { margin: 14px 56px 0; }
+  .agenda li { list-style: none; display: flex; align-items: center; gap: 22px; padding: 19px 6px; border-bottom: 1px solid #e7edf1; }
+  .agenda .num { width: 46px; height: 46px; border-radius: 50%; background: #12314e; color: #fff; font-weight: 700;
+                 display: flex; align-items: center; justify-content: center; font-size: 19px; flex: none; }
+  .agenda .txt { font-size: 23px; color: #22384c; }
+  .agenda .pg { margin-left: auto; color: #93a3af; font-size: 15px; }
+
+  /* KPI cards */
+  .kpis { display: flex; gap: 22px; margin: 30px 56px 0; }
+  .kpi { flex: 1; background: #f4f7fa; border-top: 6px solid #12314e; border-radius: 8px; padding: 26px 24px 22px; }
+  .kpi.gold { border-top-color: #e8a33d; }
+  .kpi .label { font-size: 14.5px; letter-spacing: 1.6px; color: #66788a; font-weight: 700; text-transform: uppercase; }
+  .kpi .value { font-size: 46px; font-weight: 800; color: #12314e; margin: 10px 0 6px; }
+  .kpi .delta { font-size: 16.5px; color: #2e7d46; font-weight: 600; }
+  .kpi .note2 { font-size: 14.5px; color: #71828f; margin-top: 6px; line-height: 1.45; }
+  .takeaway { margin: 30px 56px 0; background: #fdf3e0; border-left: 6px solid #e8a33d; padding: 18px 24px;
+              font-size: 19px; color: #4a3a14; line-height: 1.5; }
+
+  /* Bar chart */
+  .chart { margin: 36px 56px 0; height: 380px; display: flex; align-items: flex-end; gap: 90px; padding: 0 110px;
+           border-bottom: 3px solid #c8d3dc; }
+  .bar { flex: 1; background: linear-gradient(180deg, #2a5a84, #12314e); border-radius: 8px 8px 0 0; position: relative; }
+  .bar.best { background: linear-gradient(180deg, #f0b85a, #e8a33d); }
+  .bar .val { position: absolute; top: -42px; left: 0; right: 0; text-align: center; font-size: 25px; font-weight: 800; color: #12314e; }
+  .bar .mon { position: absolute; bottom: -40px; left: 0; right: 0; text-align: center; font-size: 18px; color: #5c6d7a; }
+  .chartnote { margin: 64px 56px 0; font-size: 17.5px; color: #41576a; line-height: 1.55; }
+
+  /* Category */
+  .catwrap { display: flex; gap: 54px; margin: 26px 56px 0; align-items: center; }
+  .donut { width: 330px; height: 330px; border-radius: 50%; flex: none; position: relative;
+           background: conic-gradient(#12314e 0 34%, #2a5a84 34% 56%, #e8a33d 56% 74%, #7fa8c4 74% 89%, #c8d3dc 89% 100%); }
+  .donut::after { content: "Q3 Revenue\A$1.284M"; white-space: pre; position: absolute; inset: 62px; background: #fff; border-radius: 50%;
+                  display: flex; align-items: center; justify-content: center; text-align: center;
+                  font-size: 21px; font-weight: 700; color: #12314e; line-height: 1.35; }
+  .catlist { flex: 1; }
+  .cat { margin-bottom: 21px; }
+  .cat .row { display: flex; justify-content: space-between; font-size: 18.5px; color: #22384c; margin-bottom: 7px; }
+  .cat .row b { color: #12314e; }
+  .track { height: 15px; background: #e8edf1; border-radius: 8px; }
+  .fill { height: 100%; border-radius: 8px; background: #12314e; }
+  .fill.b { background: #2a5a84; } .fill.c { background: #e8a33d; } .fill.d { background: #7fa8c4; } .fill.e { background: #b9c7d1; }
+
+  /* Two columns */
+  .cols { display: flex; gap: 26px; margin: 24px 56px 0; }
+  .col { flex: 1; border-radius: 10px; padding: 26px 28px; }
+  .col.good { background: #eef6f0; } .col.bad { background: #fbf0ec; }
+  .col h3 { font-size: 21px; margin-bottom: 14px; color: #12314e; }
+  .col li { margin: 0 0 13px 20px; font-size: 17.5px; line-height: 1.5; color: #33475a; }
+
+  /* Priorities */
+  .prios { margin: 16px 56px 0; }
+  .prio { display: flex; gap: 24px; padding: 20px 4px; border-bottom: 1px solid #e7edf1; align-items: flex-start; }
+  .prio .n { font-size: 34px; font-weight: 800; color: #e8a33d; width: 52px; flex: none; }
+  .prio h3 { font-size: 21.5px; color: #12314e; margin-bottom: 5px; }
+  .prio p { font-size: 16.5px; color: #55687a; line-height: 1.5; }
+  .prio .target { margin-left: auto; flex: none; background: #12314e; color: #fff; font-size: 15px; font-weight: 700;
+                   border-radius: 18px; padding: 7px 16px; }
+
+  /* Closing */
+  .closing { background: linear-gradient(135deg, #0d2438, #1b476b); color: #fff; text-align: center; }
+  .closing h1 { margin-top: 218px; font-size: 58px; font-weight: 800; }
+  .closing .line { width: 74px; height: 5px; background: #e8a33d; margin: 26px auto; }
+  .closing p { font-size: 21px; color: #c9d8e4; line-height: 1.6; }
+  .closing .contact { margin-top: 44px; font-size: 16px; color: #9fb6c6; line-height: 1.7; }
+</style>
+</head>
+<body>
+<div class="note">Sample presentation design — 8 slides, 16:9. All figures are fictional and internally consistent. Scroll to view.</div>
+
+<!-- 1 · TITLE -->
+<section class="slide cover">
+  <div class="band"></div>
+  <div class="brand">NORTHPEAK HOME</div>
+  <h1>Quarterly<br>Sales Review</h1>
+  <div class="period">Q3 2026 · July – September</div>
+  <div class="meta">Prepared for the Leadership Team<br>October 2026 · NorthPeak Home (fictional business)</div>
+  <div class="sampletag">SAMPLE DECK</div>
+</section>
+
+<!-- 2 · AGENDA -->
+<section class="slide">
+  <h2 class="title">Agenda</h2><div class="rule"></div>
+  <ul class="agenda">
+    <li><span class="num">1</span><span class="txt">The Quarter at a Glance — headline KPIs</span><span class="pg">Slide 3</span></li>
+    <li><span class="num">2</span><span class="txt">Revenue by Month — where growth came from</span><span class="pg">Slide 4</span></li>
+    <li><span class="num">3</span><span class="txt">Sales by Category — the product mix</span><span class="pg">Slide 5</span></li>
+    <li><span class="num">4</span><span class="txt">Highlights &amp; Challenges — what helped, what hurt</span><span class="pg">Slide 6</span></li>
+    <li><span class="num">5</span><span class="txt">Q4 Priorities — targets for the holiday quarter</span><span class="pg">Slide 7</span></li>
+  </ul>
+  <div class="foot"><span>NorthPeak Home — Q3 2026 Sales Review</span><span>2</span></div>
+</section>
+
+<!-- 3 · KPI -->
+<section class="slide">
+  <h2 class="title">The Quarter at a Glance</h2><div class="rule"></div>
+  <p class="sub">Revenue grew double digits for the third consecutive quarter — driven by more orders <i>and</i> a higher average basket.</p>
+  <div class="kpis">
+    <div class="kpi gold"><div class="label">Revenue</div><div class="value">$1.284M</div><div class="delta">▲ 18.4% vs Q3 2025</div><div class="note2">vs $1.08M in the same quarter last year</div></div>
+    <div class="kpi"><div class="label">Orders</div><div class="value">8,000</div><div class="delta">▲ 11.2% vs Q3 2025</div><div class="note2">8,000 orders across web store and marketplaces</div></div>
+    <div class="kpi"><div class="label">Avg. Order Value</div><div class="value">$160.50</div><div class="delta">▲ 6.5% vs Q3 2025</div><div class="note2">Bundles and free-shipping threshold doing the work</div></div>
+    <div class="kpi"><div class="label">Repeat Customers</div><div class="value">41%</div><div class="delta">▲ 3 pts vs Q3 2025</div><div class="note2">Share of revenue from returning buyers</div></div>
+  </div>
+  <div class="takeaway"><b>Takeaway:</b> growth is balanced — order volume (+11.2%) and basket size (+6.5%) multiply to the +18.4% revenue result. No single channel or promotion is carrying the quarter.</div>
+  <div class="foot"><span>NorthPeak Home — Q3 2026 Sales Review</span><span>3</span></div>
+</section>
+
+<!-- 4 · REVENUE BY MONTH -->
+<section class="slide">
+  <h2 class="title">Revenue by Month</h2><div class="rule"></div>
+  <div class="chart">
+    <div class="bar" style="height:78%"><span class="val">$402K</span><span class="mon">July · 2,512 orders</span></div>
+    <div class="bar" style="height:85%"><span class="val">$438K</span><span class="mon">August · 2,688 orders</span></div>
+    <div class="bar best" style="height:86.5%"><span class="val">$444K</span><span class="mon">September · 2,800 orders</span></div>
+  </div>
+  <p class="chartnote">September set a company record, helped by the early-autumn collection launch on 8 September. August dipped mid-month during the warehouse move, then recovered in the final week. Monthly figures sum to the Q3 total of $1,284K across 8,000 orders.</p>
+  <div class="foot"><span>NorthPeak Home — Q3 2026 Sales Review</span><span>4</span></div>
+</section>
+
+<!-- 5 · CATEGORY -->
+<section class="slide">
+  <h2 class="title">Sales by Category</h2><div class="rule"></div>
+  <div class="catwrap">
+    <div class="donut"></div>
+    <div class="catlist">
+      <div class="cat"><div class="row"><span>Kitchen &amp; Dining</span><b>34% · $436,560</b></div><div class="track"><div class="fill" style="width:100%"></div></div></div>
+      <div class="cat"><div class="row"><span>Lighting</span><b>22% · $282,480</b></div><div class="track"><div class="fill b" style="width:65%"></div></div></div>
+      <div class="cat"><div class="row"><span>Storage &amp; Organisation</span><b>18% · $231,120</b></div><div class="track"><div class="fill c" style="width:53%"></div></div></div>
+      <div class="cat"><div class="row"><span>Home Decor</span><b>15% · $192,600</b></div><div class="track"><div class="fill d" style="width:44%"></div></div></div>
+      <div class="cat"><div class="row"><span>Outdoor Living</span><b>11% · $141,240</b></div><div class="track"><div class="fill e" style="width:32%"></div></div></div>
+    </div>
+  </div>
+  <div class="foot"><span>NorthPeak Home — Q3 2026 Sales Review</span><span>5</span></div>
+</section>
+
+<!-- 6 · HIGHLIGHTS & CHALLENGES -->
+<section class="slide">
+  <h2 class="title">Highlights &amp; Challenges</h2><div class="rule"></div>
+  <div class="cols">
+    <div class="col good"><h3>✓ What went well</h3><ul>
+      <li>Autumn collection sold through 82% of stock within five weeks of launch.</li>
+      <li>Repeat-customer revenue reached 41% of the total — a company best.</li>
+      <li>Conversion rate held at 3.8% even as traffic grew 24% year on year.</li>
+      <li>Lighting range grew fastest (+31%), led by the new rechargeable line.</li>
+    </ul></div>
+    <div class="col bad"><h3>✕ What needs work</h3><ul>
+      <li>Returns rate is 2.1% — above the 1.8% target, mostly sizing/dimension queries in Storage.</li>
+      <li>The August warehouse move cost an estimated $19K in delayed-dispatch refunds.</li>
+      <li>Outdoor Living underperformed plan by 9% after a cooler-than-usual September.</li>
+      <li>Marketplace fees rose to 13.2% of marketplace revenue, squeezing margin.</li>
+    </ul></div>
+  </div>
+  <div class="foot"><span>NorthPeak Home — Q3 2026 Sales Review</span><span>6</span></div>
+</section>
+
+<!-- 7 · Q4 PRIORITIES -->
+<section class="slide">
+  <h2 class="title">Q4 Priorities</h2><div class="rule"></div>
+  <div class="prios">
+    <div class="prio"><span class="n">01</span><div><h3>Win the holiday quarter</h3><p>Gift-guide landing pages live by 20 October; bundle offers built around Kitchen &amp; Dining bestsellers.</p></div><span class="target">Target: $1.45M revenue</span></div>
+    <div class="prio"><span class="n">02</span><div><h3>Bring returns below target</h3><p>Add dimension diagrams and a size checker to every Storage &amp; Organisation product page.</p></div><span class="target">Target: returns &lt; 1.8%</span></div>
+    <div class="prio"><span class="n">03</span><div><h3>Grow repeat revenue</h3><p>Launch the NorthPeak loyalty programme with early access to seasonal collections.</p></div><span class="target">Target: 44% repeat share</span></div>
+    <div class="prio"><span class="n">04</span><div><h3>Protect margin on marketplaces</h3><p>Renegotiate fee tier and shift hero products to the web store with exclusive colours.</p></div><span class="target">Target: fees ≤ 12%</span></div>
+  </div>
+  <div class="foot"><span>NorthPeak Home — Q3 2026 Sales Review</span><span>7</span></div>
+</section>
+
+<!-- 8 · CLOSING -->
+<section class="slide closing">
+  <h1>Thank You</h1>
+  <div class="line"></div>
+  <p>Q3 was our strongest quarter yet — $1.284M in revenue, 8,000 orders,<br>and a growing base of customers who come back.</p>
+  <div class="contact">NorthPeak Home · Leadership Team<br>Questions on this review: leadership@northpeakhome.example</div>
+</section>
+
+</body>
+</html>

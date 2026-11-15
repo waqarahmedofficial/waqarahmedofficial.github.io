@@ -1,0 +1,14 @@
+Section,Item,Amount,Note
+Bank side,"Balance per bank statement, Sep 30 2026",14361.85,bank_statement.csv
+Bank side,"Add: deposit in transit - PMT-5006 received Sep 30, cleared Oct",5450.00,"Timing item, not an error"
+Bank side,"Less: outstanding payment - PYT-3007 issued Sep 29, not cleared",-3940.00,"Timing item, not an error"
+Bank side,Adjusted bank balance,15871.85,
+Book side,"Balance per books (GL 1000, before corrections)",14996.85,Excludes JE-C1..C3
+Book side,D3 add back: duplicate bill payment PYT-3006 reversed (JE-C3),620.00,Book error
+Book side,D2 add back: rent check transposition over-recorded (JE-C2),270.00,Book error
+Book side,D1 deduct: September bank service charge recorded (JE-C1),-15.00,Book adjustment - bank correct
+Book side,Adjusted book balance,15871.85,
+Result,Difference (must be zero),0.00,
+Discrepancy D1,Unrecorded bank fee $15.00 on statement Sep 30 - no book entry existed,15.00,Classification: BOOK ADJUSTMENT (bank is right). Treatment: JE-C1 Dr 6400 Bank Fees / Cr 1000 Checking. In NetSuite: create from the bank line on Match Bank Data.
+Discrepancy D2,"Rent check 1012 recorded in books as 1,850.00; check was written and cleared at 1,580.00 (digits 85/58 transposed; difference 270.00 is divisible by 9)",270.00,"Classification: BOOK ERROR. Treatment: JE-C2 Dr 1000 Checking / Cr 6000 Rent Expense. In NetSuite: edit/void and re-enter the check, or post a correcting journal with approval."
+Discrepancy D3,"Bill BILL-2017 (620.00) paid twice in books: PYT-3005 (Sep 23, cleared) and PYT-3006 (Sep 24, never cleared - duplicate entry)",620.00,Classification: BOOK ERROR. Treatment: JE-C3 Dr 1000 Checking / Cr 2000 Accounts Payable reverses the duplicate. In NetSuite: void the duplicate Bill Payment record so it un-applies from the bill.

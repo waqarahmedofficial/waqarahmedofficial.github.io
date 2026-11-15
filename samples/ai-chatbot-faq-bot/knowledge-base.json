@@ -1,0 +1,813 @@
+{
+  "clinic": "BrightCare Dental Studio",
+  "entries": [
+    {
+      "answer": "Hello, and welcome to BrightCare Dental Studio. I can help with prices, opening hours, booking, insurance and aftercare questions. What would you like to know?",
+      "id": "greeting",
+      "keywords": [
+        "hello",
+        "hi",
+        "hey"
+      ],
+      "questions": [
+        "hello",
+        "hi",
+        "hey",
+        "good morning",
+        "good afternoon"
+      ],
+      "topic": "Greeting"
+    },
+    {
+      "answer": "Our opening hours are: Monday to Friday 8:00am–6:00pm, Saturday 9:00am–2:00pm, and we are closed on Sundays and public holidays.",
+      "id": "hours",
+      "keywords": [
+        "hours",
+        "open",
+        "close",
+        "closing",
+        "saturday",
+        "sunday",
+        "weekend",
+        "timings"
+      ],
+      "questions": [
+        "what are your opening hours",
+        "when are you open",
+        "what time do you close",
+        "are you open on saturday",
+        "are you open on sunday",
+        "weekend hours"
+      ],
+      "topic": "Opening hours"
+    },
+    {
+      "answer": "You can find us at Suite 204, 118 Harbor Lane. We are a 5-minute walk from the Central Avenue tram stop, and there is a public car park on Harbor Lane.",
+      "id": "location",
+      "keywords": [
+        "located",
+        "location",
+        "address",
+        "directions",
+        "reach",
+        "where"
+      ],
+      "questions": [
+        "where are you located",
+        "what is your address",
+        "how do i get there",
+        "directions to the clinic"
+      ],
+      "topic": "Location and directions"
+    },
+    {
+      "answer": "Yes — there is a public car park on Harbor Lane, about 2 minutes from our door. The first hour costs $2. We do not have private on-site parking.",
+      "id": "parking",
+      "keywords": [
+        "parking",
+        "park",
+        "car"
+      ],
+      "questions": [
+        "is there parking",
+        "where can i park",
+        "do you have a car park"
+      ],
+      "topic": "Parking"
+    },
+    {
+      "answer": "You can reach our front desk on (555) 014-2288 during opening hours.",
+      "id": "phone",
+      "keywords": [
+        "phone",
+        "number",
+        "call",
+        "contact"
+      ],
+      "questions": [
+        "what is your phone number",
+        "how can i call you",
+        "contact number"
+      ],
+      "topic": "Phone number"
+    },
+    {
+      "answer": "Our email address is hello@brightcare-dental.example — we usually reply within one business day.",
+      "id": "email",
+      "keywords": [
+        "email",
+        "mail"
+      ],
+      "questions": [
+        "what is your email",
+        "can i email you",
+        "email address"
+      ],
+      "topic": "Email address"
+    },
+    {
+      "answer": "You can book in three ways: call us on (555) 014-2288, use the online booking form on our website, or visit the front desk in person. New patients are asked to arrive 10 minutes early to complete a short medical history form.",
+      "id": "book_appointment",
+      "keywords": [
+        "book",
+        "booking",
+        "appointment",
+        "schedule",
+        "reserve"
+      ],
+      "questions": [
+        "how do i book an appointment",
+        "i want to make an appointment",
+        "how can i schedule a visit",
+        "booking an appointment"
+      ],
+      "topic": "How to book an appointment"
+    },
+    {
+      "answer": "At your first visit we take a full medical history, examine your teeth and gums, and take digital X-rays if needed. The new patient exam costs $59 and includes the check-up and standard X-rays. Please bring a photo ID and your insurance card if you have one.",
+      "id": "first_visit",
+      "keywords": [
+        "first",
+        "new",
+        "patient",
+        "expect",
+        "visit"
+      ],
+      "questions": [
+        "what happens at my first visit",
+        "i am a new patient what should i expect",
+        "first appointment what do i need"
+      ],
+      "topic": "First visit / new patient"
+    },
+    {
+      "answer": "To reschedule, call us on (555) 014-2288 or reply to your booking confirmation email. Rescheduling is free if you tell us at least 24 hours before your appointment.",
+      "id": "reschedule",
+      "keywords": [
+        "reschedule",
+        "change",
+        "move",
+        "postpone"
+      ],
+      "questions": [
+        "how do i reschedule my appointment",
+        "can i change my appointment time",
+        "i need to move my booking"
+      ],
+      "topic": "Rescheduling an appointment"
+    },
+    {
+      "answer": "You can cancel free of charge up to 24 hours before your appointment. Cancellations with less than 24 hours' notice, and missed appointments, carry a $40 fee.",
+      "id": "cancellation",
+      "keywords": [
+        "cancel",
+        "cancellation",
+        "fee",
+        "charge",
+        "policy"
+      ],
+      "questions": [
+        "what is your cancellation policy",
+        "can i cancel my appointment",
+        "is there a cancellation fee",
+        "late cancellation charge",
+        "i need to cancel my visit"
+      ],
+      "topic": "Cancellation policy"
+    },
+    {
+      "answer": "If you are running late, please call us as soon as you can. We can usually still see you if you arrive within 10 minutes; after that we may need to shorten or rebook your appointment so other patients are not kept waiting.",
+      "id": "late_arrival",
+      "keywords": [
+        "late",
+        "running",
+        "delay",
+        "arrival"
+      ],
+      "questions": [
+        "what if i am late for my appointment",
+        "i am running late",
+        "late arrival policy"
+      ],
+      "topic": "Running late"
+    },
+    {
+      "answer": "We work by appointment so we can give every patient enough time. We do keep a small number of same-day emergency slots — call us in the morning on (555) 014-2288 and we will do our best to fit you in.",
+      "id": "walkins",
+      "keywords": [
+        "walk",
+        "walkin",
+        "without",
+        "appointment"
+      ],
+      "questions": [
+        "do you accept walk-ins",
+        "can i just walk in",
+        "do i need an appointment"
+      ],
+      "topic": "Walk-in appointments"
+    },
+    {
+      "answer": "If you have a dental emergency — a broken or knocked-out tooth, severe pain, or swelling — call us straight away on (555) 014-2288. We reserve same-day emergency slots every day we are open, and the emergency exam costs $75. If a tooth has been knocked out, hold it by the crown (not the root), rinse it briefly, and try to place it back in the socket or keep it in milk, and come in within the hour. Outside opening hours, our phone message gives the number of the local emergency dental service.",
+      "id": "emergency",
+      "keywords": [
+        "emergency",
+        "broke",
+        "broken",
+        "knocked",
+        "severe",
+        "pain",
+        "urgent",
+        "swelling"
+      ],
+      "questions": [
+        "i have a dental emergency",
+        "i broke a tooth what should i do",
+        "severe tooth pain emergency",
+        "knocked out tooth",
+        "what if i have an emergency at night"
+      ],
+      "topic": "Dental emergency"
+    },
+    {
+      "answer": "A standard professional cleaning (scale and polish) costs $110. New patients can currently book our welcome offer: exam, X-rays and cleaning together for $149.",
+      "id": "price_cleaning",
+      "keywords": [
+        "cleaning",
+        "clean",
+        "polish",
+        "scale",
+        "hygiene",
+        "price",
+        "cost",
+        "much"
+      ],
+      "questions": [
+        "how much does a cleaning cost",
+        "price of teeth cleaning",
+        "what does a scale and polish cost"
+      ],
+      "topic": "Price: cleaning"
+    },
+    {
+      "answer": "A new patient exam costs $59, including standard digital X-rays. A routine recall exam for existing patients costs $45.",
+      "id": "price_exam",
+      "keywords": [
+        "exam",
+        "checkup",
+        "check-up",
+        "xray",
+        "x-ray",
+        "xrays",
+        "price",
+        "cost",
+        "much",
+        "check",
+        "rays"
+      ],
+      "questions": [
+        "how much is a check-up",
+        "price of a dental exam",
+        "cost of x-rays"
+      ],
+      "topic": "Price: exam and X-rays"
+    },
+    {
+      "answer": "Professional in-clinic teeth whitening costs $299 per session. A take-home whitening kit with custom trays costs $179.",
+      "id": "price_whitening",
+      "keywords": [
+        "whitening",
+        "whiten",
+        "bleaching",
+        "price",
+        "cost",
+        "much"
+      ],
+      "questions": [
+        "how much does teeth whitening cost",
+        "price of whitening",
+        "cost to whiten my teeth"
+      ],
+      "topic": "Price: teeth whitening"
+    },
+    {
+      "answer": "Tooth-coloured fillings start from $149 for a small filling. The exact price depends on the size and position of the cavity, and the dentist will confirm the full cost before any treatment begins.",
+      "id": "price_filling",
+      "keywords": [
+        "filling",
+        "cavity",
+        "fill",
+        "price",
+        "cost",
+        "much"
+      ],
+      "questions": [
+        "how much does a filling cost",
+        "price of a tooth filling",
+        "cost to fill a cavity"
+      ],
+      "topic": "Price: filling"
+    },
+    {
+      "answer": "A porcelain crown costs $950 per tooth, including the temporary crown and both appointments. We will always confirm the full treatment cost in writing before starting.",
+      "id": "price_crown",
+      "keywords": [
+        "crown",
+        "price",
+        "cost",
+        "much"
+      ],
+      "questions": [
+        "how much does a crown cost",
+        "price of a dental crown"
+      ],
+      "topic": "Price: crown"
+    },
+    {
+      "answer": "Root canal treatment starts from $650 for a front tooth and from $890 for a molar. The dentist will confirm the exact cost after the examination and X-rays, before treatment starts.",
+      "id": "price_rootcanal",
+      "keywords": [
+        "root",
+        "canal",
+        "price",
+        "cost",
+        "much"
+      ],
+      "questions": [
+        "how much does a root canal cost",
+        "price of root canal treatment"
+      ],
+      "topic": "Price: root canal"
+    },
+    {
+      "answer": "A straightforward tooth extraction costs $180. Surgical extraction of a wisdom tooth starts from $320. The dentist will confirm the exact cost after examining the tooth and X-rays.",
+      "id": "price_extraction",
+      "keywords": [
+        "extraction",
+        "remove",
+        "removal",
+        "pull",
+        "wisdom",
+        "price",
+        "cost",
+        "much"
+      ],
+      "questions": [
+        "how much does a tooth extraction cost",
+        "price to remove a tooth",
+        "wisdom tooth removal cost"
+      ],
+      "topic": "Price: extraction"
+    },
+    {
+      "answer": "A single dental implant, including the implant post, abutment and crown, costs $2,900. The first implant consultation, including a 3D scan, is free.",
+      "id": "price_implant",
+      "keywords": [
+        "implant",
+        "implants",
+        "price",
+        "cost",
+        "much"
+      ],
+      "questions": [
+        "how much does a dental implant cost",
+        "price of implants",
+        "cost of a tooth implant"
+      ],
+      "topic": "Price: dental implant"
+    },
+    {
+      "answer": "Clear aligner treatment (Invisalign) starts from $3,800 for a mild case. The orthodontic consultation is free, and we will give you an exact written quote after assessing your teeth. We do not offer traditional metal braces for adults; we can refer you to an orthodontist if needed.",
+      "id": "price_invisalign",
+      "keywords": [
+        "invisalign",
+        "aligners",
+        "braces",
+        "orthodontics",
+        "price",
+        "cost",
+        "much"
+      ],
+      "questions": [
+        "how much does invisalign cost",
+        "price of clear aligners",
+        "cost of braces"
+      ],
+      "topic": "Price: Invisalign / aligners"
+    },
+    {
+      "answer": "Yes, we treat children from age 3. A child's exam and clean costs $65, and fluoride treatment costs $30. We keep children's appointments relaxed and unhurried.",
+      "id": "price_kids",
+      "keywords": [
+        "child",
+        "children",
+        "kids",
+        "kid",
+        "price",
+        "cost",
+        "son",
+        "daughter",
+        "old",
+        "year",
+        "young",
+        "much"
+      ],
+      "questions": [
+        "how much is a check-up for a child",
+        "children's dental prices",
+        "do you treat kids",
+        "how much is a check-up for my son",
+        "how much is a check up for a kid"
+      ],
+      "topic": "Price: children's dentistry"
+    },
+    {
+      "answer": "We accept Visa, Mastercard, Amex, debit cards, bank transfer and cash. Payment is due on the day of treatment unless you are on one of our payment plans.",
+      "id": "payment_methods",
+      "keywords": [
+        "payment",
+        "pay",
+        "card",
+        "cash",
+        "credit",
+        "debit"
+      ],
+      "questions": [
+        "what payment methods do you accept",
+        "can i pay by card",
+        "do you accept cash"
+      ],
+      "topic": "Payment methods"
+    },
+    {
+      "answer": "Yes. For treatments over $500 we offer interest-free instalments over 6 or 12 months, split into equal monthly payments. There is no setup fee, and we will give you the full schedule in writing before you agree.",
+      "id": "payment_plans",
+      "keywords": [
+        "instalments",
+        "installments",
+        "financing",
+        "plan",
+        "plans",
+        "monthly",
+        "spread"
+      ],
+      "questions": [
+        "do you offer payment plans",
+        "can i pay in instalments",
+        "financing options"
+      ],
+      "topic": "Payment plans / financing"
+    },
+    {
+      "answer": "We work with most major dental insurers, including Delta Dental, Cigna, MetLife and Aetna. Bring your insurance card to your first visit and we will check your exact cover before treatment. If your insurer is not on this list, call us on (555) 014-2288 and we will confirm whether we can bill them directly.",
+      "id": "insurance_accepted",
+      "keywords": [
+        "insurance",
+        "delta",
+        "cigna",
+        "metlife",
+        "aetna",
+        "network",
+        "accept",
+        "cover"
+      ],
+      "questions": [
+        "do you accept my insurance",
+        "which insurance plans do you take",
+        "are you in network with delta dental",
+        "do you accept cigna",
+        "do you accept metlife",
+        "do you accept aetna"
+      ],
+      "topic": "Insurance we accept"
+    },
+    {
+      "answer": "For insurers we work with, we bill them directly for the covered part and you only pay your share on the day. If your insurer is not one we bill directly, we give you a full itemised receipt so you can claim the money back yourself.",
+      "id": "insurance_claims",
+      "keywords": [
+        "claim",
+        "claims",
+        "bill",
+        "billing",
+        "reimburse"
+      ],
+      "questions": [
+        "do i have to claim from my insurance myself",
+        "how do insurance claims work",
+        "will you bill my insurance"
+      ],
+      "topic": "Insurance claims process"
+    },
+    {
+      "answer": "After a filling, wait until the numbness wears off before eating, so you do not bite your cheek. Avoid very hot or cold drinks for the first few hours. Mild sensitivity for a few days is normal; if pain lasts more than a week, call us on (555) 014-2288.",
+      "id": "aftercare_filling",
+      "keywords": [
+        "aftercare",
+        "after",
+        "filling",
+        "eat",
+        "care"
+      ],
+      "questions": [
+        "what should i do after a filling",
+        "aftercare for a filling",
+        "can i eat after a filling"
+      ],
+      "topic": "Aftercare: filling"
+    },
+    {
+      "answer": "For 48 hours after whitening, avoid coffee, tea, red wine, curry and smoking, as your teeth can pick up stains more easily. Some sensitivity is normal and usually settles within a day or two.",
+      "id": "aftercare_whitening",
+      "keywords": [
+        "aftercare",
+        "after",
+        "whitening",
+        "coffee",
+        "avoid"
+      ],
+      "questions": [
+        "what should i avoid after whitening",
+        "aftercare after teeth whitening",
+        "can i drink coffee after whitening"
+      ],
+      "topic": "Aftercare: whitening"
+    },
+    {
+      "answer": "After an extraction: bite on the gauze pad for 30 minutes, rest for the rest of the day, and do not rinse, spit or use a straw for 24 hours. Eat soft, cool food, and take painkillers as directed. From the next day, rinse gently with warm salt water 3–4 times a day. If bleeding does not stop or pain gets worse after 3 days, call us on (555) 014-2288.",
+      "id": "aftercare_extraction",
+      "keywords": [
+        "aftercare",
+        "after",
+        "extraction",
+        "socket",
+        "removal",
+        "care"
+      ],
+      "questions": [
+        "how do i look after the socket after an extraction",
+        "aftercare after tooth removal",
+        "what to do after a tooth extraction"
+      ],
+      "topic": "Aftercare: extraction"
+    },
+    {
+      "answer": "After implant surgery, rest for 24–48 hours, use the prescribed mouth rinse, and eat soft food for the first week. Keep the area clean with gentle brushing around (not directly on) the stitches. We will see you for a review after 1 week, and the crown is usually fitted about 3 months later once the implant has bonded.",
+      "id": "aftercare_implant",
+      "keywords": [
+        "aftercare",
+        "after",
+        "implant",
+        "recovery",
+        "surgery"
+      ],
+      "questions": [
+        "how do i care for my implant",
+        "aftercare after implant surgery",
+        "recovery after an implant"
+      ],
+      "topic": "Aftercare: implant"
+    },
+    {
+      "answer": "Yes — we look after many nervous patients. We offer oral sedation and nitrous oxide (laughing gas) for anxious patients, and we always work at your pace with breaks whenever you need them. Tell us when you book and we will plan extra time for your appointment.",
+      "id": "sedation",
+      "keywords": [
+        "sedation",
+        "nervous",
+        "anxiety",
+        "anxious",
+        "scared",
+        "afraid",
+        "phobia"
+      ],
+      "questions": [
+        "i am nervous about the dentist do you offer sedation",
+        "do you have sedation for anxious patients",
+        "i have dental anxiety"
+      ],
+      "topic": "Sedation / nervous patients"
+    },
+    {
+      "answer": "For most patients we recommend a check-up and professional clean every 6 months. If you have gum disease or a history of dental problems, the dentist may suggest every 3–4 months.",
+      "id": "hygiene_visits",
+      "keywords": [
+        "often",
+        "hygienist",
+        "cleaned",
+        "routine",
+        "regularly"
+      ],
+      "questions": [
+        "how often should i get my teeth cleaned",
+        "how often should i see the hygienist",
+        "when should i book a check-up"
+      ],
+      "topic": "How often: cleaning / hygienist"
+    },
+    {
+      "answer": "Our services include: general check-ups and X-rays, professional cleaning, tooth-coloured fillings, crowns, root canal treatment, extractions (including wisdom teeth), dental implants, teeth whitening, clear aligners (Invisalign), children's dentistry, and emergency care. If you need a treatment we do not offer, we will refer you to a trusted specialist.",
+      "id": "services_list",
+      "keywords": [
+        "services",
+        "treatments",
+        "offer",
+        "do"
+      ],
+      "questions": [
+        "what services do you offer",
+        "what treatments do you do",
+        "list of services"
+      ],
+      "topic": "Services we offer"
+    },
+    {
+      "answer": "Our team has three dentists: Dr. Sarah Linden (general and cosmetic dentistry), Dr. Omar Patel (implants and oral surgery), and Dr. Emily Rhodes (children's and family dentistry), supported by two hygienists and our front-desk team.",
+      "id": "dentists",
+      "keywords": [
+        "dentists",
+        "dentist",
+        "team",
+        "staff",
+        "doctors",
+        "dr",
+        "patel",
+        "linden",
+        "rhodes",
+        "omar",
+        "sarah",
+        "emily"
+      ],
+      "questions": [
+        "who are the dentists",
+        "how many dentists do you have",
+        "tell me about your team"
+      ],
+      "topic": "Our dentists"
+    },
+    {
+      "answer": "Our team speaks English and Spanish. If you need another language, let us know when you book and we will do our best to arrange interpretation.",
+      "id": "languages",
+      "keywords": [
+        "spanish",
+        "languages",
+        "speak",
+        "language"
+      ],
+      "questions": [
+        "do you speak spanish",
+        "what languages do you speak",
+        "is there a spanish speaking dentist"
+      ],
+      "topic": "Languages spoken"
+    },
+    {
+      "answer": "Yes, our clinic is step-free and fully wheelchair accessible, with a lift to the second floor and an accessible bathroom.",
+      "id": "accessibility",
+      "keywords": [
+        "wheelchair",
+        "accessible",
+        "accessibility",
+        "disabled",
+        "lift"
+      ],
+      "questions": [
+        "is the clinic wheelchair accessible",
+        "do you have disabled access",
+        "wheelchair access"
+      ],
+      "topic": "Accessibility"
+    },
+    {
+      "answer": "Yes. You can request a copy of your dental records and X-rays at any time — we send them free of charge within 5 business days, to you or directly to another dentist with your written permission.",
+      "id": "records",
+      "keywords": [
+        "records",
+        "transfer",
+        "copy",
+        "x-rays"
+      ],
+      "questions": [
+        "can i get a copy of my dental records",
+        "can you transfer my x-rays to another dentist",
+        "records request"
+      ],
+      "topic": "Dental records / X-ray transfer"
+    },
+    {
+      "answer": "Yes, you can book online through our website's booking form at any time. You will get an email confirmation straight away and a reminder text the day before your appointment.",
+      "id": "online_booking",
+      "keywords": [
+        "online",
+        "website",
+        "internet",
+        "book"
+      ],
+      "questions": [
+        "can i book online",
+        "do you have online booking",
+        "book through the website"
+      ],
+      "topic": "Online booking"
+    },
+    {
+      "answer": "Yes — we send a reminder text the day before your appointment and an email when you book. If the time no longer suits you, reply to the reminder or call us and we will rebook you free of charge (at least 24 hours ahead).",
+      "id": "reminders",
+      "keywords": [
+        "reminder",
+        "remind",
+        "text",
+        "notification"
+      ],
+      "questions": [
+        "will i get a reminder for my appointment",
+        "do you send reminders",
+        "reminder text"
+      ],
+      "topic": "Appointment reminders"
+    },
+    {
+      "answer": "All instruments are sterilised in hospital-grade autoclaves after every patient, single-use items are never reused, and our sterilisation logs are audited monthly. Your safety is a core part of how we work.",
+      "id": "covid_hygiene",
+      "keywords": [
+        "sterilise",
+        "sterilize",
+        "sterile",
+        "hygiene",
+        "safety",
+        "clean"
+      ],
+      "questions": [
+        "how do you sterilise your instruments",
+        "are your instruments sterile",
+        "safety and hygiene standards"
+      ],
+      "topic": "Sterilisation and safety"
+    },
+    {
+      "answer": "Yes, we sell gift vouchers for whitening and for our $149 new-patient welcome package. Vouchers are valid for 12 months and can be bought at the front desk or by phone.",
+      "id": "gift_voucher",
+      "keywords": [
+        "gift",
+        "voucher",
+        "vouchers",
+        "present"
+      ],
+      "questions": [
+        "do you sell gift vouchers",
+        "can i buy a whitening voucher as a gift"
+      ],
+      "topic": "Gift vouchers"
+    },
+    {
+      "answer": "Yes, we are happy to give a second opinion. Book a new patient exam ($59, including standard X-rays) and bring any recent X-rays or treatment plans you already have, and the dentist will talk you through your options honestly — including the option of doing nothing for now.",
+      "id": "second_opinion",
+      "keywords": [
+        "second",
+        "opinion",
+        "check",
+        "another"
+      ],
+      "questions": [
+        "can i get a second opinion",
+        "another dentist told me i need a crown can you check",
+        "second opinion consultation"
+      ],
+      "topic": "Second opinion"
+    },
+    {
+      "answer": "We assess teenagers for clear aligner treatment at a free orthodontic consultation. If traditional braces are the better option, we will refer you to a specialist orthodontist we trust and share your records with them free of charge.",
+      "id": "braces_kids",
+      "keywords": [
+        "braces",
+        "teenager",
+        "teen",
+        "orthodontics",
+        "child"
+      ],
+      "questions": [
+        "do you do braces for teenagers",
+        "my teenager needs braces",
+        "orthodontics for teens"
+      ],
+      "topic": "Braces for teenagers"
+    },
+    {
+      "id": "appointment_duration",
+      "topic": "How long appointments take",
+      "keywords": [
+        "long",
+        "duration",
+        "take",
+        "takes",
+        "minutes",
+        "length"
+      ],
+      "questions": [
+        "how long does a cleaning take",
+        "how long is a check-up appointment",
+        "how long will my appointment take"
+      ],
+      "answer": "Typical appointment lengths: a check-up takes about 30 minutes, a professional clean about 45 minutes, whitening about 60 minutes, a filling 30-60 minutes, and a root canal appointment 60-90 minutes. If you are short on time, tell us when you book and we will confirm the timing for your visit."
+    }
+  ],
+  "notice": "FICTIONAL DEMO DATA — BrightCare Dental Studio is an invented clinic created only to demonstrate this FAQ bot sample. All names, prices, hours and policies below are demo content, not a real business."
+}

@@ -1,0 +1,35 @@
+Invoice,Date,Description,Qty,Unit Price,Amount
+INV-1041,2026-10-01,A4 copier paper (case of 10 reams),6,24.50,147.00
+INV-1042,2026-10-02,Toner cartridge — black,3,58.99,176.97
+INV-1043,2026-10-03,Gel pens (box of 12),10,6.75,67.50
+INV-1044,2026-10-04,Lever-arch files (pack of 10),4,18.20,72.80
+INV-1045,2026-10-05,Sticky notes (pack of 12),8,5.40,43.20
+INV-1046,2026-10-06,USB flash drive 64GB,5,11.99,59.95
+INV-1047,2026-10-07,Wireless mouse,2,21.50,43.00
+INV-1048,2026-10-08,Desk organiser tray,6,9.85,59.10
+INV-1049,2026-10-09,Envelopes DL (box of 500),3,13.60,40.80
+INV-1050,2026-10-10,Printer ink — cyan,2,17.25,34.50
+INV-1051,2026-10-11,Printer ink — magenta,2,17.25,34.50
+INV-1052,2026-10-12,Printer ink — yellow,2,17.25,34.50
+INV-1053,2026-10-13,Stapler and staples set,4,8.95,35.80
+INV-1054,2026-10-14,Archive boxes (pack of 10),5,15.75,78.75
+INV-1055,2026-10-15,Whiteboard markers (pack of 8),6,7.30,43.80
+INV-1056,2026-10-16,Coffee — office kitchen (2 kg bag),2,19.99,39.98
+INV-1057,2026-10-17,Tea assortment (box of 240),2,12.45,24.90
+INV-1058,2026-10-18,Hand towels (pack of 6),3,10.20,30.60
+INV-1059,2026-10-19,Cleaning spray (case of 6),2,16.80,33.60
+INV-1060,2026-10-20,Batteries AA (pack of 24),4,9.60,38.40
+INV-1061,2026-10-21,Monitor stand,2,27.99,55.98
+INV-1062,2026-10-22,Keyboard — wireless,2,24.75,49.50
+INV-1063,2026-10-23,HDMI cable 2 m,5,8.49,42.45
+INV-1064,2026-10-24,Surge protector 6-way,3,14.99,44.97
+INV-1065,2026-10-25,Address labels (box of 1000),2,11.35,22.70
+INV-1066,2026-10-26,Tape rolls (pack of 6),8,4.85,38.80
+INV-1067,2026-10-27,Scissors (pack of 3),3,6.99,20.97
+INV-1068,2026-10-28,Ruler and stationery set,6,5.25,31.50
+INV-1069,2026-10-01,Filing cabinet — 3 drawer,1,119.00,119.00
+INV-1070,2026-10-02,Office chair mat,2,32.50,65.00
+INV-1071,2026-10-03,Desk lamp — LED,3,22.95,68.85
+INV-1072,2026-10-04,Shredder — cross-cut,1,64.99,64.99
+INV-1073,2026-10-05,Wall calendar 2027,4,7.99,31.96
+INV-1074,2026-10-06,Notebook A5 (pack of 5),10,8.60,86.00

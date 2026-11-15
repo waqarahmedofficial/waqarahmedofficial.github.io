@@ -1,0 +1,209 @@
+{
+  "name": "Lead Intake - Dedupe to Sheet + Notify | AUTHORED TO MAKE BLUEPRINT SCHEMA - NOT IMPORT-TESTED IN A LIVE MAKE ACCOUNT",
+  "flow": [
+    {
+      "id": 1,
+      "module": "gateway:CustomWebHook",
+      "version": 1,
+      "parameters": {
+        "hook": 0,
+        "maxResults": 1
+      },
+      "mapper": {},
+      "metadata": {
+        "designer": {
+          "x": 0,
+          "y": 0
+        },
+        "restore": {}
+      }
+    },
+    {
+      "id": 2,
+      "module": "tools:SetVariables",
+      "version": 1,
+      "parameters": {},
+      "mapper": {
+        "variables": [
+          {
+            "name": "CONFIG_sheetId",
+            "value": "BUYER-SUPPLIES: Google Sheet ID for the lead table"
+          },
+          {
+            "name": "CONFIG_notifyUrl",
+            "value": "BUYER-SUPPLIES: Slack/Teams/email webhook URL"
+          },
+          {
+            "name": "leads",
+            "value": "{{1.leads}}"
+          }
+        ],
+        "__IMTHOOK__": 0
+      },
+      "metadata": {
+        "designer": {
+          "x": 300,
+          "y": 0
+        },
+        "restore": {}
+      }
+    },
+    {
+      "id": 3,
+      "module": "builtin:BasicFeeder",
+      "version": 1,
+      "parameters": {},
+      "mapper": {
+        "array": "{{2.leads}}"
+      },
+      "metadata": {
+        "designer": {
+          "x": 600,
+          "y": 0
+        },
+        "restore": {}
+      }
+    },
+    {
+      "id": 4,
+      "module": "google-sheets:searchRows",
+      "version": 2,
+      "parameters": {
+        "__IMTCONN__": 0,
+        "selectFirstRow": false,
+        "maxResults": 1
+      },
+      "mapper": {
+        "sheetId": "{{2.CONFIG_sheetId}}",
+        "tableName": "leads_table",
+        "filter": [
+          [
+            {
+              "a": "email",
+              "b": "{{3.value.email}}",
+              "o": "text:equal"
+            }
+          ]
+        ]
+      },
+      "metadata": {
+        "designer": {
+          "x": 900,
+          "y": 0
+        },
+        "restore": {}
+      }
+    },
+    {
+      "id": 5,
+      "module": "builtin:BasicRouter",
+      "version": 1,
+      "parameters": {},
+      "mapper": {},
+      "metadata": {
+        "designer": {
+          "x": 1200,
+          "y": 0
+        },
+        "restore": {}
+      }
+    },
+    {
+      "id": 6,
+      "module": "google-sheets:addRow",
+      "version": 2,
+      "parameters": {
+        "__IMTCONN__": 0
+      },
+      "mapper": {
+        "sheetId": "{{2.CONFIG_sheetId}}",
+        "tableName": "leads_table",
+        "values": {
+          "company": "{{3.value.company}}",
+          "name": "{{3.value.name}}",
+          "email": "{{3.value.email}}",
+          "source": "{{3.value.source}}"
+        }
+      },
+      "metadata": {
+        "designer": {
+          "x": 1500,
+          "y": 0
+        },
+        "restore": {}
+      },
+      "filter": {
+        "name": "New lead only (no existing row)",
+        "conditions": [
+          [
+            {
+              "a": "{{4.totalCount}}",
+              "b": "0",
+              "o": "number:equal"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": 7,
+      "module": "builtin:BasicAggregator",
+      "version": 1,
+      "parameters": {
+        "target": 5,
+        "feeder": 3
+      },
+      "mapper": {},
+      "metadata": {
+        "designer": {
+          "x": 1800,
+          "y": 0
+        },
+        "restore": {}
+      }
+    },
+    {
+      "id": 8,
+      "module": "http:ActionSendData",
+      "version": 3,
+      "parameters": {},
+      "mapper": {
+        "url": "{{2.CONFIG_notifyUrl}}",
+        "method": "POST",
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": "{\"event\": \"lead-intake-run\", \"note\": \"one summary call per run, never per lead\"}"
+      },
+      "metadata": {
+        "designer": {
+          "x": 2100,
+          "y": 0
+        },
+        "restore": {}
+      }
+    }
+  ],
+  "metadata": {
+    "version": 1,
+    "scenario": {
+      "roundtrips": 1,
+      "maxErrors": 3,
+      "autoCommit": true,
+      "autoCommitTriggerLast": true,
+      "sequential": false,
+      "everlasting": false,
+      "confidential": false,
+      "dataloss": false,
+      "dlq": false,
+      "freshVariables": false
+    },
+    "designer": {
+      "orphans": []
+    },
+    "zone": "eu2.make.com"
+  }
+}

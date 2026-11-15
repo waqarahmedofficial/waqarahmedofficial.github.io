@@ -1,0 +1,62 @@
+UK packaging EPR — worked-example validation checks
+Round C 2026-11-15 | run 2026-11-15 | fictional demonstration figures only
+Fee rates: PackUK Year 2 ILLUSTRATIVE fees (GOV.UK, 16 Dec 2025) — not final rates
+
+ 1. [PASS] Dataset parses as CSV with 15 RPD columns — columns=15
+ 2. [PASS] Dataset has 11 data rows — rows=11
+ 3. [PASS] Header matches RPD column order
+ 4. [PASS] All weights are whole numbers >= 0 (RPD rule)
+ 5. [PASS] No negative weights anywhere
+ 6. [PASS] All rows submission_period = 2026-H2
+ 7. [PASS] All rows organisation_size = L (large producer)
+ 8. [PASS] All packaging_activity = PF (packer/filler)
+ 9. [PASS] Packaging types only HH / NH
+10. [PASS] All materials in the 8 RPD material categories
+11. [PASS] RAM rating present for every HH row, blank for every NH row
+12. [PASS] RAM ratings only red / amber / green
+13. [PASS] Transitional packaging column blank for all rows (2026 rule)
+14. [PASS] All weights from_country = GB and to_country = GB
+15. [PASS] Household total = 67,100 kg — 67100 kg
+16. [PASS] Non-household total = 19,050 kg — 19050 kg
+17. [PASS] Grand total = 86,150 kg (HH + NH, independent sum) — 86150 kg
+18. [PASS] HH rows = 7, NH rows = 4
+19. [PASS] Fee total method 1 = GBP 21,070.50 — GBP 21070.5
+20. [PASS] Fee total method 2 (grouped) agrees exactly — GBP 21070.5
+21. [PASS] Household tonnage for fee = 67.1 t
+22. [PASS] PET bottles 12.4t x GBP 455 = GBP 5,642.00
+23. [PASS] Flexible film 8.6t x GBP 545 = GBP 4,687.00
+24. [PASS] Glass jars 21.3t x GBP 185 = GBP 3,940.50
+25. [PASS] Cartons 15.7t x GBP 210 = GBP 3,297.00
+26. [PASS] Aluminium cans 4.2t x GBP 245 = GBP 1,029.00
+27. [PASS] Steel lids 1.8t x GBP 290 = GBP 522.00
+28. [PASS] Composite cartons 3.1t x GBP 630 = GBP 1,953.00
+29. [PASS] Red surcharge vs red-lines-at-amber = GBP 1,099.50 (green lines unchanged) — GBP 1099.5
+30. [PASS] Film red premium GBP 774.00 + composite red premium GBP 325.50 = GBP 1,099.50
+31. [PASS] Red lines cost GBP 6,640.00 now — GBP 6640.0
+32. [PASS] Same red lines at 1.6x (2027/28) = GBP 8,864.80 — GBP 8864.80
+33. [PASS] 2027/28 uplift on red lines = GBP 2,224.80
+34. [PASS] Turnover GBP 8.4m > GBP 2m threshold
+35. [PASS] 2025 packaging 210 t > 50 t threshold
+36. [PASS] Classification = LARGE producer (both tests pass) — large
+37. [PASS] 2026 annual total = 180,350 kg (H1 94,200 + H2 86,150)
+38. [PASS] 2026 annual household = 138,900 kg
+39. [PASS] Nation split sums to annual household total — 138900 kg
+40. [PASS] Nation percentages sum to 100.0% — {'England': 78.0, 'Scotland': 9.0, 'Wales': 8.0, 'Northern Ireland': 5.0}
+41. [PASS] Large-producer registration fee direct GBP 2,842 / via scheme GBP 1,803 (stated)
+42. [PASS] Small-producer registration fee direct GBP 1,303 / via scheme GBP 696 (stated)
+43. [PASS] Template parses as CSV with 18 fields — columns=18
+44. [PASS] Template has 2 EXAMPLE rows + 3 blank rows — rows=5
+45. [PASS] Example rows are marked EXAMPLE
+46. [PASS] Example row weight arithmetic: 42g x 100,000 units = 4,200 kg
+47. [PASS] Example sleeve row: 3g x 100,000 = 300 kg
+
+RESULT: 47/47 checks PASS
+
+Key outputs (fictional producer 'Woldside Foods Ltd', large producer):
+  H2 2026 household packaging: 67,100 kg (67.1 t)
+  H2 2026 non-household packaging: 19,050 kg
+  H2 2026 total: 86,150 kg
+  H2 2026 disposal-fee estimate (Year 2 illustrative): GBP 21,070.50
+  Red-rating surcharge vs red-lines-at-amber: GBP 1,099.50
+  Same red lines at 2027/28 1.6x multiplier: GBP 8,864.80 (+GBP 2,224.80)
+  2026 annual household (nation data): 138,900 kg — England 108,342, Scotland 12,501, Wales 11,112, NI 6,945

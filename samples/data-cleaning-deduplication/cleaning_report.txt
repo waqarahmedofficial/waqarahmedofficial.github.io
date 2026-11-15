@@ -1,0 +1,26 @@
+DATA CLEANING REPORT — working sample (fictional data)
+========================================================
+Source file : messy_sales.csv
+Clean file  : cleaned_sales.csv
+Cleaned by  : clean_sales.py (documented Python pipeline)
+
+ROWS
+  Rows received ............ 545
+  Duplicate rows removed ... 45 (exact copies: 25, near-duplicates: 20)
+  Clean rows delivered ..... 500
+
+FIXES APPLIED
+  Names corrected (capitalisation / spacing) ... 276
+  Dates standardised to YYYY-MM-DD ............. 371
+  Phone numbers reformatted to (XXX) XXX-XXXX .. 393
+  Amounts reformatted to plain numbers ......... 143
+
+FLAGGED — KEPT IN THE FILE, NEVER DELETED
+  Invalid e-mail addresses ... 16
+  Missing e-mail addresses ... 10
+
+RULES
+  De-duplication key: order_id (first occurrence kept).
+  Invalid or missing values are flagged in the "flags" column with the
+  reason, so the client decides what to do. Nothing is silently dropped.
+  The original file is never altered; a cleaned copy is delivered.

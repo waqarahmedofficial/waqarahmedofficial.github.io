@@ -1,0 +1,20 @@
+{
+  "rows_in": 20,
+  "rows_out": 16,
+  "headers_changed": 6,
+  "cells_trimmed": 9,
+  "empty_rows_removed": 2,
+  "dates_standardized": 14,
+  "dates_already_iso": 4,
+  "dates_unparseable": 0,
+  "date_column": "signup_date",
+  "emails_lowercased": 4,
+  "invalid_emails": 3,
+  "invalid_email_rows": [
+    5,
+    9,
+    16
+  ],
+  "email_column": "email",
+  "duplicates_removed": 2
+}

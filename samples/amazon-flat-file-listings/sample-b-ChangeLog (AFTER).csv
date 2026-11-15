@@ -1,0 +1,12 @@
+"ChangeLog — every fix, traceable by SKU. The corrected flat file is returned ready to re-upload.",,,,
+SKU,Field Changed,Old Value,New Value,Reason / Error Fixed
+NP-TMBLR-BLK-20,Product ID (UPC),850014372209,850014372201,Error 8541 — corrected check digit to match the product's registered UPC
+NP-TMBLR-TEAL-30,Size (size_name),(blank),30 oz,Error 8560 — child variation must carry its size value
+NP-CUTBOARD-LG,Material,wood (premium acacia),Acacia Wood,Error 8058 — replaced free text with the category's valid value
+NP-DRYRACK-2T,Main Image URL,.../old-path/rack.jpg,.../images/northpeak-dish-rack-main.jpg,"Error 20009 — pointed to the live image location (2000x2000, white background)"
+NP-KNIFESET-6,Number of Items,(blank),6,Error 8560 — declared set size to match title and images
+NP-SILICONE-12,Unit Count,twelve,12 / Count,Error 181207 — numeric value with valid unit type
+NP-STORAGE-8,Product ID (UPC),850014372102 (4-pack),850014372287 (8-pack),Error 8541 — used the UPC registered for the 8-pack listing
+NP-CASTIRON-10,Special Features,6 values listed,5 values (merged two heat points into one),Error 8058 — category allows a maximum of 5 special features
+NP-TEAKETTLE-2L,SKU,NP-KETTLE-OLD,NP-TEAKETTLE-2L,Error 8566 — new unique SKU; old SKU retired with the deleted listing
+NP-TMBLR-BLK-30,Parent SKU,(blank),NP-TMBLR-PARENT,Error 99010 — re-attached orphan child to its variation parent

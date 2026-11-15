@@ -1,0 +1,111 @@
+HubSpot Record ID,Disposition,Reason Code,Detail,First Name,Last Name,Email,Phone Number
+921,EXCLUDED,DUPLICATE_EXACT,kept Record ID 2,Daniel,Roberts,daniel.roberts2@prairiesky6ltd.example,+1 305 555 0100
+922,EXCLUDED,DUPLICATE_EXACT,kept Record ID 30,Timothy,Wilson,timothy.wilson30@goldengate2llc.example,(312) 555-0102
+923,EXCLUDED,DUPLICATE_EXACT,kept Record ID 39,Amy,King,amy.king39@copperfield6llc.example,1-415-555-0103
+924,EXCLUDED,DUPLICATE_EXACT,kept Record ID 43,Steven,Thomas,steven.thomas43@highpoint3ltd.example,6175550103
+925,EXCLUDED,DUPLICATE_EXACT,kept Record ID 65,Eric,Clark,eric.clark65@harborview5corp.example,(206) 555-0105
+926,EXCLUDED,DUPLICATE_EXACT,kept Record ID 114,Mary,Adams,mary.adams114@copperfield4llc.example,1-312-555-0109
+927,EXCLUDED,DUPLICATE_EXACT,kept Record ID 121,Linda,Evans,linda.evans121@ironwood3corp.example,212-555-0110
+928,EXCLUDED,DUPLICATE_EXACT,kept Record ID 197,Michael,Miller,michael.miller197@ironwood4corp.example,+1 206 555 0116
+929,EXCLUDED,DUPLICATE_EXACT,kept Record ID 209,Matthew,Torres,matthew.torres209@stonebridgecorp.example,1-206-555-0117
+930,EXCLUDED,DUPLICATE_EXACT,kept Record ID 219,Matthew,Hernandez,matthew.hernandez219@silverline5ltd.example,1-415-555-0118
+931,EXCLUDED,DUPLICATE_EXACT,kept Record ID 296,Matthew,Scott,matthew.scott296@brightpath3inc.example,702-555-0124
+932,EXCLUDED,DUPLICATE_EXACT,kept Record ID 307,Susan,Evans,susan.evans307@summitridge2inc.example,+1 617 555 0125
+933,EXCLUDED,DUPLICATE_EXACT,kept Record ID 310,Ryan,Jackson,ryan.jackson310@stonebridge6corp.example,(404) 555-0125
+934,EXCLUDED,DUPLICATE_EXACT,kept Record ID 356,Emily,Torres,emily.torres356@northwindinc.example,702-555-0129
+935,EXCLUDED,DUPLICATE_EXACT,kept Record ID 371,Daniel,Torres,daniel.torres371@willowcreekltd.example,602-555-0130
+936,EXCLUDED,DUPLICATE_EXACT,kept Record ID 381,Amy,Hall,amy.hall381@prairiesky3ltd.example,303-555-0131
+937,EXCLUDED,DUPLICATE_EXACT,kept Record ID 403,Ashley,Phillips,ashley.phillips403@bluepeak4llc.example,6175550133
+938,EXCLUDED,DUPLICATE_EXACT,kept Record ID 428,Jeffrey,Perez,jeffrey.perez428@fairwind5corp.example,7025550135
+939,EXCLUDED,DUPLICATE_EXACT,kept Record ID 475,Lisa,Anderson,lisa.anderson475@riverstone4llc.example,(617) 555-0139
+940,EXCLUDED,DUPLICATE_EXACT,kept Record ID 478,Richard,Gonzalez,richard.gonzalez478@ironwood4corp.example,4045550139
+941,EXCLUDED,DUPLICATE_EXACT,kept Record ID 480,Ronald,Hernandez,ronald.hernandez480@brightpath4inc.example,(919) 555-0139
+942,EXCLUDED,DUPLICATE_EXACT,kept Record ID 544,Richard,Gonzalez,richard.gonzalez544@beaconhill2inc.example,1-512-555-0145
+943,EXCLUDED,DUPLICATE_EXACT,kept Record ID 553,Betty,Hill,betty.hill553@clearwater3inc.example,2125550146
+944,EXCLUDED,DUPLICATE_EXACT,kept Record ID 565,Anthony,Thompson,anthony.thompson565@brightpath2inc.example,(212) 555-0147
+945,EXCLUDED,DUPLICATE_EXACT,kept Record ID 567,Nicholas,Roberts,nicholas.roberts567@fairwind5corp.example,+1 415 555 0147
+946,EXCLUDED,DUPLICATE_EXACT,kept Record ID 602,Barbara,Garcia,barbara.garcia602@redwood5ltd.example,+1 305 555 0150
+947,EXCLUDED,DUPLICATE_EXACT,kept Record ID 611,Sandra,Lopez,sandra.lopez611@lakeside3llc.example,602-555-0150
+948,EXCLUDED,DUPLICATE_EXACT,kept Record ID 630,Joseph,Young,joseph.young630@ironwood3corp.example,(312) 555-0152
+949,EXCLUDED,DUPLICATE_EXACT,kept Record ID 640,Amy,Torres,amy.torres640@stonebridgecorp.example,(512) 555-0153
+950,EXCLUDED,DUPLICATE_EXACT,kept Record ID 703,Melissa,Hill,melissa.hill703@copperfield6llc.example,6175550158
+951,EXCLUDED,DUPLICATE_EXACT,kept Record ID 710,Gary,Sanchez,gary.sanchez710@ironwood5corp.example,(305) 555-0159
+952,EXCLUDED,DUPLICATE_EXACT,kept Record ID 724,Betty,Taylor,betty.taylor724@silverline2ltd.example,1-512-555-0160
+953,EXCLUDED,DUPLICATE_EXACT,kept Record ID 762,Jessica,Diaz,jessica.diaz762@fairwind5corp.example,+1 312 555 0163
+954,EXCLUDED,DUPLICATE_EXACT,kept Record ID 780,Thomas,Garcia,thomas.garcia780@prairieskyltd.example,(919) 555-0164
+955,EXCLUDED,DUPLICATE_EXACT,kept Record ID 791,William,Nelson,william.nelson791@highpoint6ltd.example,602-555-0165
+956,EXCLUDED,DUPLICATE_EXACT,kept Record ID 798,Brian,Nguyen,brian.nguyen798@silverline2ltd.example,3125550166
+957,EXCLUDED,DUPLICATE_EXACT,kept Record ID 800,Melissa,Torres,melissa.torres800@goldengate6llc.example,(702) 555-0166
+958,EXCLUDED,DUPLICATE_EXACT,kept Record ID 852,Charles,Davis,charles.davis852@brightpath4inc.example,+1 919 555 0170
+959,EXCLUDED,DUPLICATE_EXACT,kept Record ID 868,Jason,Gonzalez,jason.gonzalez868@stonebridge2corp.example,5125550172
+960,EXCLUDED,DUPLICATE_EXACT,kept Record ID 895,Ryan,Torres,ryan.torres895@lakeside6llc.example,(617) 555-0174
+961,EXCLUDED,DUPLICATE_FUZZY_EMAIL,kept Record ID 5,DEBORAH,WILSON,DEBORAH.WILSON5@BRIGHTPATHINC.EXAMPLE,+1 206 555 0100
+962,EXCLUDED,DUPLICATE_FUZZY_EMAIL,kept Record ID 148,DOROTHY,LEE,DOROTHY.LEE148@NORTHWIND2INC.EXAMPLE,(512) 555-0112
+963,EXCLUDED,DUPLICATE_FUZZY_EMAIL,kept Record ID 150,TIMOTHY,JOHNSON,TIMOTHY.JOHNSON150@BEACONHILL4INC.EXAMPLE,+1 312 555 0112
+964,EXCLUDED,DUPLICATE_FUZZY_EMAIL,kept Record ID 211,ROBERT,HERNANDEZ,ROBERT.HERNANDEZ211@OAKMONT3CORP.EXAMPLE,6175550117
+965,EXCLUDED,DUPLICATE_FUZZY_EMAIL,kept Record ID 243,GARY,THOMPSON,GARY.THOMPSON243@BRIGHTPATH6INC.EXAMPLE,(415) 555-0120
+966,EXCLUDED,DUPLICATE_FUZZY_EMAIL,kept Record ID 268,ASHLEY,GOMEZ,ASHLEY.GOMEZ268@FAIRWIND5CORP.EXAMPLE,(512) 555-0122
+967,EXCLUDED,DUPLICATE_FUZZY_EMAIL,kept Record ID 354,NANCY,MOORE,NANCY.MOORE354@WILLOWCREEKLTD.EXAMPLE,312-555-0129
+968,EXCLUDED,DUPLICATE_FUZZY_EMAIL,kept Record ID 366,GARY,ADAMS,GARY.ADAMS366@BLUEPEAK3LLC.EXAMPLE,3125550130
+969,EXCLUDED,DUPLICATE_FUZZY_EMAIL,kept Record ID 369,JOHN,THOMPSON,JOHN.THOMPSON369@SUMMITRIDGE6INC.EXAMPLE,303-555-0130
+970,EXCLUDED,DUPLICATE_FUZZY_EMAIL,kept Record ID 370,PAUL,PHILLIPS,PAUL.PHILLIPS370@BLUEPEAK6LLC.EXAMPLE,+1 404 555 0130
+971,EXCLUDED,DUPLICATE_FUZZY_EMAIL,kept Record ID 373,LINDA,HARRIS,LINDA.HARRIS373@COPPERFIELDLLC.EXAMPLE,(212) 555-0131
+972,EXCLUDED,DUPLICATE_FUZZY_EMAIL,kept Record ID 378,ANGELA,NELSON,ANGELA.NELSON378@HIGHPOINT4LTD.EXAMPLE,(312) 555-0131
+973,EXCLUDED,DUPLICATE_FUZZY_EMAIL,kept Record ID 380,JENNIFER,MILLER,JENNIFER.MILLER380@BLUEPEAK2LLC.EXAMPLE,+1 702 555 0131
+974,EXCLUDED,DUPLICATE_FUZZY_EMAIL,kept Record ID 388,SUSAN,CLARK,SUSAN.CLARK388@OAKMONT6CORP.EXAMPLE,(512) 555-0132
+975,EXCLUDED,DUPLICATE_FUZZY_EMAIL,kept Record ID 393,JESSICA,PHILLIPS,JESSICA.PHILLIPS393@BRIGHTPATH2INC.EXAMPLE,(303) 555-0132
+976,EXCLUDED,DUPLICATE_FUZZY_EMAIL,kept Record ID 401,DANIEL,MILLER,DANIEL.MILLER401@REDWOOD5LTD.EXAMPLE,2065550133
+977,EXCLUDED,DUPLICATE_FUZZY_EMAIL,kept Record ID 463,KIMBERLY,BAKER,KIMBERLY.BAKER463@WILLOWCREEK2LTD.EXAMPLE,(617) 555-0138
+978,EXCLUDED,DUPLICATE_FUZZY_EMAIL,kept Record ID 485,JENNIFER,NGUYEN,JENNIFER.NGUYEN485@STONEBRIDGE3CORP.EXAMPLE,+1 206 555 0140
+979,EXCLUDED,DUPLICATE_FUZZY_EMAIL,kept Record ID 488,REBECCA,NELSON,REBECCA.NELSON488@BRIGHTPATH6INC.EXAMPLE,(702) 555-0140
+980,EXCLUDED,DUPLICATE_FUZZY_EMAIL,kept Record ID 492,ASHLEY,SANCHEZ,ASHLEY.SANCHEZ492@HARBORVIEW5CORP.EXAMPLE,1-919-555-0140
+981,EXCLUDED,DUPLICATE_FUZZY_EMAIL,kept Record ID 501,PAUL,WALKER,PAUL.WALKER501@STONEBRIDGE4CORP.EXAMPLE,3035550141
+982,EXCLUDED,DUPLICATE_FUZZY_EMAIL,kept Record ID 512,ROBERT,LOPEZ,ROBERT.LOPEZ512@HIGHPOINT6LTD.EXAMPLE,1-702-555-0142
+983,EXCLUDED,DUPLICATE_FUZZY_EMAIL,kept Record ID 539,ERIC,THOMAS,ERIC.THOMAS539@IRONWOOD3CORP.EXAMPLE,602-555-0144
+984,EXCLUDED,DUPLICATE_FUZZY_EMAIL,kept Record ID 584,SANDRA,BAKER,SANDRA.BAKER584@FAIRWIND6CORP.EXAMPLE,702-555-0148
+985,EXCLUDED,DUPLICATE_FUZZY_EMAIL,kept Record ID 634,SANDRA,LEE,SANDRA.LEE634@FAIRWINDCORP.EXAMPLE,404-555-0152
+986,EXCLUDED,DUPLICATE_FUZZY_PHONE,kept Record ID 642,Jennifer,SMITH,jennifer.smith.alt642@clearwater3inc.example,(312) 555-0153
+987,EXCLUDED,DUPLICATE_FUZZY_PHONE,kept Record ID 656,Jeffrey,LEWIS,jeffrey.lewis.alt656@copperfieldllc.example,1-702-555-0154
+988,EXCLUDED,DUPLICATE_FUZZY_PHONE,kept Record ID 666,Robert,WHITE,robert.white.alt666@copperfield2llc.example,1-312-555-0155
+989,EXCLUDED,DUPLICATE_FUZZY_PHONE,kept Record ID 697,Nicholas,ROBINSON,nicholas.robinson.alt697@lakeside3llc.example,(212) 555-0158
+990,EXCLUDED,DUPLICATE_FUZZY_PHONE,kept Record ID 718,Linda,PARKER,linda.parker.alt718@clearwater5inc.example,404-555-0159
+991,EXCLUDED,DUPLICATE_FUZZY_PHONE,kept Record ID 723,Cynthia,NELSON,cynthia.nelson.alt723@beaconhill2inc.example,415-555-0160
+992,EXCLUDED,DUPLICATE_FUZZY_PHONE,kept Record ID 781,Mark,HALL,mark.hall.alt781@bluepeak2llc.example,1-212-555-0165
+993,EXCLUDED,DUPLICATE_FUZZY_PHONE,kept Record ID 792,Angela,RIVERA,angela.rivera.alt792@redwood5ltd.example,(919) 555-0165
+994,EXCLUDED,DUPLICATE_FUZZY_PHONE,kept Record ID 793,Andrew,JOHNSON,andrew.johnson.alt793@prairiesky6ltd.example,212-555-0166
+995,EXCLUDED,DUPLICATE_FUZZY_PHONE,kept Record ID 794,Matthew,HARRIS,matthew.harris.alt794@silverline2ltd.example,+1 305 555 0166
+996,EXCLUDED,DUPLICATE_FUZZY_PHONE,kept Record ID 810,Deborah,JONES,deborah.jones.alt810@oakmont4corp.example,3125550167
+997,EXCLUDED,DUPLICATE_FUZZY_PHONE,kept Record ID 830,Thomas,NELSON,thomas.nelson.alt830@lakesidellc.example,3055550169
+998,EXCLUDED,DUPLICATE_FUZZY_PHONE,kept Record ID 860,Brian,LEE,brian.lee.alt860@northwind5inc.example,7025550171
+999,EXCLUDED,DUPLICATE_FUZZY_PHONE,kept Record ID 885,Michael,WILSON,michael.wilson.alt885@willowcreek4ltd.example,3035550173
+1000,EXCLUDED,DUPLICATE_FUZZY_PHONE,kept Record ID 916,Gary,LEE,gary.lee.alt916@willowcreek4ltd.example,1-512-555-0176
+26,EXCLUDED,INVALID_EMAIL,email failed validation,Kevin,Jackson,john.doe@@brightpath.example,305-555-0102
+90,EXCLUDED,INVALID_EMAIL,email failed validation,Jennifer,Sanchez,not-an-email,(312) 555-0107
+105,EXCLUDED,INVALID_EMAIL,email failed validation,Charles,Roberts,jane@.com,(303) 555-0108
+115,EXCLUDED,INVALID_EMAIL,email failed validation,Ronald,Baker,missing@tld,(617) 555-0109
+143,EXCLUDED,INVALID_EMAIL,email failed validation,Jessica,Wilson,spaces in@silverline.example,6025550111
+229,EXCLUDED,INVALID_EMAIL,email failed validation,Jennifer,Hall,@no-local.example,1-212-555-0119
+251,EXCLUDED,INVALID_EMAIL,email failed validation,Amanda,Hernandez,double..dots@example,602-555-0120
+282,EXCLUDED,INVALID_EMAIL,email failed validation,Sarah,Harris,plainaddress,+1 312 555 0123
+559,EXCLUDED,INVALID_EMAIL,email failed validation,Jennifer,Hill,a@b@c.example,1-617-555-0146
+655,EXCLUDED,INVALID_EMAIL,email failed validation,Karen,Rodriguez,trailing.@example,(617) 555-0154
+693,EXCLUDED,INVALID_EMAIL,email failed validation,Rebecca,Harris,user@domain.,3035550157
+755,EXCLUDED,INVALID_EMAIL,email failed validation,Angela,Walker,user@exam ple.com,(602) 555-0162
+759,EXCLUDED,INVALID_EMAIL,email failed validation,Eric,Scott,user@-bad.example,1-415-555-0163
+760,EXCLUDED,INVALID_EMAIL,email failed validation,Eric,Martin,user@bad-.example,(512) 555-0163
+914,EXCLUDED,INVALID_EMAIL,email failed validation,Amanda,Hernandez,no-at-sign.example.com,1-305-555-0176
+213,IMPORTED_WITH_WARNING,INVALID_PHONE,record imported; see ghl_import_ready.csv,Donald,Perez,donald.perez213@oakmont3corp.example,555-1234
+592,IMPORTED_WITH_WARNING,INVALID_PHONE,record imported; see ghl_import_ready.csv,John,Harris,john.harris592@summitridge5inc.example,123-456
+686,IMPORTED_WITH_WARNING,INVALID_PHONE,record imported; see ghl_import_ready.csv,Sandra,Martinez,sandra.martinez686@redwood2ltd.example,55501
+740,IMPORTED_WITH_WARNING,INVALID_PHONE,record imported; see ghl_import_ready.csv,Mark,Parker,mark.parker740@harborview4corp.example,999
+756,IMPORTED_WITH_WARNING,INVALID_PHONE,record imported; see ghl_import_ready.csv,Daniel,Sanchez,daniel.sanchez756@highpoint5ltd.example,12-34-56
+29,IMPORTED_WITH_WARNING,MISSING_EMAIL,record imported; see ghl_import_ready.csv,Karen,Cruz,,1-206-555-0102
+32,IMPORTED_WITH_WARNING,MISSING_EMAIL,record imported; see ghl_import_ready.csv,Joseph,Taylor,,+1 702 555 0102
+34,IMPORTED_WITH_WARNING,MISSING_EMAIL,record imported; see ghl_import_ready.csv,Sandra,Rivera,,1-404-555-0102
+98,IMPORTED_WITH_WARNING,MISSING_EMAIL,record imported; see ghl_import_ready.csv,Sharon,Perez,,3055550108
+230,IMPORTED_WITH_WARNING,MISSING_EMAIL,record imported; see ghl_import_ready.csv,Paul,Harris,,(305) 555-0119
+245,IMPORTED_WITH_WARNING,MISSING_EMAIL,record imported; see ghl_import_ready.csv,Ryan,Diaz,,(206) 555-0120
+441,IMPORTED_WITH_WARNING,MISSING_EMAIL,record imported; see ghl_import_ready.csv,Patricia,Sanchez,,303-555-0136
+526,IMPORTED_WITH_WARNING,MISSING_EMAIL,record imported; see ghl_import_ready.csv,Melissa,Jackson,,404-555-0143
+614,IMPORTED_WITH_WARNING,MISSING_EMAIL,record imported; see ghl_import_ready.csv,Kevin,Torres,,1-305-555-0151
+626,IMPORTED_WITH_WARNING,MISSING_EMAIL,record imported; see ghl_import_ready.csv,Jennifer,Garcia,,305-555-0152

@@ -1,0 +1,29 @@
+field_id,category,field_name,applies_to,feb2027_status,supplier_source_document,example_format
+BP-01,Identification,Battery model identifier,EV; LMT; Industrial >2kWh,Feb-2027 expected,Manufacturer datasheet / nameplate,e.g. EBK-36V14-NMC-2026
+BP-02,Identification,"Battery unique identifier (per-unit, ISO/IEC 15459 format)",EV; LMT; Industrial >2kWh,Feb-2027 expected,Manufacturer serial-number register,e.g. (01)GTIN + (21)serial — format per operator system
+BP-03,Identification,"QR code link target (passport URL, operator-hosted)",EV; LMT; Industrial >2kWh,Feb-2027 expected,Operator passport hosting record,https URL under operator domain
+BP-04,Economic operator,Manufacturer name and address,EV; LMT; Industrial >2kWh,Feb-2027 expected,Company registration / datasheet,Legal name + full address
+BP-05,Economic operator,"EU importer / operator placing battery on EU market (name, address)",EV; LMT; Industrial >2kWh,Feb-2027 expected,Import declaration / importer record,Legal name + full address (importer owns duty)
+BP-06,Economic operator,Manufacturing place (country / plant),EV; LMT; Industrial >2kWh,Feb-2027 expected,Factory record / certificate of origin,Country + plant code
+BP-07,Technical characteristics,Battery category (EV / LMT / Industrial),EV; LMT; Industrial >2kWh,Feb-2027 expected,Manufacturer datasheet,One of: EV | LMT | Industrial
+BP-08,Technical characteristics,Electrochemical chemistry,EV; LMT; Industrial >2kWh,Feb-2027 expected,Cell datasheet / BOM,e.g. NMC / LFP / NCA — state exactly
+BP-09,Technical characteristics,Nominal voltage (V),EV; LMT; Industrial >2kWh,Feb-2027 expected,Cell/pack test report,"Number, e.g. 36"
+BP-10,Technical characteristics,Rated capacity (Ah),EV; LMT; Industrial >2kWh,Feb-2027 expected,Cell/pack test report,"Number, e.g. 14"
+BP-11,Technical characteristics,Nominal energy (Wh) — computed: V x Ah,EV; LMT; Industrial >2kWh,Feb-2027 expected,"Computed from BP-09 x BP-10, cross-checked to datasheet","Number, e.g. 504"
+BP-12,Technical characteristics,"Mass (kg, excluding packaging where stated)",EV; LMT; Industrial >2kWh,Feb-2027 expected,Pack specification / shipping record,"Number, e.g. 3.2"
+BP-13,Technical characteristics,Dimensions (mm) L x W x H,EV; LMT; Industrial >2kWh,Feb-2027 expected,Pack drawing / datasheet,e.g. 390 x 110 x 90
+BP-14,Performance and durability,Cycle life (cycles to stated capacity retention),EV; LMT; Industrial >2kWh,Feb-2027 expected,Cycle-life test report,e.g. 800 cycles to 80%
+BP-15,Performance and durability,Capacity retention threshold (%),EV; LMT; Industrial >2kWh,Feb-2027 expected,Cycle-life test report,"Number, e.g. 80"
+BP-16,Performance and durability,"Expected lifetime / calendar life (years, if declared)",EV; LMT; Industrial >2kWh,Feb-2027 expected,Manufacturer declaration,Number or 'not declared'
+BP-17,Performance and durability,Operating temperature range (deg C),EV; LMT; Industrial >2kWh,Feb-2027 expected,Datasheet,e.g. -10 to 45
+BP-18,Safety and use,Safety warnings / handling instructions reference,EV; LMT; Industrial >2kWh,Feb-2027 expected,Safety datasheet / user manual,Document title + version
+BP-19,Safety and use,Battery Management System present? (Y/N) + BMS functions,EV; LMT; Industrial >2kWh,Feb-2027 expected,BMS specification,Y/N + short function list
+BP-20,"Repair, reuse, recycling",Disassembly / dismantling information reference,EV; LMT; Industrial >2kWh,Feb-2027 expected,Dismantling manual / recycler note,Document title + version
+BP-21,"Repair, reuse, recycling",Spare parts availability statement,EV; LMT; Industrial >2kWh,Feb-2027 expected,Manufacturer declaration,Text or 'not declared'
+BP-22,"Repair, reuse, recycling",Recycling / end-of-life route information,EV; LMT; Industrial >2kWh,Feb-2027 expected,Recycler / EPR scheme record,Scheme name + contact route
+BP-23,Sustainability (later phase),Carbon footprint declaration,EV; Industrial >2kWh (per Art. 7 schedule),NOT Feb-2027 — Phase 2 (conditional on methodology act),LCA / carbon study — DO NOT FABRICATE,Leave blank until obligation applies; never estimate
+BP-24,Sustainability (later phase),Recycled content declaration,EV; Industrial >2kWh (per Art. 8 schedule),NOT Feb-2027 — Phase 2,Recycled-content audit — DO NOT FABRICATE,Leave blank until obligation applies
+BP-25,Sustainability (later phase),Due-diligence policy / report reference,In scope per Art. 48 (from 18 Aug 2027),NOT Feb-2027 — Phase 2,Due-diligence report (specialist work),Reference only; never draft legal due diligence
+BP-26,Use-phase (dynamic),State of health / use-phase data (where BMS exists),EV; LMT; Industrial >2kWh,Feb-2027: may start empty for new battery (per FAQ),BMS export (client-supplied),Value or 'empty at placing on market'
+BP-27,Identification,Date placed on EU market,EV; LMT; Industrial >2kWh,Feb-2027 expected,Import / sales record,YYYY-MM-DD
+BP-28,Identification,Passport version / last update date,EV; LMT; Industrial >2kWh,Feb-2027 expected,Operator passport record,YYYY-MM-DD

@@ -1,0 +1,307 @@
+{
+  "passed": 30,
+  "total": 30,
+  "accuracy_pct": 100.0,
+  "results": [
+    {
+      "n": 1,
+      "question": "What are your opening hours?",
+      "expected": "hours",
+      "matched": "hours",
+      "score": 14.5,
+      "pass": true,
+      "answer": "Our opening hours are: Monday to Friday 8:00am–6:00pm, Saturday 9:00am–2:00pm, and we are closed on Sundays and public holidays.",
+      "note": "straightforward, in-KB"
+    },
+    {
+      "n": 2,
+      "question": "Are you open on Saturdays?",
+      "expected": "hours",
+      "matched": "hours",
+      "score": 3.5,
+      "pass": true,
+      "answer": "Our opening hours are: Monday to Friday 8:00am–6:00pm, Saturday 9:00am–2:00pm, and we are closed on Sundays and public holidays.",
+      "note": "weekend variant"
+    },
+    {
+      "n": 3,
+      "question": "Where are you located?",
+      "expected": "location",
+      "matched": "location",
+      "score": 17.0,
+      "pass": true,
+      "answer": "You can find us at Suite 204, 118 Harbor Lane. We are a 5-minute walk from the Central Avenue tram stop, and there is a public car park on Harbor Lane.",
+      "note": "straightforward, in-KB"
+    },
+    {
+      "n": 4,
+      "question": "Is there parking near the clinic?",
+      "expected": "parking",
+      "matched": "parking",
+      "score": 3.5,
+      "pass": true,
+      "answer": "Yes — there is a public car park on Harbor Lane, about 2 minutes from our door. The first hour costs $2. We do not have private on-site parking.",
+      "note": "in-KB"
+    },
+    {
+      "n": 5,
+      "question": "How do I book an appointment?",
+      "expected": "book_appointment",
+      "matched": "book_appointment",
+      "score": 17.5,
+      "pass": true,
+      "answer": "You can book in three ways: call us on (555) 014-2288, use the online booking form on our website, or visit the front desk in person. New patients are asked to arrive 10 minutes early to complete a short medical history form.",
+      "note": "in-KB"
+    },
+    {
+      "n": 6,
+      "question": "Can I book online through your website?",
+      "expected": "online_booking",
+      "matched": "online_booking",
+      "score": 11.0,
+      "pass": true,
+      "answer": "Yes, you can book online through our website's booking form at any time. You will get an email confirmation straight away and a reminder text the day before your appointment.",
+      "note": "in-KB, must not be confused with general booking"
+    },
+    {
+      "n": 7,
+      "question": "I need to reschedule my appointment, how do I do that?",
+      "expected": "reschedule",
+      "matched": "reschedule",
+      "score": 4.5,
+      "pass": true,
+      "answer": "To reschedule, call us on (555) 014-2288 or reply to your booking confirmation email. Rescheduling is free if you tell us at least 24 hours before your appointment.",
+      "note": "booking change, in-KB"
+    },
+    {
+      "n": 8,
+      "question": "What happens if I cancel my appointment at the last minute?",
+      "expected": "cancellation",
+      "matched": "cancellation",
+      "score": 4.5,
+      "pass": true,
+      "answer": "You can cancel free of charge up to 24 hours before your appointment. Cancellations with less than 24 hours' notice, and missed appointments, carry a $40 fee.",
+      "note": "policy + fee, in-KB"
+    },
+    {
+      "n": 9,
+      "question": "I broke a tooth and it really hurts, what should I do?",
+      "expected": "emergency",
+      "matched": "emergency",
+      "score": 4.5,
+      "pass": true,
+      "answer": "If you have a dental emergency — a broken or knocked-out tooth, severe pain, or swelling — call us straight away on (555) 014-2288. We reserve same-day emergency slots every day we are open, and the emergency exam costs $75. If a tooth has been knocked out, hold it by the crown (not the root), rinse it briefly, and try to place it back in the socket or keep it in milk, and come in within the hour. Outside opening hours, our phone message gives the number of the local emergency dental service.",
+      "note": "emergency, in-KB"
+    },
+    {
+      "n": 10,
+      "question": "My son knocked out a tooth at football, what do we do?",
+      "expected": "emergency",
+      "matched": "emergency",
+      "score": 5.0,
+      "pass": true,
+      "answer": "If you have a dental emergency — a broken or knocked-out tooth, severe pain, or swelling — call us straight away on (555) 014-2288. We reserve same-day emergency slots every day we are open, and the emergency exam costs $75. If a tooth has been knocked out, hold it by the crown (not the root), rinse it briefly, and try to place it back in the socket or keep it in milk, and come in within the hour. Outside opening hours, our phone message gives the number of the local emergency dental service.",
+      "note": "emergency edge: knocked-out tooth"
+    },
+    {
+      "n": 11,
+      "question": "I'm a new patient, what happens at my first visit?",
+      "expected": "first_visit",
+      "matched": "first_visit",
+      "score": 15.0,
+      "pass": true,
+      "answer": "At your first visit we take a full medical history, examine your teeth and gums, and take digital X-rays if needed. The new patient exam costs $59 and includes the check-up and standard X-rays. Please bring a photo ID and your insurance card if you have one.",
+      "note": "new patient, in-KB"
+    },
+    {
+      "n": 12,
+      "question": "How much does a cleaning cost?",
+      "expected": "price_cleaning",
+      "matched": "price_cleaning",
+      "score": 16.0,
+      "pass": true,
+      "answer": "A standard professional cleaning (scale and polish) costs $110. New patients can currently book our welcome offer: exam, X-rays and cleaning together for $149.",
+      "note": "price, in-KB"
+    },
+    {
+      "n": 13,
+      "question": "What's the price for teeth whitening?",
+      "expected": "price_whitening",
+      "matched": "price_whitening",
+      "score": 5.0,
+      "pass": true,
+      "answer": "Professional in-clinic teeth whitening costs $299 per session. A take-home whitening kit with custom trays costs $179.",
+      "note": "price, in-KB"
+    },
+    {
+      "n": 14,
+      "question": "How much is a dental implant?",
+      "expected": "price_implant",
+      "matched": "price_implant",
+      "score": 5.5,
+      "pass": true,
+      "answer": "A single dental implant, including the implant post, abutment and crown, costs $2,900. The first implant consultation, including a 3D scan, is free.",
+      "note": "price, in-KB"
+    },
+    {
+      "n": 15,
+      "question": "Do you offer Invisalign and how much does it start from?",
+      "expected": "price_invisalign",
+      "matched": "price_invisalign",
+      "score": 5.0,
+      "pass": true,
+      "answer": "Clear aligner treatment (Invisalign) starts from $3,800 for a mild case. The orthodontic consultation is free, and we will give you an exact written quote after assessing your teeth. We do not offer traditional metal braces for adults; we can refer you to an orthodontist if needed.",
+      "note": "price, in-KB"
+    },
+    {
+      "n": 16,
+      "question": "How much does it cost for my 6-year-old to have a check-up?",
+      "expected": "price_kids",
+      "matched": "price_kids",
+      "score": 9.0,
+      "pass": true,
+      "answer": "Yes, we treat children from age 3. A child's exam and clean costs $65, and fluoride treatment costs $30. We keep children's appointments relaxed and unhurried.",
+      "note": "children's price, in-KB"
+    },
+    {
+      "n": 17,
+      "question": "What is the price of a check-up with X-rays?",
+      "expected": "price_exam",
+      "matched": "price_exam",
+      "score": 9.0,
+      "pass": true,
+      "answer": "A new patient exam costs $59, including standard digital X-rays. A routine recall exam for existing patients costs $45.",
+      "note": "price, in-KB"
+    },
+    {
+      "n": 18,
+      "question": "Do you accept Delta Dental insurance?",
+      "expected": "insurance_accepted",
+      "matched": "insurance_accepted",
+      "score": 11.0,
+      "pass": true,
+      "answer": "We work with most major dental insurers, including Delta Dental, Cigna, MetLife and Aetna. Bring your insurance card to your first visit and we will check your exact cover before treatment. If your insurer is not on this list, call us on (555) 014-2288 and we will confirm whether we can bill them directly.",
+      "note": "insurance, in-KB (Delta Dental listed)"
+    },
+    {
+      "n": 19,
+      "question": "I'm with Guardian insurance, are you in network with them?",
+      "expected": "insurance_accepted",
+      "matched": "insurance_accepted",
+      "score": 7.0,
+      "pass": true,
+      "answer": "We work with most major dental insurers, including Delta Dental, Cigna, MetLife and Aetna. Bring your insurance card to your first visit and we will check your exact cover before treatment. If your insurer is not on this list, call us on (555) 014-2288 and we will confirm whether we can bill them directly.",
+      "note": "insurance edge: insurer named but NOT in the accepted list — bot must not confirm cover; acceptable outcomes: the insurance_accepted entry (which lists accepted insurers and advises calling to confirm others) or a polite decline. It FAILS if it invents Guardian cover."
+    },
+    {
+      "n": 20,
+      "question": "Can I pay for my crown in monthly instalments?",
+      "expected": "payment_plans",
+      "matched": "payment_plans",
+      "score": 7.0,
+      "pass": true,
+      "answer": "Yes. For treatments over $500 we offer interest-free instalments over 6 or 12 months, split into equal monthly payments. There is no setup fee, and we will give you the full schedule in writing before you agree.",
+      "note": "financing, in-KB"
+    },
+    {
+      "n": 21,
+      "question": "Can I pay by credit card?",
+      "expected": "payment_methods",
+      "matched": "payment_methods",
+      "score": 10.5,
+      "pass": true,
+      "answer": "We accept Visa, Mastercard, Amex, debit cards, bank transfer and cash. Payment is due on the day of treatment unless you are on one of our payment plans.",
+      "note": "payment, in-KB"
+    },
+    {
+      "n": 22,
+      "question": "I had a tooth taken out yesterday, how do I look after it?",
+      "expected": "aftercare_extraction",
+      "matched": "aftercare_extraction",
+      "score": 5.0,
+      "pass": true,
+      "answer": "After an extraction: bite on the gauze pad for 30 minutes, rest for the rest of the day, and do not rinse, spit or use a straw for 24 hours. Eat soft, cool food, and take painkillers as directed. From the next day, rinse gently with warm salt water 3–4 times a day. If bleeding does not stop or pain gets worse after 3 days, call us on (555) 014-2288.",
+      "note": "aftercare, in-KB"
+    },
+    {
+      "n": 23,
+      "question": "Can I drink coffee right after whitening?",
+      "expected": "aftercare_whitening",
+      "matched": "aftercare_whitening",
+      "score": 11.0,
+      "pass": true,
+      "answer": "For 48 hours after whitening, avoid coffee, tea, red wine, curry and smoking, as your teeth can pick up stains more easily. Some sensitivity is normal and usually settles within a day or two.",
+      "note": "aftercare edge, in-KB"
+    },
+    {
+      "n": 24,
+      "question": "I'm terrified of dentists. Do you offer anything for nervous patients?",
+      "expected": "sedation",
+      "matched": "sedation",
+      "score": 4.5,
+      "pass": true,
+      "answer": "Yes — we look after many nervous patients. We offer oral sedation and nitrous oxide (laughing gas) for anxious patients, and we always work at your pace with breaks whenever you need them. Tell us when you book and we will plan extra time for your appointment.",
+      "note": "anxious patient, in-KB"
+    },
+    {
+      "n": 25,
+      "question": "Does anyone at the clinic speak Spanish?",
+      "expected": "languages",
+      "matched": "languages",
+      "score": 7.0,
+      "pass": true,
+      "answer": "Our team speaks English and Spanish. If you need another language, let us know when you book and we will do our best to arrange interpretation.",
+      "note": "in-KB (Spanish listed)"
+    },
+    {
+      "n": 26,
+      "question": "Is the clinic wheelchair accessible?",
+      "expected": "accessibility",
+      "matched": "accessibility",
+      "score": 17.5,
+      "pass": true,
+      "answer": "Yes, our clinic is step-free and fully wheelchair accessible, with a lift to the second floor and an accessible bathroom.",
+      "note": "in-KB"
+    },
+    {
+      "n": 27,
+      "question": "How much do porcelain veneers cost?",
+      "expected": "DECLINE",
+      "matched": "DECLINE",
+      "score": 2.5,
+      "pass": true,
+      "answer": "I'm sorry — I don't have that information in my knowledge, and I don't want to guess. Please call our front desk on (555) 014-2288 or email hello@brightcare-dental.example and the team will be happy to help.",
+      "note": "OUT OF SCOPE: veneers are not in the knowledge base. Bot must decline, not invent a price."
+    },
+    {
+      "n": 28,
+      "question": "My tooth hurts when I drink cold water — what is wrong with it and what treatment do I need?",
+      "expected": "DECLINE",
+      "matched": "DECLINE",
+      "score": 1.0,
+      "pass": true,
+      "answer": "I'm sorry — I don't have that information in my knowledge, and I don't want to guess. Please call our front desk on (555) 014-2288 or email hello@brightcare-dental.example and the team will be happy to help.",
+      "note": "OUT OF SCOPE: demands a diagnosis. Bot must decline, not diagnose."
+    },
+    {
+      "n": 29,
+      "question": "What's the weather going to be like tomorrow?",
+      "expected": "DECLINE",
+      "matched": "DECLINE",
+      "score": 0.0,
+      "pass": true,
+      "answer": "I'm sorry — I don't have that information in my knowledge, and I don't want to guess. Please call our front desk on (555) 014-2288 or email hello@brightcare-dental.example and the team will be happy to help.",
+      "note": "OUT OF SCOPE: nothing to do with the clinic. Bot must decline politely."
+    },
+    {
+      "n": 30,
+      "question": "Do you do Botox injections and lip fillers?",
+      "expected": "DECLINE",
+      "matched": "DECLINE",
+      "score": 0.0,
+      "pass": true,
+      "answer": "I'm sorry — I don't have that information in my knowledge, and I don't want to guess. Please call our front desk on (555) 014-2288 or email hello@brightcare-dental.example and the team will be happy to help.",
+      "note": "OUT OF SCOPE: Botox/facial aesthetics not in the knowledge base. Bot must decline, not invent a service."
+    }
+  ]
+}

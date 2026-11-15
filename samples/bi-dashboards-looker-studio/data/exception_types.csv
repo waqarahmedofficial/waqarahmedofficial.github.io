@@ -1,0 +1,6 @@
+exception_type,count,gross_value_abs,signed_impact
+Missing from settlement,5,294.45,-294.45
+Duplicate payout,2,160.18,160.18
+Refund deducted twice,2,107.48,-107.48
+Fee overcharge,4,13.67,-13.67
+Wrong payout amount,1,13.47,-13.47

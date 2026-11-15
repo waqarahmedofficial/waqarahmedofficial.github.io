@@ -1,0 +1,248 @@
+{
+  "name": "Invoice Extraction - Table + Exceptions | AUTHORED TO MAKE BLUEPRINT SCHEMA - NOT IMPORT-TESTED IN A LIVE MAKE ACCOUNT",
+  "flow": [
+    {
+      "id": 1,
+      "module": "gateway:CustomWebHook",
+      "version": 1,
+      "parameters": {
+        "hook": 0,
+        "maxResults": 1
+      },
+      "mapper": {},
+      "metadata": {
+        "designer": {
+          "x": 0,
+          "y": 0
+        },
+        "restore": {}
+      }
+    },
+    {
+      "id": 2,
+      "module": "tools:SetVariables",
+      "version": 1,
+      "parameters": {},
+      "mapper": {
+        "variables": [
+          {
+            "name": "CONFIG_folderId",
+            "value": "BUYER-SUPPLIES: Drive folder ID where invoices are dropped"
+          },
+          {
+            "name": "CONFIG_sheetId",
+            "value": "BUYER-SUPPLIES: Sheet ID with 'Invoices' and 'Exceptions' tabs"
+          },
+          {
+            "name": "CONFIG_parserConn",
+            "value": "BUYER-SUPPLIES: connection ID of the buyer's PDF/text parser"
+          }
+        ]
+      },
+      "metadata": {
+        "designer": {
+          "x": 300,
+          "y": 0
+        },
+        "restore": {}
+      }
+    },
+    {
+      "id": 3,
+      "module": "google-drive:ListFiles",
+      "version": 1,
+      "parameters": {
+        "__IMTCONN__": 0
+      },
+      "mapper": {
+        "folderId": "{{2.CONFIG_folderId}}",
+        "limit": 500
+      },
+      "metadata": {
+        "designer": {
+          "x": 600,
+          "y": 0
+        },
+        "restore": {}
+      }
+    },
+    {
+      "id": 4,
+      "module": "builtin:BasicFeeder",
+      "version": 1,
+      "parameters": {},
+      "mapper": {
+        "array": "{{3.data}}"
+      },
+      "metadata": {
+        "designer": {
+          "x": 900,
+          "y": 0
+        },
+        "restore": {}
+      }
+    },
+    {
+      "id": 5,
+      "module": "http:ActionSendData",
+      "version": 3,
+      "parameters": {
+        "__IMTCONN__": 0
+      },
+      "mapper": {
+        "url": "BUYER-SUPPLIES: parser endpoint",
+        "note": "Returns extracted text/fields per file. A file that cannot be parsed returns an error bundle, which the error route below flags - the scenario does not crash."
+      },
+      "metadata": {
+        "designer": {
+          "x": 1200,
+          "y": 0
+        },
+        "restore": {}
+      }
+    },
+    {
+      "id": 6,
+      "module": "tools:SetVariables",
+      "version": 1,
+      "parameters": {},
+      "mapper": {
+        "variables": [
+          {
+            "name": "invoiceNumber",
+            "value": "{{5.invoiceNumber}}"
+          },
+          {
+            "name": "date",
+            "value": "{{5.date}}"
+          },
+          {
+            "name": "vendor",
+            "value": "{{5.vendor}}"
+          },
+          {
+            "name": "total",
+            "value": "{{5.total}}"
+          },
+          {
+            "name": "complete",
+            "value": "{{if(5.invoiceNumber != ''; if(5.date != ''; if(5.total != ''; 1; 0); 0); 0)}}"
+          }
+        ]
+      },
+      "metadata": {
+        "designer": {
+          "x": 1500,
+          "y": 0
+        },
+        "restore": {}
+      }
+    },
+    {
+      "id": 7,
+      "module": "builtin:BasicRouter",
+      "version": 1,
+      "parameters": {},
+      "mapper": {},
+      "metadata": {
+        "designer": {
+          "x": 1800,
+          "y": 0
+        },
+        "restore": {}
+      }
+    },
+    {
+      "id": 8,
+      "module": "google-sheets:addRow",
+      "version": 2,
+      "parameters": {
+        "__IMTCONN__": 0
+      },
+      "mapper": {
+        "sheetId": "{{2.CONFIG_sheetId}}",
+        "tableName": "Invoices",
+        "values": {
+          "file": "{{4.value.name}}",
+          "invoiceNumber": "{{6.invoiceNumber}}",
+          "date": "{{6.date}}",
+          "vendor": "{{6.vendor}}",
+          "total": "{{6.total}}"
+        }
+      },
+      "metadata": {
+        "designer": {
+          "x": 2100,
+          "y": 0
+        },
+        "restore": {}
+      },
+      "filter": {
+        "name": "Complete extraction",
+        "conditions": [
+          [
+            {
+              "a": "{{6.complete}}",
+              "b": "1",
+              "o": "number:equal"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": 9,
+      "module": "google-sheets:addRow",
+      "version": 2,
+      "parameters": {
+        "__IMTCONN__": 0
+      },
+      "mapper": {
+        "sheetId": "{{2.CONFIG_sheetId}}",
+        "tableName": "Exceptions",
+        "values": {
+          "file": "{{4.value.name}}",
+          "issue": "Missing or unparseable fields - flagged for a human"
+        }
+      },
+      "metadata": {
+        "designer": {
+          "x": 2100,
+          "y": 0
+        },
+        "restore": {}
+      },
+      "filter": {
+        "name": "Exception - flag for a human",
+        "conditions": [
+          [
+            {
+              "a": "{{6.complete}}",
+              "b": "0",
+              "o": "number:equal"
+            }
+          ]
+        ]
+      }
+    }
+  ],
+  "metadata": {
+    "version": 1,
+    "scenario": {
+      "roundtrips": 1,
+      "maxErrors": 3,
+      "autoCommit": true,
+      "autoCommitTriggerLast": true,
+      "sequential": false,
+      "everlasting": false,
+      "confidential": false,
+      "dataloss": false,
+      "dlq": false,
+      "freshVariables": false
+    },
+    "designer": {
+      "orphans": []
+    },
+    "zone": "eu2.make.com"
+  }
+}

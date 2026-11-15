@@ -1,0 +1,8 @@
+Gig 4 sample — build report (all data fictional)
+Niche: dental clinics in Texas, USA
+Total leads: 100
+With email: 100 (100%)
+With phone: 94 (94%)
+With named contact + role: 100 (100%)
+Unique cities: 18
+Files: b2b_lead_list_sample.csv, b2b_lead_list_sample.xlsx (tabs: Leads, Outreach Tracker)

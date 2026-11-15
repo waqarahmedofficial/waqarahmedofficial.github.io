@@ -1,0 +1,13 @@
+Project ID,Project Name,Client ID,Service Type,Status,Start Date,Due Date,Fee,Tasks Count,Total Task Hours,Billed Total,Paid Total,Outstanding
+PRJ-001,Verdant Rebrand 2025,CL-001,Brand Identity,Delivered,2025-01-06,2025-02-14,4800.00,4,32,4800.00,4800.00,0.00
+PRJ-002,Verdant Spring Campaign,CL-001,Content Retainer,In Review,2025-03-03,2025-04-11,2600.00,3,16.5,2600.00,1300.00,1300.00
+PRJ-003,Harbor & Finch Website Redesign,CL-002,Website Design,Delivered,2024-11-04,2024-12-20,6200.00,4,40,6200.00,6200.00,0.00
+PRJ-004,Harbor & Finch Social Pack Q2,CL-002,Social Media Pack,Design,2025-04-07,2025-05-16,1900.00,2,11,950.00,400.00,550.00
+PRJ-005,Bluepeak Product Launch Content,CL-003,Content Retainer,Design,2025-03-17,2025-05-02,3400.00,3,21,3400.00,1700.00,1700.00
+PRJ-006,Bluepeak Brand Refresh,CL-003,Brand Identity,Discovery,2025-05-05,2025-06-27,5100.00,2,10.5,0.00,0.00,0.00
+PRJ-007,Meadow Lane Menu & Signage,CL-004,Brand Identity,Delivered,2025-02-03,2025-03-07,1750.00,2,13,1750.00,1750.00,0.00
+PRJ-008,Summit Legal Website,CL-005,Website Design,Delivered,2024-06-03,2024-07-26,7000.00,3,26,7000.00,7000.00,0.00
+PRJ-009,Petal & Post Spring Socials,CL-006,Social Media Pack,In Review,2025-03-24,2025-04-25,1500.00,2,9,0.00,0.00,0.00
+PRJ-010,Northwind Discovery Sprint,CL-007,Brand Identity,Discovery,2025-06-16,2025-06-27,900.00,1,5,0.00,0.00,0.00
+PRJ-011,Casa Verde Menu Content,CL-008,Content Retainer,On Hold,2025-04-14,2025-05-30,2300.00,2,10.5,1150.00,0.00,1150.00
+PRJ-012,Casa Verde Website Refresh,CL-008,Website Design,Design,2025-05-12,2025-06-20,5400.00,2,14,0.00,0.00,0.00

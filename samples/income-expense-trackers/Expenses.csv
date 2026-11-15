@@ -1,0 +1,5 @@
+Expenses,,,,
+"Optional. Business costs (software, fees, internet share). Dashboard shows Net = Received − Expenses.",,,,
+,,,,
+Date,Item,Category,Amount,Notes
+2026-01-03 00:00:00,Design software — monthly,Software,25,SAMPLE — delete

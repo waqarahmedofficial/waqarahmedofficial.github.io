@@ -1,0 +1,29 @@
+rows_in: 600
+rows_out: 545
+duplicates_removed: 55
+exact_duplicates_removed: 29
+near_duplicates_removed: 26
+names_recased: 220
+phones_reformatted: 470
+dates_standardised: 487
+statuses_normalised: 490
+companies_standardised: 207
+missing_email_flagged: 24
+missing_phone_flagged: 33
+
+CRM CLEANING REPORT — working sample on fictional data
+========================================================
+Records received (messy export): 600
+Clean records delivered: 545
+Duplicates removed (merged): 55
+  of which exact duplicates: 29
+  of which near duplicates: 26
+Names re-cased / spacing fixed: 220
+Phone numbers reformatted to (555) 000-0000: 470
+Last-contact dates standardised to YYYY-MM-DD: 487
+Statuses normalised to the clean set (New Lead / Working / Qualified / Customer / Inactive): 490
+Company names standardised (Ltd/Inc variants): 207
+Records flagged: missing e-mail (kept, never deleted): 24
+Records flagged: missing phone (kept, never deleted): 33
+
+Dedupe rule: rows grouped when they share a normalised e-mail, the same phone digits, or the same name + normalised company; the most complete record survives and absorbs any missing fields. Every merge is listed in merge_map.csv. Original record IDs are kept, so re-importing updates existing records instead of creating new ones.

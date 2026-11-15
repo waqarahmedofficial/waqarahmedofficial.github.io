@@ -1,0 +1,9 @@
+Settings — change these once,,
+,,
+Setting,Your value,Notes
+Your name / business,Your Name Here,Shown on Dashboard.
+Currency symbol,$,"Change to £, €, etc. Amounts keep their numbers."
+Currency code,USD,For your own reference.
+Default tax rate (%),0,Reference only — enter the actual tax amount per invoice.
+Year,2026,The year this tracker covers.
+Monthly income goal,3000,Dashboard shows progress vs this goal.

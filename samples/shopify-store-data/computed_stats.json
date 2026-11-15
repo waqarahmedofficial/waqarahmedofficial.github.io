@@ -1,0 +1,470 @@
+{
+ "stats": {
+  "total_products": 21,
+  "total_variants": 466,
+  "fully_sold_out": 3,
+  "partially_available": 15,
+  "fully_available": 3,
+  "fully_sold_out_titles": [
+   "Garage Shop Towels - (Pack of 50)",
+   "Cabana Beach Towel Set 100% Cotton, Pack of 4",
+   "Cotton Bath Mats Set of 2 Not a Bathroom Rug"
+  ],
+  "partial_titles": [
+   "3-Piece Cotton Bath Towel Set",
+   "8 Piece Cotton Bath Towel Set Soft, Absorbent & Hotel-Quality",
+   "Microfiber Cleaning Cloths Pack of 12 & 24",
+   "Facial Spa Terry Headbands - (Pack of 3)",
+   "Deep Knit Jersey Sheet Set 100% Cotton",
+   "Dish Cloths & Kitchen Towels 100% Cotton",
+   "Salon & Spa Towels 100% Cotton, Pack of 24",
+   "Jersey Knit Fitted Sheet and Pillow Cases",
+   "Cotton Terry Bathrobe 100% Cotton Unisex",
+   "Cotton Bath, Hand & Face Towels",
+   "Everyday Essential 100% Cotton Bath Towels, Pack of 4",
+   "Kitchen Bar Mops Pack of 12",
+   "Makeup Remover Washcloths - 6 Piece Cotton Towels",
+   "Cotton Washcloths Premium Quality Flannel Face Cloths - Available in Pack of 12, 20, and 24",
+   "Pet Grooming Towel 100% Cotton"
+  ],
+  "products_with_any_discount": 21,
+  "products_no_discount_anywhere": 0,
+  "no_discount_titles": [],
+  "variants_with_compare_at": 466,
+  "variants_discounted": 466,
+  "avg_discount_pct_discounted_variants": 24.1,
+  "empty_desc": [],
+  "short_desc_under50w": [],
+  "one_image_titles": [],
+  "one_image_count": 0,
+  "near_dup_pairs": [],
+  "caps_titles": [],
+  "all_have_published_at": true,
+  "vendors": [
+   "DAN RIVER",
+   "Dan River"
+  ],
+  "types": [
+   ""
+  ]
+ },
+ "rows": [
+  {
+   "title": "Cloud Plush Oversized Cotton Bath Sheets",
+   "handle": "premium-bath-sheet",
+   "vendor": "DAN RIVER",
+   "type": "",
+   "price_min": 38.99,
+   "price_max": 60.99,
+   "compare_min": 50.84,
+   "variants": 67,
+   "avail_variants": 67,
+   "images": 71,
+   "desc_words": 134,
+   "published_at": "2026-07-20T16:24:53+05:00",
+   "created_at": "2026-07-20T16:24:53+05:00",
+   "updated_at": "2026-10-26T15:15:44+05:00",
+   "tags": [
+    "bath sheets",
+    "bathroom essentials",
+    "cloud plush",
+    "luxury towels",
+    "MCF",
+    "soft towels"
+   ]
+  },
+  {
+   "title": "Unisex Cotton Bath Wrap with Elastic Top & Pocket",
+   "handle": "bath-wrap",
+   "vendor": "Dan River",
+   "type": "",
+   "price_min": 35.99,
+   "price_max": 35.99,
+   "compare_min": 45.84,
+   "variants": 5,
+   "avail_variants": 5,
+   "images": 25,
+   "desc_words": 170,
+   "published_at": "2026-01-02T11:53:08+05:00",
+   "created_at": "2025-12-27T12:48:43+05:00",
+   "updated_at": "2026-10-26T15:15:44+05:00",
+   "tags": [
+    "MCF"
+   ]
+  },
+  {
+   "title": "Extra Large Bath Towels 30x60, 4-Pack 100% Cotton, Quick-Drying",
+   "handle": "large-bath-towel-4-pack",
+   "vendor": "Dan River",
+   "type": "",
+   "price_min": 55.99,
+   "price_max": 55.99,
+   "compare_min": 65.84,
+   "variants": 10,
+   "avail_variants": 10,
+   "images": 50,
+   "desc_words": 155,
+   "published_at": "2025-10-20T12:54:33+05:00",
+   "created_at": "2025-10-20T12:54:30+05:00",
+   "updated_at": "2026-10-26T15:15:44+05:00",
+   "tags": [
+    "MCF"
+   ]
+  },
+  {
+   "title": "3-Piece Cotton Bath Towel Set",
+   "handle": "3-piece-bath-towel-sets",
+   "vendor": "DAN RIVER",
+   "type": "",
+   "price_min": 30.99,
+   "price_max": 30.99,
+   "compare_min": 40.84,
+   "variants": 7,
+   "avail_variants": 4,
+   "images": 35,
+   "desc_words": 157,
+   "published_at": "2025-06-03T12:55:07+05:00",
+   "created_at": "2025-06-03T12:55:07+05:00",
+   "updated_at": "2026-10-26T15:15:44+05:00",
+   "tags": [
+    "bath towels",
+    "bathroom essentials",
+    "decorative towels",
+    "home decor",
+    "towel sets"
+   ]
+  },
+  {
+   "title": "8 Piece Cotton Bath Towel Set Soft, Absorbent & Hotel-Quality",
+   "handle": "premium-bath-towel-set",
+   "vendor": "DAN RIVER",
+   "type": "",
+   "price_min": 55.99,
+   "price_max": 55.99,
+   "compare_min": 65.84,
+   "variants": 19,
+   "avail_variants": 11,
+   "images": 113,
+   "desc_words": 247,
+   "published_at": "2024-03-22T22:58:41+05:00",
+   "created_at": "2024-03-22T02:14:37+05:00",
+   "updated_at": "2026-10-26T15:15:44+05:00",
+   "tags": [
+    "bath towel set",
+    "bath towels",
+    "cotton towels",
+    "luxury towels",
+    "soft bath towels"
+   ]
+  },
+  {
+   "title": "Microfiber Cleaning Cloths Pack of 12 & 24",
+   "handle": "microfiber-cleaning-cloths",
+   "vendor": "DAN RIVER",
+   "type": "",
+   "price_min": 15.99,
+   "price_max": 26.99,
+   "compare_min": 34.89,
+   "variants": 20,
+   "avail_variants": 8,
+   "images": 61,
+   "desc_words": 128,
+   "published_at": "2024-03-22T22:58:41+05:00",
+   "created_at": "2024-03-22T02:14:37+05:00",
+   "updated_at": "2026-10-26T15:15:44+05:00",
+   "tags": [
+    "MCF"
+   ]
+  },
+  {
+   "title": "Garage Shop Towels - (Pack of 50)",
+   "handle": "garage-shop-towel",
+   "vendor": "DAN RIVER",
+   "type": "",
+   "price_min": 35.99,
+   "price_max": 35.99,
+   "compare_min": 45.84,
+   "variants": 8,
+   "avail_variants": 0,
+   "images": 40,
+   "desc_words": 128,
+   "published_at": "2024-03-22T22:58:40+05:00",
+   "created_at": "2024-03-22T02:14:37+05:00",
+   "updated_at": "2026-10-26T15:15:44+05:00",
+   "tags": [
+    "MCF"
+   ]
+  },
+  {
+   "title": "Facial Spa Terry Headbands - (Pack of 3)",
+   "handle": "spa-headband-sets",
+   "vendor": "DAN RIVER",
+   "type": "",
+   "price_min": 20.99,
+   "price_max": 20.99,
+   "compare_min": 30.84,
+   "variants": 2,
+   "avail_variants": 1,
+   "images": 10,
+   "desc_words": 141,
+   "published_at": "2024-03-22T22:58:40+05:00",
+   "created_at": "2024-03-22T02:08:55+05:00",
+   "updated_at": "2026-10-26T15:15:44+05:00",
+   "tags": [
+    "MCF"
+   ]
+  },
+  {
+   "title": "Deep Knit Jersey Sheet Set 100% Cotton",
+   "handle": "jersey-sheet-set",
+   "vendor": "DAN RIVER",
+   "type": "",
+   "price_min": 43.59,
+   "price_max": 80.99,
+   "compare_min": 70.84,
+   "variants": 58,
+   "avail_variants": 42,
+   "images": 50,
+   "desc_words": 160,
+   "published_at": "2024-03-22T22:58:39+05:00",
+   "created_at": "2024-03-22T02:39:22+05:00",
+   "updated_at": "2026-10-26T15:15:44+05:00",
+   "tags": [
+    "bedding",
+    "cotton sheets",
+    "deep knit jersey",
+    "home essentials",
+    "sheet set"
+   ]
+  },
+  {
+   "title": "Dish Cloths & Kitchen Towels 100% Cotton",
+   "handle": "waffle-weave-kitchen-towels",
+   "vendor": "DAN RIVER",
+   "type": "",
+   "price_min": 18.99,
+   "price_max": 25.99,
+   "compare_min": 26.99,
+   "variants": 12,
+   "avail_variants": 5,
+   "images": 60,
+   "desc_words": 118,
+   "published_at": "2024-03-22T22:58:39+05:00",
+   "created_at": "2024-03-22T02:09:03+05:00",
+   "updated_at": "2026-10-26T15:15:44+05:00",
+   "tags": [
+    "MCF"
+   ]
+  },
+  {
+   "title": "Salon & Spa Towels 100% Cotton, Pack of 24",
+   "handle": "saloon-and-spa-towels",
+   "vendor": "DAN RIVER",
+   "type": "",
+   "price_min": 65.99,
+   "price_max": 65.99,
+   "compare_min": 75.84,
+   "variants": 5,
+   "avail_variants": 2,
+   "images": 25,
+   "desc_words": 114,
+   "published_at": "2024-03-22T22:58:39+05:00",
+   "created_at": "2024-03-22T02:02:40+05:00",
+   "updated_at": "2026-10-26T15:15:44+05:00",
+   "tags": [
+    "MCF"
+   ]
+  },
+  {
+   "title": "Jersey Knit Fitted Sheet and Pillow Cases",
+   "handle": "jersey-bed-sheets",
+   "vendor": "DAN RIVER",
+   "type": "",
+   "price_min": 30.99,
+   "price_max": 50.99,
+   "compare_min": 40.84,
+   "variants": 50,
+   "avail_variants": 24,
+   "images": 101,
+   "desc_words": 158,
+   "published_at": "2024-03-22T22:58:38+05:00",
+   "created_at": "2024-03-22T02:34:08+05:00",
+   "updated_at": "2026-10-26T15:15:44+05:00",
+   "tags": [
+    "MCF",
+    "sale"
+   ]
+  },
+  {
+   "title": "Cabana Beach Towel Set 100% Cotton, Pack of 4",
+   "handle": "cabana-beach-towel",
+   "vendor": "DAN RIVER",
+   "type": "",
+   "price_min": 34.99,
+   "price_max": 45.99,
+   "compare_min": 116.99,
+   "variants": 9,
+   "avail_variants": 0,
+   "images": 46,
+   "desc_words": 114,
+   "published_at": "2024-03-22T22:58:37+05:00",
+   "created_at": "2024-03-22T02:08:58+05:00",
+   "updated_at": "2026-10-26T15:15:44+05:00",
+   "tags": [
+    "MCF"
+   ]
+  },
+  {
+   "title": "Cotton Terry Bathrobe 100% Cotton Unisex",
+   "handle": "premium-bath-robe-and-shower-wrap",
+   "vendor": "DAN RIVER",
+   "type": "",
+   "price_min": 50.99,
+   "price_max": 50.99,
+   "compare_min": 60.84,
+   "variants": 15,
+   "avail_variants": 2,
+   "images": 76,
+   "desc_words": 128,
+   "published_at": "2024-03-22T22:58:37+05:00",
+   "created_at": "2024-03-22T02:08:56+05:00",
+   "updated_at": "2026-10-26T15:15:44+05:00",
+   "tags": [
+    "MCF"
+   ]
+  },
+  {
+   "title": "Cotton Bath Mats Set of 2 Not a Bathroom Rug",
+   "handle": "bath-mat-set",
+   "vendor": "DAN RIVER",
+   "type": "",
+   "price_min": 40.99,
+   "price_max": 40.99,
+   "compare_min": 50.84,
+   "variants": 16,
+   "avail_variants": 0,
+   "images": 81,
+   "desc_words": 112,
+   "published_at": "2024-03-22T22:58:36+05:00",
+   "created_at": "2024-03-22T02:08:55+05:00",
+   "updated_at": "2026-10-26T15:15:44+05:00",
+   "tags": [
+    "MCF"
+   ]
+  },
+  {
+   "title": "Cotton Bath, Hand & Face Towels",
+   "handle": "bath-hand-and-face-towel-set",
+   "vendor": "DAN RIVER",
+   "type": "",
+   "price_min": 35.99,
+   "price_max": 65.99,
+   "compare_min": 45.84,
+   "variants": 65,
+   "avail_variants": 57,
+   "images": 290,
+   "desc_words": 126,
+   "published_at": "2024-03-22T22:58:36+05:00",
+   "created_at": "2024-03-22T02:05:57+05:00",
+   "updated_at": "2026-10-26T15:15:44+05:00",
+   "tags": [
+    "MCF"
+   ]
+  },
+  {
+   "title": "Everyday Essential 100% Cotton Bath Towels, Pack of 4",
+   "handle": "economy-bath-towel",
+   "vendor": "DAN RIVER",
+   "type": "",
+   "price_min": 32.99,
+   "price_max": 34.99,
+   "compare_min": 59.99,
+   "variants": 20,
+   "avail_variants": 15,
+   "images": 120,
+   "desc_words": 122,
+   "published_at": "2024-03-22T22:58:36+05:00",
+   "created_at": "2024-03-22T02:05:57+05:00",
+   "updated_at": "2026-10-26T15:15:44+05:00",
+   "tags": [
+    "MCF"
+   ]
+  },
+  {
+   "title": "Kitchen Bar Mops Pack of 12",
+   "handle": "kitchen-bar-mops",
+   "vendor": "DAN RIVER",
+   "type": "",
+   "price_min": 20.99,
+   "price_max": 30.99,
+   "compare_min": 40.84,
+   "variants": 10,
+   "avail_variants": 1,
+   "images": 53,
+   "desc_words": 123,
+   "published_at": "2024-03-22T22:58:35+05:00",
+   "created_at": "2024-03-22T02:03:54+05:00",
+   "updated_at": "2026-10-26T15:15:44+05:00",
+   "tags": [
+    "MCF"
+   ]
+  },
+  {
+   "title": "Makeup Remover Washcloths - 6 Piece Cotton Towels",
+   "handle": "make-removing-towels",
+   "vendor": "DAN RIVER",
+   "type": "",
+   "price_min": 30.99,
+   "price_max": 30.99,
+   "compare_min": 40.84,
+   "variants": 8,
+   "avail_variants": 1,
+   "images": 40,
+   "desc_words": 109,
+   "published_at": "2024-03-22T22:58:34+05:00",
+   "created_at": "2024-03-22T02:08:57+05:00",
+   "updated_at": "2026-10-26T15:15:44+05:00",
+   "tags": [
+    "MCF"
+   ]
+  },
+  {
+   "title": "Cotton Washcloths Premium Quality Flannel Face Cloths - Available in Pack of 12, 20, and 24",
+   "handle": "essential-cleaning-washcloths",
+   "vendor": "DAN RIVER",
+   "type": "",
+   "price_min": 20.99,
+   "price_max": 35.99,
+   "compare_min": 40.84,
+   "variants": 51,
+   "avail_variants": 32,
+   "images": 187,
+   "desc_words": 213,
+   "published_at": "2024-03-22T22:58:34+05:00",
+   "created_at": "2024-03-22T02:05:57+05:00",
+   "updated_at": "2026-10-26T15:15:44+05:00",
+   "tags": [
+    "MCF"
+   ]
+  },
+  {
+   "title": "Pet Grooming Towel 100% Cotton",
+   "handle": "pet-grooming-towel",
+   "vendor": "DAN RIVER",
+   "type": "",
+   "price_min": 18.74,
+   "price_max": 25.99,
+   "compare_min": 34.99,
+   "variants": 9,
+   "avail_variants": 2,
+   "images": 57,
+   "desc_words": 118,
+   "published_at": "2024-03-22T22:58:33+05:00",
+   "created_at": "2024-03-22T02:08:55+05:00",
+   "updated_at": "2026-10-26T15:15:44+05:00",
+   "tags": [
+    "MCF"
+   ]
+  }
+ ]
+}

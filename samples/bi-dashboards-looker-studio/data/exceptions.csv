@@ -1,0 +1,15 @@
+rank,exception_type,order_id,channel,expected_payout,actual_payout,money_impact,explanation
+1,Duplicate payout,ORD-1102,Shopify,114.28,228.56,114.28,Order was paid 2 times in settlement; the extra payment must be flagged before the platform reclaims it.
+2,Missing from settlement,ORD-1106,Shopify,87.08,0.0,-87.08,Order never appears in the platform settlement — the full expected payout was never received.
+3,Refund deducted twice,ORD-1096,Shopify,-2.62,-82.6,-79.98,The customer refund was deducted twice from the payout (refund deduction exceeds the order revenue).
+4,Missing from settlement,ORD-1107,Amazon,73.95,0.0,-73.95,Order never appears in the platform settlement — the full expected payout was never received.
+5,Missing from settlement,ORD-1075,Shopify,71.8,0.0,-71.8,Order never appears in the platform settlement — the full expected payout was never received.
+6,Duplicate payout,ORD-1060,Amazon,45.9,91.8,45.9,Order was paid 2 times in settlement; the extra payment must be flagged before the platform reclaims it.
+7,Missing from settlement,ORD-1059,Amazon,42.5,0.0,-42.5,Order never appears in the platform settlement — the full expected payout was never received.
+8,Refund deducted twice,ORD-1057,Amazon,-5.08,-32.58,-27.5,The customer refund was deducted twice from the payout (refund deduction exceeds the order revenue).
+9,Missing from settlement,ORD-1116,Amazon,19.12,0.0,-19.12,Order never appears in the platform settlement — the full expected payout was never received.
+10,Wrong payout amount,ORD-1088,Shopify,89.03,75.56,-13.47,Payout does not match settlement arithmetic (gross - fees - refunds).
+11,Fee overcharge,ORD-1016,Amazon,230.35,222.07,-8.28,Platform fees charged are higher than the fee schedule allows.
+12,Fee overcharge,ORD-1055,Amazon,96.05,92.51,-3.54,Platform fees charged are higher than the fee schedule allows.
+13,Fee overcharge,ORD-1004,Shopify,145.32,143.82,-1.5,Platform fees charged are higher than the fee schedule allows.
+14,Fee overcharge,ORD-1093,Shopify,33.64,33.29,-0.35,Platform fees charged are higher than the fee schedule allows.

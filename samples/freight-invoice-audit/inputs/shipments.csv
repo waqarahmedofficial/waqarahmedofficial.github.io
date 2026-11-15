@@ -1,0 +1,43 @@
+shipment_id,shipment_date,carrier,lane_origin,lane_destination,weight_kg,detention_hours_beyond_free_time,liftgate_used,residential_delivery
+HHG-0001,2026-09-01,TransGlobal Freight,Shanghai,Los Angeles,85,0,N,N
+HHG-0002,2026-09-01,PacificLane Logistics,Los Angeles,Dallas,240,1,Y,N
+HHG-0003,2026-09-02,TransGlobal Freight,Los Angeles,Dallas,480,0,N,N
+HHG-0004,2026-09-02,TransGlobal Freight,Seattle,Denver,1450,2,N,N
+HHG-0005,2026-09-03,PacificLane Logistics,Los Angeles,Chicago,3200,0,Y,N
+HHG-0006,2026-09-04,PacificLane Logistics,Seattle,Denver,92,0,N,N
+HHG-0007,2026-09-04,TransGlobal Freight,Los Angeles,Dallas,95,1,N,Y
+HHG-0008,2026-09-05,TransGlobal Freight,Chicago,New York,780,0,Y,N
+HHG-0009,2026-09-06,Continental Cargo Lines,Seattle,Denver,2100,2,N,N
+HHG-0010,2026-09-06,TransGlobal Freight,Los Angeles,Chicago,150,0,N,N
+HHG-0011,2026-09-07,Continental Cargo Lines,Shanghai,Los Angeles,880,1,Y,Y
+HHG-0012,2026-09-08,Continental Cargo Lines,Los Angeles,Dallas,55,0,N,N
+HHG-0013,2026-09-08,TransGlobal Freight,Chicago,New York,1250,0,N,N
+HHG-0014,2026-09-09,TransGlobal Freight,Seattle,Denver,2900,1,Y,N
+HHG-0015,2026-09-10,Continental Cargo Lines,Los Angeles,Chicago,380,0,N,Y
+HHG-0016,2026-09-10,TransGlobal Freight,Shanghai,Los Angeles,1750,2,N,N
+HHG-0017,2026-09-11,TransGlobal Freight,Los Angeles,Dallas,68,0,N,N
+HHG-0018,2026-09-12,Continental Cargo Lines,Chicago,New York,540,3,N,N
+HHG-0019,2026-09-12,TransGlobal Freight,Seattle,Denver,2600,1,N,Y
+HHG-0020,2026-09-13,PacificLane Logistics,Los Angeles,Chicago,310,1,N,N
+HHG-0021,2026-09-14,Continental Cargo Lines,Shanghai,Los Angeles,990,2,N,N
+HHG-0022,2026-09-14,TransGlobal Freight,Los Angeles,Dallas,120,0,N,N
+HHG-0023,2026-09-15,PacificLane Logistics,Chicago,New York,1680,2,N,N
+HHG-0024,2026-09-16,Continental Cargo Lines,Seattle,Denver,430,0,N,N
+HHG-0025,2026-09-16,TransGlobal Freight,Los Angeles,Chicago,720,0,N,N
+HHG-0026,2026-09-17,PacificLane Logistics,Chicago,New York,620,0,N,N
+HHG-0027,2026-09-18,Continental Cargo Lines,Los Angeles,Dallas,175,0,N,Y
+HHG-0028,2026-09-18,TransGlobal Freight,Chicago,New York,3050,2,N,N
+HHG-0029,2026-09-19,TransGlobal Freight,Seattle,Denver,510,0,Y,N
+HHG-0030,2026-09-20,Continental Cargo Lines,Los Angeles,Chicago,88,3,N,N
+HHG-0031,2026-09-20,TransGlobal Freight,Shanghai,Los Angeles,1340,1,N,Y
+HHG-0032,2026-09-21,PacificLane Logistics,Los Angeles,Dallas,265,0,Y,N
+HHG-0033,2026-09-22,Continental Cargo Lines,Chicago,New York,1980,2,N,N
+HHG-0034,2026-09-22,TransGlobal Freight,Seattle,Denver,640,0,N,N
+HHG-0035,2026-09-23,PacificLane Logistics,Los Angeles,Chicago,110,1,Y,Y
+HHG-0036,2026-09-24,Continental Cargo Lines,Shanghai,Los Angeles,2750,0,N,N
+HHG-0037,2026-09-24,TransGlobal Freight,Los Angeles,Dallas,920,0,N,N
+HHG-0038,2026-09-25,PacificLane Logistics,Chicago,New York,340,1,Y,N
+HHG-0039,2026-09-26,Continental Cargo Lines,Seattle,Denver,1520,0,N,Y
+HHG-0040,2026-09-26,TransGlobal Freight,Los Angeles,Chicago,205,2,N,N
+HHG-0041,2026-09-27,PacificLane Logistics,Shanghai,Los Angeles,480,0,Y,N
+HHG-0042,2026-09-28,Continental Cargo Lines,Los Angeles,Dallas,1180,3,N,N

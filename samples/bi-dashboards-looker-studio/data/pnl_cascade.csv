@@ -1,0 +1,8 @@
+step,amount,kind
+Gross revenue,9824.97,start
+Refunds,-666.93,decrease
+COGS,-3578.15,decrease
+Platform fees (per schedule),-1260.46,decrease
+Ad spend,-2835.08,decrease
+Shipping,-1170.67,decrease
+TRUE NET PROFIT,313.68,total

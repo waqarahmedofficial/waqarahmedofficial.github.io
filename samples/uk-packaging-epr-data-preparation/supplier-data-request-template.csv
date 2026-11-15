@@ -1,0 +1,6 @@
+supplier_name,supplier_contact_name,supplier_contact_email,product_sku,product_name,packaging_component,packaging_material,material_subtype,weight_per_unit_g,units_supplied_in_period,total_weight_kg,packaging_class,household_or_non_household,nation_of_sale,ram_relevant_features,evidence_attached,data_status,notes
+EXAMPLE ONLY - DELETE BEFORE USE,Acme Packaging Ltd,Jo Smith,jo.smith@example.com,SKU-001,Apple Juice 1L,PET bottle,plastic,PET,42,100000,4200,primary,household,England,"mono-material PET, clear, no sleeve",spec sheet + photo,received,EXAMPLE ROW
+EXAMPLE ONLY - DELETE BEFORE USE,Acme Packaging Ltd,Jo Smith,jo.smith@example.com,SKU-001,Apple Juice 1L,Shrink sleeve,plastic,LDPE,3,100000,300,primary,household,England,"sleeve covers >50% of bottle - RAM red risk",spec sheet,received,EXAMPLE ROW - sleeve makes bottle hard to recycle
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,

@@ -1,0 +1,150 @@
+{
+  "name": "Order Filter - AS RECEIVED (broken) | AUTHORED TO MAKE BLUEPRINT SCHEMA - NOT IMPORT-TESTED IN A LIVE MAKE ACCOUNT",
+  "flow": [
+    {
+      "id": 1,
+      "module": "gateway:CustomWebHook",
+      "version": 1,
+      "parameters": {
+        "hook": 0,
+        "maxResults": 1
+      },
+      "mapper": {},
+      "metadata": {
+        "designer": {
+          "x": 0,
+          "y": 0
+        },
+        "restore": {}
+      }
+    },
+    {
+      "id": 2,
+      "module": "tools:SetVariables",
+      "version": 1,
+      "parameters": {},
+      "mapper": {
+        "variables": [
+          {
+            "name": "CONFIG_minAmount",
+            "value": "100"
+          },
+          {
+            "name": "_faultNote",
+            "value": "AS RECEIVED (FAULTY): dates parsed as MM/DD/YYYY although the client system sends ISO YYYY-MM-DD, so every date is invalid; amount rule inverted (< instead of >=). Runs green, silently drops every valid record."
+          }
+        ]
+      },
+      "metadata": {
+        "designer": {
+          "x": 300,
+          "y": 0
+        },
+        "restore": {}
+      }
+    },
+    {
+      "id": 3,
+      "module": "builtin:BasicFeeder",
+      "version": 1,
+      "parameters": {},
+      "mapper": {
+        "array": "{{1.orders}}"
+      },
+      "metadata": {
+        "designer": {
+          "x": 600,
+          "y": 0
+        },
+        "restore": {}
+      }
+    },
+    {
+      "id": 4,
+      "module": "tools:SetVariable",
+      "version": 1,
+      "parameters": {},
+      "mapper": {
+        "name": "parsedDate",
+        "value": "{{parseDate(3.value.orderDate; \"MM/DD/YYYY\")}}"
+      },
+      "metadata": {
+        "designer": {
+          "x": 900,
+          "y": 0
+        },
+        "restore": {}
+      },
+      "filter": {
+        "name": "Keep rule",
+        "conditions": [
+          [
+            {
+              "a": "{{4.parsedDate}}",
+              "b": "",
+              "o": "text:notempty"
+            },
+            {
+              "a": "{{3.value.amount}}",
+              "b": "{{2.CONFIG_minAmount}}",
+              "o": "number:lessThan"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "module": "builtin:BasicAggregator",
+      "version": 1,
+      "parameters": {
+        "target": 4,
+        "feeder": 3
+      },
+      "mapper": {},
+      "metadata": {
+        "designer": {
+          "x": 1200,
+          "y": 0
+        },
+        "restore": {}
+      }
+    },
+    {
+      "id": 6,
+      "module": "tools:SetVariable",
+      "version": 1,
+      "parameters": {},
+      "mapper": {
+        "name": "keptIds",
+        "value": "{{map(5.array; \"orderId\")}}"
+      },
+      "metadata": {
+        "designer": {
+          "x": 1500,
+          "y": 0
+        },
+        "restore": {}
+      }
+    }
+  ],
+  "metadata": {
+    "version": 1,
+    "scenario": {
+      "roundtrips": 1,
+      "maxErrors": 3,
+      "autoCommit": true,
+      "autoCommitTriggerLast": true,
+      "sequential": false,
+      "everlasting": false,
+      "confidential": false,
+      "dataloss": false,
+      "dlq": false,
+      "freshVariables": false
+    },
+    "designer": {
+      "orphans": []
+    },
+    "zone": "eu2.make.com"
+  }
+}

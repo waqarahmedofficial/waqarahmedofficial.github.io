@@ -1,0 +1,86 @@
+BooksID,Date,Payee,Category,Amount,Notes
+K-001,01/05/2026,Cardly,Sales Income,1020.76,
+K-002,05-Feb-2026,Cardly Payouts,Sales Income,397.11,paid
+K-003,2026-03-05,Cardly Payouts,Sales Income,1112.73,inv
+K-004,01/19/2026,Cardly Payouts,Sales Income,175.41,
+K-005,19-Feb-2026,Cardly Payouts,Sales Income,1219.76,
+K-006,2026-03-19,Cardly Payouts,Sales Income,637.56,inv
+K-007,01/03/2026,Till Box,Sales Income,316.79,card
+K-008,10-Jan-2026,TillBox Sales,Office Expenses,341.94,transfer
+K-009,2026-01-17,TillBox Sales,General Expenses,491.84,inv
+K-010,01/24/2026,TillBox Sales,Miscellaneous,324.94,
+K-011,07-Feb-2026,TillBox Sales,Office Expenses,283.89,card
+K-012,2026-02-14,TillBox Sales,General Expenses,250.71,inv
+K-013,02/21/2026,TillBox Sales,Miscellaneous,201.38,inv
+K-014,28-Feb-2026,TillBox Sales,Office Expenses,357.29,
+K-015,2026-03-14,TillBox Sales,Sales Income,231.83,
+K-016,03/21/2026,TillBox Sales,Sales Income,329.99,paid
+K-017,28-Mar-2026,TillBox Sales,Sales Income,491.33,
+K-018,2026-01-15,ShopFront Payouts,Sales Income,759.85,transfer
+K-019,02/15/2026,ShopFront Payouts,Sales Income,823.86,paid
+K-020,15-Mar-2026,ShopFront Payouts,Sales Income,817.85,
+K-021,2026-01-01,Harborview Props,Rent,-1450.00,monthly
+K-022,02/01/2026,Harborview Properties,Rent,-1450.00,
+K-023,01-Mar-2026,Harborview Properties,Rent,-1450.00,
+K-024,2026-01-06,Pawsome Wholesale,Inventory Purchases,-278.89,
+K-025,01/24/2026,Pawsome Wholesale Co,Inventory Purchases,-401.48,
+K-026,08-Feb-2026,Pawsome Wholesale Co,Inventory Purchases,-445.25,
+K-027,2026-02-23,Pawsome Wholesale Co,Inventory Purchases,-466.26,monthly
+K-028,03/10/2026,Pawsome Wholesale Co,Inventory Purchases,-341.25,inv
+K-029,09-Jan-2026,Green Trail Supplies,Inventory Purchases,-307.80,card
+K-030,2026-03-04,GreenTrail Supplies,Inventory Purchases,-224.04,inv
+K-031,03/12/2026,GreenTrail Supplies,Inventory Purchases,-199.68,card
+K-032,13-Jan-2026,PackRight Boxes,Packaging Supplies,-96.02,monthly
+K-033,2026-02-11,PackRight Boxes,Packaging Supplies,-112.84,inv
+K-034,02/12/2026,City Power,Utilities,-128.26,monthly
+K-035,12-Mar-2026,CityPower Electric,Utilities,-129.41,inv
+K-036,2026-01-14,Metro Water,Utilities,-53.84,card
+K-037,02/14/2026,Metro Water,Utilities,-54.94,card
+K-038,14-Mar-2026,Metro Water,Utilities,-65.21,paid
+K-039,2026-01-08,Ledgerly,Software Subscriptions,-30.00,
+K-040,02/08/2026,Ledgerly Online,Software Subscriptions,-30.00,
+K-041,08-Mar-2026,Ledgerly Online,Software Subscriptions,-30.00,
+K-042,2026-01-09,Designly Team,Software Subscriptions,-12.99,
+K-043,02/09/2026,Designly,Software Subscriptions,-12.99,
+K-044,09-Mar-2026,Designly,Software Subscriptions,-12.99,monthly
+K-045,2026-01-10,WorkSpace Mail,Software Subscriptions,-14.40,
+K-046,02/10/2026,WorkSpace Mail,Software Subscriptions,-14.40,monthly
+K-047,10-Mar-2026,WorkSpace Mail,Software Subscriptions,-14.40,
+K-048,2026-01-07,AdSphere,Advertising,-169.95,paid
+K-049,01/21/2026,AdSphere Ads,Advertising,-154.90,inv
+K-050,04-Feb-2026,AdSphere Ads,Advertising,-218.76,monthly
+K-051,2026-02-18,AdSphere Ads,Advertising,-229.59,
+K-052,02/13/2026,SearchAds,Advertising,-187.68,monthly
+K-053,06-Mar-2026,SearchAds,Advertising,-152.91,transfer
+K-054,2026-03-20,SearchAds,Advertising,-138.20,monthly
+K-055,01/08/2026,Swift Ship,Shipping & Delivery,-85.52,
+K-056,22-Jan-2026,SwiftShip,Shipping & Delivery,-44.94,inv
+K-057,2026-03-02,SwiftShip,Shipping & Delivery,-41.24,
+K-058,03/16/2026,SwiftShip,Shipping & Delivery,-79.01,monthly
+K-059,15-Jan-2026,Parcel Post,Shipping & Delivery,-71.47,inv
+K-060,2026-02-26,ParcelPost,Shipping & Delivery,-36.73,transfer
+K-061,03/11/2026,ParcelPost,Shipping & Delivery,-65.59,paid
+K-062,20-Jan-2026,SafeShield Ins,Insurance,-210.00,
+K-063,2026-02-20,SafeShield Insurance,Insurance,-210.00,card
+K-064,03/20/2026,SafeShield Insurance,Insurance,-210.00,
+K-065,18-Jan-2026,BrightOffice Supplies,Office Supplies,-64.20,monthly
+K-066,2026-02-22,BrightOffice Supplies,Office Supplies,-38.75,
+K-067,02/15/2026,HandyFix Repairs,Repairs & Maintenance,-175.00,monthly
+K-068,27-Jan-2026,PrintWorks Studio,Printing & Marketing,-86.20,transfer
+K-069,2026-01-06,StreamFlix,Office Expenses,-15.49,card
+K-070,02/06/2026,StreamFlix,Office Expenses,-15.49,inv
+K-071,06-Mar-2026,StreamFlix,Office Expenses,-15.49,card
+K-072,2026-01-24,FreshMart Groceries,Meals & Entertainment,-86.40,transfer
+K-073,02/14/2026,StarScreen Cinemas,Client Entertainment,-32.00,
+K-074,28-Mar-2026,Pawsome Wholesale Co,Inventory Purchases,-320.00, cheque written
+K-075,2026-03-29,GreenTrail Supplies,Inventory Purchases,-154.75, cheque written
+K-076,03/30/2026,ParcelPost,Shipping & Delivery,-62.30, cheque written
+K-077,31-Mar-2026,HandyFix Repairs,Repairs & Maintenance,-210.00, cheque written
+K-078,2026-03-30,TillBox Sales,Sales Income,412.60, deposit recorded
+K-079,03/31/2026,Cardly Payouts,Sales Income,655.20, deposit recorded
+K-080,2026-03-14,TillBox Sales,Sales Income,231.83,
+K-081,03/21/2026,TillBox Sales,Sales Income,329.99,paid
+K-082,28-Mar-2026,TillBox Sales,Sales Income,491.33,
+K-083,2026-01-15,ShopFront Payouts,Sales Income,759.85,transfer
+K-084,02/15/2026,ShopFront Payouts,Sales Income,823.86,paid
+K-085,15-Mar-2026,ShopFront Payouts,Sales Income,817.85,

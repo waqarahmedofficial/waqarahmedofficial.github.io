@@ -1,0 +1,91 @@
+Date,Description,Category,Type,Quantity,Unit Price,Line Total
+2026-10-01,Marketplace payout,Product Sales,Income,48,35.00,1680.00
+2026-10-01,Wholesale order — bookshops,Wholesale Orders,Income,60,14.50,870.00
+2026-10-01,Postage — parcels,Shipping,Expense,1,9.99,9.99
+2026-10-02,Online order batch,Product Sales,Income,41,6.50,266.50
+2026-10-02,Social media ads,Advertising,Expense,2,55.00,110.00
+2026-10-02,Marketplace payout,Product Sales,Income,58,35.00,2030.00
+2026-10-03,Bubble mailers x500,Packaging,Expense,1,55.00,55.00
+2026-10-03,Craft fair sales,Product Sales,Income,42,6.50,273.00
+2026-10-03,Wholesale order — bookshops,Wholesale Orders,Income,44,18.25,803.00
+2026-10-04,Online order batch,Product Sales,Income,54,14.50,783.00
+2026-10-04,Wholesale order — gift shops,Wholesale Orders,Income,52,22.00,1144.00
+2026-10-04,Design tool subscription,Software,Expense,1,9.99,9.99
+2026-10-05,Marketplace payout,Product Sales,Income,38,22.00,836.00
+2026-10-05,Electricity bill,Utilities,Expense,1,55.00,55.00
+2026-10-05,Online order batch,Product Sales,Income,9,18.25,164.25
+2026-10-06,Social media ads,Advertising,Expense,2,55.00,110.00
+2026-10-06,Online order batch,Product Sales,Income,57,9.75,555.75
+2026-10-06,Wholesale order — gift shops,Wholesale Orders,Income,46,35.00,1610.00
+2026-10-07,Online order batch,Product Sales,Income,28,12.00,336.00
+2026-10-07,Wholesale order — bookshops,Wholesale Orders,Income,36,14.50,522.00
+2026-10-07,Yarn and fabric stock,Inventory,Expense,1,55.00,55.00
+2026-10-08,Wholesale order — gift shops,Wholesale Orders,Income,54,22.00,1188.00
+2026-10-08,Marketplace commission,Fees,Expense,2,55.00,110.00
+2026-10-08,Online order batch,Product Sales,Income,21,9.75,204.75
+2026-10-09,Search ads,Advertising,Expense,1,39.95,39.95
+2026-10-09,Online order batch,Product Sales,Income,30,12.00,360.00
+2026-10-09,Marketplace payout,Product Sales,Income,6,22.00,132.00
+2026-10-10,Wholesale order — bookshops,Wholesale Orders,Income,8,22.00,176.00
+2026-10-10,Wholesale order — gift shops,Wholesale Orders,Income,25,18.25,456.25
+2026-10-10,Design tool subscription,Software,Expense,1,9.99,9.99
+2026-10-11,Wholesale order — gift shops,Wholesale Orders,Income,8,35.00,280.00
+2026-10-11,Studio rent — October,Rent,Expense,1,450.00,450.00
+2026-10-11,Marketplace payout,Product Sales,Income,39,22.00,858.00
+2026-10-12,Postage — parcels,Shipping,Expense,1,9.99,9.99
+2026-10-12,Wholesale order — bookshops,Wholesale Orders,Income,54,22.00,1188.00
+2026-10-12,Online order batch,Product Sales,Income,13,18.25,237.25
+2026-10-13,Marketplace payout,Product Sales,Income,39,48.00,1872.00
+2026-10-13,Wholesale order — gift shops,Wholesale Orders,Income,14,18.25,255.50
+2026-10-13,Yarn and fabric stock,Inventory,Expense,1,39.95,39.95
+2026-10-14,Craft fair sales,Product Sales,Income,14,8.00,112.00
+2026-10-14,Payment processing fees,Fees,Expense,10,24.00,240.00
+2026-10-14,Craft fair sales,Product Sales,Income,36,6.50,234.00
+2026-10-15,Candle-making supplies,Inventory,Expense,4,39.95,159.80
+2026-10-15,Craft fair sales,Product Sales,Income,12,8.00,96.00
+2026-10-15,Wholesale order — gift shops,Wholesale Orders,Income,50,22.00,1100.00
+2026-10-16,Craft fair sales,Product Sales,Income,10,6.50,65.00
+2026-10-16,Marketplace payout,Product Sales,Income,53,35.00,1855.00
+2026-10-16,Accounting software subscription,Software,Expense,1,15.49,15.49
+2026-10-17,Online order batch,Product Sales,Income,12,12.00,144.00
+2026-10-17,Bubble mailers x500,Packaging,Expense,1,55.00,55.00
+2026-10-17,Craft fair sales,Product Sales,Income,3,6.50,19.50
+2026-10-18,Studio rent — October,Rent,Expense,1,450.00,450.00
+2026-10-18,Wholesale order — bookshops,Wholesale Orders,Income,46,18.25,839.50
+2026-10-18,Wholesale order — bookshops,Wholesale Orders,Income,29,14.50,420.50
+2026-10-19,Craft fair sales,Product Sales,Income,39,8.00,312.00
+2026-10-19,Wholesale order — bookshops,Wholesale Orders,Income,46,18.25,839.50
+2026-10-19,Courier charges,Shipping,Expense,4,55.00,220.00
+2026-10-20,Marketplace payout,Product Sales,Income,49,35.00,1715.00
+2026-10-20,Courier charges,Shipping,Expense,1,24.00,24.00
+2026-10-20,Marketplace payout,Product Sales,Income,12,35.00,420.00
+2026-10-21,Yarn and fabric stock,Inventory,Expense,10,72.30,723.00
+2026-10-21,Craft fair sales,Product Sales,Income,60,12.00,720.00
+2026-10-21,Craft fair sales,Product Sales,Income,7,8.00,56.00
+2026-10-22,Marketplace payout,Product Sales,Income,55,35.00,1925.00
+2026-10-22,Craft fair sales,Product Sales,Income,5,12.00,60.00
+2026-10-23,Marketplace payout,Product Sales,Income,39,35.00,1365.00
+2026-10-23,Accounting software subscription,Software,Expense,1,15.49,15.49
+2026-10-24,Electricity bill,Utilities,Expense,1,55.00,55.00
+2026-10-24,Marketplace payout,Product Sales,Income,28,22.00,616.00
+2026-10-25,Wholesale order — bookshops,Wholesale Orders,Income,43,18.25,784.75
+2026-10-25,Online order batch,Product Sales,Income,19,9.75,185.25
+2026-10-26,Wholesale order — bookshops,Wholesale Orders,Income,54,18.25,985.50
+2026-10-26,Cardboard boxes x200,Packaging,Expense,1,120.00,120.00
+2026-10-27,Courier charges,Shipping,Expense,4,24.00,96.00
+2026-10-27,Wholesale order — bookshops,Wholesale Orders,Income,27,14.50,391.50
+2026-10-28,Wholesale order — bookshops,Wholesale Orders,Income,56,22.00,1232.00
+2026-10-28,Wholesale order — gift shops,Wholesale Orders,Income,15,18.25,273.75
+
+CATEGORY SUMMARY,,,,,,
+Category,Stated Total,,,,,
+Advertising,259.95,,,,,
+Fees,350.00,,,,,
+Inventory,977.75,,,,,
+Packaging,230.00,,,,,
+Product Sales,20488.25,,,,,
+Rent,900.00,,,,,
+Shipping,359.98,,,,,
+Software,50.96,,,,,
+Utilities,110.00,,,,,
+Wholesale Orders,15359.75,,,,,

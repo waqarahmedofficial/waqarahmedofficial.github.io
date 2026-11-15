@@ -1,0 +1,59 @@
+order_id,order_date,product,category,region,qty,amount,channel
+5108,2026-01-03,A4 Paper Box,Office Supplies,Unknown,6,168.94,Website
+5091,2026-01-05,Power Bank 20000Mah,Electronics,North,5,171.0,Website
+5084,2026-01-07,Canvas Tote Bag,Apparel,North,2,191.87,Website
+5085,2026-01-13,Hardcover Notebook,Office Supplies,South,4,435.96,Store
+5092,2026-01-15,Steel Bottle 750Ml,Home & Kitchen,East,4,96.78,Marketplace
+5003,2026-01-20,Hoodie — Zip,Apparel,South,6,125.0,Marketplace
+5036,2026-01-24,Hoodie — Zip,Apparel,South,6,79.45,Website
+5113,2026-01-24,Usb-C Cable 2M,Electronics,West,4,26.58,Marketplace
+5079,2026-01-27,Led Desk Lamp,Home & Kitchen,South,6,198.0,Store
+5020,2026-02-05,Steel Bottle 750Ml,Home & Kitchen,North,2,358.0,Store
+5075,2026-02-07,Steel Bottle 750Ml,Home & Kitchen,North,6,207.0,Website
+5025,2026-02-09,A4 Paper Box,Office Supplies,East,2,208.07,Marketplace
+5056,2026-02-09,Canvas Tote Bag,Apparel,Unknown,5,298.0,Website
+5023,2026-02-10,Usb-C Cable 2M,Electronics,South,5,120.56,Website
+5031,2026-02-20,Cotton T-Shirt,Apparel,North,3,43.52,Marketplace
+5049,2026-02-24,Steel Bottle 750Ml,Home & Kitchen,South,6,237.88,Website
+5100,2026-02-27,File Organizer,Office Supplies,North,6,471.78,Website
+5004,2026-02-28,Cotton T-Shirt,Apparel,South,5,33.8,Website
+5034,2026-03-08,Led Desk Lamp,Home & Kitchen,North,4,459.16,Store
+5107,2026-03-11,Cotton T-Shirt,Apparel,South,1,182.42,Store
+5109,2026-03-11,Wireless Mouse,Electronics,West,1,394.38,Store
+5017,2026-03-13,Wireless Mouse,Electronics,North,5,233.88,Store
+5072,2026-03-14,Led Desk Lamp,Home & Kitchen,North,5,224.0,Store
+5068,2026-03-27,Wireless Mouse,Electronics,South,2,331.0,Store
+5019,2026-04-01,Canvas Tote Bag,Apparel,Unknown,1,23.0,Store
+5095,2026-04-01,Steel Bottle 750Ml,Home & Kitchen,North,6,388.12,Marketplace
+5042,2026-04-04,A4 Paper Box,Office Supplies,South,2,373.27,Website
+5053,2026-04-15,Hoodie — Zip,Apparel,South,1,359.89,Website
+5082,2026-04-20,Hoodie — Zip,Apparel,North,3,103.61,Marketplace
+5098,2026-05-04,Led Desk Lamp,Home & Kitchen,North,4,127.0,Marketplace
+5119,2026-05-05,Cotton T-Shirt,Apparel,North,5,438.1,Website
+5114,2026-05-08,Usb-C Cable 2M,Electronics,North,5,135.0,Website
+5059,2026-05-11,Steel Bottle 750Ml,Home & Kitchen,South,2,124.57,Website
+5044,2026-05-15,Ceramic Mug Set,Home & Kitchen,West,3,242.62,Website
+5057,2026-05-17,Wireless Mouse,Electronics,South,2,362.76,Website
+5039,2026-05-18,Usb-C Cable 2M,Electronics,North,1,181.3,Store
+5069,2026-05-26,Power Bank 20000Mah,Electronics,Unknown,5,25.04,Marketplace
+5032,2026-05-28,Wireless Mouse,Electronics,North,2,82.79,Marketplace
+5111,2026-06-01,Ceramic Mug Set,Home & Kitchen,South,3,460.17,Store
+5013,2026-06-07,Hoodie — Zip,Apparel,South,3,470.72,Website
+5008,2026-06-10,Wireless Mouse,Electronics,Unknown,4,108.0,Store
+5112,2026-06-10,File Organizer,Office Supplies,West,6,313.03,Marketplace
+5002,2026-06-18,Steel Bottle 750Ml,Home & Kitchen,Unknown,2,34.6,Website
+5062,2026-06-21,Hardcover Notebook,Office Supplies,Unknown,2,285.0,Marketplace
+5015,2026-06-23,Cotton T-Shirt,Apparel,Unknown,4,48.33,Marketplace
+5077,2026-06-23,Usb-C Cable 2M,Electronics,South,3,153.7,Website
+5105,2026-06-23,Canvas Tote Bag,Apparel,West,2,466.4,Website
+5010,2026-06-30,Ceramic Mug Set,Home & Kitchen,Unknown,4,376.96,Store
+5065,2026-07-20,Power Bank 20000Mah,Electronics,South,4,97.69,Marketplace
+5052,2026-07-22,Power Bank 20000Mah,Electronics,West,6,344.98,Store
+5047,2026-07-28,Hardcover Notebook,Office Supplies,South,1,450.53,Website
+5117,2026-07-29,Hoodie — Zip,Apparel,South,6,46.84,Store
+5007,2026-07-30,File Organizer,Office Supplies,North,2,331.18,Store
+5022,2026-07-31,A4 Paper Box,Office Supplies,North,4,213.48,Website
+5102,2026-08-05,A4 Paper Box,Office Supplies,South,1,72.76,Website
+5028,2026-08-21,Power Bank 20000Mah,Electronics,West,1,420.0,Store
+5087,2026-08-26,Led Desk Lamp,Home & Kitchen,East,1,253.0,Website
+5089,2026-08-31,Bluetooth Speaker,Electronics,Unknown,2,19.88,Website

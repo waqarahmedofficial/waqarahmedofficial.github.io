@@ -1,0 +1,546 @@
+order_id,customer_name,email,phone,product,region,amount,date
+ORD-2082,Thomas Robinson,thomas.robinson@,+1 312 263 2936,aerobook laptop stand,East, 179.90 ,14-Mar-2026
+ORD-2133,  CHARLES PEREZ ,charles.perez@yahoo.com,+1 212 515 7512,Drift Laptop Backpack,North, 119.95 ,"January 29, 2026"
+ORD-2467,  Lisa Johnson ,LISA.JOHNSON@HOTMAIL.COM,5128522021,TERRA WATER BOTTLE,South, 24.95 ,19-Feb-2026
+ORD-2387,John Smith,john.smith@outlook.com,7136817742,tERRa WATer bOtTLe,North,$49.90,02/12/2026
+ORD-2031,MARGARET THOMPSON,MARGARET.THOMPSON@EXAMPLE.COM,713-790-1659,Terra Water Bottle,east,24.95,2026-01-11
+ORD-2335,JOHN WILSON,john.wilson@gmail.com,2066613700,  drift laptop backpack ,NORTH,239.90,"May 26, 2026"
+ORD-2007,Andrew Gonzalez,andrew.gonzalez@example.com,212.546.1344,Pulse Wireless Mouse,NORTH,$90.00,2026-06-25
+ORD-2441,Michael Jones,michael.jones@yahoo.com,2062737987,ECHO USB-C HUB,east, 149.00 ,"February 02, 2026"
+ORD-2249,Jessica Baker,jessica.baker@outlook.com,(206) 483-1892,  ergoflex offiCe CHaIR ,South,659.00,02-Jun-2026
+ORD-2171,anthony robinson,anthony.robinson@example.com,212.381.8796,Lumen Desk Lamp,NORTH,59.99,"January 09, 2026"
+ORD-2246,Jennifer Young,jennifer.young@@yahoo.com,+1 312 453 6362,Echo USB-C Hub,South,149.00,2026-03-01
+ORD-2373,Jessica Moore,jessica.moore@hotmail.com,415-393-3436,ERGOFLEX OFFICE CHAIR,East,329.50,2026-03-09
+ORD-2310,miCHELLE WIlLiAMS,michelle.williams@yahoo.com,(713) 584-2981,drift laptop backpack,South,119.95,2026-04-02
+ORD-2119,robert nelson,ROBERT.NELSON@YAHOO.COM,(646) 322-9225,VISTA 27IN MONITOR,  North ,399.00,28-Mar-2026
+ORD-2399,  Donald Mitchell ,donald.mitchell@example.com,312-556-4436,ErgoFlex Office Chair,NORtH,329.50,"March 01, 2026"
+ORD-2123,  Daniel King ,DANIEL.KING@EXAMPLE.COM,+1 512 677 6145,PULSE WIRELESS MOUSE,soUtH,45.00,01/24/2026
+ORD-2473,Michael Clark,michael.clark@gmail.com,415-678-9958,Vertex Standing Desk,West,649.00,"April 22, 2026"
+ORD-2394,  Lisa Martin ,lisa.martin@yahoo.com,+1 646 582 2367,Vista 27in Monitor,North,$798.00,2026-06-12
+ORD-2257,Linda Martin,linda.martin@gmail.com,212.813.6927,Vista 27in Monitor,East,399.00,10-May-2026
+ORD-2149,MAtthew kINg,matthew.king@outlook.com,512-782-8178,Terra Water Bottle,North,$24.95,"January 28, 2026"
+ORD-2345,STEVEN GARCIA,steven.garcia@example.com,+1 415 693 1324,KeYflOW MecHaNiCal keYbOArD,nOrTh,259.98,11-Apr-2026
+ORD-2212,  michelle baker ,michelle.baker@hotmail.com,3126652477,lumen desk lamp,  South ,119.98,"April 20, 2026"
+ORD-2389,  john lewis ,,555-974-6064,Terra Water Bottle,  north ,24.95,"January 12, 2026"
+ORD-2010,  Mark Nguyen ,mark.nguyen@gmail.com,512.492.7930,Drift Laptop Backpack,south,119.95,17-Apr-2026
+ORD-2199,Jennifer Carter,jennifer.carter@hotmail.com,(212) 809-5921,Vista 27in Monitor,North, 1197.00 ,01-Mar-2026
+ORD-2322,David Lee,david.lee@yahoo.com,4153508692,Terra Water Bottle,North,$49.90,2026-05-16
+ORD-2289,  THOMAS LOPEZ ,thomas.lopez@hotmail.com,+1 415 323 5891,AeroBook Laptop Stand,East, 179.90 ,2026-01-27
+ORD-2431,ashley anderson,ashley.anderson@yahoo.com,6462693586,VERTEX STANDING DESK,EaSt, 1947.00 ,2026-05-23
+ORD-2190,william williams,WILLIAM.WILLIAMS@OUTLOOK.COM,+1 312 315 4866,echo usb-c hub,East,$223.50,2026-02-05
+ORD-2103,Jessica Adams,jessica.adam@hotmail.com,+1 415 390 8080,LUMEN DESK LAMP,sOUTh,179.97,"February 14, 2026"
+ORD-2305,DanIeL Adams,daniel.adams@example.com,+1 512 905 9020,  Terra Water Bottle ,South,24.95,04/07/2026
+ORD-2022,PaTricia tHOmAS,patricia.thomas@gmail.com,512.885.2874,Vista 27in Monitor,  East ,399.00,02/28/2026
+ORD-2333,Mark Walker,mark.walker@gmail.com,3123334369,lumen dESK Lamp,  West ,59.99,07-Feb-2026
+ORD-2346,Patricia Robinson,patricia.robinson@yahoo.com,415-467-8462,vista 27in monitor,SOUTH,399.00,"March 08, 2026"
+ORD-2012,MATTHEW JONES,matthew.jones@yahoo.com,(555) 883-5905,  AeroBook Laptop Stand ,North,$89.95,18-Mar-2026
+ORD-2479,  JENNIFER CLARK ,jennifer.clark@example.com,+1 512 869 7581,ErgoFlex Office Chair,  East ,659.00,08-Jan-2026
+ORD-2313,  Betty Davis ,betty.davis@example.com,+1 646 850 5282,lumen desk lamp,east, 179.97 ,2026-03-17
+ORD-2301,  marK wriGHt ,,713.629.7586,Echo USB-C Hub,  East , 74.50 ,01/12/2026
+ORD-2342,patricia rodriguez,patricia.rodriguez@gmail.com,512-956-6385,keyflow mechanical keyboard,North, 259.98 ,2026-03-21
+ORD-2340,John Wilson,john.wilson@example.com,415.457.2552,vista 27in monitor,West,$399.00,07-Jun-2026
+ORD-2138,David Lee,david.lee@gmail.com,206.958.8937,Drift Laptop Backpack,SOUTH,119.95,03/14/2026
+ORD-2483,Linda Gonzalez,LINDA.GONZALEZ@OUTLOOK.COM,5124208158,Terra Water Bottle,  East ,24.95,03/23/2026
+ORD-2420,tHOmAs claRk,thomas.clark@outlook.com,7138383664,  KeyFlow Mechanical Keyboard ,  EAST , 259.98 ,2026-06-04
+ORD-2495,  Sandra Lopez ,sandra.lopez@outlook.com,(415) 735-5960,vertex standing desk,West,1947.00,14-Mar-2026
+ORD-2079,Emily Hernandez,emily.hernandez@yahoo.com,212.867.4804,Vista 27in Monitor,  North ,$798.00,2026-05-07
+ORD-2162,Andrew Martin,ANDREW.MARTIN@YAHOO.COM,(415) 326-1684,Lumen Desk Lamp,north, 59.99 ,06/27/2026
+ORD-2021,ASHLEY ANDERSON,ashley.anderson@hotmail.com,(415) 837-9751,Pulse Wireless Mouse,NORTH,90.00,05/09/2026
+ORD-2476,  JENNIFER TAYLOR ,jennifer.taylor@gmail.com,+1 312 683 7165,Lumen Desk Lamp,NoRTH,179.97,"April 10, 2026"
+ORD-2413,joseph garcia,joseph.garcia@outlook.com,(312) 911-2278,  Pulse Wireless Mouse ,North,45.00,01/26/2026
+ORD-2206,jessica hill,jessica.hill@gmail.com,+1 312 355 6599,  Pulse Wireless Mouse ,West,$45.00,"June 14, 2026"
+ORD-2395,Elizabeth Miller,elizabeth.miller@outlook.com,+1 212 557 8632,Pulse Wireless Mouse,  WEST ,90.00,"February 14, 2026"
+ORD-2376,Lisa King,lisa.king@example.com,7139133112,ERGOFLEX OFFICE CHAIR,South,659.00,01/22/2026
+ORD-2183,William Lopez,william.lopez@gmail.com,212.265.8752,VERTEX STANDING DESK,NORTH,649.00,"March 06, 2026"
+ORD-2350,  Ashley Miller ,ASHLEY.MILLER@EXAMPLE.COM,+1 312 734 1118,Vertex Standing Desk,East, 649.00 ,"March 14, 2026"
+ORD-2126,Matthew Scott,MATTHEW.SCOTT@HOTMAIL.COM,646-435-4421,Echo USB-C Hub,East,$149.00,2026-04-03
+ORD-2272,mary adams,mary.adams@hotmail.com,206.779.1981,lumen desk lamp,SOUTH, 179.97 ,"May 12, 2026"
+ORD-2017,aNThoNy lopez,anthony.lopez@example.com,312-888-6085,  Terra Water Bottle ,north,74.85,"March 23, 2026"
+ORD-2142,maTThew ANdersOn,matthew.anderson@example.com,(415) 523-3954,Pulse Wireless Mouse,  south ,90.00,30-Mar-2026
+ORD-2055,DANiEl mArtinez,daniel.martinez@gmail.com,312.529.8792,  DRIFT LAPTOP BACKPACK ,North,119.95,05/05/2026
+ORD-2030,  Linda Baker ,linda.baker@outlook.com,+1 713 649 3037,AeroBook Laptop Stand,East,89.95,2026-03-14
+ORD-2347,MICHELLE GARCIA,michelle.garcia@yahoo.com,+1 206 800 6045,Echo USB-C Hub,NORTH, 74.50 ,04/23/2026
+ORD-2252,SUSAN NELSON,SUSAN.NELSON@OUTLOOK.COM,555-614-9182,Vertex Standing Desk,SOUTH, 649.00 ,03-Apr-2026
+ORD-2331,jameS ngUyEn,james.nguyen@example.com,(206) 409-7400,KeyFlow Mechanical Keyboard,north, 129.99 ,2026-03-03
+ORD-2363,ROBERT RODRIGUEZ,ROBERT.RODRIGUEZ@GMAIL.COM,713-572-9919,tERra water BoTTlE,  East ,$24.95,06/21/2026
+ORD-2038,Charles Anderson,charles.anderson@gmail.com,(555) 247-6314,ergoflex office chair,south,$659.00,01/30/2026
+ORD-2351,Nancy Lewis,nancy.lewis@hotmail.com,+1 646 302 1050,KeyFlow Mechanical Keyboard,  SOUTH , 129.99 ,03/07/2026
+ORD-2154,david miller,david.miller@hotmail.com,312-530-7998,Vista 27in Monitor,SOUTH, 1197.00 ,"June 09, 2026"
+ORD-2130,Barbara Nelson,barbara.nelson@hotmail.com,415.381.1029,teRra WatEr bOtTle,  WEST ,24.95,03-Mar-2026
+ORD-2447,  Charles Davis ,,+1 646 659 7699,KeyFlow Mechanical Keyboard,West,129.99,06/05/2026
+ORD-2302,BETTY KING,betty.king@yahoo.com,206.221.7577,AEROBOOK LAPTOP STAND,West,$269.85,13-Jun-2026
+ORD-2496,  JOHN GONZALEZ ,john.gonzalez@example.com,713.782.1157,drift laPtOp bAcKpAck,North,119.95,2026-04-28
+ORD-2328,Donald Wright,donald.wright@@hotmail.com,3124712243,Vista 27in Monitor,North,798.00,2026-04-09
+ORD-2231,  saNDra hIlL ,sandra.hill@yahoo.com,713-696-2351,Drift Laptop Backpack,east, 359.85 ,30-Mar-2026
+ORD-2451,Robert Allen,robert.alle@gmail.com,312-340-7163,ErgoFlex Office Chair,  South ,988.50,"March 27, 2026"
+ORD-2181,  kAren THomAS ,karen.thomas@example.com,4159995663,echo usb-c hub,West, 223.50 ,"January 17, 2026"
+ORD-2482,  daniel lee ,DANIEL.LEE@HOTMAIL.COM,+1 212 329 3369,VerTex stANDing dEsk,north,1947.00,"February 02, 2026"
+ORD-2254,  Mary Garcia ,mary.garcia@example.com,+1 555 882 6915,ECHO USB-C HUB,EASt,$149.00,"June 27, 2026"
+ORD-2369,Joshua Walker,joshua.walker@hotmail.com,555.564.1096,AeroBook Laptop Stand,NORTH,$89.95,"June 18, 2026"
+ORD-2045,  Ashley Roberts ,ashley.roberts@hotmail.com,212.902.7018,Vista 27in Monitor,NOrth,399.00,2026-01-13
+ORD-2344,Elizabeth Wilson,ELIZABETH.WILSON@OUTLOOK.COM,512-518-3689,lumen desk lamp,south,$59.99,18-Feb-2026
+ORD-2384,elizabeth garcia,elizabeth.garcia@hotmail.com,512-570-6456,KeyFlow Mechanical Keyboard,  soutH ,129.99,20-Feb-2026
+ORD-2251,Patricia Martinez,patricia.martinez@outlook.com,415-925-3514,  keyflow mechanical keyboard ,East, 129.99 ,05/01/2026
+ORD-2366,Andrew Nelson,andrew.nelson@example.com,(415) 587-5380,Terra Water Bottle,East,49.90,"May 07, 2026"
+ORD-2473,Michael Clark,michael.clark@gmail.com,415-678-9958,Vertex Standing Desk,West,649.00,"April 22, 2026"
+ORD-2362,Andrew Lopez,andrew.lopez@example.com,(212) 971-4399,vista 27in monitor,SOUTH, 399.00 ,2026-04-15
+ORD-2242,susan williams,susan.william@hotmail.com,415.649.4991,  TERRA WATER BOTTLE ,  West ,24.95,31-Mar-2026
+ORD-2492,kevin williams,kevin.williams@yahoo.com,713.933.3593,Lumen Desk Lamp,  West ,$59.99,05/18/2026
+ORD-2424,  KAREN SMITH ,karen.smith@example.com,+1 312 409 2697,DRIFT LAPTOP BACKPACK,  WEST ,359.85,"February 25, 2026"
+ORD-2417,  PATRICIA TAYLOR ,patricia.taylor@yahoo.com,+1 713 431 7628,ErgoFLex OFfice ChAIr,WesT,329.50,03-Feb-2026
+ORD-2147,KIMBERLY GONZALEZ,kimberly.gonzalez@outlook.com,(312) 202-1208,KeyFlow Mechanical Keyboard,  WEST ,259.98,2026-03-21
+ORD-2221,Elizabeth Miller,elizabeth.miller@example.com,5559032426,  Echo USB-C Hub ,EAST,$74.50,26-Feb-2026
+ORD-2112,WILLiam BRown,WILLIAM.BROWN@GMAIL.COM,646-576-5902,vistA 27IN monItOR,East,$399.00,03/05/2026
+ORD-2300,Elizabeth Lewis,ELIZABETH.LEWIS@HOTMAIL.COM,512.549.5698,KEYFLOW MECHANICAL KEYBOARD,wEst,129.99,"February 05, 2026"
+ORD-2099,nancy roberts,nancy.roberts@example.com,312-690-6147,Vista 27in Monitor,East,$399.00,27-Apr-2026
+ORD-2349,  paul davis ,paul.davis@outlook.com,206-651-2789,  DRIFT LAPTOP BACKPACK ,north,$359.85,"February 28, 2026"
+ORD-2107,ROBERT MOORE,ROBERT.MOORE@HOTMAIL.COM,2124749898,AeroBook Laptop Stand,West,269.85,03/19/2026
+ORD-2146,Linda Young,linda.young@outlook.com,(555) 508-7895,Drift Laptop Backpack,souTh,$239.90,05-Feb-2026
+ORD-2357,Karen Hill,karen.hill@hotmail.com,555-541-3501,ErgoFlex Office Chair,  South ,$329.50,"May 31, 2026"
+ORD-2250,mARK baKer,mark.baker@hotmail.com,512.668.5982,LUMEN DESK LAMP,South, 119.98 ,03-Apr-2026
+ORD-2443,Jennifer Jones,JENNIFER.JONES@HOTMAIL.COM,555.821.8738,AeroBook Laptop Stand,South,$269.85,13-May-2026
+ORD-2263,Susan Hill,SUSAN.HILL@HOTMAIL.COM,646.921.5723,  AeroBook Laptop Stand ,WEST, 179.90 ,"February 02, 2026"
+ORD-2258,  Paul Carter ,PAUL.CARTER@HOTMAIL.COM,4152545467,  vERtex STandinG dEsk ,  eAsT ,$649.00,02/15/2026
+ORD-2295,ASHLEY MITCHELL,ashley.mitchell@example.com,512.437.1994,TERRA WATER BOTTLE,north,74.85,2026-03-20
+ORD-2156,MARgarET SmIth,margaret.smith@example.com,2064439370,  Echo USB-C Hub ,  weSt , 74.50 ,01/11/2026
+ORD-2466,Robert Moore,robert.moore@yahoo.com,555.935.8713,Drift Laptop Backpack,West,239.90,2026-01-16
+ORD-2203,PATRICIA TAYLOR,patricia.taylor@gmail.com,646-414-9814,terra water bottle,East,$24.95,2026-03-19
+ORD-2302,Betty King,betty.king@yahoo.com,2069944232,AEROBOOK LAPTOP STAND,West,$269.85,13-Jun-2026
+ORD-2283,  susan perez ,susan.perez@,312-832-8388,  aeROBook lAPTOP stand ,East,89.95,27-Jun-2026
+ORD-2271,  dorothy garcia ,dorothy.garcia@example.com,212.867.5945,Terra Water Bottle,east,24.95,06/05/2026
+ORD-2126,Matthew Scott,MATTHEW.SCOTT@HOTMAIL.COM,(312) 230-5602,Echo USB-C Hub,East,$149.00,2026-04-03
+ORD-2056,  Robert Taylor ,robert.taylor@yahoo.com,6468951857,  DRIFT LAPTOP BACKPACK ,west,$239.90,19-May-2026
+ORD-2227,Michelle Smith,michelle.smith@gmail.com,(555) 200-6885,Terra Water Bottle,  south ,$74.85,"April 18, 2026"
+ORD-2148,  Thomas Anderson ,thomas.anderson@outlook.com,+1 646 893 6123,  Drift Laptop Backpack ,  NORTH ,$119.95,13-Mar-2026
+ORD-2189,BARBARA GONZALEZ,barbara.gonzalez@outlook.com,312-955-1549,Pulse Wireless Mouse,South, 90.00 ,08-Jan-2026
+ORD-2383,Ashley Hernandez,ASHLEY.HERNANDEZ@GMAIL.COM,212-244-3475,ERgoflEx oFFice chAIr,  West ,329.50,31-Jan-2026
+ORD-2468,William Mitchell,,(415) 946-5368,  KEYFLOW MECHANICAL KEYBOARD ,South,389.97,08-Jan-2026
+ORD-2197,  Mark Allen ,mark.allen@example.com,(512) 658-7505,KeyFlow Mechanical Keyboard,North, 389.97 ,2026-03-07
+ORD-2104,lisa thompson,lisa.thompson@example.com,206.825.7431,AEROBOOK LAPTOP STAND,West, 179.90 ,2026-02-03
+ORD-2092,ASHLEY NGUYEN,ashley.nguyen@hotmail.com,(555) 736-1554,Drift Laptop Backpack,nOrTh,119.95,"April 05, 2026"
+ORD-2229,Dorothy Lopez,dorothy.lopez@yahoo.com,555-791-9161,Drift Laptop Backpack,  EAST ,359.85,23-Apr-2026
+ORD-2002,Donald Mitchell,donald.mitchell@outlook.com,(212) 294-7224,pulse wireless mouse,East,45.00,"February 14, 2026"
+ORD-2442,CHARLES ROBERTS,charles.roberts@example,646.723.9326,Vertex Standing Desk,  West ,$649.00,"April 09, 2026"
+ORD-2046,NANCY TAYLOR,nancy.taylor@outlook.com,312.536.3417,LUMEN DESK LAMP,South,$179.97,2026-02-26
+ORD-2286,Linda Nguyen,linda.nguyen@hotmail.com,(415) 326-6727,vertex standing desk,South,"$1,298.00",2026-04-06
+ORD-2469,Sarah Nelson,sarah.nelson@gmail.com,(212) 292-3990,keyflow mechanical keyboard,North,$129.99,02-Apr-2026
+ORD-2086,Kimberly Rodriguez,kimberly.rodriguez@example.com,3124538546,AEROBOOK LAPTOP STAND,NORTH,89.95,01/10/2026
+ORD-2210,  William Gonzalez ,william.gonzalez@yahoo.com,(312) 975-4351,AEROBOOK LAPTOP STAND,West, 89.95 ,"April 19, 2026"
+ORD-2085,Joshua Brown,JOSHUA.BROWN@HOTMAIL.COM,(312) 792-2196,ecHo uSB-c hUb,west,$149.00,"June 26, 2026"
+ORD-2388,betty roberts,BETTY.ROBERTS@EXAMPLE.COM,+1 512 688 6131,Vertex Standing Desk,  East ,649.00,2026-04-15
+ORD-2174,DonaLd HErnANDEZ,donald.hernandez@example.com,+1 555 992 3871,  ErgOFleX OFFIce ChaiR ,East, 329.50 ,15-May-2026
+ORD-2230,Linda Mitchell,LINDA.MITCHELL@YAHOO.COM,(212) 451-8740,Drift Laptop Backpack,East,119.95,"February 10, 2026"
+ORD-2140,James Scott,james.scott@example.com,7136337168,LUmen desk LamP,East, 59.99 ,06/07/2026
+ORD-2408,James Thompson,james.thompson@outlook.com,(312) 739-4562,Vertex Standing Desk,North,649.00,28-Feb-2026
+ORD-2384,Elizabeth Garcia,elizabeth.garcia@hotmail.com,206-816-6463,KeyFlow Mechanical Keyboard,  soutH ,129.99,02/20/2026
+ORD-2111,  Robert Miller ,robert.miller@@hotmail.com,3129053161,DRIFT LAPTOP BACKPACK,EAST,119.95,05-Feb-2026
+ORD-2423,Anthony Allen,anthony.alle@outlook.com,713-254-7433,ErgoFLex OFfICe cHAIr,South,$329.50,05/19/2026
+ORD-2276,margaret wilson,margaret.wilson@hotmail.com,(512) 746-7139,lumen desk lamp,South,$59.99,18-Feb-2026
+ORD-2427,Sandra Moore,sandra.moore@outlook.com,206-725-2028,Vertex Standing Desk,eAst,649.00,"April 06, 2026"
+ORD-2023,Karen Miller,karen.miller@hotmail.com,(212) 806-4978,Terra Water Bottle,North,24.95,25-Mar-2026
+ORD-2288,Sarah Perez,sarah.perez@yahoo.com,4154161797,  vertex standing desk ,North,649.00,"January 16, 2026"
+ORD-2341,BARBARA THOMPSON,barbara.thompson@hotmail.com,312-715-1217,DRIFT LAPTOP BACKPACK,north,$119.95,2026-03-31
+ORD-2256,barbara nelson,BARBARA.NELSON@YAHOO.COM,+1 713 799 5979,Drift Laptop Backpack,  North , 359.85 ,"February 09, 2026"
+ORD-2475,Joshua Rodriguez,joshua.rodriguez@outlook.com,415-671-1013,lumen desk lamp,EAST,$59.99,"January 18, 2026"
+ORD-2176,Anthony Carter,anthony.carter@hotmail.com,(512) 319-5224,dRift laPTOp bACKpAck,south, 119.95 ,04/01/2026
+ORD-2477,Andrew Jones,andrew.jones@outlook.com,3125776935,  KeyFlow Mechanical Keyboard ,West,$259.98,"June 25, 2026"
+ORD-2448,James Mitchell,james.mitchell@hotmail.com,713-991-2587,terra water bottle,west,$24.95,06/26/2026
+ORD-2222,richard gonzalez,richard.gonzalez@gmail.com,(212) 215-9422,pulse wireless mouse,east, 45.00 ,05/21/2026
+ORD-2029,  JENNIFER HERNANDEZ ,jennifer.hernandez@hotmail.com,5554375720,AeroBook Laptop Stand,South,$89.95,"May 26, 2026"
+ORD-2372,  linda miller ,,+1 646 639 1131,Vertex Standing Desk,North,$649.00,02/13/2026
+ORD-2144,JAMES TAYLOR,JAMES.TAYLOR@EXAMPLE.COM,+1 555 505 5764,AeroBook Laptop Stand,eAst,$89.95,"March 25, 2026"
+ORD-2011,Patricia Brown,PATRICIA.BROWN@GMAIL.COM,415-270-2113,terRA wATeR BottlE,  NORTH , 49.90 ,05/13/2026
+ORD-2070,Joshua Young,joshua.young@yahoo.com,(206) 504-8430,Terra Water Bottle,  West ,$24.95,12-May-2026
+ORD-2088,Emily Nguyen,emily.nguyen@yahoo.com,713.585.4012,Vertex Standing Desk,  East ,649.00,2026-06-18
+ORD-2426,Lisa Moore,lisa.moore@@outlook.com,(212) 777-7380,  Vista 27in Monitor ,WEST,$798.00,"February 01, 2026"
+ORD-2040,  Michelle Lee ,MICHELLE.LEE@HOTMAIL.COM,206.785.6881,vista 27in monitor,North, 399.00 ,2026-05-01
+ORD-2292,Mark Lee,mark.lee@yahoo.com,(415) 416-4032,KeyFlow Mechanical Keyboard,NORth,389.97,01-May-2026
+ORD-2308,ANTHONY ANDERSON,anthony.anderson@hotmail.com,415.924.1406,Vista 27in Monitor,  East ,399.00,05/23/2026
+ORD-2288,sarah perez,sarah.pere@yahoo.com,4154161797,  vertex standing desk ,North,649.00,16-Jan-2026
+ORD-2167,wilLiAm loPeZ,WILLIAM.LOPE@HOTMAIL.COM,5124372029,TErRa WaTer bOtTlE,North,$74.85,22-Jun-2026
+ORD-2218,  Karen Lee ,karen.lee@yahoo.com,5553794178,Echo USB-C Hub,West,$223.50,"March 28, 2026"
+ORD-2359,SUSAN GONZALEZ,susan.gonzalez@outlook.com,4152572573,Vertex Standing Desk,NORTH, 649.00 ,"June 01, 2026"
+ORD-2060,Charles Robinson,charles.robinson@example.com,512.580.2680,Echo USB-C Hub,south,$223.50,"April 22, 2026"
+ORD-2121,james young,JAMES.YOUNG@GMAIL.COM,(206) 955-6038,vertex standing desk,  West ,$649.00,23-May-2026
+ORD-2480,Steven White,steven.white@example.com,2123531113,Echo USB-C Hub,east,74.50,"February 02, 2026"
+ORD-2161,JOHN BROWN,john.brown@yahoo.com,(206) 643-6183,LUmEn dEsK lAmP,North,$59.99,"May 27, 2026"
+ORD-2376,Lisa King,lisa.kin@example.com,7139133112,ERGOFLEX OFFICE CHAIR,South,659.00,01/22/2026
+ORD-2287,kimberly carter,KIMBERLY.CARTER@GMAIL.COM,212.603.7120,  Lumen Desk Lamp ,  EAST ,119.98,"January 24, 2026"
+ORD-2146,Linda Young,linda.young@outlook.com,(555) 508-7895,Drift Laptop Backpack,souTh,$239.90,05-Feb-2026
+ORD-2225,Barbara Jones,barbara.jones@example.com,713.615.2140,TERRA WATER BOTTLE,west,49.90,2026-02-03
+ORD-2031,MARGARET THOMPSON,MARGARET.THOMPSON@EXAMPLE.COM,713-790-1659,Terra Water Bottle,east,24.95,2026-01-11
+ORD-2164,Matthew Rodriguez,matthew.rodriguez@yahoo.com,713.910.3496,AeroBook Laptop Stand,WEST,$89.95,"March 18, 2026"
+ORD-2003,Jennifer Nelson,jennifer.nelson@gmail.com,+1 212 438 2654,pulse wireless mouse,EAST, 135.00 ,2026-04-07
+ORD-2423,Anthony allen,anthony.allen@outlook.com,713-254-7433,ErgoFLex OFfICe cHAIr,South,$329.50,19-May-2026
+ORD-2284,david nelson,DAVID.NELSON@YAHOO.COM,+1 646 927 9690,  VERTEX STANDING DESK ,North, 1947.00 ,19-Feb-2026
+ORD-2276,margaret wilson,margaret.wilson@hotmail.com,(512) 746-7139,lumen desk lamp,South,$59.99,18-Feb-2026
+ORD-2201,  kEVin CArter ,kevin.carter@hotmail.com,3124482173,Echo USB-C Hub,NORTH, 74.50 ,02-Mar-2026
+ORD-2397,PATRICIA LEWIS,patricia.lewis@hotmail.com,2123452134,Vista 27iN MOnitOr,West,$798.00,2026-02-28
+ORD-2053,JOhn WalKer,john.walker@yahoo.com,312.646.7560,VERTEX STANDING DESK,east,1298.00,2026-01-09
+ORD-2236,  Charles Thomas ,charles.thomas@example.com,(212) 925-2965,  AeroBook Laptop Stand ,South, 89.95 ,11-Jan-2026
+ORD-2329,john lewis,john.lewis@yahoo.com,713.395.3258,  Vertex Standing Desk ,east,"1,947.00","February 25, 2026"
+ORD-2150,ASHLEY DAVIS,ashley.davis@gmail.com,312.885.6542,Vista 27in Monitor,nortH,798.00,2026-01-16
+ORD-2472,  Nancy Hill ,NANCY.HILL@OUTLOOK.COM,+1 212 729 4054,ECHO USB-C HUB,East,74.50,28-Jan-2026
+ORD-2228,  David Gonzalez ,DAVID.GONZALEZ@OUTLOOK.COM,+1 555 347 8974,  Echo USB-C Hub ,South,149.00,"April 07, 2026"
+ORD-2202,RICHARD THOMPSON,richard.thompson@yahoo.com,+1 512 838 3389,KEYFLOW MECHANICAL KEYBOARD,  South ,389.97,2026-06-21
+ORD-2071,  Daniel Clark ,daniel.clark@outlook.com,(312) 344-2586,vista 27in monitor,west,$399.00,09-Apr-2026
+ORD-2240,Linda Wilson,LINDA.WILSON@EXAMPLE.COM,+1 415 700 1312,Echo USB-C Hub,  South ,$149.00,2026-06-27
+ORD-2019,Donald Thomas,donald.thomas@hotmail.com,713.543.6238,AEROBOOK LAPTOP STAND,West,89.95,"May 18, 2026"
+ORD-2462,Lisa Roberts,LISA.ROBERTS@GMAIL.COM,3124863921,  Vista 27in Monitor ,west, 399.00 ,"May 28, 2026"
+ORD-2064,david jones,david.jones@gmail.com,2067568756,DRIFT LAPTOP BACKPACK,east, 119.95 ,21-Mar-2026
+ORD-2459,DONALD DAVIS,donald.davis@hotmail.com,2066081151,VERTEX STANDING DESK,East, 1298.00 ,05/11/2026
+ORD-2382,  Andrew Moore ,andrew.moore@yahoo.com,206-345-1019,ECHO USB-C HUB,south,74.50,2026-01-10
+ORD-2378,susan baker,susan.baker@yahoo.com,+1 713 939 3189,ErgoFlex Office Chair,  North , 329.50 ,06/20/2026
+ORD-2270,Michael Wilson,michael.wilson@outlook.com,(206) 406-9142,KeyFlow Mechanical Keyboard,east,259.98,05/13/2026
+ORD-2316,Joseph Nguyen,joseph.nguyen@example.com,206.313.5544,KeyFlow Mechanical Keyboard,South,$129.99,2026-03-17
+ORD-2312,SANDRA ROBERTS,sandra.roberts@yahoo.com,206.559.4485,Pulse Wireless Mouse,South, 45.00 ,2026-01-05
+ORD-2361,Linda Garcia,linda.garcia@gmail.com,512.480.2549,ergoflex office chair,  west , 659.00 ,2026-06-18
+ORD-2063,Steven Williams,steven.williams@gmail.com,212-990-6447,VISTA 27IN MONITOR,South,399.00,03/10/2026
+ORD-2196,Emily Nelson,emily.nelson@hotmail.com,415.763.7579,vista 27in monitor,West, 399.00 ,17-Jun-2026
+ORD-2042,jennifer martin,jennifer.martin@yahoo.com,4154638894,KeyFlow Mechanical Keyboard,  North ,$259.98,"February 18, 2026"
+ORD-2052,SaRaH kiNG,sarah.king@gmail.com,4159825186,  vista 27in monitor ,WEST,$798.00,09-Jun-2026
+ORD-2037,Elizabeth Young,elizabeth.young@example.com,+1 646 890 9742,Lumen Desk Lamp,  West ,59.99,05/05/2026
+ORD-2036,Joseph Young,joseph.young@hotmail.com,415-707-1606,Vertex Standing Desk,North,649.00,2026-05-06
+ORD-2106,Daniel King,daniel.king@outlook.com,+1 512 618 9056,Terra Water Bottle,  SOUTH ,$24.95,06-Apr-2026
+ORD-2400,Mark Clark,mark.clark@gmail.com,646.381.3664,Keyflow MeCHaNical keyBoaRd,East,389.97,"April 24, 2026"
+ORD-2438,  mary perez ,mary.perez@example.com,5553117358,KeyFlow Mechanical Keyboard,weSt,$129.99,06/05/2026
+ORD-2320,  KevIn rObErtS ,kevin.roberts@gmail.com,212-832-7735,Drift Laptop Backpack,norTh,119.95,"June 14, 2026"
+ORD-2153,Michael Williams,michael.williams@hotmail.com,312-323-7437,luMen desk LamP,West,$119.98,02/09/2026
+ORD-2291,kiMBerlY ADAmS,kimberly.adams@example.com,(212) 987-9248,ERGOFLEX OFFICE CHAIR,South,329.50,2026-05-04
+ORD-2285,Margaret Martin,margaret.martin@outlook.com,(415) 769-8208,  pulse wireless mouse ,SOUTH,135.00,"March 13, 2026"
+ORD-2348,Sarah Wilson,sarah.wilson@gmail.com,2067377829,Vista 27in Monitor,  east ,399.00,01/06/2026
+ORD-2397,Patricia Lewis,patricia.lewi@hotmail.com,2123452134,Vista 27iN MOnitOr,West,$798.00,2026-02-28
+ORD-2172,kimBerly YouNg,kimberly.young@yahoo.com,(555) 791-9561,KeyFlow Mechanical Keyboard,South, 129.99 ,2026-05-20
+ORD-2143,Susan Hernandez,susan.hernandez@outlook.com,+1 206 639 8821,TERRA WATER BOTTLE,East,$24.95,2026-05-10
+ORD-2268,Patricia Johnson,patricia.johnson@,2062998014,Terra Water Bottle,North, 24.95 ,2026-02-06
+ORD-2274,ROBERT GONZALEZ,robert.gonzalez@yahoo.com,(555) 939-8960,LUMEN DESK LAMP,East,59.99,08-Feb-2026
+ORD-2069,Thomas Gonzalez,thomas.gonzalez@gmail.com,2129166143,ECHO USB-C HUB,NORTH, 74.50 ,2026-02-06
+ORD-2405,  Linda White ,linda.white@example.com,312.820.1484,KEYFLOW MECHANICAL KEYBOARD,south,$259.98,2026-06-11
+ORD-2077,STEVEN CLARK,steven.clark@hotmail.com,6469913399,ECHO USB-C HUB,north, 74.50 ,"March 19, 2026"
+ORD-2488,  Dorothy Taylor ,dorothy.taylor@@yahoo.com,3123658500,Lumen Desk Lamp,West, 179.97 ,06/14/2026
+ORD-2035,Paul Moore,paul.moore@hotmail.com,512.553.6446,Vertex Standing Desk,East,$649.00,"March 22, 2026"
+ORD-2318,Margaret Young,margaret.young@example.com,+1 312 248 5553,Pulse Wireless Mouse,  west ,45.00,06/28/2026
+ORD-2120,  KAREN THOMPSON ,karen.thompson@example.com,312.675.7033,ErgoFlex Office Chair,South,$988.50,05/01/2026
+ORD-2414,Ashley Miller,ashley.miller@yahoo.com,512.871.3523,  KEYFLOW MECHANICAL KEYBOARD ,  eaSt ,129.99,06/05/2026
+ORD-2446,sandra smith,SANDRA.SMITH@HOTMAIL.COM,555-641-1392,  Lumen Desk Lamp ,West,59.99,04/22/2026
+ORD-2134,LisA Lopez,lisa.lopez@gmail.com,206.748.8779,Drift Laptop Backpack,nOrth,$119.95,2026-03-13
+ORD-2299,Donald Wright,DONALD.WRIGHT@GMAIL.COM,212-371-2934,ErgoFlex Office Chair,East,329.50,2026-06-10
+ORD-2076,barbara wright,barbara.wright@yahoo.com,312-485-5890,Echo USB-C Hub,East,74.50,24-May-2026
+ORD-2103,jessica adams,jessica.adams@hotmail.com,+1 415 390 8080,LUMEN DESK LAMP,sOUTh,179.97,02/14/2026
+ORD-2013,Charles Perez,charles.perez@example.com,5552947939,AEROBOOK LAPTOP STAND,South,89.95,"February 26, 2026"
+ORD-2454,Donald Young,donald.young@gmail.com,(646) 332-9843,  AeroBook Laptop Stand ,WEST, 269.85 ,2026-02-16
+ORD-2393,MICHAEL WRIGHT,MICHAEL.WRIGHT@YAHOO.COM,5124648753,KeyFlow Mechanical Keyboard,South,129.99,2026-03-21
+ORD-2471,jennifer nguyen,jennifer.nguyen@hotmail.com,415-237-7318,KeyFlow Mechanical Keyboard,west, 389.97 ,04/08/2026
+ORD-2109,Daniel Martin,daniel.martin@gmail.com,206-260-5543,  Pulse Wireless Mouse ,South,135.00,"March 14, 2026"
+ORD-2419,MAtthew BakEr,MATTHEW.BAKER@OUTLOOK.COM,(206) 568-4380,pulse wireless mouse,North,90.00,03/10/2026
+ORD-2421,patricia nguyen,patricia.nguyen@gmail.com,(713) 714-3540,  Pulse Wireless Mouse ,sOUtH,45.00,"April 25, 2026"
+ORD-2039,Barbara Garcia,barbara.garcia@example.com,(713) 670-5183,Terra Water Bottle,  East ,49.90,12-Jun-2026
+ORD-2184,  Karen Anderson ,karen.anderson@,646.687.8654,AeroBook Laptop Stand,South,$89.95,"April 28, 2026"
+ORD-2193,Daniel Jones,daniel.jones@example.com,(206) 856-6276,ECHO USB-C HUB,  North ,149.00,02/22/2026
+ORD-2493,kevin martin,kevin.martin@example.com,713.572.9332,vISTa 27iN MoNiTOR,North,399.00,2026-06-17
+ORD-2386,Susan Anderson,susan.anderson@hotmail.com,(206) 580-1886,  Vertex Standing Desk ,SOUTH,649.00,02/04/2026
+ORD-2486,EMiLy ClaRk,emily.clark@hotmail.com,(415) 587-3023,ERGoflex OfFice chaiR,west,$329.50,05/20/2026
+ORD-2220,  anthONy BakER ,anthony.baker@gmail.com,+1 512 718 1408,Lumen Desk Lamp,East, 179.97 ,09-Jun-2026
+ORD-2375,  lISa lEwis ,LISA.LEWIS@HOTMAIL.COM,646-508-8769,Terra Water Bottle,south, 74.85 ,08-Jun-2026
+ORD-2163,mark hill,mark.hill@outlook.com,+1 555 969 9992,  Lumen Desk Lamp ,  north ,59.99,21-Feb-2026
+ORD-2314,David Smith,david.smith@hotmail.com,512.980.7435,TERRA WATER BOTTLE,North,49.90,2026-01-06
+ORD-2294,  KAREN WRIGHT ,karen.wright@outlook.com,+1 512 682 1321,Lumen Desk Lamp,  WEST ,119.98,"April 23, 2026"
+ORD-2026,andrew lopez,andrew.lopez@example.com,3125034727,  AEROBOOK LAPTOP STAND ,south, 89.95 ,05/08/2026
+ORD-2041,Joshua Brown,joshua.brown@yahoo.com,(713) 894-3240,Terra Water Bottle,  East , 49.90 ,03/19/2026
+ORD-2445,Joseph Carter,joseph.carter@example.com,(713) 549-6142,LUMEN DESK LAMP,South,$179.97,03/08/2026
+ORD-2396,margaret gonzalez,margaret.gonzalez@hotmail.com,(212) 485-8447,Vista 27in Monitor,South,399.00,"January 21, 2026"
+ORD-2487,Betty Martin,betty.martin@gmail.com,(206) 620-4094,  Vertex Standing Desk ,North,1947.00,31-Mar-2026
+ORD-2243,James Smith,james.smith@hotmail.com,+1 713 735 8379,lumen desk lamp,North,59.99,20-Jun-2026
+ORD-2273,mark thompson,mark.thompson@outlook.com,206-444-2860,ergoflex office chair,East,329.50,"April 20, 2026"
+ORD-2059,  Elizabeth Hernandez ,elizabeth.hernandez@yahoo.com,+1 512 825 5668,lumen desk lamp,  West ,179.97,"February 16, 2026"
+ORD-2139,  Kimberly Carter ,kimberly.carter@gmail.com,6469214262,vErtEx staNdInG DesK,South,649.00,2026-02-23
+ORD-2186,Steven Lee,steven.lee@example.com,206-604-5094,Vertex Standing Desk,  west ,"$1,298.00",20-Mar-2026
+ORD-2301,  marK wriGHt ,,713.629.7586,Echo USB-C Hub,  East , 74.50 ,01/12/2026
+ORD-2432,robert white,robert.white@outlook.com,646-975-2021,Vista 27in Monitor,  north ,399.00,2026-02-25
+ORD-2489,Charles Jones,charles.jones@example.com,(415) 672-9195,Vertex Standing Desk,south,649.00,2026-06-01
+ORD-2326,SUSAN GARCIA,susan.garcia@example.com,415.529.7125,Drift Laptop Backpack,West,359.85,01/21/2026
+ORD-2470,Sandra Garcia,sandra.garcia@outlook.com,7132547214,  AEROBOOK LAPTOP STAND ,eASt,89.95,28-Jun-2026
+ORD-2114,Anthony Davis,anthony.davis@gmail.com,4155967895,AeroBook Laptop Stand,West,179.90,2026-06-17
+ORD-2463,SUSAN HERNANDEZ,susan.hernandez@outlook.com,(555) 531-2274,VERTEX STANDING DESK,West,649.00,03/01/2026
+ORD-2100,  Anthony Moore ,anthony.moore@example.com,555-944-8563,Vista 27in Monitor,East,399.00,2026-02-03
+ORD-2262,Paul Carter,paul.carter@outlook.com,555-942-2616,ErgoFlex Office Chair,wesT,329.50,"June 02, 2026"
+ORD-2491,William Lewis,william.lewis@outlook.com,212-669-9053,Vista 27in Monitor,west, 399.00 ,10-Feb-2026
+ORD-2323,jessica hill,jessica.hill@outlook.com,512.911.8657,Echo USB-C Hub,East,$74.50,2026-04-23
+ORD-2259,Emily Roberts,EMILY.ROBERTS@HOTMAIL.COM,4152178856,echo usb-c hub,West, 223.50 ,05/26/2026
+ORD-2353,  Kimberly Carter ,kimberly.carter@example.com,512.318.8899,echo usb-c hub,NORTH,74.50,02/06/2026
+ORD-2224,LiSa waLKer,lisa.walker@gmail.com,206-804-7773,Lumen Desk Lamp,West, 59.99 ,03/29/2026
+ORD-2398,Michelle Roberts,michelle.roberts@@yahoo.com,(415) 711-6184,Lumen Desk Lamp,  East ,59.99,06/24/2026
+ORD-2158,Nancy Wright,nancy.wright@example.com,646.274.6207,lumen desk lamp,  North ,59.99,2026-02-13
+ORD-2178,  Barbara Hill ,barbara.hill@example.com,+1 555 714 6689,Pulse Wireless Mouse,West,90.00,02-Mar-2026
+ORD-2281,  BARBARA WALKER ,barbara.walker@example.com,2126734248,Vista 27in Monitor,West,"$1,197.00",2026-03-03
+ORD-2152,Daniel davIs,daniel.davis@hotmail.com,+1 512 933 6952,DRIFT LAPTOP BACKPACK,SOUTH, 119.95 ,31-Jan-2026
+ORD-2062,Ashley Perez,ASHLEY.PEREZ@OUTLOOK.COM,646-446-7825,  Echo USB-C Hub ,EAST,74.50,"June 15, 2026"
+ORD-2425,Barbara Taylor,BARBARA.TAYLOR@EXAMPLE.COM,555-389-3321,ECHO USB-C HUB,South,74.50,"June 10, 2026"
+ORD-2235,  Michelle Walker ,michelle.walker@yahoo.com,(646) 760-1173,  Drift Laptop Backpack ,North, 119.95 ,06/26/2026
+ORD-2117,James Rodriguez,JAMES.RODRIGUEZ@YAHOO.COM,(713) 950-2934,vertex standing desk,north,649.00,"May 12, 2026"
+ORD-2352,Lisa KInG,lisa.king@example.com,+1 212 556 8010,Terra Water Bottle,North,$49.90,05/16/2026
+ORD-2478,RICHARD WILLIAMS,richard.williams@outlook.com,(206) 891-8875,aerobook laptop stand,SOUTH,89.95,"April 26, 2026"
+ORD-2279,Nancy Allen,nancy.allen@example.com,(646) 664-1448,ErgoFlex Office Chair,  West ,329.50,03/12/2026
+ORD-2466,Robert Moore,robert.moore@yahoo.com,555.935.8713,Drift Laptop Backpack,West,239.90,2026-01-16
+ORD-2219,Elizabeth Wright,elizabeth.wright@gmail.com,(646) 768-9779,echo usb-c hub,  EAST ,74.50,03-May-2026
+ORD-2368,John Lewis,john.lewis@hotmail.com,646.895.5092,Lumen Desk Lamp,east,$179.97,2026-04-05
+ORD-2033,Mark Brown,mark.brown@hotmail.com,+1 415 494 8178,AEROBOOK LAPTOP STAND,South,269.85,"April 07, 2026"
+ORD-2304,Patricia Davis,patricia.davis@outlook.com,3125585902,Drift Laptop Backpack,South,$119.95,2026-05-31
+ORD-2433,EMILY SCOTT,emily.scott@outlook.com,(713) 433-1351,LUMEN DESK LAMP,South,59.99,"January 15, 2026"
+ORD-2176,Anthony Carter,anthony.carter@hotmail.com,(512) 319-5224,dRift laPTOp bACKpAck,south, 119.95 ,04/01/2026
+ORD-2365,  andrew davis ,ANDREW.DAVIS@YAHOO.COM,(312) 480-1161,eCHo uSb-c hub,south,$149.00,21-Jan-2026
+ORD-2498,Michael Lee,michael.lee@outlook.com,4158243574,Terra Water Bottle,West, 24.95 ,"May 31, 2026"
+ORD-2282,Lisa Hernandez,lisa.hernandez@hotmail.com,312-930-4328,Terra Water Bottle,east,$24.95,"January 08, 2026"
+ORD-2250,mARK baKer,mark.baker@hotmail.com,512.668.5982,LUMEN DESK LAMP,South, 119.98 ,03-Apr-2026
+ORD-2175,Sarah Anderson,sarah.anderson@yahoo.com,2127155821,Terra Water Bottle,East, 24.95 ,"May 01, 2026"
+ORD-2338,Patricia Perez,patricia.perez@yahoo.com,(555) 631-1457,vertex standing desk,north,$649.00,04/11/2026
+ORD-2190,william williams,WILLIAM.WILLIAMS@OUTLOOK.COM,+1 312 315 4866,echo usb-c hub,East,$223.50,2026-02-05
+ORD-2298,  william lopez ,william.lopez@outlook.com,(713) 548-6820,Echo USB-C Hub,South,74.50,2026-01-21
+ORD-2173,Elizabeth Allen,elizabeth.allen@yahoo.com,+1 206 973 4337,Terra Water Bottle,sOUTh,24.95,03/12/2026
+ORD-2358,beTTY Lee,betty.lee@gmail.com,+1 555 926 5981,Lumen Desk Lamp,West,$59.99,05/25/2026
+ORD-2144,JAMES TAYLOR,JAMES.TAYLOR@EXAMPLE.COM,+1 555 505 5764,AeroBook Laptop Stand,eAst,$89.95,"March 25, 2026"
+ORD-2061,JENNIFEr ANderson,jennifer.anderson@gmail.com,206-313-5720,  drift laptop backpack ,West,119.95,2026-01-11
+ORD-2381,Elizabeth Jones,ELIZABETH.JONES@GMAIL.COM,+1 555 817 2633,VIstA 27in moniTOr,south,$399.00,2026-05-01
+ORD-2280,KAREN THOMPSON,karen.thompson@outlook.com,646-662-8837,terra water bottle,  East ,24.95,02-Feb-2026
+ORD-2135,DONALD LOPEZ,donald.lopez@hotmail.com,4158095225,Lumen Desk Lamp,NORTH, 59.99 ,23-Feb-2026
+ORD-2233,MARK ROBINSON,,(713) 973-2900,AEROBOOK LAPTOP STAND,East,$179.90,"June 17, 2026"
+ORD-2110,  elIzAbEtH carteR ,elizabeth.carter@example.com,3127065399,Pulse Wireless Mouse,South, 90.00 ,2026-04-11
+ORD-2232,James Davis,james.davis@yahoo.com,312.696.3962,Terra Water Bottle,North,$24.95,"June 05, 2026"
+ORD-2208,john nelson,john.nelson@gmail.com,+1 206 621 5970,Echo USB-C Hub,  EAST ,$74.50,02/21/2026
+ORD-2336,  NANCY WALKER ,nancy.walker@outlook.com,(512) 672-2117,AeroBook Laptop Stand,WEST,$179.90,01/14/2026
+ORD-2097,  JAMES LEE ,james.lee@hotmail.com,(206) 305-1430,  drift laptop backpack ,  East ,119.95,"March 15, 2026"
+ORD-2177,  JOSEPH GONZALEZ ,joseph.gonzalez@gmail.com,(555) 982-9871,AeroBook Laptop Stand,East, 269.85 ,"April 06, 2026"
+ORD-2248,Joshua Mitchell,joshua.mitchell@hotmail.com,(512) 920-1022,veRtex StaNdinG DeSK,North,"$1,298.00",03-May-2026
+ORD-2247,Robert Scott,robert.scott@gmail.com,555-909-7662,ECHO USB-C HUB,NORTH,$74.50,"April 23, 2026"
+ORD-2362,Andrew Lopez,andrew.lopez@example.com,(212) 971-4399,vista 27in monitor,SOUTH, 399.00 ,2026-04-15
+ORD-2006,ashley johnson,ASHLEY.JOHNSON@EXAMPLE.COM,512-270-9727,ERGOFLEX OFFICE CHAIR,south,329.50,03/24/2026
+ORD-2371,MATTHEW ALLEN,matthew.allen@outlook.com,+1 555 364 4260,Vertex Standing Desk,norTh,649.00,02/24/2026
+ORD-2057,Jennifer Mitchell,jennifer.mitchell@hotmail.com,2125177171,Lumen Desk Lamp,North, 59.99 ,2026-03-25
+ORD-2083,DOROTHY ANDERSON,dorothy.anderson@example.com,512-975-9806,AeroBook Laptop Stand,North, 89.95 ,2026-05-07
+ORD-2122,Jennifer Williams,jennifer.williams@gmail.com,+1 206 276 2020,  AeroBook Laptop Stand ,east,269.85,20-Apr-2026
+ORD-2328,Donald Wright,donald.wright@@hotmail.com,3124712243,Vista 27in Monitor,North,798.00,2026-04-09
+ORD-2453,  David Scott ,david.scott@yahoo.com,2062626295,Drift Laptop Backpack,WEsT,359.85,20-Apr-2026
+ORD-2392,David White,david.white@hotmail.com,(212) 356-9151,  Pulse Wireless Mouse ,East,45.00,"June 13, 2026"
+ORD-2094,Lisa Walker,lisa.walker@gmail.com,+1 555 295 7640,driFt LaptoP baCkpAck,  EAST ,$359.85,"March 08, 2026"
+ORD-2102,mark garcia,mark.garcia@outlook.com,2126488412,  ERGOFLEX OFFICE CHAIR ,NORTH,329.50,04/04/2026
+ORD-2025,ashley king,ashley.king@yahoo.com,6466356419,Vertex Standing Desk,east, 649.00 ,2026-03-21
+ORD-2324,Sandra Williams,sandra.williams@hotmail.com,646-957-7158,  dRIFt lapToP BACkPACK ,sOuTH,$119.95,"January 05, 2026"
+ORD-2198,Karen Anderson,karen.anderson@yahoo.com,+1 415 296 1618,  aerobook laptop stand ,East, 89.95 ,10-Jan-2026
+ORD-2406,daniel rodriguez,daniel.rodriguez@gmail.com,+1 713 678 9123,AeroBook Laptop Stand,  south , 89.95 ,"February 06, 2026"
+ORD-2297,lisa scott,lisa.scott@hotmail.com,+1 512 303 7815,lumen desk lamp,North, 179.97 ,27-Feb-2026
+ORD-2075,elizabeth taylor,elizabeth.taylor@hotmail.com,(206) 713-8726,Vertex Standing Desk,East,"1,947.00",02-Feb-2026
+ORD-2416,  Susan Martinez ,SUSAN.MARTINEZ@YAHOO.COM,206-949-7923,vista 27in monitor,East,"1,197.00",2026-04-25
+ORD-2217,James Davis,james.davis@outlook.com,2062466468,Vertex Standing Desk,North, 1298.00 ,2026-06-14
+ORD-2225,BARBARA JONES,barbara.jone@example.com,713.615.2140,TERRA WATER BOTTLE,west,49.90,2026-02-03
+ORD-2068,Lisa Nelson,LISA.NELSON@EXAMPLE.COM,206.934.8842,teRRA wAter BottlE,south, 24.95 ,2026-05-04
+ORD-2137,Barbara Moore,barbara.moore@gmail.com,3122508785,  Vista 27in Monitor ,east,399.00,06/12/2026
+ORD-2296,ASHLEY ROBERTS,ashley.roberts@outlook.com,312.801.6556,KeyFlow Mechanical Keyboard,WEST,259.98,"April 26, 2026"
+ORD-2265,steven perez,steven.perez@gmail.com,(312) 843-3205,  VISTA 27IN MONITOR ,  North ,$798.00,"May 15, 2026"
+ORD-2267,AntHonY kIng,anthony.king@example.com,+1 415 718 1913,keyflow mechanical keyboard,West, 259.98 ,28-Apr-2026
+ORD-2303,Susan Garcia,susan.garcia@,+1 312 992 5979,  Echo USB-C Hub ,North, 223.50 ,2026-03-25
+ORD-2237,Sandra Jones,sandra.jones@yahoo.com,+1 713 995 2022,dRiFT LApTop BaCKPacK,North, 119.95 ,04/24/2026
+ORD-2169,STEVEN SCOTT,STEVEN.SCOTT@GMAIL.COM,(415) 337-9399,  Drift Laptop Backpack ,  south ,119.95,2026-06-05
+ORD-2155,Emily Wilson,emily.wilson@outlook.com,4157159888,AeroBook Laptop Stand,West,89.95,13-Jun-2026
+ORD-2354,Daniel Robinson,daniel.robinson@gmail.com,512-292-6452,Pulse Wireless Mouse,North,45.00,"March 11, 2026"
+ORD-2095,John Lee,john.lee@example.com,415.905.2284,Lumen Desk Lamp,nOrtH,179.97,07-Mar-2026
+ORD-2129,Mary Martinez,mary.martinez@gmail.com,2068002655,  terra water bottle ,South,24.95,02-Feb-2026
+ORD-2355,  JOSEPH ANDERSON ,joseph.anderson@example.com,212-786-7025,Pulse Wireless Mouse,north,$45.00,"March 20, 2026"
+ORD-2461,James Lee,james.lee@gmail.com,2125584703,AeroBook Laptop Stand,east,89.95,29-Jan-2026
+ORD-2054,Kimberly Hill,KIMBERLY.HILL@OUTLOOK.COM,(312) 377-3504,AEROBOOK LAPTOP STAND,West,89.95,04-Apr-2026
+ORD-2193,Daniel Jones,daniel.jones@example.com,(206) 856-6276,ECHO USB-C HUB,  North ,149.00,02/22/2026
+ORD-2145,Mary Anderson,mary.anderson@outlook.com,555.584.5190,AeroBook Laptop Stand,North,89.95,2026-02-28
+ORD-2418,  Steven Mitchell ,steven.mitchell@gmail.com,312-737-9243,Vertex Standing Desk,north,"1,298.00","March 09, 2026"
+ORD-2049,Jennifer Allen,jennifer.allen@example.com,(206) 562-7929,ErgoFlex Office Chair,EAST,$329.50,"February 07, 2026"
+ORD-2043,  emily lewis ,emily.lewis@yahoo.com,(206) 853-7086,ErgoFlex Office Chair,East,659.00,"January 08, 2026"
+ORD-2338,Patricia Perez,patricia.perez@yahoo.com,(555) 631-1457,vertex standing desk,north,$649.00,04/11/2026
+ORD-2116,Andrew Thompson,andrew.thompson@gmail.com,(312) 259-5005,  Vista 27in Monitor ,north,"$1,197.00",2026-06-16
+ORD-2404,ELIZABETH MARTIN,elizabeth.martin@outlook.com,+1 555 623 2205,  Pulse Wireless Mouse ,  WesT ,$45.00,2026-01-28
+ORD-2067,  barbara king ,barbara.king@example.com,4159283852,  ErgoFlex Office Chair ,South,329.50,2026-06-24
+ORD-2264,  joseph nelson ,joseph.nelson@hotmail.com,(555) 890-9055,viSTa 27IN MonItor,East,399.00,24-Apr-2026
+ORD-2113,Sarah Garcia,sarah.garcia@gmail.com,713.410.9482,AeroBook Laptop Stand,East,$269.85,"June 07, 2026"
+ORD-2065,Linda Lewis,linda.lewis@outlook.com,(713) 284-7955,vISTA 27In monitoR,wesT,798.00,2026-04-27
+ORD-2101,Jessica Clark,jessica.clark@hotmail.com,(206) 308-1172,lumen desk lamp,  SoutH ,179.97,16-Jan-2026
+ORD-2293,  DOROTHY ROBERTS ,DOROTHY.ROBERTS@OUTLOOK.COM,+1 312 227 4428,KeyFlow Mechanical Keyboard,West,$259.98,2026-03-23
+ORD-2253,Steven Martin,steven.martin@yahoo.com,5553422914,TERRA WATER BOTTLE,SOutH, 24.95 ,05/29/2026
+ORD-2200,Margaret Young,,555.526.9846,ERGOFLEX OFFICE CHAIR,SOUTH,329.50,"June 21, 2026"
+ORD-2050,JOSEPH MILLER,joseph.miller@outlook.com,(555) 823-5381,keyflow mechanical keyboard,East,$389.97,04/09/2026
+ORD-2428,Anthony Scott,anthony.scott@example.com,(646) 798-7615,TERRA WATER BOTTLE,south,24.95,"June 01, 2026"
+ORD-2315,MATTHEW ROBINSON,matthew.robinson@gmail.com,312-655-1153,Terra Water Bottle,east, 24.95 ,04/14/2026
+ORD-2188,  DONALD SMITH ,donald.smith@hotmail.com,6466741519,AEROBOOK LAPTOP STAND,SOUTH,89.95,"February 12, 2026"
+ORD-2401,james lewis,james.lewis@yahoo.com,(206) 889-4957,AeroBook Laptop Stand,NORTH, 269.85 ,18-Mar-2026
+ORD-2337,MARY PEREZ,mary.perez@outlook.com,7133578219,ERGOFLEX OFFICE CHAIR,  South , 329.50 ,"March 21, 2026"
+ORD-2465,Matthew Lopez,matthew.lopez@hotmail.com,312-591-7130,Vertex Standing Desk,sOUTH,649.00,04-May-2026
+ORD-2457,Mary Nguyen,mary.nguyen@example.com,+1 312 657 7059,Vista 27in Monitor,EAST,399.00,2026-05-24
+ORD-2132,MARGARET HERNANDEZ,margaret.hernandez@outlook.com,7138765612,  terra water bottle ,WEST,49.90,2026-02-14
+ORD-2407,Michael Mitchell,michael.mitchell@hotmail.com,713.526.2762,TErra wAter bOTtlE,South, 24.95 ,2026-02-16
+ORD-2212,Michelle Baker,michelle.bake@hotmail.com,3126652477,lumen desk lamp,  South ,119.98,2026-04-20
+ORD-2160,  Michael Hernandez ,michael.hernandez@outlook.com,+1 212 410 9810,Echo USB-C Hub,SOUTH,223.50,2026-01-06
+ORD-2001,  LINDA JOHNSON ,linda.johnson@example.com,555-295-4582,  Pulse Wireless Mouse ,South,45.00,03/03/2026
+ORD-2327,joseph gonzalez,joseph.gonzalez@hotmail.com,646-460-2388,Drift Laptop Backpack,  east , 119.95 ,"April 16, 2026"
+ORD-2309,Dorothy Baker,DOROTHY.BAKER@EXAMPLE.COM,415-219-5504,terra water bottle,WEST, 24.95 ,"May 30, 2026"
+ORD-2069,Thomas Gonzalez,thomas.gonzalez@gmail.com,415.375.6531,ECHO USB-C HUB,NORTH, 74.50 ,02/06/2026
+ORD-2226,Susan Rodriguez,susan.rodriguez@yahoo.com,3124106187,Terra Water Bottle,East, 24.95 ,2026-02-11
+ORD-2275,Jennifer Walker,jennifer.walker@gmail.com,713-708-2478,Lumen Desk Lamp,east,59.99,02/02/2026
+ORD-2439,James Moore,james.moore@example.com,646.475.5104,PULSE WIRELESS MOUSE,East,45.00,"March 09, 2026"
+ORD-2238,Nancy Walker,nancy.walker@hotmail.com,(212) 753-4700,teRra WAteR BotTLe,south,24.95,16-May-2026
+ORD-2244,matthew young,matthew.young@gmail.com,3126754409,  VERTEX STANDING DESK ,South,"1,947.00","March 06, 2026"
+ORD-2500,  Mary Gonzalez ,mary.gonzalez@hotmail.com,+1 312 420 9240,  AeroBook Laptop Stand ,SOUTH,89.95,2026-03-21
+ORD-2499,Karen Lewis,karen.lewis@yahoo.com,(206) 980-7834,Lumen Desk Lamp,west,59.99,31-Mar-2026
+ORD-2436,jennifer wilson,jennifer.wilson@gmail.com,+1 415 236 4851,Lumen Desk Lamp,NORTH, 179.97 ,05-Mar-2026
+ORD-2048,Steven Walker,STEVEN.WALKER@GMAIL.COM,4154819984,vIsta 27in monItOR,South,399.00,2026-05-10
+ORD-2115,James Thomas,james.thomas@yahoo.com,(206) 633-7590,AeroBook Laptop Stand,south,$89.95,01/20/2026
+ORD-2179,JAMES SMITH,james.smith@yahoo.com,7136826621,aerobook laptop stand,West,179.90,02-Jun-2026
+ORD-2008,robert white,robert.white@example.com,+1 512 448 8749,  ergoflex office chair ,west,988.50,2026-03-06
+ORD-2490,ROBERT YOUNG,robert.young@yahoo.com,(555) 649-8877,echo usb-c hub,  nortH , 149.00 ,2026-04-13
+ORD-2437,michelle robinson,michelle.robinson@@hotmail.com,206-654-1727,pulse wireless mouse,West,45.00,20-Jan-2026
+ORD-2087,suSAn joNeS,susan.jones@example.com,646-442-5944,ErgoFlex Office Chair,  west ,$988.50,"January 13, 2026"
+ORD-2269,JOHN LEE,john.lee@hotmail.com,+1 206 473 1334,ErgoFlex Office Chair,West,329.50,"February 17, 2026"
+ORD-2370,matthew smith,matthew.smith@outlook.com,555-359-5098,ErgoFlex Office Chair,EaSt,$659.00,05/10/2026
+ORD-2307,Steven Carter,steven.carter@hotmail.com,415.980.3269,Pulse Wireless Mouse,WEST,135.00,"April 30, 2026"
+ORD-2078,Susan Gonzalez,susan.gonzale@example.com,555-885-9700,  Echo USB-C Hub ,west,$74.50,"May 28, 2026"
+ORD-2194,Michael Nguyen,michael.nguyen@hotmail.com,713-250-7002,  AeroBook Laptop Stand ,South,89.95,"January 13, 2026"
+ORD-2277,Steven Lewis,steven.lewis@gmail.com,3124597302,Pulse Wireless Mouse,North,45.00,"June 19, 2026"
+ORD-2464,emily walker,emily.walker@yahoo.com,312-370-5550,Vista 27in Monitor,West,798.00,"May 06, 2026"
+ORD-2209,Mary Roberts,MARY.ROBERTS@OUTLOOK.COM,212-904-8808,Terra Water Bottle,east,24.95,06/09/2026
+ORD-2074,paul hill,PAUL.HILL@YAHOO.COM,(206) 797-6040,Echo USB-C Hub,South,$149.00,"May 29, 2026"
+ORD-2377,DONAld hilL,donald.hill@yahoo.com,5557464902,  VISTA 27IN MONITOR ,East,1197.00,04/14/2026
+ORD-2018,Mark cArter,mark.carter@gmail.com,646.973.8251,AeroBook Laptop Stand,West,$179.90,"May 11, 2026"
+ORD-2452,  DAVID GONZALEZ ,david.gonzalez@example.com,555.628.5310,  ergoFLEX oFFiCE cHaIr ,West, 988.50 ,"February 28, 2026"
+ORD-2494,KIMBERLY ANDERSON,kimberly.anderson@yahoo.com,212.257.8317,AeroBook Laptop Stand,South,$89.95,06/24/2026
+ORD-2170,Charles Garcia,charles.garcia@outlook.com,415.796.3979,AeroBook Laptop Stand,East,179.90,06/09/2026
+ORD-2014,Emily Smith,emily.smith@example.com,(555) 515-6974,ErgoFlex Office Chair,South,329.50,02/12/2026
+ORD-2402,  William Carter ,william.carter@hotmail.com,206-331-7396,VIStA 27in MONIToR,  North ,$399.00,"May 27, 2026"
+ORD-2015,JESSICA HERNANDEZ,jessica.hernandez@hotmail.com,(312) 473-3608,LuMeN dEsK LaMp,  East , 119.98 ,01/11/2026
+ORD-2165,Sarah Lewis,SARAH.LEWIS@YAHOO.COM,212.487.3293,lumen desk lamp,North,59.99,"May 07, 2026"
+ORD-2319,  margaret jones ,margaret.jones@@gmail.com,5558066477,aerobook laptop stand,East,$89.95,2026-02-16
+ORD-2136,Kimberly Wright,kimberly.wright@hotmail.com,2123082654,Vertex Standing Desk,west,"1,947.00",2026-06-04
+ORD-2192,Joshua Lopez,joshua.lopez@example.com,+1 212 743 3539,echo usb-c hub,east, 74.50 ,03/28/2026
+ORD-2321,KIMBERLY WHITE,kimberly.white@gmail.com,4158529337,terra water bottle,  west ,24.95,2026-02-01
+ORD-2207,Jessica Carter,jessica.carter@example.com,312.341.6062,Lumen Desk Lamp,South,$119.98,25-Mar-2026
+ORD-2157,Dorothy King,dorothy.king@outlook.com,212.391.3847,  AEROBOOK LAPTOP STAND ,  East , 89.95 ,2026-06-04
+ORD-2105,DAVID THOMPSON,david.thompson@outlook.com,+1 415 788 7286,ergoflex office chair,South,$329.50,03/24/2026
+ORD-2255,Mark King,MARK.KING@EXAMPLE.COM,7136869606,PULSE WIRELESS MOUSE,WEST, 45.00 ,"April 23, 2026"
+ORD-2016,  mIchElLe thomaS ,michelle.thomas@yahoo.com,212.937.5920,vertex standing desk,West,$649.00,"June 06, 2026"
+ORD-2084,joshua davis,joshua.davis@outlook.com,212.896.4365,Vertex Standing Desk,West,"1,947.00","May 14, 2026"
+ORD-2403,matthew lopez,matthew.lopez@hotmail.com,(713) 284-3355,AeroBook Laptop Stand,NORTH,89.95,2026-03-22
+ORD-2057,Jennifer Mitchell,jennifer.mitchell@hotmail.com,2125177171,Lumen Desk Lamp,North, 59.99 ,2026-03-25
+ORD-2187,  Charles Baker ,charles.baker@yahoo.com,512-478-9060,pulse wireless mouse,  north , 90.00 ,02/22/2026
+ORD-2093,MARY SMITH,mary.smith@yahoo.com,(206) 383-2753,Echo USB-C Hub,East,223.50,2026-04-20
+ORD-2343,Joseph White,joseph.white@outlook.com,312.822.7250,keyflow mechanical keyboard,NORTH,$129.99,2026-02-26
+ORD-2430,Nancy Lopez,nancy.lopez@hotmail.com,+1 415 268 8190,Echo USB-C Hub,NORTH,149.00,2026-02-22
+ORD-2474,Jessica Thomas,jessica.thomas@gmail.com,2126317977,KeyFlow Mechanical Keyboard,  NORTH , 389.97 ,04/01/2026
+ORD-2380,  Donald Anderson ,donald.anderson@outlook.com,415-393-9036,  Vista 27in Monitor ,South,$399.00,2026-02-11
+ORD-2078,  Susan Gonzalez ,susan.gonzalez@example.com,555-885-9700,  Echo USB-C Hub ,west,$74.50,2026-05-28
+ORD-2456,Michelle Walker,michelle.walker@gmail.com,+1 212 470 8723,  aerobook laptop stand ,West,$269.85,"March 25, 2026"
+ORD-2090,Susan White,susan.white@gmail.com,+1 312 912 4350,Pulse Wireless Mouse,eASt,45.00,"February 28, 2026"
+ORD-2089,EMILY YOUNG,EMILY.YOUNG@OUTLOOK.COM,512.579.2514,Vista 27in Monitor,eASt,"$1,197.00","May 20, 2026"
+ORD-2029,  JENNIFER HERNANDEZ ,jennifer.hernandez@hotmail.com,5554375720,AeroBook Laptop Stand,South,$89.95,"May 26, 2026"
+ORD-2081,Sandra Thomas,sandra.thomas@outlook.com,2066379442,LUMEN DESK LAMP,South,$59.99,2026-04-01
+ORD-2422,betty miller,BETTY.MILLER@YAHOO.COM,+1 312 456 3223,Pulse Wireless Mouse,north,45.00,06/06/2026
+ORD-2311,saRaH bRowN,sarah.brown@gmail.com,415-582-9854,KeyFlow Mechanical Keyboard,West,259.98,2026-05-26
+ORD-2317,Michelle Rodriguez,michelle.rodriguez@example.com,555.909.9731,ergoflex office chair,WEST,329.50,12-Mar-2026
+ORD-2191,ROBert MitcHEll,ROBERT.MITCHELL@HOTMAIL.COM,2065663207,Drift Laptop Backpack,West,359.85,02/13/2026
+ORD-2151,WILLIAM HILL,william.hill@outlook.com,+1 312 763 7203,  Drift Laptop Backpack ,West,239.90,"February 16, 2026"
+ORD-2339,robert young,robert.young@example.com,206-323-4807,ECHO USB-C HUB,NOrTh, 74.50 ,2026-03-29
+ORD-2379,Sarah Lopez,sarah.lopez@example.com,206.869.5216,Pulse Wireless Mouse,  south ,45.00,05/22/2026
+ORD-2444,  Jessica Lewis ,jessica.lewis@outlook.com,2065702305,  AeroBook Laptop Stand ,East,179.90,"March 26, 2026"
+ORD-2128,  JOSHUA GONZALEZ ,joshua.gonzalez@gmail.com,512.200.6435,  drift laptop backpack ,South, 359.85 ,2026-03-25
+ORD-2411,Joseph Brown,JOSEPH.BROWN@HOTMAIL.COM,(646) 750-1080,vertex standing desk,NORTH, 649.00 ,31-Jan-2026
+ORD-2306,  sanDrA ScOtt ,sandra.scott@example.com,713-490-4532,Vertex Standing Desk,  North ,649.00,"May 28, 2026"
+ORD-2032,Steven Clark,steven.clark@yahoo.com,+1 206 978 1601,VISTA 27IN MONITOR,North,399.00,"March 28, 2026"
+ORD-2020,MARK WHITE,mark.white@hotmail.com,+1 555 983 7232,ECHO USB-C HUB,West,149.00,04/21/2026
+ORD-2391,  Mary Mitchell ,mary.mitchell@outlook.com,212-935-4794,Vista 27in Monitor,South, 798.00 ,"June 04, 2026"
+ORD-2241,  Karen Miller ,karen.miller@gmail.com,+1 312 264 4320,drift laptop backpack,west,$359.85,17-Feb-2026
+ORD-2356,Margaret Thompson,margaret.thompson@gmail.com,5125233370,KeyFlow Mechanical Keyboard,WEST,129.99,18-May-2026
+ORD-2072,Joshua Thompson,JOSHUA.THOMPSON@YAHOO.COM,206-717-8491,aerobook laptop stand,north,89.95,12-May-2026
+ORD-2080,BETTY NGUYEN,betty.nguyen@gmail.com,512.856.9901,Lumen Desk Lamp,west, 59.99 ,01/14/2026
+ORD-2266,Kevin Thompson,kevin.thompson@example.com,+1 312 500 9157,Lumen Desk Lamp,  North ,59.99,2026-06-13
+ORD-2066,  daviD joNeS ,david.jones@outlook.com,+1 212 468 5264,aerobook laptop stand,  west ,89.95,"April 07, 2026"
+ORD-2005,PAtricIa dAvIs,patricia.davis@yahoo.com,212.840.5889,Lumen Desk Lamp,South,59.99,28-Jun-2026
+ORD-2290,Lisa Hill,LISA.HILL@EXAMPLE.COM,+1 206 577 4053,  AeroBook Laptop Stand ,East,$179.90,"April 29, 2026"
+ORD-2091,DANIEL WILSON,daniel.wilson@@outlook.com,7133564214,keyflow mechanical keyboard,South, 129.99 ,20-Apr-2026
+ORD-2225,Barbara Jones,barbara.jones@example.com,713.615.2140,TERRA WATER BOTTLE,west,49.90,2026-02-03
+ORD-2434,Patricia Robinson,patricia.robinson@gmail.com,6465604172,VIsTa 27iN mONITOr,EAST,399.00,2026-04-25
+ORD-2073,Andrew Smith,andrew.smith@hotmail.com,(312) 571-5728,  ergofLEX oFFicE chaIr ,EAST, 659.00 ,08-Feb-2026
+ORD-2024,  Andrew Allen ,ANDREW.ALLEN@HOTMAIL.COM,646-850-8532,keYflow MecHaNicAL KEyBoaRD,north,$129.99,"May 14, 2026"
+ORD-2166,Michelle Wilson,MICHELLE.WILSON@HOTMAIL.COM,206-428-5767,Vertex Standing Desk,WEst,"$1,947.00","March 12, 2026"
+ORD-2460,Elizabeth Martin,elizabeth.martin@example.com,646-964-3217,Echo USB-C Hub,  north ,74.50,2026-06-11
+ORD-2332,William Miller,WILLIAM.MILLER@GMAIL.COM,206-490-4373,echo usb-c hub,WEST,$74.50,13-Jan-2026
+ORD-2374,DoROthy GONzALEZ,dorothy.gonzalez@outlook.com,2126414028,ErgoFlex Office Chair,EAST,$329.50,12-Apr-2026
+ORD-2448,James Mitchell,james.mitchel@hotmail.com,713-991-2587,terra water bottle,west,$24.95,06/26/2026
+ORD-2497,DANIEL HILL,daniel.hill@yahoo.com,646-853-9824,  drift laptop backpack ,south, 239.90 ,"February 15, 2026"
+ORD-2242,SUSAN WILLIAMS,susan.williams@hotmail.com,415.649.4991,  TERRA WATER BOTTLE ,  West ,24.95,2026-03-31
+ORD-2449,Robert Wilson,robert.wilson@gmail.com,+1 713 480 8973,vista 27in monitor,East,"$1,197.00",17-Mar-2026
+ORD-2200,Margaret Young,,555.526.9846,ERGOFLEX OFFICE CHAIR,SOUTH,329.50,"June 21, 2026"
+ORD-2415,Karen Carter,karen.carter@@outlook.com,+1 415 473 1468,ErgoFlex Office Chair,EAST, 329.50 ,"May 03, 2026"
+ORD-2330,Michelle Smith,michelle.smith@outlook.com,5129398559,Drift Laptop Backpack,  soutH ,$359.85,12-Feb-2026
+ORD-2481,Patricia Wright,patricia.wright@gmail.com,7136356528,  Pulse Wireless Mouse ,EAST,45.00,"February 05, 2026"
+ORD-2044,Karen Young,karen.young@hotmail.com,4155978432,ErgoFlex Office Chair,West,329.50,2026-01-16
+ORD-2360,elizabeth walker,elizabeth.walker@example.com,+1 206 994 2468,AeroBook Laptop Stand,East,89.95,2026-02-04
+ORD-2118,  Sandra Hill ,SANDRA.HILL@OUTLOOK.COM,(212) 433-9336,KEYFLOW MECHANICAL KEYBOARD,SOUTH,$129.99,05/12/2026
+ORD-2154,David Miller,david.miller@hotmail.com,3124807518,Vista 27in Monitor,SOUTH, 1197.00 ,09-Jun-2026
+ORD-2334,Sandra Clark,sandra.clark@hotmail.com,206-668-7302,  Pulse Wireless Mouse ,north, 90.00 ,10-Jun-2026
+ORD-2046,Nancy Taylor,nancy.taylor@outlook.com,415-411-6054,LUMEN DESK LAMP,South,$179.97,02/26/2026
+ORD-2294,karen wright,karen.wrigh@outlook.com,+1 512 682 1321,Lumen Desk Lamp,  WEST ,119.98,04/23/2026
+ORD-2034,  Jennifer Anderson ,jennifer.anderson@yahoo.com,+1 512 683 4993,ErgoFlex Office Chair,South,659.00,04-Feb-2026
+ORD-2429,Daniel Anderson,DANIEL.ANDERSON@HOTMAIL.COM,(713) 317-1613,  AeROBoOk LapTop sTAnD ,South,89.95,2026-02-18
+ORD-2159,MattheW andersOn,matthew.anderson@hotmail.com,555.729.7143,AeroBook Laptop Stand,north, 89.95 ,2026-03-30
+ORD-2485,  Kevin White ,kevin.white@yahoo.com,415-673-9175,Echo USB-C Hub,  west ,149.00,"May 06, 2026"
+ORD-2353,  Kimberly Carter ,kimberly.carter@example.com,512.318.8899,echo usb-c hub,NORTH,74.50,02/06/2026
+ORD-2182,Elizabeth Hernandez,elizabeth.hernandez@gmail.com,6465245773,KeyFlow Mechanical Keyboard,West,259.98,"June 15, 2026"
+ORD-2052,SaRaH kiNG,sarah.king@gmail.com,4159825186,  vista 27in monitor ,WEST,$798.00,09-Jun-2026
+ORD-2440,Mary King,MARY.KING@EXAMPLE.COM,(212) 483-6145,VeRtEX sTaNdiNg desK,  East ,"$1,298.00",14-Jan-2026
+ORD-2205,Anthony Hill,anthony.hill@outlook.com,555.240.5053,ergoflex office chair,SOUTH, 329.50 ,09-May-2026
+ORD-2216,Steven Perez,steven.perez@example.com,415.829.9132,Pulse Wireless Mouse,South, 90.00 ,06/09/2026
+ORD-2412,  Dorothy Robinson ,dorothy.robinson@yahoo.com,(206) 852-8320,Pulse Wireless Mouse,West, 45.00 ,"February 09, 2026"
+ORD-2195,  Patricia Lewis ,PATRICIA.LEWIS@EXAMPLE.COM,212-511-2276,  Echo USB-C Hub ,  South ,$149.00,04/09/2026
+ORD-2004,Kevin Hernandez,kevin.hernandez@example.com,5554341525,Echo usb-C hub,east,74.50,2026-02-15
+ORD-2009,patricia walker,patricia.walker@outlook.com,312.277.8260,KEYFLOW MECHANICAL KEYBOARD,North,$129.99,03/09/2026
+ORD-2234,  Anthony Scott ,anthony.scott@hotmail.com,5552999704,Pulse Wireless Mouse,east,45.00,20-May-2026
+ORD-2484,CHARLES MOORE,charles.moore@outlook.com,646-299-4626,VERTEX STANDING DESK,North,"1,298.00","February 27, 2026"
+ORD-2058,Lisa Lee,lisa.lee@outlook.com,713.303.9317,Lumen Desk Lamp,North,$59.99,"April 02, 2026"
+ORD-2261,Linda Thomas,linda.thomas@gmail.com,(312) 389-6759,VERTEX STANDING DESK,East,$649.00,03/23/2026
+ORD-2131,  tHomAS milLer ,thomas.miller@gmail.com,+1 212 550 3787,  VERTEX STANDING DESK ,north,649.00,2026-04-13
+ORD-2245,BArbaRA HErNAndez,barbara.hernandez@outlook.com,212-442-7759,VertEx STandINg DesK,East,$649.00,06/19/2026
+ORD-2185,Joshua Allen,joshua.allen@outlook.com,646-622-5256,  echo usb-c hub ,south,223.50,"March 25, 2026"
+ORD-2260,  Karen Johnson ,karen.johnson@outlook.com,(212) 635-2830,ERGOFLEX OFFICE CHAIR,  WEST ,329.50,"February 06, 2026"
+ORD-2410,ANDREW ADAMS,andrew.adams@hotmail.com,646.609.2306,Vertex Standing Desk,nortH,649.00,2026-06-19
+ORD-2047,  Mary Rodriguez ,,(206) 738-2862,Vertex Standing Desk,North,649.00,2026-03-06
+ORD-2492,kevin williams,kevin.williams@yahoo.com,713.933.3593,Lumen Desk Lamp,  West ,$59.99,05/18/2026
+ORD-2108,  Karen Williams ,karen.williams@gmail.com,646-927-8015,Drift Laptop Backpack,South, 119.95 ,04/04/2026
+ORD-2098,JENNIFER NELSON,jennifer.nelson@outlook.com,+1 415 264 3739,aerobook laptop stand,  north ,269.85,"May 18, 2026"
+ORD-2213,  Lisa Garcia ,lisa.garcia@example.com,646-779-3459,Echo USB-C Hub,  NortH ,$149.00,2026-05-15
+ORD-2325,john davis,john.davis@yahoo.com,312.247.4098,  lumen desk lamp ,SOUTH,$59.99,"February 22, 2026"
+ORD-2367,barbara king,barbara.king@example.com,3125122424,KEYflOW mechanical keyboard,North,$259.98,05/13/2026
+ORD-2400,Mark Clark,mark.clark@gmail.com,646.381.3664,Keyflow MeCHaNical keyBoaRd,East,389.97,"April 24, 2026"
+ORD-2124,  DAnIel mARtINeZ ,daniel.martinez@hotmail.com,(212) 796-5240,  ERGOFLEX OFFICE CHAIR ,  West , 329.50 ,2026-04-06
+ORD-2215,Jennifer Lee,,5123372999,keyflow mechanical keyboard,South,129.99,2026-04-12
+ORD-2167,  William Lopez ,WILLIAM.LOPEZ@HOTMAIL.COM,5124372029,TErRa WaTer bOtTlE,North,$74.85,"June 22, 2026"
+ORD-2125,roBeRt wRight,,+1 713 592 3248,vertex standing desk,South,649.00,"May 31, 2026"
+ORD-2142,maTThew ANdersOn,matthew.anderson@example.com,(415) 523-3954,Pulse Wireless Mouse,  south ,90.00,30-Mar-2026
+ORD-2180,Donald Lopez,donald.lopez@yahoo.com,206-400-3389,  Terra Water Bottle ,West, 24.95 ,"June 01, 2026"
+ORD-2096,Donald Nguyen,DONALD.NGUYEN@EXAMPLE.COM,(713) 452-2204,aerobook laptop stand,South,89.95,2026-05-26
+ORD-2128,  JOSHUA GONZALEZ ,joshua.gonzalez@gmail.com,512.200.6435,  drift laptop backpack ,South, 359.85 ,2026-03-25
+ORD-2038,Charles Anderson,charles.anderson@gmail.com,+1 555 343 2952,ergoflex office chair,south,$659.00,30-Jan-2026
+ORD-2211,Jessica Allen,jessica.allen@yahoo.com,+1 555 733 2791,viSta 27iN moNITor,West,399.00,06/09/2026
+ORD-2204,ANTHONY MITCHELL,anthony.mitchell@example.com,5552687367,Echo USB-C Hub,  East ,74.50,03/11/2026
+ORD-2409,Daniel Gonzalez,daniel.gonzalez@hotmail.com,646-805-7272,AeroBook Laptop Stand,North,89.95,2026-05-11
+ORD-2450,  Elizabeth Miller ,elizabeth.miller@gmail.com,(312) 206-9001,AeroBook LapTOP staND,east,269.85,15-May-2026
+ORD-2458,  emily hernandez ,emily.hernandez@example.com,3122609084,  aeRoboOK lapTop stanD ,NORTH,$179.90,06/05/2026
+ORD-2051,  Joshua Walker ,joshua.walker@example.com,6463617062,ErgoFlex Office Chair,  North ,329.50,2026-06-16
+ORD-2390,ROBERT BROWN,robert.brown@yahoo.com,6469697400,KeyFlow Mechanical Keyboard,north,129.99,03/25/2026
+ORD-2214,Dorothy Thomas,dorothy.thomas@gmail.com,+1 312 802 8794,VeRtex STaNdinG DeSk,South, 1298.00 ,2026-05-12
+ORD-2455,  patricia adams ,patricia.adams@example.com,7133657125,  aERobook LAptOp Stand ,WEST,$89.95,2026-05-22
+ORD-2027,Ashley Miller,ashley.miller@outlook.com,+1 512 316 2070,Vertex Standing Desk,NORTH, 1947.00 ,2026-03-18
+ORD-2385,  Jennifer Taylor ,JENNIFER.TAYLOR@EXAMPLE.COM,2122616723,KeyFlow Mechanical Keyboard,  south ,129.99,02/26/2026
+ORD-2127,Jessica Taylor,jessica.taylor@example.com,646-377-3885,Pulse Wireless Mouse,  East , 135.00 ,01/19/2026
+ORD-2451,robert allen,robert.allen@gmail.com,312-340-7163,ErgoFlex Office Chair,  South ,988.50,27-Mar-2026
+ORD-2141,ELIzAbeth aDams,elizabeth.adams@yahoo.com,+1 415 500 2599,AEROBOOK LAPTOP STAND,South,89.95,06/07/2026
+ORD-2028,Jessica Davis,jessica.davis@example.com,7138028025,  Echo USB-C Hub ,  North ,$149.00,09-Jun-2026
+ORD-2364,mIcHelle ClArk,michelle.clark@example.com,4156293514,Pulse Wireless Mouse,North, 45.00 ,2026-06-13
+ORD-2223,  William Jones ,william.jones@gmail.com,(212) 592-1881,Pulse Wireless mouse,West,$135.00,01-Apr-2026
+ORD-2239,  ASHLEY GARCIA ,ashley.garcia@example.com,+1 713 711 9748,  Drift Laptop Backpack ,EAST,119.95,"February 09, 2026"
+ORD-2278,James Walker,james.walker@yahoo.com,+1 512 846 6196,Pulse Wireless Mouse,North,45.00,"January 28, 2026"
+ORD-2435,John Thomas,john.thomas@outlook.com,646-998-5795,Echo USB-C Hub,NORTH,74.50,11-May-2026
+ORD-2168,MATTHEW CLARK,MATTHEW.CLARK@HOTMAIL.COM,713-416-3461,DRIFT LAPTOP BACKPACK,North, 239.90 ,2026-06-08
+ORD-2311,saRaH bRowN,sarah.brown@gmail.com,415-582-9854,KeyFlow Mechanical Keyboard,West,259.98,2026-05-26

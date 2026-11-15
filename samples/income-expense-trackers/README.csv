@@ -1,0 +1,13 @@
+Freelancer Income + Invoice Tracker,
+"A clean, professional Google Sheets / Excel tracker for freelancers. Track invoices, payments, clients and monthly income in one place.",
+,
+WHAT'S INSIDE,Dashboard (auto totals)  •  Invoices  •  Payments  •  Clients  •  Expenses  •  Settings
+START HERE (5 MIN),"1) Go to Settings and enter your name, currency and tax rate.  2) Delete the SAMPLE rows on Invoices / Payments / Expenses (they are marked SAMPLE).  3) Add your real clients on Clients.  4) Add each invoice on Invoices.  5) When you get paid, add the payment on Payments and change the invoice Status to Paid."
+HOW STATUS WORKS,Paid = money received.  Unpaid = waiting.  Overdue = past due date and still unpaid (Dashboard counts it automatically).  Partial = part-paid.  Cancelled = void — excluded from totals.
+DASHBOARD,All Dashboard numbers are formulas — they update automatically when you add invoices or payments. Do not type over formula cells (they are shaded).
+CURRENCY,"Change the currency symbol in Settings (cell B4). Invoice amounts use your Settings currency. If you work in several currencies, keep one tracker per currency."
+TAX,"The Tax column on Invoices is optional. If you charge tax, enter the tax amount; Total = Amount + Tax. If not, leave Tax = 0."
+SAMPLE DATA,Rows labelled SAMPLE are examples only so you can see how the formulas work. Delete them before using the tracker for real work.
+GOOGLE SHEETS,"Upload this file to Google Drive → Open with Google Sheets. All formulas work in Google Sheets. In Excel, enable editing when asked."
+SUPPORT,"If a formula shows an error, check that dates are real dates (not text) and that Status uses exactly: Paid, Unpaid, Overdue, Partial, Cancelled."
+LICENCE,For personal use by the buyer. Do not resell or share this file.

@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Northwind Home Goods - October 2026 Profit &amp; Settlement Dashboard (Demo)</title>
+<style>
+  :root{
+    --navy:#1F3864; --gold:#C9A227; --card:#F2F2F2; --ink:#1a1a2e;
+    --red:#B03A2E; --green:#1E8449; --line:#d9d9d9;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:"Segoe UI",Arial,Helvetica,sans-serif;color:var(--ink);background:#fff}
+  header{background:var(--navy);color:#fff;padding:18px 28px}
+  header h1{margin:0;font-size:22px;font-weight:600}
+  header p{margin:4px 0 0;color:#cfd8ea;font-size:13px}
+  header .gold{color:var(--gold)}
+  .toolbar{display:flex;flex-wrap:wrap;gap:14px;align-items:end;padding:12px 28px;background:#eef1f6;border-bottom:2px solid var(--gold)}
+  .toolbar label{font-size:12px;font-weight:600;color:var(--navy);display:block;margin-bottom:4px}
+  .toolbar input,.toolbar select{padding:6px 8px;border:1px solid #b9c2d4;border-radius:4px;font-size:13px;background:#fff}
+  nav.tabs{display:flex;gap:2px;padding:10px 28px 0}
+  nav.tabs button{border:1px solid var(--line);border-bottom:none;background:var(--card);color:var(--navy);
+    padding:9px 16px;font-size:14px;font-weight:600;border-radius:6px 6px 0 0;cursor:pointer}
+  nav.tabs button.active{background:var(--navy);color:#fff}
+  main{padding:18px 28px 8px;border-top:2px solid var(--navy);margin:0 0 4px}
+  section.page{display:none}
+  section.page.active{display:block}
+  h2.page-title{color:var(--navy);font-size:18px;margin:2px 0 4px}
+  p.page-sub{color:#555;font-size:13px;margin:0 0 14px}
+  .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-bottom:16px}
+  .kpi{background:var(--card);border-top:3px solid var(--gold);border-radius:4px;padding:12px 14px}
+  .kpi .v{font-size:24px;font-weight:700;color:var(--navy)}
+  .kpi .v.neg{color:var(--red)}
+  .kpi .l{font-size:12px;color:#444;margin-top:2px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  @media (max-width:900px){.grid{grid-template-columns:1fr}}
+  .card{border:1px solid var(--line);border-radius:6px;margin-bottom:16px;overflow:hidden}
+  .card h3{background:var(--navy);color:#fff;margin:0;padding:8px 12px;font-size:14px;font-weight:600}
+  .card .body{padding:12px}
+  .card .src{font-size:11px;color:#777;padding:0 12px 10px}
+  table{border-collapse:collapse;width:100%;font-size:13px}
+  th{background:var(--navy);color:#fff;text-align:right;padding:6px 8px;font-weight:600}
+  th:first-child,td:first-child{text-align:left}
+  td{padding:5px 8px;border-bottom:1px solid #eee;text-align:right}
+  tr.tot td{font-weight:700;background:var(--card);border-top:2px solid var(--gold)}
+  .neg{color:var(--red)} .pos{color:var(--green)}
+  .insight{background:#fdf6e0;border-left:4px solid var(--gold);padding:10px 14px;font-size:13.5px;line-height:1.5;margin:0 0 16px}
+  .insight b{color:var(--navy)}
+  .footnote{font-size:11.5px;color:#666;margin:2px 0 14px}
+  footer{margin:10px 28px 22px;padding:10px 14px;background:var(--card);border-radius:4px;
+    font-size:12px;color:#444;border-left:4px solid var(--navy)}
+  .legend{font-size:12px;color:#444;margin:4px 0 8px}
+  .legend span{display:inline-block;width:11px;height:11px;margin:0 5px 0 12px;border-radius:2px;vertical-align:-1px}
+  svg text{font-family:"Segoe UI",Arial,sans-serif}
+</style>
+</head>
+<body>
+<header>
+  <h1>Northwind Home Goods <span class="gold">—</span> October 2026 Profit &amp; Settlement Dashboard</h1>
+  <p>Demo dashboard built to the BI-dashboards service spec: profit truth, product profitability, settlement leakage, channel &amp; country performance.</p>
+</header>
+
+<div class="toolbar">
+  <div><label for="f-from">Date from</label><input type="date" id="f-from" value="2026-10-01" min="2026-10-01" max="2026-10-31"></div>
+  <div><label for="f-to">Date to</label><input type="date" id="f-to" value="2026-10-31" min="2026-10-01" max="2026-10-31"></div>
+  <div><label for="f-channel">Channel</label>
+    <select id="f-channel"><option value="All">All channels</option><option>Amazon</option><option>Shopify</option></select></div>
+  <div id="wrap-sku" style="display:none"><label for="f-sku">SKU (Page 2)</label>
+    <select id="f-sku"><option value="All">All SKUs</option></select></div>
+  <div id="wrap-country" style="display:none"><label for="f-country">Country (Page 4)</label>
+    <select id="f-country"><option value="All">All countries</option><option>US</option><option>CA</option><option>UK</option><option>DE</option></select></div>
+</div>
+
+<nav class="tabs">
+  <button data-page="p1" class="active">1 · Executive overview</button>
+  <button data-page="p2">2 · Product profitability</button>
+  <button data-page="p3">3 · Settlement leakage</button>
+  <button data-page="p4">4 · Channel &amp; country</button>
+</nav>
+
+<main>
+<!-- ================= PAGE 1 ================= -->
+<section class="page active" id="page-p1">
+  <h2 class="page-title">Executive overview — Are we actually making money?</h2>
+  <p class="page-sub">Headline profit truth for October 2026 after refunds, COGS, scheduled platform fees, ad spend and shipping.</p>
+  <div class="kpis" id="p1-kpis"></div>
+  <div class="grid">
+    <div class="card"><h3>P&amp;L cascade — from revenue to true net profit</h3><div class="body" id="p1-cascade"></div><div class="src">Source: orders_fact (components per fee schedule)</div></div>
+    <div class="card"><h3>Daily revenue by channel, with ad spend</h3><div class="body"><div class="legend"><span style="background:#1F3864"></span>Amazon<span style="background:#C9A227"></span>Shopify<span style="background:#B03A2E"></span>Ad spend (line)</div><div id="p1-trend"></div></div><div class="src">Source: daily_channel</div></div>
+  </div>
+  <div class="grid">
+    <div class="card"><h3>Revenue share by channel</h3><div class="body" id="p1-donut"></div><div class="src">Source: orders_fact — SUM(revenue) by channel</div></div>
+    <div class="card"><h3>Net profit by channel</h3><div class="body" id="p1-chanprofit"></div><div class="src">Source: orders_fact — SUM(net_profit) by channel</div></div>
+  </div>
+  <p class="insight"><b>Insight.</b> <span class="insight-text">On $9,824.97 of sales the store kept only $313.68 — a 3.19% margin. The profit is real but thin: one bad month of ad spend would erase it. Ad spend alone ($2,835.08) is 9× the profit.</span></p>
+  <p class="footnote">Method note: profit uses fees per the client's fee schedule; what the platforms actually charged is isolated on Page 3 as exceptions. Ad spend is allocated to orders by gross-revenue share within channel (largest-remainder, exact to the cent).</p>
+  <footer>Demo dashboard — Northwind Home Goods is a fictional store; all data is synthetic and shown to demonstrate the service.</footer>
+</section>
+
+<!-- ================= PAGE 2 ================= -->
+<section class="page" id="page-p2">
+  <h2 class="page-title">Product profitability — Which products actually make money?</h2>
+  <p class="page-sub">Full per-SKU profit &amp; loss after refunds, COGS, fees, allocated ad spend and shipping.</p>
+  <div class="grid">
+    <div class="card"><h3>Net profit by SKU (sorted, best first)</h3><div class="body" id="p2-bars"></div><div class="src">Source: sku_profit / orders_fact</div></div>
+    <div class="card"><h3>Revenue vs net profit (bubble = units sold)</h3><div class="body" id="p2-scatter"></div><div class="src">Source: sku_profit / orders_fact</div></div>
+  </div>
+  <div class="card"><h3>Full SKU P&amp;L</h3><div class="body" id="p2-table"></div><div class="src">Source: sku_profit</div></div>
+  <p class="insight"><b>Insight.</b> <span class="insight-text">The best seller is the biggest loser: the Scented Candle Trio sold the most units (30) and still lost $53.43 — $238.93 of ad spend and $198.06 of shipping against $825.00 of revenue. The quiet winner is the Linen Throw Blanket (+$106.78). The Stoneware Dinner Set brings in the most revenue ($1,709.81) but $269.97 of refunds drag it to −$5.98.</span></p>
+  <footer>Demo dashboard — Northwind Home Goods is a fictional store; all data is synthetic and shown to demonstrate the service.</footer>
+</section>
+
+<!-- ================= PAGE 3 ================= -->
+<section class="page" id="page-p3">
+  <h2 class="page-title">Settlement leakage — Where did the payouts go?</h2>
+  <p class="page-sub">Expected payouts per the fee schedule versus what the platforms actually paid, order by order.</p>
+  <div class="kpis" id="p3-kpis"></div>
+  <div class="grid">
+    <div class="card"><h3>Gross discrepancy value by exception type</h3><div class="body" id="p3-typebars"></div><div class="src">Source: exception_types / orders_fact</div></div>
+    <div class="card"><h3>Leakage by channel</h3><div class="body" id="p3-chanleak"></div><div class="src">Source: orders_fact — expected minus actual payouts</div></div>
+  </div>
+  <div class="grid">
+    <div class="card"><h3>Reconciliation status (orders)</h3><div class="body" id="p3-statusdonut"></div><div class="src">Source: orders_fact — COUNT by recon_status</div></div>
+    <div class="card"><h3>What the exceptions mean</h3><div class="body">
+      <p style="font-size:13.5px;line-height:1.55;margin:2px 0">Every order whose settlement deviates from the fee schedule is listed below, ranked by money impact. Positive impacts (duplicate payouts) are money the platforms can reclaim — a risk, not a gain. Negative impacts are money the store was owed and never received.</p>
+    </div></div>
+  </div>
+  <div class="card"><h3>All exceptions, ranked by impact</h3><div class="body" id="p3-table"></div><div class="src">Source: exceptions</div></div>
+  <p class="insight"><b>Insight.</b> <span class="insight-text">Five orders were never paid at all — $294.45 simply missing from settlement, led by ORD-1106 (−$87.08). Two orders were paid twice (+$160.18): that money is a clawback risk, not profit — the platforms can reclaim it. Fee overcharges are small ($13.67 across 4 orders) but prove the platforms' arithmetic cannot be taken on trust.</span></p>
+  <footer>Demo dashboard — Northwind Home Goods is a fictional store; all data is synthetic and shown to demonstrate the service.</footer>
+</section>
+
+<!-- ================= PAGE 4 ================= -->
+<section class="page" id="page-p4">
+  <h2 class="page-title">Channel &amp; country — Which markets carry the business?</h2>
+  <p class="page-sub">Net profit for every channel × country cell, payout integrity and refund behaviour by channel.</p>
+  <div class="card"><h3>Net profit by channel × country</h3><div class="body" id="p4-heat"></div><div class="src">Source: channel_country / orders_fact</div></div>
+  <div class="grid">
+    <div class="card"><h3>Expected vs actual payouts by channel</h3><div class="body" id="p4-expact"></div><div class="src">Source: channel_country / orders_fact</div></div>
+    <div class="card"><h3>Refund rate by channel</h3><div class="body" id="p4-refunds"></div><div class="src">Source: orders_fact — refunds ÷ revenue by channel</div></div>
+  </div>
+  <p class="insight"><b>Insight.</b> <span class="insight-text">One cell pays for everything: Shopify US (+$395.84) earns more than the whole business nets. Amazon is negative in all four countries — worst in the UK (−$105.18). Shopify's problem is different: a 10.05% refund rate, more than double Amazon's 4.42%.</span></p>
+  <footer>Demo dashboard — Northwind Home Goods is a fictional store; all data is synthetic and shown to demonstrate the service.</footer>
+</section>
+</main>
+
+<script id="dash-data">
+const DATA = {"kpis": [{"measure": "Gross revenue (USD)", "value": 9824.97, "definition": "Sum of quantity x unit_price over orders.csv (120 orders)"}, {"measure": "True net profit (USD)", "value": 313.68, "definition": "Revenue - refunds - COGS - scheduled fees - ad spend - shipping"}, {"measure": "Net profit margin (%)", "value": 3.19, "definition": "Net profit / gross revenue x 100"}, {"measure": "Orders reconciled", "value": 120, "definition": "Rows in orders.csv"}, {"measure": "Units sold", "value": 189, "definition": "Sum of quantity in orders.csv"}, {"measure": "Average order value (USD)", "value": 81.87, "definition": "Gross revenue / orders"}, {"measure": "Refunds (USD)", "value": 666.93, "definition": "Revenue of orders with status Refunded"}, {"measure": "Refunded orders", "value": 7, "definition": "Count of orders with status Refunded"}, {"measure": "Refund rate by value (%)", "value": 6.79, "definition": "Refunds / gross revenue x 100"}, {"measure": "Expected payouts (USD)", "value": 7897.58, "definition": "Sum of revenue - scheduled fees - refunds, per fee_schedule.md"}, {"measure": "Actual payouts (USD)", "value": 7628.69, "definition": "Sum of payout_amount in settlement_amazon.csv + shopify_payouts.csv"}, {"measure": "Net leakage (USD)", "value": 268.89, "definition": "Expected payouts - actual payouts"}, {"measure": "Leakage as % of expected payouts", "value": 3.4, "definition": "Net leakage / expected payouts x 100"}, {"measure": "Exceptions found", "value": 14, "definition": "Orders whose settlement deviates from the fee schedule"}, {"measure": "Gross discrepancy value (USD)", "value": 589.25, "definition": "Sum of |actual - expected| over the 14 exception orders"}, {"measure": "Orders matched exactly", "value": 106, "definition": "Orders - exceptions"}, {"measure": "Settlement match rate (%)", "value": 88.33, "definition": "Matched orders / orders x 100"}, {"measure": "Amazon net profit (USD)", "value": -309.56, "definition": "Sum of per-order net profit, channel = Amazon"}, {"measure": "Shopify net profit (USD)", "value": 623.24, "definition": "Sum of per-order net profit, channel = Shopify"}, {"measure": "Amazon leakage (USD)", "value": 128.99, "definition": "-(sum of exception diffs, channel = Amazon)"}, {"measure": "Shopify leakage (USD)", "value": 139.9, "definition": "-(sum of exception diffs, channel = Shopify)"}, {"measure": "Most profitable SKU", "value": "NHG-003", "definition": "Linen Throw Blanket \u2014 highest total net profit"}, {"measure": "Least profitable SKU", "value": "NHG-005", "definition": "Scented Candle Trio \u2014 lowest total net profit"}], "orders_fact": [{"order_id": "ORD-1001", "date": "2026-10-14", "channel": "Amazon", "country": "US", "sku": "NHG-007", "product_name": "Cotton Sheet Set", "quantity": 2, "order_status": "Completed", "revenue": 130.0, "refund_amount": 0.0, "cogs": 52.2, "platform_fees_scheduled": 23.75, "ad_spend_allocated": 40.4, "shipping_cost": 8.6, "net_profit": 5.05, "expected_payout": 106.25, "actual_payout": 106.25, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1002", "date": "2026-10-15", "channel": "Amazon", "country": "DE", "sku": "NHG-004", "product_name": "Stoneware Dinner Set", "quantity": 1, "order_status": "Completed", "revenue": 89.99, "refund_amount": 0.0, "cogs": 38.75, "platform_fees_scheduled": 17.75, "ad_spend_allocated": 27.97, "shipping_cost": 10.96, "net_profit": -5.44, "expected_payout": 72.24, "actual_payout": 72.24, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1003", "date": "2026-10-23", "channel": "Shopify", "country": "US", "sku": "NHG-005", "product_name": "Scented Candle Trio", "quantity": 2, "order_status": "Completed", "revenue": 55.0, "refund_amount": 0.0, "cogs": 19.6, "platform_fees_scheduled": 1.9, "ad_spend_allocated": 14.18, "shipping_cost": 7.93, "net_profit": 11.39, "expected_payout": 53.1, "actual_payout": 53.1, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1004", "date": "2026-10-03", "channel": "Shopify", "country": "CA", "sku": "NHG-001", "product_name": "Ceramic Vase Set", "quantity": 3, "order_status": "Completed", "revenue": 149.97, "refund_amount": 0.0, "cogs": 55.5, "platform_fees_scheduled": 4.65, "ad_spend_allocated": 38.67, "shipping_cost": 12.92, "net_profit": 38.23, "expected_payout": 145.32, "actual_payout": 143.82, "payout_difference": -1.5, "recon_status": "Underpaid", "exception_type": "Fee overcharge"}, {"order_id": "ORD-1005", "date": "2026-10-19", "channel": "Shopify", "country": "US", "sku": "NHG-007", "product_name": "Cotton Sheet Set", "quantity": 1, "order_status": "Completed", "revenue": 65.0, "refund_amount": 0.0, "cogs": 26.1, "platform_fees_scheduled": 2.19, "ad_spend_allocated": 16.76, "shipping_cost": 7.41, "net_profit": 12.54, "expected_payout": 62.81, "actual_payout": 62.81, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1006", "date": "2026-10-02", "channel": "Amazon", "country": "US", "sku": "NHG-002", "product_name": "Bamboo Bath Tray", "quantity": 1, "order_status": "Completed", "revenue": 34.95, "refund_amount": 0.0, "cogs": 12.25, "platform_fees_scheduled": 9.49, "ad_spend_allocated": 10.86, "shipping_cost": 6.35, "net_profit": -4.0, "expected_payout": 25.46, "actual_payout": 25.46, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1007", "date": "2026-10-22", "channel": "Amazon", "country": "US", "sku": "NHG-005", "product_name": "Scented Candle Trio", "quantity": 2, "order_status": "Completed", "revenue": 55.0, "refund_amount": 0.0, "cogs": 19.6, "platform_fees_scheduled": 12.5, "ad_spend_allocated": 17.09, "shipping_cost": 8.64, "net_profit": -2.83, "expected_payout": 42.5, "actual_payout": 42.5, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1008", "date": "2026-10-08", "channel": "Amazon", "country": "US", "sku": "NHG-010", "product_name": "Ceramic Planter Duo", "quantity": 1, "order_status": "Completed", "revenue": 32.75, "refund_amount": 0.0, "cogs": 11.35, "platform_fees_scheduled": 9.16, "ad_spend_allocated": 10.18, "shipping_cost": 7.49, "net_profit": -5.43, "expected_payout": 23.59, "actual_payout": 23.59, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1009", "date": "2026-10-08", "channel": "Shopify", "country": "US", "sku": "NHG-003", "product_name": "Linen Throw Blanket", "quantity": 3, "order_status": "Completed", "revenue": 177.0, "refund_amount": 0.0, "cogs": 66.0, "platform_fees_scheduled": 5.43, "ad_spend_allocated": 45.64, "shipping_cost": 10.13, "net_profit": 49.8, "expected_payout": 171.57, "actual_payout": 171.57, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1010", "date": "2026-10-11", "channel": "Shopify", "country": "US", "sku": "NHG-004", "product_name": "Stoneware Dinner Set", "quantity": 2, "order_status": "Completed", "revenue": 179.98, "refund_amount": 0.0, "cogs": 77.5, "platform_fees_scheduled": 5.52, "ad_spend_allocated": 46.41, "shipping_cost": 8.14, "net_profit": 42.41, "expected_payout": 174.46, "actual_payout": 174.46, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1011", "date": "2026-10-28", "channel": "Shopify", "country": "US", "sku": "NHG-009", "product_name": "Storage Basket Set", "quantity": 2, "order_status": "Completed", "revenue": 79.98, "refund_amount": 0.0, "cogs": 29.8, "platform_fees_scheduled": 2.62, "ad_spend_allocated": 20.63, "shipping_cost": 8.35, "net_profit": 18.58, "expected_payout": 77.36, "actual_payout": 77.36, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1012", "date": "2026-10-03", "channel": "Amazon", "country": "CA", "sku": "NHG-009", "product_name": "Storage Basket Set", "quantity": 1, "order_status": "Completed", "revenue": 39.99, "refund_amount": 0.0, "cogs": 14.9, "platform_fees_scheduled": 10.25, "ad_spend_allocated": 12.43, "shipping_cost": 9.55, "net_profit": -7.14, "expected_payout": 29.74, "actual_payout": 29.74, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1013", "date": "2026-10-12", "channel": "Amazon", "country": "US", "sku": "NHG-007", "product_name": "Cotton Sheet Set", "quantity": 2, "order_status": "Completed", "revenue": 130.0, "refund_amount": 0.0, "cogs": 52.2, "platform_fees_scheduled": 23.75, "ad_spend_allocated": 40.4, "shipping_cost": 8.27, "net_profit": 5.38, "expected_payout": 106.25, "actual_payout": 106.25, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1014", "date": "2026-10-23", "channel": "Amazon", "country": "UK", "sku": "NHG-008", "product_name": "Brass Table Lamp", "quantity": 1, "order_status": "Completed", "revenue": 92.0, "refund_amount": 0.0, "cogs": 41.6, "platform_fees_scheduled": 18.05, "ad_spend_allocated": 28.59, "shipping_cost": 10.88, "net_profit": -7.12, "expected_payout": 73.95, "actual_payout": 73.95, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1015", "date": "2026-10-26", "channel": "Amazon", "country": "US", "sku": "NHG-004", "product_name": "Stoneware Dinner Set", "quantity": 1, "order_status": "Completed", "revenue": 89.99, "refund_amount": 0.0, "cogs": 38.75, "platform_fees_scheduled": 17.75, "ad_spend_allocated": 27.97, "shipping_cost": 7.17, "net_profit": -1.65, "expected_payout": 72.24, "actual_payout": 72.24, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1016", "date": "2026-10-21", "channel": "Amazon", "country": "US", "sku": "NHG-008", "product_name": "Brass Table Lamp", "quantity": 3, "order_status": "Completed", "revenue": 276.0, "refund_amount": 0.0, "cogs": 124.8, "platform_fees_scheduled": 45.65, "ad_spend_allocated": 85.78, "shipping_cost": 9.74, "net_profit": 10.03, "expected_payout": 230.35, "actual_payout": 222.07, "payout_difference": -8.28, "recon_status": "Underpaid", "exception_type": "Fee overcharge"}, {"order_id": "ORD-1017", "date": "2026-10-15", "channel": "Amazon", "country": "UK", "sku": "NHG-005", "product_name": "Scented Candle Trio", "quantity": 3, "order_status": "Completed", "revenue": 82.5, "refund_amount": 0.0, "cogs": 29.4, "platform_fees_scheduled": 16.63, "ad_spend_allocated": 25.64, "shipping_cost": 13.79, "net_profit": -2.96, "expected_payout": 65.87, "actual_payout": 65.87, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1018", "date": "2026-10-22", "channel": "Amazon", "country": "DE", "sku": "NHG-006", "product_name": "Wall Mirror Round", "quantity": 1, "order_status": "Completed", "revenue": 74.25, "refund_amount": 0.0, "cogs": 30.4, "platform_fees_scheduled": 15.39, "ad_spend_allocated": 23.08, "shipping_cost": 10.54, "net_profit": -5.16, "expected_payout": 58.86, "actual_payout": 58.86, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1019", "date": "2026-10-01", "channel": "Shopify", "country": "US", "sku": "NHG-007", "product_name": "Cotton Sheet Set", "quantity": 1, "order_status": "Refunded", "revenue": 65.0, "refund_amount": 65.0, "cogs": 0.0, "platform_fees_scheduled": 2.19, "ad_spend_allocated": 16.76, "shipping_cost": 7.07, "net_profit": -26.02, "expected_payout": -2.19, "actual_payout": -2.19, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1020", "date": "2026-10-16", "channel": "Shopify", "country": "CA", "sku": "NHG-005", "product_name": "Scented Candle Trio", "quantity": 2, "order_status": "Completed", "revenue": 55.0, "refund_amount": 0.0, "cogs": 19.6, "platform_fees_scheduled": 1.9, "ad_spend_allocated": 14.18, "shipping_cost": 11.28, "net_profit": 8.04, "expected_payout": 53.1, "actual_payout": 53.1, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1021", "date": "2026-10-14", "channel": "Amazon", "country": "US", "sku": "NHG-003", "product_name": "Linen Throw Blanket", "quantity": 1, "order_status": "Completed", "revenue": 59.0, "refund_amount": 0.0, "cogs": 22.0, "platform_fees_scheduled": 13.1, "ad_spend_allocated": 18.34, "shipping_cost": 6.81, "net_profit": -1.25, "expected_payout": 45.9, "actual_payout": 45.9, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1022", "date": "2026-10-08", "channel": "Amazon", "country": "DE", "sku": "NHG-010", "product_name": "Ceramic Planter Duo", "quantity": 2, "order_status": "Completed", "revenue": 65.5, "refund_amount": 0.0, "cogs": 22.7, "platform_fees_scheduled": 14.08, "ad_spend_allocated": 20.36, "shipping_cost": 11.94, "net_profit": -3.58, "expected_payout": 51.42, "actual_payout": 51.42, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1023", "date": "2026-10-22", "channel": "Shopify", "country": "DE", "sku": "NHG-005", "product_name": "Scented Candle Trio", "quantity": 1, "order_status": "Completed", "revenue": 27.5, "refund_amount": 0.0, "cogs": 9.8, "platform_fees_scheduled": 1.1, "ad_spend_allocated": 7.09, "shipping_cost": 10.48, "net_profit": -0.97, "expected_payout": 26.4, "actual_payout": 26.4, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1024", "date": "2026-10-05", "channel": "Amazon", "country": "CA", "sku": "NHG-004", "product_name": "Stoneware Dinner Set", "quantity": 1, "order_status": "Completed", "revenue": 89.99, "refund_amount": 0.0, "cogs": 38.75, "platform_fees_scheduled": 17.75, "ad_spend_allocated": 27.97, "shipping_cost": 9.99, "net_profit": -4.47, "expected_payout": 72.24, "actual_payout": 72.24, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1025", "date": "2026-10-07", "channel": "Shopify", "country": "CA", "sku": "NHG-006", "product_name": "Wall Mirror Round", "quantity": 1, "order_status": "Completed", "revenue": 74.25, "refund_amount": 0.0, "cogs": 30.4, "platform_fees_scheduled": 2.45, "ad_spend_allocated": 19.15, "shipping_cost": 9.14, "net_profit": 13.11, "expected_payout": 71.8, "actual_payout": 71.8, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1026", "date": "2026-10-12", "channel": "Amazon", "country": "UK", "sku": "NHG-009", "product_name": "Storage Basket Set", "quantity": 1, "order_status": "Completed", "revenue": 39.99, "refund_amount": 0.0, "cogs": 14.9, "platform_fees_scheduled": 10.25, "ad_spend_allocated": 12.43, "shipping_cost": 10.67, "net_profit": -8.26, "expected_payout": 29.74, "actual_payout": 29.74, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1027", "date": "2026-10-30", "channel": "Amazon", "country": "US", "sku": "NHG-004", "product_name": "Stoneware Dinner Set", "quantity": 1, "order_status": "Completed", "revenue": 89.99, "refund_amount": 0.0, "cogs": 38.75, "platform_fees_scheduled": 17.75, "ad_spend_allocated": 27.97, "shipping_cost": 7.4, "net_profit": -1.88, "expected_payout": 72.24, "actual_payout": 72.24, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1028", "date": "2026-10-16", "channel": "Amazon", "country": "UK", "sku": "NHG-005", "product_name": "Scented Candle Trio", "quantity": 1, "order_status": "Completed", "revenue": 27.5, "refund_amount": 0.0, "cogs": 9.8, "platform_fees_scheduled": 8.38, "ad_spend_allocated": 8.55, "shipping_cost": 11.1, "net_profit": -10.33, "expected_payout": 19.12, "actual_payout": 19.12, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1029", "date": "2026-10-19", "channel": "Shopify", "country": "UK", "sku": "NHG-003", "product_name": "Linen Throw Blanket", "quantity": 2, "order_status": "Completed", "revenue": 118.0, "refund_amount": 0.0, "cogs": 44.0, "platform_fees_scheduled": 3.72, "ad_spend_allocated": 30.43, "shipping_cost": 13.13, "net_profit": 26.72, "expected_payout": 114.28, "actual_payout": 114.28, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1030", "date": "2026-10-23", "channel": "Amazon", "country": "UK", "sku": "NHG-008", "product_name": "Brass Table Lamp", "quantity": 1, "order_status": "Completed", "revenue": 92.0, "refund_amount": 0.0, "cogs": 41.6, "platform_fees_scheduled": 18.05, "ad_spend_allocated": 28.59, "shipping_cost": 11.06, "net_profit": -7.3, "expected_payout": 73.95, "actual_payout": 73.95, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1031", "date": "2026-10-27", "channel": "Amazon", "country": "DE", "sku": "NHG-005", "product_name": "Scented Candle Trio", "quantity": 1, "order_status": "Completed", "revenue": 27.5, "refund_amount": 0.0, "cogs": 9.8, "platform_fees_scheduled": 8.38, "ad_spend_allocated": 8.55, "shipping_cost": 11.3, "net_profit": -10.53, "expected_payout": 19.12, "actual_payout": 19.12, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1032", "date": "2026-10-02", "channel": "Amazon", "country": "US", "sku": "NHG-002", "product_name": "Bamboo Bath Tray", "quantity": 1, "order_status": "Completed", "revenue": 34.95, "refund_amount": 0.0, "cogs": 12.25, "platform_fees_scheduled": 9.49, "ad_spend_allocated": 10.86, "shipping_cost": 7.05, "net_profit": -4.7, "expected_payout": 25.46, "actual_payout": 25.46, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1033", "date": "2026-10-26", "channel": "Amazon", "country": "CA", "sku": "NHG-001", "product_name": "Ceramic Vase Set", "quantity": 1, "order_status": "Completed", "revenue": 49.99, "refund_amount": 0.0, "cogs": 18.5, "platform_fees_scheduled": 11.75, "ad_spend_allocated": 15.54, "shipping_cost": 9.91, "net_profit": -5.71, "expected_payout": 38.24, "actual_payout": 38.24, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1034", "date": "2026-10-18", "channel": "Amazon", "country": "US", "sku": "NHG-001", "product_name": "Ceramic Vase Set", "quantity": 2, "order_status": "Completed", "revenue": 99.98, "refund_amount": 0.0, "cogs": 37.0, "platform_fees_scheduled": 19.25, "ad_spend_allocated": 31.07, "shipping_cost": 8.52, "net_profit": 4.14, "expected_payout": 80.73, "actual_payout": 80.73, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1035", "date": "2026-10-05", "channel": "Shopify", "country": "CA", "sku": "NHG-007", "product_name": "Cotton Sheet Set", "quantity": 1, "order_status": "Completed", "revenue": 65.0, "refund_amount": 0.0, "cogs": 26.1, "platform_fees_scheduled": 2.19, "ad_spend_allocated": 16.76, "shipping_cost": 8.97, "net_profit": 10.98, "expected_payout": 62.81, "actual_payout": 62.81, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1036", "date": "2026-10-22", "channel": "Amazon", "country": "DE", "sku": "NHG-010", "product_name": "Ceramic Planter Duo", "quantity": 2, "order_status": "Completed", "revenue": 65.5, "refund_amount": 0.0, "cogs": 22.7, "platform_fees_scheduled": 14.08, "ad_spend_allocated": 20.36, "shipping_cost": 12.21, "net_profit": -3.85, "expected_payout": 51.42, "actual_payout": 51.42, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1037", "date": "2026-10-18", "channel": "Amazon", "country": "US", "sku": "NHG-001", "product_name": "Ceramic Vase Set", "quantity": 2, "order_status": "Completed", "revenue": 99.98, "refund_amount": 0.0, "cogs": 37.0, "platform_fees_scheduled": 19.25, "ad_spend_allocated": 31.07, "shipping_cost": 8.27, "net_profit": 4.39, "expected_payout": 80.73, "actual_payout": 80.73, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1038", "date": "2026-10-30", "channel": "Amazon", "country": "US", "sku": "NHG-006", "product_name": "Wall Mirror Round", "quantity": 1, "order_status": "Completed", "revenue": 74.25, "refund_amount": 0.0, "cogs": 30.4, "platform_fees_scheduled": 15.39, "ad_spend_allocated": 23.08, "shipping_cost": 7.08, "net_profit": -1.7, "expected_payout": 58.86, "actual_payout": 58.86, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1039", "date": "2026-10-21", "channel": "Shopify", "country": "CA", "sku": "NHG-004", "product_name": "Stoneware Dinner Set", "quantity": 2, "order_status": "Completed", "revenue": 179.98, "refund_amount": 0.0, "cogs": 77.5, "platform_fees_scheduled": 5.52, "ad_spend_allocated": 46.41, "shipping_cost": 10.92, "net_profit": 39.63, "expected_payout": 174.46, "actual_payout": 174.46, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1040", "date": "2026-10-29", "channel": "Shopify", "country": "US", "sku": "NHG-006", "product_name": "Wall Mirror Round", "quantity": 1, "order_status": "Completed", "revenue": 74.25, "refund_amount": 0.0, "cogs": 30.4, "platform_fees_scheduled": 2.45, "ad_spend_allocated": 19.15, "shipping_cost": 7.34, "net_profit": 14.91, "expected_payout": 71.8, "actual_payout": 71.8, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1041", "date": "2026-10-25", "channel": "Shopify", "country": "US", "sku": "NHG-010", "product_name": "Ceramic Planter Duo", "quantity": 2, "order_status": "Completed", "revenue": 65.5, "refund_amount": 0.0, "cogs": 22.7, "platform_fees_scheduled": 2.2, "ad_spend_allocated": 16.89, "shipping_cost": 8.38, "net_profit": 15.33, "expected_payout": 63.3, "actual_payout": 63.3, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1042", "date": "2026-10-16", "channel": "Shopify", "country": "UK", "sku": "NHG-010", "product_name": "Ceramic Planter Duo", "quantity": 1, "order_status": "Completed", "revenue": 32.75, "refund_amount": 0.0, "cogs": 11.35, "platform_fees_scheduled": 1.25, "ad_spend_allocated": 8.45, "shipping_cost": 11.62, "net_profit": 0.08, "expected_payout": 31.5, "actual_payout": 31.5, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1043", "date": "2026-10-07", "channel": "Amazon", "country": "CA", "sku": "NHG-008", "product_name": "Brass Table Lamp", "quantity": 3, "order_status": "Completed", "revenue": 276.0, "refund_amount": 0.0, "cogs": 124.8, "platform_fees_scheduled": 45.65, "ad_spend_allocated": 85.78, "shipping_cost": 12.48, "net_profit": 7.29, "expected_payout": 230.35, "actual_payout": 230.35, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1044", "date": "2026-10-26", "channel": "Shopify", "country": "US", "sku": "NHG-009", "product_name": "Storage Basket Set", "quantity": 3, "order_status": "Completed", "revenue": 119.97, "refund_amount": 0.0, "cogs": 44.7, "platform_fees_scheduled": 3.78, "ad_spend_allocated": 30.94, "shipping_cost": 10.31, "net_profit": 30.24, "expected_payout": 116.19, "actual_payout": 116.19, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1045", "date": "2026-10-26", "channel": "Amazon", "country": "UK", "sku": "NHG-005", "product_name": "Scented Candle Trio", "quantity": 3, "order_status": "Completed", "revenue": 82.5, "refund_amount": 0.0, "cogs": 29.4, "platform_fees_scheduled": 16.63, "ad_spend_allocated": 25.64, "shipping_cost": 14.24, "net_profit": -3.41, "expected_payout": 65.87, "actual_payout": 65.87, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1046", "date": "2026-10-19", "channel": "Amazon", "country": "UK", "sku": "NHG-003", "product_name": "Linen Throw Blanket", "quantity": 2, "order_status": "Completed", "revenue": 118.0, "refund_amount": 0.0, "cogs": 44.0, "platform_fees_scheduled": 21.95, "ad_spend_allocated": 36.68, "shipping_cost": 12.45, "net_profit": 2.92, "expected_payout": 96.05, "actual_payout": 96.05, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1047", "date": "2026-10-21", "channel": "Shopify", "country": "US", "sku": "NHG-005", "product_name": "Scented Candle Trio", "quantity": 2, "order_status": "Completed", "revenue": 55.0, "refund_amount": 0.0, "cogs": 19.6, "platform_fees_scheduled": 1.9, "ad_spend_allocated": 14.18, "shipping_cost": 8.5, "net_profit": 10.82, "expected_payout": 53.1, "actual_payout": 53.1, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1048", "date": "2026-10-10", "channel": "Shopify", "country": "UK", "sku": "NHG-009", "product_name": "Storage Basket Set", "quantity": 3, "order_status": "Completed", "revenue": 119.97, "refund_amount": 0.0, "cogs": 44.7, "platform_fees_scheduled": 3.78, "ad_spend_allocated": 30.94, "shipping_cost": 14.74, "net_profit": 25.81, "expected_payout": 116.19, "actual_payout": 116.19, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1049", "date": "2026-10-11", "channel": "Shopify", "country": "DE", "sku": "NHG-001", "product_name": "Ceramic Vase Set", "quantity": 2, "order_status": "Completed", "revenue": 99.98, "refund_amount": 0.0, "cogs": 37.0, "platform_fees_scheduled": 3.2, "ad_spend_allocated": 25.78, "shipping_cost": 12.44, "net_profit": 21.56, "expected_payout": 96.78, "actual_payout": 96.78, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1050", "date": "2026-10-04", "channel": "Shopify", "country": "US", "sku": "NHG-001", "product_name": "Ceramic Vase Set", "quantity": 1, "order_status": "Completed", "revenue": 49.99, "refund_amount": 0.0, "cogs": 18.5, "platform_fees_scheduled": 1.75, "ad_spend_allocated": 12.89, "shipping_cost": 6.66, "net_profit": 10.19, "expected_payout": 48.24, "actual_payout": 48.24, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1051", "date": "2026-10-18", "channel": "Amazon", "country": "US", "sku": "NHG-004", "product_name": "Stoneware Dinner Set", "quantity": 1, "order_status": "Completed", "revenue": 89.99, "refund_amount": 0.0, "cogs": 38.75, "platform_fees_scheduled": 17.75, "ad_spend_allocated": 27.97, "shipping_cost": 6.36, "net_profit": -0.84, "expected_payout": 72.24, "actual_payout": 72.24, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1052", "date": "2026-10-28", "channel": "Amazon", "country": "US", "sku": "NHG-001", "product_name": "Ceramic Vase Set", "quantity": 2, "order_status": "Completed", "revenue": 99.98, "refund_amount": 0.0, "cogs": 37.0, "platform_fees_scheduled": 19.25, "ad_spend_allocated": 31.07, "shipping_cost": 8.67, "net_profit": 3.99, "expected_payout": 80.73, "actual_payout": 80.73, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1053", "date": "2026-10-27", "channel": "Shopify", "country": "US", "sku": "NHG-005", "product_name": "Scented Candle Trio", "quantity": 1, "order_status": "Completed", "revenue": 27.5, "refund_amount": 0.0, "cogs": 9.8, "platform_fees_scheduled": 1.1, "ad_spend_allocated": 7.09, "shipping_cost": 7.18, "net_profit": 2.33, "expected_payout": 26.4, "actual_payout": 26.4, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1054", "date": "2026-10-19", "channel": "Shopify", "country": "US", "sku": "NHG-006", "product_name": "Wall Mirror Round", "quantity": 3, "order_status": "Completed", "revenue": 222.75, "refund_amount": 0.0, "cogs": 91.2, "platform_fees_scheduled": 6.76, "ad_spend_allocated": 57.44, "shipping_cost": 10.28, "net_profit": 57.07, "expected_payout": 215.99, "actual_payout": 215.99, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1055", "date": "2026-10-05", "channel": "Amazon", "country": "US", "sku": "NHG-003", "product_name": "Linen Throw Blanket", "quantity": 2, "order_status": "Completed", "revenue": 118.0, "refund_amount": 0.0, "cogs": 44.0, "platform_fees_scheduled": 21.95, "ad_spend_allocated": 36.68, "shipping_cost": 8.93, "net_profit": 6.44, "expected_payout": 96.05, "actual_payout": 92.51, "payout_difference": -3.54, "recon_status": "Underpaid", "exception_type": "Fee overcharge"}, {"order_id": "ORD-1056", "date": "2026-10-10", "channel": "Amazon", "country": "CA", "sku": "NHG-003", "product_name": "Linen Throw Blanket", "quantity": 1, "order_status": "Completed", "revenue": 59.0, "refund_amount": 0.0, "cogs": 22.0, "platform_fees_scheduled": 13.1, "ad_spend_allocated": 18.34, "shipping_cost": 9.15, "net_profit": -3.59, "expected_payout": 45.9, "actual_payout": 45.9, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1057", "date": "2026-10-05", "channel": "Amazon", "country": "DE", "sku": "NHG-005", "product_name": "Scented Candle Trio", "quantity": 1, "order_status": "Refunded", "revenue": 27.5, "refund_amount": 27.5, "cogs": 0.0, "platform_fees_scheduled": 5.08, "ad_spend_allocated": 8.55, "shipping_cost": 10.51, "net_profit": -24.14, "expected_payout": -5.08, "actual_payout": -32.58, "payout_difference": -27.5, "recon_status": "Underpaid", "exception_type": "Refund deducted twice"}, {"order_id": "ORD-1058", "date": "2026-10-10", "channel": "Shopify", "country": "US", "sku": "NHG-010", "product_name": "Ceramic Planter Duo", "quantity": 2, "order_status": "Completed", "revenue": 65.5, "refund_amount": 0.0, "cogs": 22.7, "platform_fees_scheduled": 2.2, "ad_spend_allocated": 16.89, "shipping_cost": 7.97, "net_profit": 15.74, "expected_payout": 63.3, "actual_payout": 63.3, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1059", "date": "2026-10-22", "channel": "Amazon", "country": "US", "sku": "NHG-005", "product_name": "Scented Candle Trio", "quantity": 2, "order_status": "Completed", "revenue": 55.0, "refund_amount": 0.0, "cogs": 19.6, "platform_fees_scheduled": 12.5, "ad_spend_allocated": 17.09, "shipping_cost": 8.49, "net_profit": -2.68, "expected_payout": 42.5, "actual_payout": 0.0, "payout_difference": -42.5, "recon_status": "Missing", "exception_type": "Missing from settlement"}, {"order_id": "ORD-1060", "date": "2026-10-12", "channel": "Amazon", "country": "CA", "sku": "NHG-003", "product_name": "Linen Throw Blanket", "quantity": 1, "order_status": "Completed", "revenue": 59.0, "refund_amount": 0.0, "cogs": 22.0, "platform_fees_scheduled": 13.1, "ad_spend_allocated": 18.34, "shipping_cost": 9.47, "net_profit": -3.91, "expected_payout": 45.9, "actual_payout": 91.8, "payout_difference": 45.9, "recon_status": "Duplicate", "exception_type": "Duplicate payout"}, {"order_id": "ORD-1061", "date": "2026-10-21", "channel": "Amazon", "country": "DE", "sku": "NHG-009", "product_name": "Storage Basket Set", "quantity": 1, "order_status": "Completed", "revenue": 39.99, "refund_amount": 0.0, "cogs": 14.9, "platform_fees_scheduled": 10.25, "ad_spend_allocated": 12.43, "shipping_cost": 11.05, "net_profit": -8.64, "expected_payout": 29.74, "actual_payout": 29.74, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1062", "date": "2026-10-02", "channel": "Shopify", "country": "DE", "sku": "NHG-007", "product_name": "Cotton Sheet Set", "quantity": 1, "order_status": "Completed", "revenue": 65.0, "refund_amount": 0.0, "cogs": 26.1, "platform_fees_scheduled": 2.19, "ad_spend_allocated": 16.76, "shipping_cost": 10.75, "net_profit": 9.2, "expected_payout": 62.81, "actual_payout": 62.81, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1063", "date": "2026-10-29", "channel": "Amazon", "country": "DE", "sku": "NHG-010", "product_name": "Ceramic Planter Duo", "quantity": 1, "order_status": "Completed", "revenue": 32.75, "refund_amount": 0.0, "cogs": 11.35, "platform_fees_scheduled": 9.16, "ad_spend_allocated": 10.18, "shipping_cost": 10.17, "net_profit": -8.11, "expected_payout": 23.59, "actual_payout": 23.59, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1064", "date": "2026-10-27", "channel": "Shopify", "country": "US", "sku": "NHG-002", "product_name": "Bamboo Bath Tray", "quantity": 2, "order_status": "Completed", "revenue": 69.9, "refund_amount": 0.0, "cogs": 24.5, "platform_fees_scheduled": 2.33, "ad_spend_allocated": 18.03, "shipping_cost": 7.92, "net_profit": 17.12, "expected_payout": 67.57, "actual_payout": 67.57, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1065", "date": "2026-10-23", "channel": "Amazon", "country": "US", "sku": "NHG-007", "product_name": "Cotton Sheet Set", "quantity": 1, "order_status": "Completed", "revenue": 65.0, "refund_amount": 0.0, "cogs": 26.1, "platform_fees_scheduled": 14.0, "ad_spend_allocated": 20.2, "shipping_cost": 6.93, "net_profit": -2.23, "expected_payout": 51.0, "actual_payout": 51.0, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1066", "date": "2026-10-22", "channel": "Shopify", "country": "UK", "sku": "NHG-003", "product_name": "Linen Throw Blanket", "quantity": 1, "order_status": "Completed", "revenue": 59.0, "refund_amount": 0.0, "cogs": 22.0, "platform_fees_scheduled": 2.01, "ad_spend_allocated": 15.22, "shipping_cost": 11.3, "net_profit": 8.47, "expected_payout": 56.99, "actual_payout": 56.99, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1067", "date": "2026-10-02", "channel": "Amazon", "country": "UK", "sku": "NHG-002", "product_name": "Bamboo Bath Tray", "quantity": 1, "order_status": "Completed", "revenue": 34.95, "refund_amount": 0.0, "cogs": 12.25, "platform_fees_scheduled": 9.49, "ad_spend_allocated": 10.86, "shipping_cost": 11.16, "net_profit": -8.81, "expected_payout": 25.46, "actual_payout": 25.46, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1068", "date": "2026-10-18", "channel": "Amazon", "country": "DE", "sku": "NHG-001", "product_name": "Ceramic Vase Set", "quantity": 3, "order_status": "Completed", "revenue": 149.97, "refund_amount": 0.0, "cogs": 55.5, "platform_fees_scheduled": 26.75, "ad_spend_allocated": 46.61, "shipping_cost": 13.64, "net_profit": 7.47, "expected_payout": 123.22, "actual_payout": 123.22, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1069", "date": "2026-10-09", "channel": "Amazon", "country": "UK", "sku": "NHG-007", "product_name": "Cotton Sheet Set", "quantity": 2, "order_status": "Completed", "revenue": 130.0, "refund_amount": 0.0, "cogs": 52.2, "platform_fees_scheduled": 23.75, "ad_spend_allocated": 40.4, "shipping_cost": 12.29, "net_profit": 1.36, "expected_payout": 106.25, "actual_payout": 106.25, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1070", "date": "2026-10-02", "channel": "Amazon", "country": "US", "sku": "NHG-004", "product_name": "Stoneware Dinner Set", "quantity": 1, "order_status": "Completed", "revenue": 89.99, "refund_amount": 0.0, "cogs": 38.75, "platform_fees_scheduled": 17.75, "ad_spend_allocated": 27.97, "shipping_cost": 7.32, "net_profit": -1.8, "expected_payout": 72.24, "actual_payout": 72.24, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1071", "date": "2026-10-11", "channel": "Shopify", "country": "DE", "sku": "NHG-004", "product_name": "Stoneware Dinner Set", "quantity": 3, "order_status": "Refunded", "revenue": 269.97, "refund_amount": 269.97, "cogs": 0.0, "platform_fees_scheduled": 8.13, "ad_spend_allocated": 69.62, "shipping_cost": 14.31, "net_profit": -92.06, "expected_payout": -8.13, "actual_payout": -8.13, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1072", "date": "2026-10-19", "channel": "Amazon", "country": "US", "sku": "NHG-003", "product_name": "Linen Throw Blanket", "quantity": 1, "order_status": "Completed", "revenue": 59.0, "refund_amount": 0.0, "cogs": 22.0, "platform_fees_scheduled": 13.1, "ad_spend_allocated": 18.34, "shipping_cost": 7.03, "net_profit": -1.47, "expected_payout": 45.9, "actual_payout": 45.9, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1073", "date": "2026-10-16", "channel": "Amazon", "country": "DE", "sku": "NHG-002", "product_name": "Bamboo Bath Tray", "quantity": 1, "order_status": "Completed", "revenue": 34.95, "refund_amount": 0.0, "cogs": 12.25, "platform_fees_scheduled": 9.49, "ad_spend_allocated": 10.86, "shipping_cost": 10.47, "net_profit": -8.12, "expected_payout": 25.46, "actual_payout": 25.46, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1074", "date": "2026-10-04", "channel": "Amazon", "country": "UK", "sku": "NHG-007", "product_name": "Cotton Sheet Set", "quantity": 2, "order_status": "Completed", "revenue": 130.0, "refund_amount": 0.0, "cogs": 52.2, "platform_fees_scheduled": 23.75, "ad_spend_allocated": 40.4, "shipping_cost": 12.23, "net_profit": 1.42, "expected_payout": 106.25, "actual_payout": 106.25, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1075", "date": "2026-10-06", "channel": "Shopify", "country": "UK", "sku": "NHG-006", "product_name": "Wall Mirror Round", "quantity": 1, "order_status": "Completed", "revenue": 74.25, "refund_amount": 0.0, "cogs": 30.4, "platform_fees_scheduled": 2.45, "ad_spend_allocated": 19.15, "shipping_cost": 10.81, "net_profit": 11.44, "expected_payout": 71.8, "actual_payout": 0.0, "payout_difference": -71.8, "recon_status": "Missing", "exception_type": "Missing from settlement"}, {"order_id": "ORD-1076", "date": "2026-10-15", "channel": "Amazon", "country": "CA", "sku": "NHG-005", "product_name": "Scented Candle Trio", "quantity": 1, "order_status": "Completed", "revenue": 27.5, "refund_amount": 0.0, "cogs": 9.8, "platform_fees_scheduled": 8.38, "ad_spend_allocated": 8.55, "shipping_cost": 9.66, "net_profit": -8.89, "expected_payout": 19.12, "actual_payout": 19.12, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1077", "date": "2026-10-12", "channel": "Shopify", "country": "US", "sku": "NHG-002", "product_name": "Bamboo Bath Tray", "quantity": 2, "order_status": "Completed", "revenue": 69.9, "refund_amount": 0.0, "cogs": 24.5, "platform_fees_scheduled": 2.33, "ad_spend_allocated": 18.03, "shipping_cost": 8.49, "net_profit": 16.55, "expected_payout": 67.57, "actual_payout": 67.57, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1078", "date": "2026-10-11", "channel": "Amazon", "country": "CA", "sku": "NHG-005", "product_name": "Scented Candle Trio", "quantity": 2, "order_status": "Completed", "revenue": 55.0, "refund_amount": 0.0, "cogs": 19.6, "platform_fees_scheduled": 12.5, "ad_spend_allocated": 17.09, "shipping_cost": 10.5, "net_profit": -4.69, "expected_payout": 42.5, "actual_payout": 42.5, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1079", "date": "2026-10-20", "channel": "Amazon", "country": "US", "sku": "NHG-009", "product_name": "Storage Basket Set", "quantity": 3, "order_status": "Completed", "revenue": 119.97, "refund_amount": 0.0, "cogs": 44.7, "platform_fees_scheduled": 22.25, "ad_spend_allocated": 37.29, "shipping_cost": 10.14, "net_profit": 5.59, "expected_payout": 97.72, "actual_payout": 97.72, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1080", "date": "2026-10-22", "channel": "Amazon", "country": "US", "sku": "NHG-003", "product_name": "Linen Throw Blanket", "quantity": 2, "order_status": "Completed", "revenue": 118.0, "refund_amount": 0.0, "cogs": 44.0, "platform_fees_scheduled": 21.95, "ad_spend_allocated": 36.67, "shipping_cost": 8.14, "net_profit": 7.24, "expected_payout": 96.05, "actual_payout": 96.05, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1081", "date": "2026-10-06", "channel": "Amazon", "country": "US", "sku": "NHG-002", "product_name": "Bamboo Bath Tray", "quantity": 2, "order_status": "Completed", "revenue": 69.9, "refund_amount": 0.0, "cogs": 24.5, "platform_fees_scheduled": 14.74, "ad_spend_allocated": 21.73, "shipping_cost": 8.29, "net_profit": 0.64, "expected_payout": 55.16, "actual_payout": 55.16, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1082", "date": "2026-10-01", "channel": "Amazon", "country": "US", "sku": "NHG-009", "product_name": "Storage Basket Set", "quantity": 1, "order_status": "Completed", "revenue": 39.99, "refund_amount": 0.0, "cogs": 14.9, "platform_fees_scheduled": 10.25, "ad_spend_allocated": 12.43, "shipping_cost": 7.39, "net_profit": -4.98, "expected_payout": 29.74, "actual_payout": 29.74, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1083", "date": "2026-10-15", "channel": "Amazon", "country": "CA", "sku": "NHG-002", "product_name": "Bamboo Bath Tray", "quantity": 1, "order_status": "Completed", "revenue": 34.95, "refund_amount": 0.0, "cogs": 12.25, "platform_fees_scheduled": 9.49, "ad_spend_allocated": 10.86, "shipping_cost": 9.55, "net_profit": -7.2, "expected_payout": 25.46, "actual_payout": 25.46, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1084", "date": "2026-10-28", "channel": "Amazon", "country": "US", "sku": "NHG-004", "product_name": "Stoneware Dinner Set", "quantity": 1, "order_status": "Completed", "revenue": 89.99, "refund_amount": 0.0, "cogs": 38.75, "platform_fees_scheduled": 17.75, "ad_spend_allocated": 27.97, "shipping_cost": 7.14, "net_profit": -1.62, "expected_payout": 72.24, "actual_payout": 72.24, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1085", "date": "2026-10-20", "channel": "Shopify", "country": "US", "sku": "NHG-003", "product_name": "Linen Throw Blanket", "quantity": 2, "order_status": "Completed", "revenue": 118.0, "refund_amount": 0.0, "cogs": 44.0, "platform_fees_scheduled": 3.72, "ad_spend_allocated": 30.43, "shipping_cost": 8.19, "net_profit": 31.66, "expected_payout": 114.28, "actual_payout": 114.28, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1086", "date": "2026-10-24", "channel": "Shopify", "country": "CA", "sku": "NHG-010", "product_name": "Ceramic Planter Duo", "quantity": 2, "order_status": "Completed", "revenue": 65.5, "refund_amount": 0.0, "cogs": 22.7, "platform_fees_scheduled": 2.2, "ad_spend_allocated": 16.89, "shipping_cost": 11.51, "net_profit": 12.2, "expected_payout": 63.3, "actual_payout": 63.3, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1087", "date": "2026-10-05", "channel": "Amazon", "country": "DE", "sku": "NHG-003", "product_name": "Linen Throw Blanket", "quantity": 1, "order_status": "Completed", "revenue": 59.0, "refund_amount": 0.0, "cogs": 22.0, "platform_fees_scheduled": 13.1, "ad_spend_allocated": 18.34, "shipping_cost": 10.77, "net_profit": -5.21, "expected_payout": 45.9, "actual_payout": 45.9, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1088", "date": "2026-10-17", "channel": "Shopify", "country": "US", "sku": "NHG-008", "product_name": "Brass Table Lamp", "quantity": 1, "order_status": "Completed", "revenue": 92.0, "refund_amount": 0.0, "cogs": 41.6, "platform_fees_scheduled": 2.97, "ad_spend_allocated": 23.73, "shipping_cost": 7.3, "net_profit": 16.4, "expected_payout": 89.03, "actual_payout": 75.56, "payout_difference": -13.47, "recon_status": "Underpaid", "exception_type": "Wrong payout amount"}, {"order_id": "ORD-1089", "date": "2026-10-08", "channel": "Amazon", "country": "US", "sku": "NHG-001", "product_name": "Ceramic Vase Set", "quantity": 2, "order_status": "Refunded", "revenue": 99.98, "refund_amount": 99.98, "cogs": 0.0, "platform_fees_scheduled": 7.25, "ad_spend_allocated": 31.07, "shipping_cost": 8.95, "net_profit": -47.27, "expected_payout": -7.25, "actual_payout": -7.25, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1090", "date": "2026-10-11", "channel": "Amazon", "country": "US", "sku": "NHG-002", "product_name": "Bamboo Bath Tray", "quantity": 2, "order_status": "Completed", "revenue": 69.9, "refund_amount": 0.0, "cogs": 24.5, "platform_fees_scheduled": 14.74, "ad_spend_allocated": 21.73, "shipping_cost": 8.13, "net_profit": 0.8, "expected_payout": 55.16, "actual_payout": 55.16, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1091", "date": "2026-10-11", "channel": "Amazon", "country": "UK", "sku": "NHG-010", "product_name": "Ceramic Planter Duo", "quantity": 2, "order_status": "Refunded", "revenue": 65.5, "refund_amount": 65.5, "cogs": 0.0, "platform_fees_scheduled": 6.22, "ad_spend_allocated": 20.36, "shipping_cost": 12.32, "net_profit": -38.9, "expected_payout": -6.22, "actual_payout": -6.22, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1092", "date": "2026-10-12", "channel": "Amazon", "country": "UK", "sku": "NHG-003", "product_name": "Linen Throw Blanket", "quantity": 1, "order_status": "Completed", "revenue": 59.0, "refund_amount": 0.0, "cogs": 22.0, "platform_fees_scheduled": 13.1, "ad_spend_allocated": 18.34, "shipping_cost": 10.79, "net_profit": -5.23, "expected_payout": 45.9, "actual_payout": 45.9, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1093", "date": "2026-10-12", "channel": "Shopify", "country": "US", "sku": "NHG-002", "product_name": "Bamboo Bath Tray", "quantity": 1, "order_status": "Completed", "revenue": 34.95, "refund_amount": 0.0, "cogs": 12.25, "platform_fees_scheduled": 1.31, "ad_spend_allocated": 9.01, "shipping_cost": 6.38, "net_profit": 6.0, "expected_payout": 33.64, "actual_payout": 33.29, "payout_difference": -0.35, "recon_status": "Underpaid", "exception_type": "Fee overcharge"}, {"order_id": "ORD-1094", "date": "2026-10-16", "channel": "Shopify", "country": "DE", "sku": "NHG-005", "product_name": "Scented Candle Trio", "quantity": 1, "order_status": "Completed", "revenue": 27.5, "refund_amount": 0.0, "cogs": 9.8, "platform_fees_scheduled": 1.1, "ad_spend_allocated": 7.09, "shipping_cost": 11.23, "net_profit": -1.72, "expected_payout": 26.4, "actual_payout": 26.4, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1095", "date": "2026-10-11", "channel": "Amazon", "country": "DE", "sku": "NHG-003", "product_name": "Linen Throw Blanket", "quantity": 1, "order_status": "Completed", "revenue": 59.0, "refund_amount": 0.0, "cogs": 22.0, "platform_fees_scheduled": 13.1, "ad_spend_allocated": 18.34, "shipping_cost": 10.6, "net_profit": -5.04, "expected_payout": 45.9, "actual_payout": 45.9, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1096", "date": "2026-10-31", "channel": "Shopify", "country": "US", "sku": "NHG-009", "product_name": "Storage Basket Set", "quantity": 2, "order_status": "Refunded", "revenue": 79.98, "refund_amount": 79.98, "cogs": 0.0, "platform_fees_scheduled": 2.62, "ad_spend_allocated": 20.63, "shipping_cost": 8.25, "net_profit": -31.5, "expected_payout": -2.62, "actual_payout": -82.6, "payout_difference": -79.98, "recon_status": "Underpaid", "exception_type": "Refund deducted twice"}, {"order_id": "ORD-1097", "date": "2026-10-31", "channel": "Amazon", "country": "UK", "sku": "NHG-001", "product_name": "Ceramic Vase Set", "quantity": 3, "order_status": "Completed", "revenue": 149.97, "refund_amount": 0.0, "cogs": 55.5, "platform_fees_scheduled": 26.75, "ad_spend_allocated": 46.61, "shipping_cost": 14.74, "net_profit": 6.37, "expected_payout": 123.22, "actual_payout": 123.22, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1098", "date": "2026-10-17", "channel": "Amazon", "country": "DE", "sku": "NHG-009", "product_name": "Storage Basket Set", "quantity": 1, "order_status": "Completed", "revenue": 39.99, "refund_amount": 0.0, "cogs": 14.9, "platform_fees_scheduled": 10.25, "ad_spend_allocated": 12.43, "shipping_cost": 10.91, "net_profit": -8.5, "expected_payout": 29.74, "actual_payout": 29.74, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1099", "date": "2026-10-26", "channel": "Amazon", "country": "US", "sku": "NHG-003", "product_name": "Linen Throw Blanket", "quantity": 1, "order_status": "Refunded", "revenue": 59.0, "refund_amount": 59.0, "cogs": 0.0, "platform_fees_scheduled": 6.02, "ad_spend_allocated": 18.34, "shipping_cost": 7.52, "net_profit": -31.88, "expected_payout": -6.02, "actual_payout": -6.02, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1100", "date": "2026-10-12", "channel": "Shopify", "country": "US", "sku": "NHG-009", "product_name": "Storage Basket Set", "quantity": 1, "order_status": "Completed", "revenue": 39.99, "refund_amount": 0.0, "cogs": 14.9, "platform_fees_scheduled": 1.46, "ad_spend_allocated": 10.31, "shipping_cost": 6.99, "net_profit": 6.33, "expected_payout": 38.53, "actual_payout": 38.53, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1101", "date": "2026-10-11", "channel": "Shopify", "country": "DE", "sku": "NHG-001", "product_name": "Ceramic Vase Set", "quantity": 2, "order_status": "Completed", "revenue": 99.98, "refund_amount": 0.0, "cogs": 37.0, "platform_fees_scheduled": 3.2, "ad_spend_allocated": 25.78, "shipping_cost": 12.37, "net_profit": 21.63, "expected_payout": 96.78, "actual_payout": 96.78, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1102", "date": "2026-10-27", "channel": "Shopify", "country": "US", "sku": "NHG-003", "product_name": "Linen Throw Blanket", "quantity": 2, "order_status": "Completed", "revenue": 118.0, "refund_amount": 0.0, "cogs": 44.0, "platform_fees_scheduled": 3.72, "ad_spend_allocated": 30.43, "shipping_cost": 8.74, "net_profit": 31.11, "expected_payout": 114.28, "actual_payout": 228.56, "payout_difference": 114.28, "recon_status": "Duplicate", "exception_type": "Duplicate payout"}, {"order_id": "ORD-1103", "date": "2026-10-26", "channel": "Amazon", "country": "US", "sku": "NHG-001", "product_name": "Ceramic Vase Set", "quantity": 1, "order_status": "Completed", "revenue": 49.99, "refund_amount": 0.0, "cogs": 18.5, "platform_fees_scheduled": 11.75, "ad_spend_allocated": 15.54, "shipping_cost": 6.85, "net_profit": -2.65, "expected_payout": 38.24, "actual_payout": 38.24, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1104", "date": "2026-10-03", "channel": "Amazon", "country": "UK", "sku": "NHG-004", "product_name": "Stoneware Dinner Set", "quantity": 2, "order_status": "Completed", "revenue": 179.98, "refund_amount": 0.0, "cogs": 77.5, "platform_fees_scheduled": 31.25, "ad_spend_allocated": 55.94, "shipping_cost": 12.32, "net_profit": 2.97, "expected_payout": 148.73, "actual_payout": 148.73, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1105", "date": "2026-10-13", "channel": "Shopify", "country": "DE", "sku": "NHG-005", "product_name": "Scented Candle Trio", "quantity": 1, "order_status": "Completed", "revenue": 27.5, "refund_amount": 0.0, "cogs": 9.8, "platform_fees_scheduled": 1.1, "ad_spend_allocated": 7.09, "shipping_cost": 11.09, "net_profit": -1.58, "expected_payout": 26.4, "actual_payout": 26.4, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1106", "date": "2026-10-14", "channel": "Shopify", "country": "CA", "sku": "NHG-004", "product_name": "Stoneware Dinner Set", "quantity": 1, "order_status": "Completed", "revenue": 89.99, "refund_amount": 0.0, "cogs": 38.75, "platform_fees_scheduled": 2.91, "ad_spend_allocated": 23.21, "shipping_cost": 9.08, "net_profit": 16.04, "expected_payout": 87.08, "actual_payout": 0.0, "payout_difference": -87.08, "recon_status": "Missing", "exception_type": "Missing from settlement"}, {"order_id": "ORD-1107", "date": "2026-10-03", "channel": "Amazon", "country": "DE", "sku": "NHG-008", "product_name": "Brass Table Lamp", "quantity": 1, "order_status": "Completed", "revenue": 92.0, "refund_amount": 0.0, "cogs": 41.6, "platform_fees_scheduled": 18.05, "ad_spend_allocated": 28.59, "shipping_cost": 10.94, "net_profit": -7.18, "expected_payout": 73.95, "actual_payout": 0.0, "payout_difference": -73.95, "recon_status": "Missing", "exception_type": "Missing from settlement"}, {"order_id": "ORD-1108", "date": "2026-10-06", "channel": "Shopify", "country": "CA", "sku": "NHG-001", "product_name": "Ceramic Vase Set", "quantity": 1, "order_status": "Completed", "revenue": 49.99, "refund_amount": 0.0, "cogs": 18.5, "platform_fees_scheduled": 1.75, "ad_spend_allocated": 12.89, "shipping_cost": 9.76, "net_profit": 7.09, "expected_payout": 48.24, "actual_payout": 48.24, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1109", "date": "2026-10-30", "channel": "Amazon", "country": "UK", "sku": "NHG-005", "product_name": "Scented Candle Trio", "quantity": 1, "order_status": "Completed", "revenue": 27.5, "refund_amount": 0.0, "cogs": 9.8, "platform_fees_scheduled": 8.38, "ad_spend_allocated": 8.55, "shipping_cost": 11.81, "net_profit": -11.04, "expected_payout": 19.12, "actual_payout": 19.12, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1110", "date": "2026-10-09", "channel": "Shopify", "country": "US", "sku": "NHG-010", "product_name": "Ceramic Planter Duo", "quantity": 1, "order_status": "Completed", "revenue": 32.75, "refund_amount": 0.0, "cogs": 11.35, "platform_fees_scheduled": 1.25, "ad_spend_allocated": 8.45, "shipping_cost": 6.99, "net_profit": 4.71, "expected_payout": 31.5, "actual_payout": 31.5, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1111", "date": "2026-10-03", "channel": "Shopify", "country": "UK", "sku": "NHG-001", "product_name": "Ceramic Vase Set", "quantity": 3, "order_status": "Completed", "revenue": 149.97, "refund_amount": 0.0, "cogs": 55.5, "platform_fees_scheduled": 4.65, "ad_spend_allocated": 38.67, "shipping_cost": 14.17, "net_profit": 36.98, "expected_payout": 145.32, "actual_payout": 145.32, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1112", "date": "2026-10-03", "channel": "Amazon", "country": "UK", "sku": "NHG-002", "product_name": "Bamboo Bath Tray", "quantity": 1, "order_status": "Completed", "revenue": 34.95, "refund_amount": 0.0, "cogs": 12.25, "platform_fees_scheduled": 9.49, "ad_spend_allocated": 10.86, "shipping_cost": 11.15, "net_profit": -8.8, "expected_payout": 25.46, "actual_payout": 25.46, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1113", "date": "2026-10-05", "channel": "Shopify", "country": "US", "sku": "NHG-010", "product_name": "Ceramic Planter Duo", "quantity": 2, "order_status": "Completed", "revenue": 65.5, "refund_amount": 0.0, "cogs": 22.7, "platform_fees_scheduled": 2.2, "ad_spend_allocated": 16.89, "shipping_cost": 8.67, "net_profit": 15.04, "expected_payout": 63.3, "actual_payout": 63.3, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1114", "date": "2026-10-03", "channel": "Amazon", "country": "US", "sku": "NHG-008", "product_name": "Brass Table Lamp", "quantity": 1, "order_status": "Completed", "revenue": 92.0, "refund_amount": 0.0, "cogs": 41.6, "platform_fees_scheduled": 18.05, "ad_spend_allocated": 28.59, "shipping_cost": 6.63, "net_profit": -2.87, "expected_payout": 73.95, "actual_payout": 73.95, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1115", "date": "2026-10-29", "channel": "Shopify", "country": "DE", "sku": "NHG-009", "product_name": "Storage Basket Set", "quantity": 1, "order_status": "Completed", "revenue": 39.99, "refund_amount": 0.0, "cogs": 14.9, "platform_fees_scheduled": 1.46, "ad_spend_allocated": 10.31, "shipping_cost": 10.19, "net_profit": 3.13, "expected_payout": 38.53, "actual_payout": 38.53, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1116", "date": "2026-10-18", "channel": "Amazon", "country": "UK", "sku": "NHG-005", "product_name": "Scented Candle Trio", "quantity": 1, "order_status": "Completed", "revenue": 27.5, "refund_amount": 0.0, "cogs": 9.8, "platform_fees_scheduled": 8.38, "ad_spend_allocated": 8.55, "shipping_cost": 11.56, "net_profit": -10.79, "expected_payout": 19.12, "actual_payout": 0.0, "payout_difference": -19.12, "recon_status": "Missing", "exception_type": "Missing from settlement"}, {"order_id": "ORD-1117", "date": "2026-10-15", "channel": "Shopify", "country": "DE", "sku": "NHG-002", "product_name": "Bamboo Bath Tray", "quantity": 2, "order_status": "Completed", "revenue": 69.9, "refund_amount": 0.0, "cogs": 24.5, "platform_fees_scheduled": 2.33, "ad_spend_allocated": 18.03, "shipping_cost": 11.65, "net_profit": 13.39, "expected_payout": 67.57, "actual_payout": 67.57, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1118", "date": "2026-10-02", "channel": "Shopify", "country": "US", "sku": "NHG-009", "product_name": "Storage Basket Set", "quantity": 1, "order_status": "Completed", "revenue": 39.99, "refund_amount": 0.0, "cogs": 14.9, "platform_fees_scheduled": 1.46, "ad_spend_allocated": 10.31, "shipping_cost": 6.78, "net_profit": 6.54, "expected_payout": 38.53, "actual_payout": 38.53, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1119", "date": "2026-10-19", "channel": "Amazon", "country": "UK", "sku": "NHG-004", "product_name": "Stoneware Dinner Set", "quantity": 2, "order_status": "Completed", "revenue": 179.98, "refund_amount": 0.0, "cogs": 77.5, "platform_fees_scheduled": 31.25, "ad_spend_allocated": 55.94, "shipping_cost": 12.56, "net_profit": 2.73, "expected_payout": 148.73, "actual_payout": 148.73, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}, {"order_id": "ORD-1120", "date": "2026-10-13", "channel": "Shopify", "country": "US", "sku": "NHG-005", "product_name": "Scented Candle Trio", "quantity": 2, "order_status": "Completed", "revenue": 55.0, "refund_amount": 0.0, "cogs": 19.6, "platform_fees_scheduled": 1.9, "ad_spend_allocated": 14.18, "shipping_cost": 8.77, "net_profit": 10.55, "expected_payout": 53.1, "actual_payout": 53.1, "payout_difference": 0.0, "recon_status": "Matched", "exception_type": ""}], "daily_channel": [{"date": "2026-10-01", "channel": "Amazon", "orders": 1, "units": 1, "revenue": 39.99, "refunds": 0.0, "ad_spend_actual": 58.57, "net_profit": -4.98, "payout_difference": 0.0}, {"date": "2026-10-01", "channel": "Shopify", "orders": 1, "units": 1, "revenue": 65.0, "refunds": 65.0, "ad_spend_actual": 37.63, "net_profit": -26.02, "payout_difference": 0.0}, {"date": "2026-10-02", "channel": "Amazon", "orders": 4, "units": 4, "revenue": 194.84, "refunds": 0.0, "ad_spend_actual": 58.84, "net_profit": -19.31, "payout_difference": 0.0}, {"date": "2026-10-02", "channel": "Shopify", "orders": 2, "units": 2, "revenue": 104.99, "refunds": 0.0, "ad_spend_actual": 28.71, "net_profit": 15.74, "payout_difference": 0.0}, {"date": "2026-10-03", "channel": "Amazon", "orders": 5, "units": 6, "revenue": 438.92, "refunds": 0.0, "ad_spend_actual": 61.55, "net_profit": -23.02, "payout_difference": -73.95}, {"date": "2026-10-03", "channel": "Shopify", "orders": 2, "units": 6, "revenue": 299.94, "refunds": 0.0, "ad_spend_actual": 31.1, "net_profit": 75.21, "payout_difference": -1.5}, {"date": "2026-10-04", "channel": "Amazon", "orders": 1, "units": 2, "revenue": 130.0, "refunds": 0.0, "ad_spend_actual": 54.58, "net_profit": 1.42, "payout_difference": 0.0}, {"date": "2026-10-04", "channel": "Shopify", "orders": 1, "units": 1, "revenue": 49.99, "refunds": 0.0, "ad_spend_actual": 25.69, "net_profit": 10.19, "payout_difference": 0.0}, {"date": "2026-10-05", "channel": "Amazon", "orders": 4, "units": 5, "revenue": 294.49, "refunds": 27.5, "ad_spend_actual": 70.81, "net_profit": -27.38, "payout_difference": -31.04}, {"date": "2026-10-05", "channel": "Shopify", "orders": 2, "units": 3, "revenue": 130.5, "refunds": 0.0, "ad_spend_actual": 45.06, "net_profit": 26.02, "payout_difference": 0.0}, {"date": "2026-10-06", "channel": "Amazon", "orders": 1, "units": 2, "revenue": 69.9, "refunds": 0.0, "ad_spend_actual": 73.12, "net_profit": 0.64, "payout_difference": 0.0}, {"date": "2026-10-06", "channel": "Shopify", "orders": 2, "units": 2, "revenue": 124.24, "refunds": 0.0, "ad_spend_actual": 21.12, "net_profit": 18.53, "payout_difference": -71.8}, {"date": "2026-10-07", "channel": "Amazon", "orders": 1, "units": 3, "revenue": 276.0, "refunds": 0.0, "ad_spend_actual": 47.27, "net_profit": 7.29, "payout_difference": 0.0}, {"date": "2026-10-07", "channel": "Shopify", "orders": 1, "units": 1, "revenue": 74.25, "refunds": 0.0, "ad_spend_actual": 28.18, "net_profit": 13.11, "payout_difference": 0.0}, {"date": "2026-10-08", "channel": "Amazon", "orders": 3, "units": 5, "revenue": 198.23, "refunds": 99.98, "ad_spend_actual": 70.28, "net_profit": -56.28, "payout_difference": 0.0}, {"date": "2026-10-08", "channel": "Shopify", "orders": 1, "units": 3, "revenue": 177.0, "refunds": 0.0, "ad_spend_actual": 24.11, "net_profit": 49.8, "payout_difference": 0.0}, {"date": "2026-10-09", "channel": "Amazon", "orders": 1, "units": 2, "revenue": 130.0, "refunds": 0.0, "ad_spend_actual": 72.82, "net_profit": 1.36, "payout_difference": 0.0}, {"date": "2026-10-09", "channel": "Shopify", "orders": 1, "units": 1, "revenue": 32.75, "refunds": 0.0, "ad_spend_actual": 48.66, "net_profit": 4.71, "payout_difference": 0.0}, {"date": "2026-10-10", "channel": "Amazon", "orders": 1, "units": 1, "revenue": 59.0, "refunds": 0.0, "ad_spend_actual": 65.3, "net_profit": -3.59, "payout_difference": 0.0}, {"date": "2026-10-10", "channel": "Shopify", "orders": 2, "units": 5, "revenue": 185.47, "refunds": 0.0, "ad_spend_actual": 33.4, "net_profit": 41.55, "payout_difference": 0.0}, {"date": "2026-10-11", "channel": "Amazon", "orders": 4, "units": 7, "revenue": 249.4, "refunds": 65.5, "ad_spend_actual": 42.46, "net_profit": -47.83, "payout_difference": 0.0}, {"date": "2026-10-11", "channel": "Shopify", "orders": 4, "units": 9, "revenue": 649.91, "refunds": 269.97, "ad_spend_actual": 37.21, "net_profit": -6.46, "payout_difference": 0.0}, {"date": "2026-10-12", "channel": "Amazon", "orders": 4, "units": 5, "revenue": 287.99, "refunds": 0.0, "ad_spend_actual": 60.64, "net_profit": -12.02, "payout_difference": 45.9}, {"date": "2026-10-12", "channel": "Shopify", "orders": 3, "units": 4, "revenue": 144.84, "refunds": 0.0, "ad_spend_actual": 31.76, "net_profit": 28.88, "payout_difference": -0.35}, {"date": "2026-10-13", "channel": "Amazon", "orders": 0, "units": 0, "revenue": 0.0, "refunds": 0.0, "ad_spend_actual": 38.97, "net_profit": 0.0, "payout_difference": 0.0}, {"date": "2026-10-13", "channel": "Shopify", "orders": 2, "units": 3, "revenue": 82.5, "refunds": 0.0, "ad_spend_actual": 36.58, "net_profit": 8.97, "payout_difference": 0.0}, {"date": "2026-10-14", "channel": "Amazon", "orders": 2, "units": 3, "revenue": 189.0, "refunds": 0.0, "ad_spend_actual": 71.5, "net_profit": 3.8, "payout_difference": 0.0}, {"date": "2026-10-14", "channel": "Shopify", "orders": 1, "units": 1, "revenue": 89.99, "refunds": 0.0, "ad_spend_actual": 42.76, "net_profit": 16.04, "payout_difference": -87.08}, {"date": "2026-10-15", "channel": "Amazon", "orders": 4, "units": 6, "revenue": 234.94, "refunds": 0.0, "ad_spend_actual": 51.71, "net_profit": -24.49, "payout_difference": 0.0}, {"date": "2026-10-15", "channel": "Shopify", "orders": 1, "units": 2, "revenue": 69.9, "refunds": 0.0, "ad_spend_actual": 39.55, "net_profit": 13.39, "payout_difference": 0.0}, {"date": "2026-10-16", "channel": "Amazon", "orders": 2, "units": 2, "revenue": 62.45, "refunds": 0.0, "ad_spend_actual": 53.74, "net_profit": -18.45, "payout_difference": 0.0}, {"date": "2026-10-16", "channel": "Shopify", "orders": 3, "units": 4, "revenue": 115.25, "refunds": 0.0, "ad_spend_actual": 43.23, "net_profit": 6.4, "payout_difference": 0.0}, {"date": "2026-10-17", "channel": "Amazon", "orders": 1, "units": 1, "revenue": 39.99, "refunds": 0.0, "ad_spend_actual": 59.85, "net_profit": -8.5, "payout_difference": 0.0}, {"date": "2026-10-17", "channel": "Shopify", "orders": 1, "units": 1, "revenue": 92.0, "refunds": 0.0, "ad_spend_actual": 30.42, "net_profit": 16.4, "payout_difference": -13.47}, {"date": "2026-10-18", "channel": "Amazon", "orders": 5, "units": 9, "revenue": 467.42, "refunds": 0.0, "ad_spend_actual": 47.1, "net_profit": 4.37, "payout_difference": -19.12}, {"date": "2026-10-18", "channel": "Shopify", "orders": 0, "units": 0, "revenue": 0.0, "refunds": 0.0, "ad_spend_actual": 20.92, "net_profit": 0.0, "payout_difference": 0.0}, {"date": "2026-10-19", "channel": "Amazon", "orders": 3, "units": 5, "revenue": 356.98, "refunds": 0.0, "ad_spend_actual": 54.85, "net_profit": 4.18, "payout_difference": 0.0}, {"date": "2026-10-19", "channel": "Shopify", "orders": 3, "units": 6, "revenue": 405.75, "refunds": 0.0, "ad_spend_actual": 44.59, "net_profit": 96.33, "payout_difference": 0.0}, {"date": "2026-10-20", "channel": "Amazon", "orders": 1, "units": 3, "revenue": 119.97, "refunds": 0.0, "ad_spend_actual": 55.41, "net_profit": 5.59, "payout_difference": 0.0}, {"date": "2026-10-20", "channel": "Shopify", "orders": 1, "units": 2, "revenue": 118.0, "refunds": 0.0, "ad_spend_actual": 36.48, "net_profit": 31.66, "payout_difference": 0.0}, {"date": "2026-10-21", "channel": "Amazon", "orders": 2, "units": 4, "revenue": 315.99, "refunds": 0.0, "ad_spend_actual": 44.51, "net_profit": 1.39, "payout_difference": -8.28}, {"date": "2026-10-21", "channel": "Shopify", "orders": 2, "units": 4, "revenue": 234.98, "refunds": 0.0, "ad_spend_actual": 27.76, "net_profit": 50.45, "payout_difference": 0.0}, {"date": "2026-10-22", "channel": "Amazon", "orders": 5, "units": 9, "revenue": 367.75, "refunds": 0.0, "ad_spend_actual": 61.16, "net_profit": -7.28, "payout_difference": -42.5}, {"date": "2026-10-22", "channel": "Shopify", "orders": 2, "units": 2, "revenue": 86.5, "refunds": 0.0, "ad_spend_actual": 24.53, "net_profit": 7.5, "payout_difference": 0.0}, {"date": "2026-10-23", "channel": "Amazon", "orders": 3, "units": 3, "revenue": 249.0, "refunds": 0.0, "ad_spend_actual": 43.33, "net_profit": -16.65, "payout_difference": 0.0}, {"date": "2026-10-23", "channel": "Shopify", "orders": 1, "units": 2, "revenue": 55.0, "refunds": 0.0, "ad_spend_actual": 32.01, "net_profit": 11.39, "payout_difference": 0.0}, {"date": "2026-10-24", "channel": "Amazon", "orders": 0, "units": 0, "revenue": 0.0, "refunds": 0.0, "ad_spend_actual": 62.21, "net_profit": 0.0, "payout_difference": 0.0}, {"date": "2026-10-24", "channel": "Shopify", "orders": 1, "units": 2, "revenue": 65.5, "refunds": 0.0, "ad_spend_actual": 42.44, "net_profit": 12.2, "payout_difference": 0.0}, {"date": "2026-10-25", "channel": "Amazon", "orders": 0, "units": 0, "revenue": 0.0, "refunds": 0.0, "ad_spend_actual": 58.43, "net_profit": 0.0, "payout_difference": 0.0}, {"date": "2026-10-25", "channel": "Shopify", "orders": 1, "units": 2, "revenue": 65.5, "refunds": 0.0, "ad_spend_actual": 25.76, "net_profit": 15.33, "payout_difference": 0.0}, {"date": "2026-10-26", "channel": "Amazon", "orders": 5, "units": 7, "revenue": 331.47, "refunds": 59.0, "ad_spend_actual": 60.49, "net_profit": -45.3, "payout_difference": 0.0}, {"date": "2026-10-26", "channel": "Shopify", "orders": 1, "units": 3, "revenue": 119.97, "refunds": 0.0, "ad_spend_actual": 22.45, "net_profit": 30.24, "payout_difference": 0.0}, {"date": "2026-10-27", "channel": "Amazon", "orders": 1, "units": 1, "revenue": 27.5, "refunds": 0.0, "ad_spend_actual": 63.94, "net_profit": -10.53, "payout_difference": 0.0}, {"date": "2026-10-27", "channel": "Shopify", "orders": 3, "units": 5, "revenue": 215.4, "refunds": 0.0, "ad_spend_actual": 48.11, "net_profit": 50.56, "payout_difference": 114.28}, {"date": "2026-10-28", "channel": "Amazon", "orders": 2, "units": 3, "revenue": 189.97, "refunds": 0.0, "ad_spend_actual": 40.41, "net_profit": 2.37, "payout_difference": 0.0}, {"date": "2026-10-28", "channel": "Shopify", "orders": 1, "units": 2, "revenue": 79.98, "refunds": 0.0, "ad_spend_actual": 38.15, "net_profit": 18.58, "payout_difference": 0.0}, {"date": "2026-10-29", "channel": "Amazon", "orders": 1, "units": 1, "revenue": 32.75, "refunds": 0.0, "ad_spend_actual": 44.57, "net_profit": -8.11, "payout_difference": 0.0}, {"date": "2026-10-29", "channel": "Shopify", "orders": 2, "units": 2, "revenue": 114.24, "refunds": 0.0, "ad_spend_actual": 30.33, "net_profit": 18.04, "payout_difference": 0.0}, {"date": "2026-10-30", "channel": "Amazon", "orders": 3, "units": 3, "revenue": 191.74, "refunds": 0.0, "ad_spend_actual": 63.61, "net_profit": -14.62, "payout_difference": 0.0}, {"date": "2026-10-30", "channel": "Shopify", "orders": 0, "units": 0, "revenue": 0.0, "refunds": 0.0, "ad_spend_actual": 40.06, "net_profit": 0.0, "payout_difference": 0.0}, {"date": "2026-10-31", "channel": "Amazon", "orders": 1, "units": 3, "revenue": 149.97, "refunds": 0.0, "ad_spend_actual": 58.2, "net_profit": 6.37, "payout_difference": 0.0}, {"date": "2026-10-31", "channel": "Shopify", "orders": 1, "units": 2, "revenue": 79.98, "refunds": 79.98, "ad_spend_actual": 46.09, "net_profit": -31.5, "payout_difference": -79.98}], "sku_profit": [{"sku": "NHG-001", "product_name": "Ceramic Vase Set", "orders": 14, "units": 28, "revenue": 1399.72, "refunds": 99.98, "cogs": 481.0, "platform_fees_scheduled": 161.2, "ad_spend_allocated": 403.26, "shipping": 147.87, "net_profit": 106.41, "net_margin_pct": 7.6}, {"sku": "NHG-002", "product_name": "Bamboo Bath Tray", "orders": 12, "units": 17, "revenue": 594.15, "refunds": 0.0, "cogs": 208.25, "platform_fees_scheduled": 94.72, "ad_spend_allocated": 171.72, "shipping": 106.59, "net_profit": 12.87, "net_margin_pct": 2.17}, {"sku": "NHG-003", "product_name": "Linen Throw Blanket", "orders": 16, "units": 24, "revenue": 1416.0, "refunds": 59.0, "cogs": 506.0, "platform_fees_scheduled": 182.17, "ad_spend_allocated": 408.9, "shipping": 153.15, "net_profit": 106.78, "net_margin_pct": 7.54}, {"sku": "NHG-004", "product_name": "Stoneware Dinner Set", "orders": 13, "units": 19, "revenue": 1709.81, "refunds": 269.97, "cogs": 620.0, "platform_fees_scheduled": 208.83, "ad_spend_allocated": 493.32, "shipping": 123.67, "net_profit": -5.98, "net_margin_pct": -0.35}, {"sku": "NHG-005", "product_name": "Scented Candle Trio", "orders": 19, "units": 30, "revenue": 825.0, "refunds": 27.5, "cogs": 284.2, "platform_fees_scheduled": 129.74, "ad_spend_allocated": 238.93, "shipping": 198.06, "net_profit": -53.43, "net_margin_pct": -6.48}, {"sku": "NHG-006", "product_name": "Wall Mirror Round", "orders": 6, "units": 8, "revenue": 594.0, "refunds": 0.0, "cogs": 243.2, "platform_fees_scheduled": 44.89, "ad_spend_allocated": 161.05, "shipping": 55.19, "net_profit": 89.67, "net_margin_pct": 15.1}, {"sku": "NHG-007", "product_name": "Cotton Sheet Set", "orders": 9, "units": 13, "revenue": 845.0, "refunds": 65.0, "cogs": 313.2, "platform_fees_scheduled": 117.76, "ad_spend_allocated": 248.84, "shipping": 82.52, "net_profit": 17.68, "net_margin_pct": 2.09}, {"sku": "NHG-008", "product_name": "Brass Table Lamp", "orders": 7, "units": 11, "revenue": 1012.0, "refunds": 0.0, "cogs": 457.6, "platform_fees_scheduled": 166.47, "ad_spend_allocated": 309.65, "shipping": 69.03, "net_profit": 9.25, "net_margin_pct": 0.91}, {"sku": "NHG-009", "product_name": "Storage Basket Set", "orders": 13, "units": 21, "revenue": 839.79, "refunds": 79.98, "cogs": 283.1, "platform_fees_scheduled": 90.68, "ad_spend_allocated": 233.51, "shipping": 125.32, "net_profit": 27.2, "net_margin_pct": 3.24}, {"sku": "NHG-010", "product_name": "Ceramic Planter Duo", "orders": 11, "units": 18, "revenue": 589.5, "refunds": 65.5, "cogs": 181.6, "platform_fees_scheduled": 64.0, "ad_spend_allocated": 165.9, "shipping": 109.27, "net_profit": 3.23, "net_margin_pct": 0.55}], "channel_country": [{"channel": "Amazon", "country": "CA", "orders": 9, "units": 12, "revenue": 691.42, "refunds": 0.0, "cogs": 282.6, "platform_fees_scheduled": 141.97, "ad_spend_allocated": 214.9, "shipping": 90.26, "net_profit": -38.31, "expected_payouts": 549.45, "actual_payouts": 595.35, "leakage": -45.9}, {"channel": "Amazon", "country": "DE", "orders": 14, "units": 18, "revenue": 857.89, "refunds": 27.5, "cogs": 318.85, "platform_fees_scheduled": 184.91, "ad_spend_allocated": 266.65, "shipping": 156.01, "net_profit": -96.03, "expected_payouts": 645.48, "actual_payouts": 544.03, "leakage": 101.45}, {"channel": "Amazon", "country": "UK", "orders": 18, "units": 30, "revenue": 1553.82, "refunds": 65.5, "cogs": 591.7, "platform_fees_scheduled": 301.75, "ad_spend_allocated": 482.93, "shipping": 217.12, "net_profit": -105.18, "expected_payouts": 1186.57, "actual_payouts": 1167.45, "leakage": 19.12}, {"channel": "Amazon", "country": "US", "orders": 30, "units": 46, "revenue": 2592.52, "refunds": 158.98, "cogs": 966.2, "platform_fees_scheduled": 497.33, "ad_spend_allocated": 805.75, "shipping": 234.3, "net_profit": -70.04, "expected_payouts": 1936.21, "actual_payouts": 1881.89, "leakage": 54.32}, {"channel": "Shopify", "country": "CA", "orders": 8, "units": 13, "revenue": 729.68, "refunds": 0.0, "cogs": 289.05, "platform_fees_scheduled": 23.57, "ad_spend_allocated": 188.16, "shipping": 83.58, "net_profit": 145.32, "expected_payouts": 706.11, "actual_payouts": 617.53, "leakage": 88.58}, {"channel": "Shopify", "country": "DE", "orders": 9, "units": 14, "revenue": 727.32, "refunds": 269.97, "cogs": 168.9, "platform_fees_scheduled": 23.81, "ad_spend_allocated": 187.55, "shipping": 104.51, "net_profit": -27.42, "expected_payouts": 433.54, "actual_payouts": 433.54, "leakage": 0.0}, {"channel": "Shopify", "country": "UK", "orders": 6, "units": 11, "revenue": 553.94, "refunds": 0.0, "cogs": 207.95, "platform_fees_scheduled": 17.86, "ad_spend_allocated": 142.86, "shipping": 75.77, "net_profit": 109.5, "expected_payouts": 536.08, "actual_payouts": 464.28, "leakage": 71.8}, {"channel": "Shopify", "country": "US", "orders": 26, "units": 45, "revenue": 2118.38, "refunds": 144.98, "cogs": 752.9, "platform_fees_scheduled": 69.26, "ad_spend_allocated": 546.28, "shipping": 209.12, "net_profit": 395.84, "expected_payouts": 1904.14, "actual_payouts": 1924.62, "leakage": -20.48}], "exceptions": [{"rank": 1, "exception_type": "Duplicate payout", "order_id": "ORD-1102", "channel": "Shopify", "expected_payout": 114.28, "actual_payout": 228.56, "money_impact": 114.28, "explanation": "Order was paid 2 times in settlement; the extra payment must be flagged before the platform reclaims it."}, {"rank": 2, "exception_type": "Missing from settlement", "order_id": "ORD-1106", "channel": "Shopify", "expected_payout": 87.08, "actual_payout": 0.0, "money_impact": -87.08, "explanation": "Order never appears in the platform settlement \u2014 the full expected payout was never received."}, {"rank": 3, "exception_type": "Refund deducted twice", "order_id": "ORD-1096", "channel": "Shopify", "expected_payout": -2.62, "actual_payout": -82.6, "money_impact": -79.98, "explanation": "The customer refund was deducted twice from the payout (refund deduction exceeds the order revenue)."}, {"rank": 4, "exception_type": "Missing from settlement", "order_id": "ORD-1107", "channel": "Amazon", "expected_payout": 73.95, "actual_payout": 0.0, "money_impact": -73.95, "explanation": "Order never appears in the platform settlement \u2014 the full expected payout was never received."}, {"rank": 5, "exception_type": "Missing from settlement", "order_id": "ORD-1075", "channel": "Shopify", "expected_payout": 71.8, "actual_payout": 0.0, "money_impact": -71.8, "explanation": "Order never appears in the platform settlement \u2014 the full expected payout was never received."}, {"rank": 6, "exception_type": "Duplicate payout", "order_id": "ORD-1060", "channel": "Amazon", "expected_payout": 45.9, "actual_payout": 91.8, "money_impact": 45.9, "explanation": "Order was paid 2 times in settlement; the extra payment must be flagged before the platform reclaims it."}, {"rank": 7, "exception_type": "Missing from settlement", "order_id": "ORD-1059", "channel": "Amazon", "expected_payout": 42.5, "actual_payout": 0.0, "money_impact": -42.5, "explanation": "Order never appears in the platform settlement \u2014 the full expected payout was never received."}, {"rank": 8, "exception_type": "Refund deducted twice", "order_id": "ORD-1057", "channel": "Amazon", "expected_payout": -5.08, "actual_payout": -32.58, "money_impact": -27.5, "explanation": "The customer refund was deducted twice from the payout (refund deduction exceeds the order revenue)."}, {"rank": 9, "exception_type": "Missing from settlement", "order_id": "ORD-1116", "channel": "Amazon", "expected_payout": 19.12, "actual_payout": 0.0, "money_impact": -19.12, "explanation": "Order never appears in the platform settlement \u2014 the full expected payout was never received."}, {"rank": 10, "exception_type": "Wrong payout amount", "order_id": "ORD-1088", "channel": "Shopify", "expected_payout": 89.03, "actual_payout": 75.56, "money_impact": -13.47, "explanation": "Payout does not match settlement arithmetic (gross - fees - refunds)."}, {"rank": 11, "exception_type": "Fee overcharge", "order_id": "ORD-1016", "channel": "Amazon", "expected_payout": 230.35, "actual_payout": 222.07, "money_impact": -8.28, "explanation": "Platform fees charged are higher than the fee schedule allows."}, {"rank": 12, "exception_type": "Fee overcharge", "order_id": "ORD-1055", "channel": "Amazon", "expected_payout": 96.05, "actual_payout": 92.51, "money_impact": -3.54, "explanation": "Platform fees charged are higher than the fee schedule allows."}, {"rank": 13, "exception_type": "Fee overcharge", "order_id": "ORD-1004", "channel": "Shopify", "expected_payout": 145.32, "actual_payout": 143.82, "money_impact": -1.5, "explanation": "Platform fees charged are higher than the fee schedule allows."}, {"rank": 14, "exception_type": "Fee overcharge", "order_id": "ORD-1093", "channel": "Shopify", "expected_payout": 33.64, "actual_payout": 33.29, "money_impact": -0.35, "explanation": "Platform fees charged are higher than the fee schedule allows."}], "exception_types": [{"exception_type": "Missing from settlement", "count": 5, "gross_value_abs": 294.45, "signed_impact": -294.45}, {"exception_type": "Duplicate payout", "count": 2, "gross_value_abs": 160.18, "signed_impact": 160.18}, {"exception_type": "Refund deducted twice", "count": 2, "gross_value_abs": 107.48, "signed_impact": -107.48}, {"exception_type": "Fee overcharge", "count": 4, "gross_value_abs": 13.67, "signed_impact": -13.67}, {"exception_type": "Wrong payout amount", "count": 1, "gross_value_abs": 13.47, "signed_impact": -13.47}], "pnl_cascade": [{"step": "Gross revenue", "amount": 9824.97, "kind": "start"}, {"step": "Refunds", "amount": -666.93, "kind": "decrease"}, {"step": "COGS", "amount": -3578.15, "kind": "decrease"}, {"step": "Platform fees (per schedule)", "amount": -1260.46, "kind": "decrease"}, {"step": "Ad spend", "amount": -2835.08, "kind": "decrease"}, {"step": "Shipping", "amount": -1170.67, "kind": "decrease"}, {"step": "TRUE NET PROFIT", "amount": 313.68, "kind": "total"}]};
+</script>
+
+<script id="viewmodel">
+/* Pure view-model: every figure the dashboard displays is computed here from
+   DATA and the active filters. No DOM access in this block, so
+   verify_dashboard.py can execute it headlessly in Node. */
+function computeViewModel(D, F) {
+  var r2 = function (x) { return Math.round((x + Number.EPSILON) * 100) / 100; };
+  function sum(arr, k) { var s = 0; for (var i = 0; i < arr.length; i++) s += arr[i][k]; return r2(s); }
+  function groupBy(arr, keys) {
+    var m = {}, order = [];
+    arr.forEach(function (o) {
+      var key = keys.map(function (k) { return o[k]; }).join('|');
+      if (!m[key]) { m[key] = []; order.push(key); }
+      m[key].push(o);
+    });
+    return { map: m, order: order };
+  }
+  var orders = D.orders_fact.filter(function (o) {
+    return o.date >= F.from && o.date <= F.to &&
+      (F.channel === 'All' || o.channel === F.channel);
+  });
+  var gross = sum(orders, 'revenue');
+  var net = sum(orders, 'net_profit');
+  var expTot = sum(orders, 'expected_payout');
+  var actTot = sum(orders, 'actual_payout');
+  var leakage = r2(expTot - actTot);
+  var matched = orders.filter(function (o) { return o.recon_status === 'Matched'; }).length;
+  var exc = orders.filter(function (o) { return o.recon_status !== 'Matched'; });
+
+  /* ---- Page 1 ---- */
+  var p1 = {
+    kpis: {
+      grossRevenue: gross,
+      netProfit: net,
+      marginPct: gross ? r2(net / gross * 100) : 0,
+      netLeakage: leakage,
+      exceptions: exc.length,
+      matchRate: orders.length ? r2(matched / orders.length * 100) : 0
+    },
+    cascade: [
+      { step: 'Gross revenue', amount: gross, kind: 'start' },
+      { step: 'Refunds', amount: r2(-sum(orders, 'refund_amount')), kind: 'decrease' },
+      { step: 'COGS', amount: r2(-sum(orders, 'cogs')), kind: 'decrease' },
+      { step: 'Platform fees (per schedule)', amount: r2(-sum(orders, 'platform_fees_scheduled')), kind: 'decrease' },
+      { step: 'Ad spend', amount: r2(-sum(orders, 'ad_spend_allocated')), kind: 'decrease' },
+      { step: 'Shipping', amount: r2(-sum(orders, 'shipping_cost')), kind: 'decrease' },
+      { step: 'TRUE NET PROFIT', amount: net, kind: 'total' }
+    ]
+  };
+  var dc = D.daily_channel.filter(function (r) {
+    return r.date >= F.from && r.date <= F.to &&
+      (F.channel === 'All' || r.channel === F.channel);
+  });
+  var dates = [], seen = {};
+  dc.forEach(function (r) { if (!seen[r.date]) { seen[r.date] = 1; dates.push(r.date); } });
+  dates.sort();
+  var chans = F.channel === 'All' ? ['Amazon', 'Shopify'] : [F.channel];
+  p1.trend = {
+    dates: dates,
+    series: chans.map(function (c) {
+      return { channel: c, revenue: dates.map(function (d) {
+        var row = dc.filter(function (r) { return r.date === d && r.channel === c; })[0];
+        return row ? row.revenue : 0;
+      }) };
+    }),
+    adSpend: dates.map(function (d) {
+      return r2(dc.filter(function (r) { return r.date === d; })
+        .reduce(function (a, r) { return a + r.ad_spend_actual; }, 0));
+    }),
+    amazonTotal: sum(dc.filter(function (r) { return r.channel === 'Amazon'; }), 'revenue'),
+    shopifyTotal: sum(dc.filter(function (r) { return r.channel === 'Shopify'; }), 'revenue'),
+    total: sum(dc, 'revenue')
+  };
+  var gChan = groupBy(orders, ['channel']);
+  p1.channelRevenue = ['Amazon', 'Shopify'].filter(function (c) { return gChan.map[c]; })
+    .map(function (c) {
+      var rev = sum(gChan.map[c], 'revenue');
+      return { channel: c, revenue: rev, sharePct: gross ? r2(rev / gross * 100) : 0 };
+    });
+  p1.channelProfit = ['Amazon', 'Shopify'].filter(function (c) { return gChan.map[c]; })
+    .map(function (c) { return { channel: c, net: sum(gChan.map[c], 'net_profit') }; });
+
+  /* ---- Page 2 ---- */
+  var orders2 = (F.sku === 'All') ? orders : orders.filter(function (o) { return o.sku === F.sku; });
+  var gSku = groupBy(orders2, ['sku']);
+  var skuRows = gSku.order.map(function (key) {
+    var rows = gSku.map[key], o0 = rows[0];
+    var rev = sum(rows, 'revenue'), nt = sum(rows, 'net_profit');
+    return {
+      sku: o0.sku, product_name: o0.product_name,
+      orders: rows.length, units: sum(rows, 'quantity'),
+      revenue: rev, refunds: sum(rows, 'refund_amount'), cogs: sum(rows, 'cogs'),
+      fees: sum(rows, 'platform_fees_scheduled'), ad: sum(rows, 'ad_spend_allocated'),
+      shipping: sum(rows, 'shipping_cost'), net: nt,
+      marginPct: rev ? r2(nt / rev * 100) : 0
+    };
+  });
+  var p2 = {
+    bars: skuRows.slice().sort(function (a, b) { return b.net - a.net; })
+      .map(function (r) { return { sku: r.sku, product_name: r.product_name, net: r.net }; }),
+    scatter: skuRows.map(function (r) {
+      return { sku: r.sku, product_name: r.product_name, revenue: r.revenue, net: r.net, units: r.units };
+    }),
+    table: skuRows,
+    totals: { revenue: sum(orders2, 'revenue'), net: sum(orders2, 'net_profit') }
+  };
+
+  /* ---- Page 3 ---- */
+  var gType = groupBy(exc, ['exception_type']);
+  var gChanAll = groupBy(orders, ['channel']);
+  var gStatus = groupBy(orders, ['recon_status']);
+  var p3 = {
+    kpis: {
+      netLeakage: leakage,
+      exceptions: exc.length,
+      grossDiscrepancy: r2(exc.reduce(function (a, o) { return a + Math.abs(o.payout_difference); }, 0)),
+      leakagePctOfExpected: expTot ? r2(leakage / expTot * 100) : 0
+    },
+    typeBars: gType.order.map(function (key) {
+      var rows = gType.map[key];
+      return {
+        type: rows[0].exception_type, count: rows.length,
+        gross: r2(rows.reduce(function (a, o) { return a + Math.abs(o.payout_difference); }, 0))
+      };
+    }).sort(function (a, b) { return b.gross - a.gross; }),
+    channelLeakage: ['Amazon', 'Shopify'].filter(function (c) { return gChanAll.map[c]; })
+      .map(function (c) {
+        return { channel: c, leakage: r2(-sum(gChanAll.map[c], 'payout_difference')) };
+      }),
+    statusDonut: ['Matched', 'Underpaid', 'Missing', 'Duplicate', 'Overpaid']
+      .filter(function (s) { return gStatus.map[s]; })
+      .map(function (s) { return { status: s, count: gStatus.map[s].length }; }),
+    exceptionsTable: exc.slice()
+      .sort(function (a, b) { return Math.abs(b.payout_difference) - Math.abs(a.payout_difference); })
+      .map(function (o, i) {
+        return {
+          rank: i + 1, exception_type: o.exception_type, order_id: o.order_id,
+          channel: o.channel, expected_payout: o.expected_payout,
+          actual_payout: o.actual_payout, money_impact: o.payout_difference
+        };
+      })
+  };
+
+  /* ---- Page 4 ---- */
+  var orders4 = (F.country === 'All') ? orders : orders.filter(function (o) { return o.country === F.country; });
+  var gCell = groupBy(orders4, ['channel', 'country']);
+  var gChan4 = groupBy(orders4, ['channel']);
+  var p4 = {
+    cells: gCell.order.map(function (key) {
+      var rows = gCell.map[key];
+      return { channel: rows[0].channel, country: rows[0].country, net: sum(rows, 'net_profit') };
+    }).sort(function (a, b) { return b.net - a.net; }),
+    totalNet: sum(orders4, 'net_profit'),
+    expectedActual: ['Amazon', 'Shopify'].filter(function (c) { return gChan4.map[c]; })
+      .map(function (c) {
+        return {
+          channel: c,
+          expected: sum(gChan4.map[c], 'expected_payout'),
+          actual: sum(gChan4.map[c], 'actual_payout')
+        };
+      }),
+    expectedTotal: sum(orders4, 'expected_payout'),
+    actualTotal: sum(orders4, 'actual_payout'),
+    refundRates: ['Amazon', 'Shopify'].filter(function (c) { return gChan4.map[c]; })
+      .map(function (c) {
+        var rows = gChan4.map[c], rf = sum(rows, 'refund_amount'), rv = sum(rows, 'revenue');
+        return { channel: c, refunds: rf, revenue: rv, ratePct: rv ? r2(rf / rv * 100) : 0 };
+      })
+  };
+
+  return { p1: p1, p2: p2, p3: p3, p4: p4 };
+}
+</script>
+<script>
+/* ================= Rendering layer (DOM) ================= */
+var NAVY = '#1F3864', GOLD = '#C9A227', RED = '#B03A2E', GREEN = '#1E8449', GREY = '#8a93a6';
+function $(id) { return document.getElementById(id); }
+function fmt$(v) { return (v < 0 ? '-$' : '$') + Math.abs(v).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }); }
+function fmtPct(v) { return v.toFixed(2) + '%'; }
+function fmtN(v) { return v.toLocaleString('en-US'); }
+function esc(s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;'); }
+
+function yTicks(min, max, n) {
+  var t = [], step = (max - min) / n;
+  for (var i = 0; i <= n; i++) t.push(min + step * i);
+  return t;
+}
+/* Horizontal bars with a zero axis. items: [{label, value, color}] */
+function hbarSVG(items, fmt, w, h) {
+  w = w || 560; h = h || Math.max(120, items.length * 34 + 26);
+  var labelW = 168, plotW = w - labelW - 74;
+  var min = Math.min(0, Math.min.apply(null, items.map(function (d) { return d.value; })));
+  var max = Math.max(0, Math.max.apply(null, items.map(function (d) { return d.value; })));
+  if (max === min) max = min + 1;
+  var zx = labelW + (0 - min) / (max - min) * plotW;
+  var s = '<svg viewBox="0 0 ' + w + ' ' + h + '" width="100%" role="img">';
+  s += '<line x1="' + zx + '" y1="6" x2="' + zx + '" y2="' + (h - 20) + '" stroke="#bbb"/>';
+  items.forEach(function (d, i) {
+    var y = 10 + i * 34, bw = Math.abs(d.value) / (max - min) * plotW;
+    var x = d.value >= 0 ? zx : zx - bw;
+    var col = d.color || (d.value < 0 ? RED : NAVY);
+    s += '<text x="' + (labelW - 8) + '" y="' + (y + 15) + '" text-anchor="end" font-size="12">' + esc(d.label) + '</text>';
+    s += '<rect x="' + x + '" y="' + y + '" width="' + Math.max(bw, 1) + '" height="19" fill="' + col + '" rx="2"/>';
+    var tx = d.value >= 0 ? zx + bw + 6 : zx - bw - 6;
+    s += '<text x="' + tx + '" y="' + (y + 15) + '" text-anchor="' + (d.value >= 0 ? 'start' : 'end') + '" font-size="12" font-weight="600">' + fmt(d.value) + '</text>';
+  });
+  return s + '</svg>';
+}
+/* Donut from parts [{label, value, color}] with centre total label */
+function donutSVG(parts, centerTop, centerBottom, w, h) {
+  w = w || 560; h = h || 280;
+  var cx = 150, cy = h / 2, r = 92, C = 2 * Math.PI * r;
+  var total = parts.reduce(function (a, p) { return a + p.value; }, 0) || 1;
+  var s = '<svg viewBox="0 0 ' + w + ' ' + h + '" width="100%" role="img">';
+  var off = 0;
+  parts.forEach(function (p) {
+    var frac = p.value / total, len = Math.max(frac * C - 2.5, 0.5);
+    s += '<circle cx="' + cx + '" cy="' + cy + '" r="' + r + '" fill="none" stroke="' + p.color +
+      '" stroke-width="30" stroke-dasharray="' + len + ' ' + (C - len) + '" stroke-dashoffset="' + (-off) +
+      '" transform="rotate(-90 ' + cx + ' ' + cy + ')"><title>' + esc(p.label) + '</title></circle>';
+    off += frac * C;
+  });
+  s += '<text x="' + cx + '" y="' + (cy - 4) + '" text-anchor="middle" font-size="19" font-weight="700" fill="#1F3864">' + centerTop + '</text>';
+  s += '<text x="' + cx + '" y="' + (cy + 17) + '" text-anchor="middle" font-size="11.5" fill="#555">' + centerBottom + '</text>';
+  var ly = cy - (parts.length - 1) * 15;
+  parts.forEach(function (p, i) {
+    var y = ly + i * 30;
+    s += '<rect x="300" y="' + (y - 11) + '" width="13" height="13" fill="' + p.color + '"/>';
+    s += '<text x="322" y="' + y + '" font-size="13">' + esc(p.label) + '</text>';
+  });
+  return s + '</svg>';
+}
+function waterfallSVG(steps, w, h) {
+  w = w || 560; h = h || 300;
+  var padL = 58, padB = 44, padT = 16, plotW = w - padL - 12, plotH = h - padB - padT;
+  var levels = [0], run = 0;
+  steps.forEach(function (st) { run += st.amount; levels.push(run); });
+  var lo = Math.min(0, Math.min.apply(null, levels)), hi = Math.max.apply(null, levels);
+  if (hi === lo) hi = lo + 1;
+  var Y = function (v) { return padT + (hi - v) / (hi - lo) * plotH; };
+  var bw = plotW / steps.length * 0.62, gap = plotW / steps.length;
+  var s = '<svg viewBox="0 0 ' + w + ' ' + h + '" width="100%" role="img">';
+  yTicks(lo, hi, 4).forEach(function (t) {
+    s += '<line x1="' + padL + '" y1="' + Y(t) + '" x2="' + (w - 12) + '" y2="' + Y(t) + '" stroke="#e5e5e5"/>';
+    s += '<text x="' + (padL - 6) + '" y="' + (Y(t) + 4) + '" text-anchor="end" font-size="10.5" fill="#666">$' + fmtN(Math.round(t)) + '</text>';
+  });
+  s += '<line x1="' + padL + '" y1="' + Y(0) + '" x2="' + (w - 12) + '" y2="' + Y(0) + '" stroke="#999"/>';
+  steps.forEach(function (st, i) {
+    var before = levels[i], after = levels[i + 1];
+    var top, bot, col;
+    if (st.kind === 'start' || st.kind === 'total') { top = Math.max(0, after); bot = Math.min(0, after); col = st.kind === 'total' ? GOLD : NAVY; }
+    else { top = Math.max(before, after); bot = Math.min(before, after); col = st.amount < 0 ? RED : GREEN; }
+    var x = padL + i * gap + (gap - bw) / 2;
+    s += '<rect x="' + x + '" y="' + Y(top) + '" width="' + bw + '" height="' + Math.max(Y(bot) - Y(top), 1.5) + '" fill="' + col + '" rx="2"/>';
+    if (i > 0) s += '<line x1="' + (padL + (i - 1) * gap + (gap - bw) / 2 + bw) + '" y1="' + Y(before) + '" x2="' + x + '" y2="' + Y(before) + '" stroke="#aaa" stroke-dasharray="3 3"/>';
+    s += '<text x="' + (x + bw / 2) + '" y="' + (Y(top) - 5) + '" text-anchor="middle" font-size="11" font-weight="600">' + fmt$(st.amount) + '</text>';
+    var label = st.step.length > 15 ? st.step.replace(' (per schedule)', '') : st.step;
+    s += '<text x="' + (x + bw / 2) + '" y="' + (h - 26) + '" text-anchor="middle" font-size="10.5">' + esc(label.split(' ')[0]) + '</text>';
+    if (label.split(' ').length > 1) s += '<text x="' + (x + bw / 2) + '" y="' + (h - 13) + '" text-anchor="middle" font-size="10.5">' + esc(label.split(' ').slice(1).join(' ')) + '</text>';
+  });
+  return s + '</svg>';
+}
+function trendSVG(tr, w, h) {
+  w = w || 560; h = h || 300;
+  var padL = 52, padB = 30, padT = 14, plotW = w - padL - 12, plotH = h - padB - padT;
+  var n = tr.dates.length, cw = plotW / n;
+  var maxStack = 0, maxAd = 0;
+  for (var i = 0; i < n; i++) {
+    var st = tr.series.reduce(function (a, s2) { return a + s2.revenue[i]; }, 0);
+    maxStack = Math.max(maxStack, st); maxAd = Math.max(maxAd, tr.adSpend[i]);
+  }
+  var hi = Math.max(maxStack, maxAd) * 1.12 || 1;
+  var Y = function (v) { return padT + (hi - v) / hi * plotH; };
+  var cols = { Amazon: NAVY, Shopify: GOLD };
+  var s = '<svg viewBox="0 0 ' + w + ' ' + h + '" width="100%" role="img">';
+  yTicks(0, hi, 4).forEach(function (t) {
+    s += '<line x1="' + padL + '" y1="' + Y(t) + '" x2="' + (w - 12) + '" y2="' + Y(t) + '" stroke="#e5e5e5"/>';
+    s += '<text x="' + (padL - 6) + '" y="' + (Y(t) + 4) + '" text-anchor="end" font-size="10.5" fill="#666">$' + fmtN(Math.round(t)) + '</text>';
+  });
+  for (var j = 0; j < n; j++) {
+    var yBase = Y(0);
+    tr.series.forEach(function (s2) {
+      var v = s2.revenue[j], y = Y(v) - (Y(0) - yBase);
+      var top = yBase - (Y(0) - Y(v));
+      s += '<rect x="' + (padL + j * cw + 1) + '" y="' + top + '" width="' + Math.max(cw - 2, 1) + '" height="' + Math.max(yBase - top, 0) + '" fill="' + cols[s2.channel] + '"><title>' + tr.dates[j] + ' ' + s2.channel + ' ' + fmt$(v) + '</title></rect>';
+      yBase = top;
+    });
+    if (j % 5 === 0 || j === n - 1) s += '<text x="' + (padL + j * cw + cw / 2) + '" y="' + (h - 10) + '" text-anchor="middle" font-size="10" fill="#666">' + tr.dates[j].slice(8) + '</text>';
+  }
+  var pts = tr.adSpend.map(function (v, j2) { return (padL + j2 * cw + cw / 2) + ',' + Y(v); }).join(' ');
+  s += '<polyline points="' + pts + '" fill="none" stroke="#B03A2E" stroke-width="1.8"/>';
+  return s + '</svg>';
+}
+function scatterSVG(pts, w, h) {
+  w = w || 560; h = h || 300;
+  var padL = 62, padB = 34, padT = 14, plotW = w - padL - 16, plotH = h - padB - padT;
+  var maxX = Math.max.apply(null, pts.map(function (p) { return p.revenue; })) * 1.12;
+  var minY = Math.min(0, Math.min.apply(null, pts.map(function (p) { return p.net; }))) * 1.25;
+  var maxY = Math.max(0, Math.max.apply(null, pts.map(function (p) { return p.net; }))) * 1.25;
+  if (maxY === minY) maxY = minY + 1;
+  var X = function (v) { return padL + v / maxX * plotW; };
+  var Y = function (v) { return padT + (maxY - v) / (maxY - minY) * plotH; };
+  var s = '<svg viewBox="0 0 ' + w + ' ' + h + '" width="100%" role="img">';
+  yTicks(minY, maxY, 4).forEach(function (t) {
+    s += '<line x1="' + padL + '" y1="' + Y(t) + '" x2="' + (w - 16) + '" y2="' + Y(t) + '" stroke="#e5e5e5"/>';
+    s += '<text x="' + (padL - 6) + '" y="' + (Y(t) + 4) + '" text-anchor="end" font-size="10.5" fill="#666">$' + fmtN(Math.round(t)) + '</text>';
+  });
+  s += '<line x1="' + padL + '" y1="' + Y(0) + '" x2="' + (w - 16) + '" y2="' + Y(0) + '" stroke="#999"/>';
+  s += '<text x="' + (padL + plotW / 2) + '" y="' + (h - 8) + '" text-anchor="middle" font-size="11" fill="#555">Revenue</text>';
+  s += '<text x="14" y="' + (padT + plotH / 2) + '" font-size="11" fill="#555" transform="rotate(-90 14 ' + (padT + plotH / 2) + ')" text-anchor="middle">Net profit</text>';
+  pts.forEach(function (p) {
+    var r = 4 + p.units * 0.32;
+    s += '<circle cx="' + X(p.revenue) + '" cy="' + Y(p.net) + '" r="' + r + '" fill="' + (p.net < 0 ? RED : NAVY) + '" fill-opacity="0.75" stroke="#fff"><title>' + esc(p.sku + ' ' + p.product_name) + ' — revenue ' + fmt$(p.revenue) + ', net ' + fmt$(p.net) + ', units ' + p.units + '</title></circle>';
+    s += '<text x="' + (X(p.revenue) + r + 3) + '" y="' + (Y(p.net) + 4) + '" font-size="10.5">' + esc(p.sku.replace('NHG-', '')) + '</text>';
+  });
+  return s + '</svg>';
+}
+function groupedBarSVG(groups, w, h) {
+  /* groups: [{label, a, b}] expected (navy) vs actual (gold) */
+  w = w || 560; h = h || 290;
+  var padL = 58, padB = 30, padT = 22, plotW = w - padL - 12, plotH = h - padB - padT;
+  var hi = Math.max.apply(null, groups.map(function (g) { return Math.max(g.a, g.b); })) * 1.15 || 1;
+  var Y = function (v) { return padT + (hi - v) / hi * plotH; };
+  var gw = plotW / groups.length, bw = gw * 0.3;
+  var s = '<svg viewBox="0 0 ' + w + ' ' + h + '" width="100%" role="img">';
+  yTicks(0, hi, 4).forEach(function (t) {
+    s += '<line x1="' + padL + '" y1="' + Y(t) + '" x2="' + (w - 12) + '" y2="' + Y(t) + '" stroke="#e5e5e5"/>';
+    s += '<text x="' + (padL - 6) + '" y="' + (Y(t) + 4) + '" text-anchor="end" font-size="10.5" fill="#666">$' + fmtN(Math.round(t)) + '</text>';
+  });
+  groups.forEach(function (g, i) {
+    var gx = padL + i * gw + gw * 0.2;
+    s += '<rect x="' + gx + '" y="' + Y(g.a) + '" width="' + bw + '" height="' + (Y(0) - Y(g.a)) + '" fill="#1F3864"/>';
+    s += '<rect x="' + (gx + bw + 4) + '" y="' + Y(g.b) + '" width="' + bw + '" height="' + (Y(0) - Y(g.b)) + '" fill="#C9A227"/>';
+    s += '<text x="' + (gx + bw / 2) + '" y="' + (Y(g.a) - 5) + '" text-anchor="middle" font-size="11" font-weight="600">' + fmt$(g.a) + '</text>';
+    s += '<text x="' + (gx + bw + 6) + '" y="' + (Y(g.b) - 5) + '" text-anchor="middle" font-size="11" font-weight="600">' + fmt$(g.b) + '</text>';
+    s += '<text x="' + (gx + bw + 2) + '" y="' + (h - 10) + '" text-anchor="middle" font-size="12">' + esc(g.label) + '</text>';
+  });
+  return s + '</svg>';
+}
+function vProfitSVG(items, w, h) {
+  /* vertical bars, positive navy / negative red */
+  w = w || 560; h = h || 290;
+  var padL = 58, padB = 30, padT = 22, plotW = w - padL - 12, plotH = h - padB - padT;
+  var lo = Math.min(0, Math.min.apply(null, items.map(function (d) { return d.value; }))) * 1.15;
+  var hi = Math.max(0, Math.max.apply(null, items.map(function (d) { return d.value; }))) * 1.15;
+  if (hi === lo) hi = lo + 1;
+  var Y = function (v) { return padT + (hi - v) / (hi - lo) * plotH; };
+  var gw = plotW / items.length, bw = gw * 0.5;
+  var s = '<svg viewBox="0 0 ' + w + ' ' + h + '" width="100%" role="img">';
+  yTicks(lo, hi, 4).forEach(function (t) {
+    s += '<line x1="' + padL + '" y1="' + Y(t) + '" x2="' + (w - 12) + '" y2="' + Y(t) + '" stroke="#e5e5e5"/>';
+    s += '<text x="' + (padL - 6) + '" y="' + (Y(t) + 4) + '" text-anchor="end" font-size="10.5" fill="#666">$' + fmtN(Math.round(t)) + '</text>';
+  });
+  s += '<line x1="' + padL + '" y1="' + Y(0) + '" x2="' + (w - 12) + '" y2="' + Y(0) + '" stroke="#999"/>';
+  items.forEach(function (d, i) {
+    var x = padL + i * gw + (gw - bw) / 2;
+    var top = Y(Math.max(0, d.value)), bot = Y(Math.min(0, d.value));
+    s += '<rect x="' + x + '" y="' + top + '" width="' + bw + '" height="' + Math.max(bot - top, 1.5) + '" fill="' + (d.value < 0 ? RED : NAVY) + '" rx="2"/>';
+    s += '<text x="' + (x + bw / 2) + '" y="' + (d.value >= 0 ? top - 6 : bot + 16) + '" text-anchor="middle" font-size="12.5" font-weight="700">' + fmt$(d.value) + '</text>';
+    s += '<text x="' + (x + bw / 2) + '" y="' + (h - 10) + '" text-anchor="middle" font-size="12">' + esc(d.label) + '</text>';
+  });
+  return s + '</svg>';
+}
+
+/* ================= Page renders ================= */
+function kpiHTML(list) {
+  return list.map(function (k) {
+    return '<div class="kpi"><div class="v' + (k.neg ? ' neg' : '') + '">' + k.v + '</div><div class="l">' + k.l + '</div></div>';
+  }).join('');
+}
+function currentFilters() {
+  return {
+    from: $('f-from').value || '2026-10-01',
+    to: $('f-to').value || '2026-10-31',
+    channel: $('f-channel').value,
+    sku: $('f-sku').value || 'All',
+    country: $('f-country').value || 'All'
+  };
+}
+function render() {
+  var vm = computeViewModel(DATA, currentFilters());
+  /* Page 1 */
+  $('p1-kpis').innerHTML = kpiHTML([
+    { v: fmt$(vm.p1.kpis.grossRevenue), l: 'Gross revenue' },
+    { v: fmt$(vm.p1.kpis.netProfit), l: 'True net profit', neg: vm.p1.kpis.netProfit < 0 },
+    { v: fmtPct(vm.p1.kpis.marginPct), l: 'Net margin' },
+    { v: fmt$(vm.p1.kpis.netLeakage), l: 'Net leakage (expected − actual payouts)' },
+    { v: fmtN(vm.p1.kpis.exceptions), l: 'Exceptions found' },
+    { v: fmtPct(vm.p1.kpis.matchRate), l: 'Settlement match rate' }
+  ]);
+  $('p1-cascade').innerHTML = waterfallSVG(vm.p1.cascade);
+  $('p1-trend').innerHTML = trendSVG(vm.p1.trend);
+  $('p1-donut').innerHTML = donutSVG(
+    vm.p1.channelRevenue.map(function (c) {
+      return { label: c.channel + ' — ' + fmt$(c.revenue) + ' (' + fmtPct(c.sharePct) + ')', value: c.revenue, color: c.channel === 'Amazon' ? NAVY : GOLD };
+    }), fmt$(vm.p1.kpis.grossRevenue), 'October revenue');
+  $('p1-chanprofit').innerHTML = vProfitSVG(vm.p1.channelProfit.map(function (c) { return { label: c.channel, value: c.net }; }));
+  /* Page 2 */
+  $('p2-bars').innerHTML = hbarSVG(vm.p2.bars.map(function (b) {
+    return { label: b.sku + ' ' + b.product_name, value: b.net };
+  }), fmt$);
+  $('p2-scatter').innerHTML = scatterSVG(vm.p2.scatter);
+  var rows = vm.p2.table.map(function (r) {
+    return '<tr><td>' + r.sku + '</td><td>' + esc(r.product_name) + '</td><td>' + r.orders + '</td><td>' + r.units + '</td>' +
+      '<td>' + fmt$(r.revenue) + '</td><td>' + fmt$(r.refunds) + '</td><td>' + fmt$(r.cogs) + '</td><td>' + fmt$(r.fees) + '</td>' +
+      '<td>' + fmt$(r.ad) + '</td><td>' + fmt$(r.shipping) + '</td>' +
+      '<td class="' + (r.net < 0 ? 'neg' : 'pos') + '">' + fmt$(r.net) + '</td><td>' + fmtPct(r.marginPct) + '</td></tr>';
+  }).join('');
+  var t = vm.p2.totals;
+  var sumCol = function (k) { return Math.round(vm.p2.table.reduce(function (a, r) { return a + r[k]; }, 0) * 100) / 100; };
+  $('p2-table').innerHTML = '<table><tr><th>SKU</th><th>Product</th><th>Orders</th><th>Units</th><th>Revenue</th><th>Refunds</th><th>COGS</th><th>Fees</th><th>Ad spend</th><th>Shipping</th><th>Net profit</th><th>Margin</th></tr>' +
+    rows + '<tr class="tot"><td colspan="4">Total</td><td>' + fmt$(t.revenue) + '</td><td>' + fmt$(sumCol('refunds')) + '</td><td>' + fmt$(sumCol('cogs')) + '</td><td>' + fmt$(sumCol('fees')) + '</td><td>' + fmt$(sumCol('ad')) + '</td><td>' + fmt$(sumCol('shipping')) + '</td><td>' + fmt$(t.net) + '</td><td>' + fmtPct(t.revenue ? Math.round(t.net / t.revenue * 10000) / 100 : 0) + '</td></tr></table>';
+  /* Page 3 */
+  $('p3-kpis').innerHTML = kpiHTML([
+    { v: fmt$(vm.p3.kpis.netLeakage), l: 'Net leakage' },
+    { v: fmtN(vm.p3.kpis.exceptions), l: 'Exceptions found' },
+    { v: fmt$(vm.p3.kpis.grossDiscrepancy), l: 'Gross discrepancy value' },
+    { v: fmtPct(vm.p3.kpis.leakagePctOfExpected), l: 'Leakage as % of expected payouts' }
+  ]);
+  $('p3-typebars').innerHTML = hbarSVG(vm.p3.typeBars.map(function (b) {
+    return { label: b.type + ' (' + b.count + ')', value: b.gross, color: NAVY };
+  }), fmt$);
+  $('p3-chanleak').innerHTML = vProfitSVG(vm.p3.channelLeakage.map(function (c) {
+    return { label: c.channel, value: c.leakage };
+  }));
+  var statusColors = { Matched: GREEN, Underpaid: GOLD, Missing: RED, Duplicate: NAVY, Overpaid: GREY };
+  $('p3-statusdonut').innerHTML = donutSVG(
+    vm.p3.statusDonut.map(function (s2) {
+      return { label: s2.status + ' — ' + s2.count + ' orders', value: s2.count, color: statusColors[s2.status] || GREY };
+    }), fmtN(vm.p3.statusDonut.reduce(function (a, s2) { return a + s2.count; }, 0)), 'orders reconciled');
+  var expl = {};
+  DATA.exceptions.forEach(function (e) { expl[e.order_id] = e.explanation; });
+  $('p3-table').innerHTML = '<table><tr><th>#</th><th>Type</th><th>Order</th><th>Channel</th><th>Expected</th><th>Actual</th><th>Impact</th><th>Explanation</th></tr>' +
+    vm.p3.exceptionsTable.map(function (r) {
+      return '<tr><td>' + r.rank + '</td><td>' + esc(r.exception_type) + '</td><td>' + r.order_id + '</td><td>' + r.channel + '</td>' +
+        '<td>' + fmt$(r.expected_payout) + '</td><td>' + fmt$(r.actual_payout) + '</td>' +
+        '<td class="' + (r.money_impact < 0 ? 'neg' : 'pos') + '">' + fmt$(r.money_impact) + '</td>' +
+        '<td style="text-align:left">' + esc(expl[r.order_id] || '') + '</td></tr>';
+    }).join('') + '</table>';
+  /* Page 4 */
+  var countries = ['US', 'CA', 'UK', 'DE'], channels = ['Amazon', 'Shopify'];
+  var cellMap = {};
+  vm.p4.cells.forEach(function (c) { cellMap[c.channel + '|' + c.country] = c.net; });
+  var maxAbs = Math.max.apply(null, vm.p4.cells.map(function (c) { return Math.abs(c.net); }).concat([1]));
+  function cellStyle(v) {
+    if (v === undefined) return '';
+    var a = 0.10 + 0.5 * Math.abs(v) / maxAbs;
+    return 'background:' + (v < 0 ? 'rgba(176,58,46,' + a + ')' : 'rgba(30,132,73,' + a + ')') + ';font-weight:600';
+  }
+  var heat = '<table><tr><th>Channel \\ Country</th>' + countries.map(function (c) { return '<th style="text-align:right">' + c + '</th>'; }).join('') + '<th style="text-align:right">Total</th></tr>';
+  channels.forEach(function (ch) {
+    var rowTot = 0, has = false;
+    var cells = countries.map(function (co) {
+      var v = cellMap[ch + '|' + co];
+      if (v !== undefined) { rowTot += v; has = true; }
+      return '<td style="' + cellStyle(v) + '">' + (v === undefined ? '—' : fmt$(v)) + '</td>';
+    }).join('');
+    if (has) heat += '<tr><td><b>' + ch + '</b></td>' + cells + '<td style="font-weight:700">' + fmt$(Math.round(rowTot * 100) / 100) + '</td></tr>';
+  });
+  var colTots = countries.map(function (co) {
+    var s = 0, has = false;
+    channels.forEach(function (ch) { var v = cellMap[ch + '|' + co]; if (v !== undefined) { s += v; has = true; } });
+    return '<td>' + (has ? fmt$(Math.round(s * 100) / 100) : '—') + '</td>';
+  }).join('');
+  heat += '<tr class="tot"><td>Total</td>' + colTots + '<td>' + fmt$(vm.p4.totalNet) + '</td></tr></table>';
+  $('p4-heat').innerHTML = heat;
+  $('p4-expact').innerHTML = '<div class="legend"><span style="background:#1F3864"></span>Expected<span style="background:#C9A227"></span>Actual</div>' +
+    groupedBarSVG(vm.p4.expectedActual.map(function (c) { return { label: c.channel, a: c.expected, b: c.actual }; })) +
+    '<p class="footnote" style="margin:8px 0 0">Totals: expected ' + fmt$(vm.p4.expectedTotal) + ' · actual ' + fmt$(vm.p4.actualTotal) + '</p>';
+  $('p4-refunds').innerHTML = hbarSVG(vm.p4.refundRates.map(function (r) {
+    return { label: r.channel + ' (' + fmt$(r.refunds) + ' of ' + fmt$(r.revenue) + ')', value: r.ratePct, color: r.channel === 'Amazon' ? NAVY : GOLD };
+  }), fmtPct);
+}
+
+/* Tabs + filter wiring */
+var skuSel = $('f-sku');
+DATA.sku_profit.forEach(function (r) {
+  var opt = document.createElement('option');
+  opt.value = r.sku; opt.textContent = r.sku + ' — ' + r.product_name;
+  skuSel.appendChild(opt);
+});
+document.querySelectorAll('nav.tabs button').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    document.querySelectorAll('nav.tabs button').forEach(function (b) { b.classList.remove('active'); });
+    document.querySelectorAll('section.page').forEach(function (s2) { s2.classList.remove('active'); });
+    btn.classList.add('active');
+    $('page-' + btn.dataset.page).classList.add('active');
+    $('wrap-sku').style.display = btn.dataset.page === 'p2' ? '' : 'none';
+    $('wrap-country').style.display = btn.dataset.page === 'p4' ? '' : 'none';
+  });
+});
+['f-from', 'f-to', 'f-channel', 'f-sku', 'f-country'].forEach(function (id) {
+  $(id).addEventListener('change', render);
+});
+render();
+</script>
+</body>
+</html>

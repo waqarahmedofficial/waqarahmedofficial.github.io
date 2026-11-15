@@ -1,0 +1,63 @@
+order_id,order_date,product,category,region,qty,amount,channel
+5002,"Jun 18, 2026",  Steel Bottle 750ml ,home & kitchen,,2,$34.60, Website 
+5003,2026-01-20,Hoodie — Zip,apparel,South,6,125,Marketplace
+5004,"Feb 28, 2026",Cotton T-Shirt,APPAREL,South,5,33.8, Website 
+5007,30/07/2026,File Organizer,OFFICE SUPPLIES, north ,2,$331.18,Store
+5008,"Jun 10, 2026",Wireless Mouse,Electronics,,4,108,Store
+5010,30/06/2026,  Ceramic Mug Set ,HOME & KITCHEN,,4,$376.96,Store
+5013,07/06/2026,Hoodie — Zip,APPAREL,South,3,$470.72,website
+5015,"Jun 23, 2026",Cotton T-Shirt,Clothing,,4,USD 48.33,Marketplace
+5017,2026-03-13,Wireless Mouse,Electronic, north ,5,$233.88,STORE
+5019,"Apr 01, 2026",Canvas Tote Bag,Apparel ,,1,23,STORE
+5020,2026/02/05,  Steel Bottle 750ml ,Home and Kitchen,North,2,358,STORE
+5022,2026/07/31,A4 Paper Box,Office, north ,4,USD 213.48,website
+5023,2026-02-10,USB-C Cable 2m,Electronics,SOUTH,5,120.56,website
+5025,09/02/2026,A4 Paper Box,OFFICE SUPPLIES,East,2,USD 208.07,Marketplace
+5028,2026/08/21,Power Bank 20000mAh,Electronics,West,1,420,STORE
+5031,2026/02/20,  Cotton T-Shirt ,Apparel ,North,3,43.52,Marketplace
+5032,"May 28, 2026",Wireless Mouse,electronics,North,2,$82.79,Marketplace
+5034,2026/03/08,LED Desk Lamp,home & kitchen,North,4,USD 459.16,STORE
+5036,"Jan 24, 2026",Hoodie — Zip,APPAREL,SOUTH,6,USD 79.45,website
+5039,18/05/2026,USB-C Cable 2m,Electronic, north ,1,$181.30,Store
+5042,04-Apr-2026,  A4 Paper Box ,OFFICE SUPPLIES,SOUTH,2,USD 373.27,website
+5044,2026-05-15,Ceramic Mug Set,HOME & KITCHEN,West,3,$242.62,website
+5047,"Jul 28, 2026",Hardcover Notebook,office supplies,South,1,USD 450.53,website
+5049,2026/02/24,Steel Bottle 750ml,HOME & KITCHEN,SOUTH,6,$237.88, Website 
+5052,2026/07/22,Power Bank 20000mAh,ELECTRONICS ,West,6,344.98,Store
+5053,15-Apr-2026,  Hoodie — Zip ,Apparel ,South,1,$359.89,website
+5056,"Feb 09, 2026",Canvas Tote Bag,Apparel ,,5,298,website
+5057,2026/05/17,Wireless Mouse,ELECTRONICS ,SOUTH,2,362.76, Website 
+5059,"May 11, 2026",Steel Bottle 750ml,Home and Kitchen,SOUTH,2,USD 124.57, Website 
+5062,21/06/2026,Hardcover Notebook,office supplies,,2,285,Marketplace
+5065,20-Jul-2026,  Power Bank 20000mAh ,ELECTRONICS ,South,4,$97.69,Marketplace
+5068,2026-03-27,Wireless Mouse,electronics,South,2,331,Store
+5069,2026/05/26,Power Bank 20000mAh,Electronic,,5,$25.04,Marketplace
+5072,14/03/2026,LED Desk Lamp,Home/Kitchen, north ,5,224,Store
+5075,2026/02/07,Steel Bottle 750ml,HOME & KITCHEN,North,6,207,website
+5077,23-Jun-2026,  USB-C Cable 2m ,Electronic,South,3,$153.70,website
+5079,27-Jan-2026,LED Desk Lamp,Home/Kitchen,South,6,198,STORE
+5082,2026-04-20,Hoodie — Zip,Clothing,North,3,USD 103.61,Marketplace
+5084,07/01/2026,Canvas Tote Bag,apparel,North,2,USD 191.87, Website 
+5085,"Jan 13, 2026",Hardcover Notebook,office supplies,SOUTH,4,435.96,Store
+5087,"Aug 26, 2026",  LED Desk Lamp ,home & kitchen,East,1,253,website
+5089,"Aug 31, 2026",Bluetooth Speaker,electronics,,2,$19.88, Website 
+5091,"Jan 05, 2026",Power Bank 20000mAh,ELECTRONICS ,North,5,171,website
+5092,"Jan 15, 2026",Steel Bottle 750ml,Home/Kitchen,East,4,USD 96.78,Marketplace
+5095,2026-04-01,Steel Bottle 750ml,home & kitchen,North,6,USD 388.12,Marketplace
+5098,2026-05-04,  LED Desk Lamp ,Home and Kitchen, north ,4,127,Marketplace
+5100,27-Feb-2026,File Organizer,OFFICE SUPPLIES, north ,6,USD 471.78,website
+5102,"Aug 05, 2026",A4 Paper Box,Office,South,1,$72.76, Website 
+5105,"Jun 23, 2026",Canvas Tote Bag,apparel,West,2,466.4,website
+5107,11/03/2026,Cotton T-Shirt,Clothing,South,1,USD 182.42,Store
+5108,2026/01/03,  A4 Paper Box ,Office,,6,$168.94,website
+5109,2026/03/11,Wireless Mouse,electronics,West,1,394.38,Store
+5111,01/06/2026,Ceramic Mug Set,Home and Kitchen,SOUTH,3,460.17,STORE
+5112,10/06/2026,File Organizer,OFFICE SUPPLIES,West,6,$313.03,Marketplace
+5113,"Jan 24, 2026",USB-C Cable 2m,electronics,West,4,26.58,Marketplace
+5114,2026-05-08,  USB-C Cable 2m ,electronics, north ,5,135, Website 
+5117,29-Jul-2026,Hoodie — Zip,Apparel ,South,6,USD 46.84,STORE
+5119,2026-05-05,Cotton T-Shirt,Apparel ,North,5,USD 438.10,website
+5007,30/07/2026,File Organizer,OFFICE SUPPLIES, north ,2,$331.18,Store
+5020,2026/02/05,  Steel Bottle 750ml ,Home and Kitchen,North,2,358,STORE
+5007,30/07/2026,File Organizer,OFFICE SUPPLIES, north ,2,$331.18,Store
+5015,"Jun 23, 2026",Cotton T-Shirt,electronics,North,4,USD 48.33,website

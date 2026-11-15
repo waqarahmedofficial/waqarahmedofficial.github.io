@@ -1,0 +1,7 @@
+Clients,,,,
+"One row per client. Client names here must match the Client names on Invoices exactly, so Dashboard totals by client work.",,,,
+,,,,
+Client,Contact / Email,Usual rate,Currency,Notes
+Acme Studio,hello@acme.example,75,USD,Design client — net-14 terms
+Northwind Media,accounts@northwind.example,60,USD,Retainer — invoices on the 1st
+SAMPLE — Bluebird Co,sample@example.com,50,USD,SAMPLE — delete this row

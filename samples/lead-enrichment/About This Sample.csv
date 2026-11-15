@@ -1,0 +1,10 @@
+What this is
+"A working sample of our B2B Lead Enrichment service, built for one specific ICP: marketing, lead-generation and B2B digital agencies in the US, UK, Canada, Australia and the EU that sell — or could sell — outbound, lead generation, ABM or demand generation to their clients."
+How it was built
+"Each company was researched from public web sources (the agency's own website first — services, about, team and contact pages). Firmographic fields, a buying signal and an ICP fit score were then layered on, and a personalisation ('icebreaker') line was written for every single row from something real on that agency's site."
+Accuracy rules used
+"• A contact email appears only where the agency itself publishes it on its website. Where an agency offers only a contact form, the field is deliberately blank — we never guess email patterns."
+• A decision-maker is named only where the agency publicly lists that person (team / about / leadership page).
+• Every row carries a Source column so any field can be checked in one click.
+What a full engagement adds
+"Verified individual contacts per account (multi-step email verification with free replacement of hard bounces), buying-signal fields at contact level, suppression against your existing lists, and delivery in Sheets, Excel or CRM-ready format. Full method, packages and guarantee: see METHOD.md."

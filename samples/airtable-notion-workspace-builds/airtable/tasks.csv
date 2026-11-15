@@ -1,0 +1,31 @@
+Task ID,Task Title,Project ID,Assignee,Status,Due Date,Hours
+TSK-001,Brand audit workshop,PRJ-001,Amara Reyes,Done,2025-01-10,4
+TSK-002,Logo direction sketches,PRJ-001,Ben Okafor,Done,2025-01-24,12.5
+TSK-003,Brand guidelines document,PRJ-001,Ben Okafor,Done,2025-02-07,9
+TSK-004,Launch asset pack,PRJ-001,Priya Nair,Done,2025-02-13,6.5
+TSK-005,Campaign content calendar,PRJ-002,Priya Nair,Done,2025-03-10,5
+TSK-006,Spring photo brief,PRJ-002,Amara Reyes,Done,2025-03-21,3.5
+TSK-007,Campaign copy set,PRJ-002,Priya Nair,In Progress,2025-04-08,8
+TSK-008,Sitemap and wireframes,PRJ-003,Tom Becker,Done,2024-11-15,10
+TSK-009,Homepage design,PRJ-003,Ben Okafor,Done,2024-11-29,14
+TSK-010,Shop page design,PRJ-003,Ben Okafor,Done,2024-12-10,11.5
+TSK-011,Launch QA checklist,PRJ-003,Tom Becker,Done,2024-12-18,4.5
+TSK-012,Social template set,PRJ-004,Ben Okafor,In Progress,2025-04-25,7
+TSK-013,Caption bank Q2,PRJ-004,Priya Nair,To Do,2025-05-09,4
+TSK-014,Launch landing copy,PRJ-005,Priya Nair,Done,2025-03-28,6
+TSK-015,Product story pages,PRJ-005,Priya Nair,In Progress,2025-04-18,9.5
+TSK-016,Email launch sequence,PRJ-005,Tom Becker,To Do,2025-04-30,5.5
+TSK-017,Discovery interviews,PRJ-006,Amara Reyes,In Progress,2025-05-16,6
+TSK-018,Competitor shelf audit,PRJ-006,Tom Becker,To Do,2025-05-30,4.5
+TSK-019,Menu layout design,PRJ-007,Ben Okafor,Done,2025-02-21,8
+TSK-020,Signage artwork files,PRJ-007,Ben Okafor,Done,2025-03-05,5
+TSK-021,Site structure plan,PRJ-008,Tom Becker,Done,2024-06-14,7.5
+TSK-022,Practice-area page designs,PRJ-008,Ben Okafor,Done,2024-07-05,13
+TSK-023,Accessibility pass,PRJ-008,Tom Becker,Done,2024-07-22,5.5
+TSK-024,Spring post designs,PRJ-009,Ben Okafor,Done,2025-04-04,6
+TSK-025,Reels cover set,PRJ-009,Priya Nair,In Progress,2025-04-22,3
+TSK-026,Brand discovery workshop,PRJ-010,Amara Reyes,To Do,2025-06-20,5
+TSK-027,Menu copy refresh,PRJ-011,Priya Nair,Done,2025-04-25,4.5
+TSK-028,Photo shoot direction,PRJ-011,Amara Reyes,To Do,2025-05-23,6
+TSK-029,Website audit and plan,PRJ-012,Tom Becker,Done,2025-05-20,5
+TSK-030,Menu page redesign,PRJ-012,Ben Okafor,In Progress,2025-06-06,9

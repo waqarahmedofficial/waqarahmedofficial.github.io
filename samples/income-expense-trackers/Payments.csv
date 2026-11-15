@@ -1,0 +1,6 @@
+Payments — money actually received,,,,,
+"Add a row each time you are paid. Invoice # must match Invoices exactly, so Balances and Dashboard update.",,,,,
+,,,,,
+Date,Client,Invoice #,Amount received,Method,Notes
+2026-01-18 00:00:00,Acme Studio,INV-001,600,Bank transfer,SAMPLE — delete
+2026-01-28 00:00:00,Acme Studio,INV-003,150,PayPal,SAMPLE — partial payment

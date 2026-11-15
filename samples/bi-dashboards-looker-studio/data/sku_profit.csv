@@ -1,0 +1,11 @@
+sku,product_name,orders,units,revenue,refunds,cogs,platform_fees_scheduled,ad_spend_allocated,shipping,net_profit,net_margin_pct
+NHG-001,Ceramic Vase Set,14,28,1399.72,99.98,481.0,161.2,403.26,147.87,106.41,7.6
+NHG-002,Bamboo Bath Tray,12,17,594.15,0.0,208.25,94.72,171.72,106.59,12.87,2.17
+NHG-003,Linen Throw Blanket,16,24,1416.0,59.0,506.0,182.17,408.9,153.15,106.78,7.54
+NHG-004,Stoneware Dinner Set,13,19,1709.81,269.97,620.0,208.83,493.32,123.67,-5.98,-0.35
+NHG-005,Scented Candle Trio,19,30,825.0,27.5,284.2,129.74,238.93,198.06,-53.43,-6.48
+NHG-006,Wall Mirror Round,6,8,594.0,0.0,243.2,44.89,161.05,55.19,89.67,15.1
+NHG-007,Cotton Sheet Set,9,13,845.0,65.0,313.2,117.76,248.84,82.52,17.68,2.09
+NHG-008,Brass Table Lamp,7,11,1012.0,0.0,457.6,166.47,309.65,69.03,9.25,0.91
+NHG-009,Storage Basket Set,13,21,839.79,79.98,283.1,90.68,233.51,125.32,27.2,3.24
+NHG-010,Ceramic Planter Duo,11,18,589.5,65.5,181.6,64.0,165.9,109.27,3.23,0.55

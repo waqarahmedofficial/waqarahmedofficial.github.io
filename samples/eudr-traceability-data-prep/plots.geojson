@@ -1,0 +1,1536 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "plot_id": "PLT-001-01",
+    "supplier_id": "SUP-001",
+    "commodity": "Cocoa",
+    "area_ha": 3.73,
+    "geometry_type": "point"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.44061,
+     7.035488
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "plot_id": "PLT-001-02",
+    "supplier_id": "SUP-001",
+    "commodity": "Cocoa",
+    "area_ha": 9.29,
+    "geometry_type": "polygon"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -0.447902,
+       6.948456
+      ],
+      [
+       -0.44924,
+       6.949509
+      ],
+      [
+       -0.451228,
+       6.949866
+      ],
+      [
+       -0.452143,
+       6.948456
+      ],
+      [
+       -0.451003,
+       6.947326
+      ],
+      [
+       -0.449045,
+       6.947163
+      ],
+      [
+       -0.447902,
+       6.948456
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "plot_id": "PLT-001-03",
+    "supplier_id": "SUP-001",
+    "commodity": "Cocoa",
+    "area_ha": 8.5,
+    "geometry_type": "polygon"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -0.397726,
+       7.011299
+      ],
+      [
+       -0.398564,
+       7.012143
+      ],
+      [
+       -0.399744,
+       7.012568
+      ],
+      [
+       -0.401107,
+       7.012273
+      ],
+      [
+       -0.401409,
+       7.011299
+      ],
+      [
+       -0.401022,
+       7.010385
+      ],
+      [
+       -0.399744,
+       7.00995
+      ],
+      [
+       -0.398301,
+       7.010267
+      ],
+      [
+       -0.397726,
+       7.011299
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "plot_id": "PLT-002-02",
+    "supplier_id": "SUP-002",
+    "commodity": "Cocoa",
+    "area_ha": 11.09,
+    "geometry_type": "polygon"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -1.62797,
+       6.563306
+      ],
+      [
+       -1.629174,
+       6.564818
+      ],
+      [
+       -1.631485,
+       6.564657
+      ],
+      [
+       -1.632428,
+       6.563306
+      ],
+      [
+       -1.631435,
+       6.562015
+      ],
+      [
+       -1.629379,
+       6.562047
+      ],
+      [
+       -1.62797,
+       6.563306
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "plot_id": "PLT-002-03",
+    "supplier_id": "SUP-002",
+    "commodity": "Cocoa",
+    "area_ha": 7.21,
+    "geometry_type": "polygon"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -1.594184,
+       6.486984
+      ],
+      [
+       -1.594858,
+       6.488068
+      ],
+      [
+       -1.59643,
+       6.488127
+      ],
+      [
+       -1.597477,
+       6.487471
+      ],
+      [
+       -1.597663,
+       6.486434
+      ],
+      [
+       -1.596452,
+       6.485774
+      ],
+      [
+       -1.595083,
+       6.486103
+      ],
+      [
+       -1.594184,
+       6.486984
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "plot_id": "PLT-003-01",
+    "supplier_id": "SUP-003",
+    "commodity": "Cocoa",
+    "area_ha": 3.55,
+    "geometry_type": "point"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -6.679005,
+     4.738639
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "plot_id": "PLT-003-02",
+    "supplier_id": "SUP-003",
+    "commodity": "Cocoa",
+    "area_ha": 12.25,
+    "geometry_type": "polygon"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -6.598645,
+       4.708454
+      ],
+      [
+       -6.599363,
+       4.709696
+      ],
+      [
+       -6.601326,
+       4.710289
+      ],
+      [
+       -6.602524,
+       4.70907
+      ],
+      [
+       -6.602584,
+       4.707818
+      ],
+      [
+       -6.601243,
+       4.70688
+      ],
+      [
+       -6.599154,
+       4.707024
+      ],
+      [
+       -6.598645,
+       4.708454
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "plot_id": "PLT-003-03",
+    "supplier_id": "SUP-003",
+    "commodity": "Cocoa",
+    "area_ha": 11.1,
+    "geometry_type": "polygon"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -6.58908,
+       4.796422
+      ],
+      [
+       -6.589763,
+       4.797529
+      ],
+      [
+       -6.591304,
+       4.797832
+      ],
+      [
+       -6.592648,
+       4.797387
+      ],
+      [
+       -6.593413,
+       4.796422
+      ],
+      [
+       -6.592853,
+       4.795311
+      ],
+      [
+       -6.591304,
+       4.795026
+      ],
+      [
+       -6.589663,
+       4.795244
+      ],
+      [
+       -6.58908,
+       4.796422
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "plot_id": "PLT-004-01",
+    "supplier_id": "SUP-004",
+    "commodity": "Cocoa",
+    "area_ha": 3.66,
+    "geometry_type": "point"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -6.42156,
+     6.92877
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "plot_id": "PLT-004-02",
+    "supplier_id": "SUP-004",
+    "commodity": "Cocoa",
+    "area_ha": 4.11,
+    "geometry_type": "polygon"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -6.471997,
+       6.871237
+      ],
+      [
+       -6.472734,
+       6.87209
+      ],
+      [
+       -6.474085,
+       6.872057
+      ],
+      [
+       -6.474612,
+       6.871237
+      ],
+      [
+       -6.47416,
+       6.870324
+      ],
+      [
+       -6.472791,
+       6.870454
+      ],
+      [
+       -6.471997,
+       6.871237
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "plot_id": "PLT-004-03",
+    "supplier_id": "SUP-004",
+    "commodity": "Cocoa",
+    "area_ha": 8.58,
+    "geometry_type": "polygon"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -6.4657,
+       6.920197
+      ],
+      [
+       -6.46601,
+       6.921241
+      ],
+      [
+       -6.46747,
+       6.921462
+      ],
+      [
+       -6.468789,
+       6.92114
+      ],
+      [
+       -6.469229,
+       6.920197
+      ],
+      [
+       -6.468938,
+       6.919147
+      ],
+      [
+       -6.46747,
+       6.918887
+      ],
+      [
+       -6.466245,
+       6.919321
+      ],
+      [
+       -6.4657,
+       6.920197
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "plot_id": "PLT-005-01",
+    "supplier_id": "SUP-005",
+    "commodity": "Cocoa",
+    "area_ha": 1.66,
+    "geometry_type": "point"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.522638,
+     6.450713
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "plot_id": "PLT-005-02",
+    "supplier_id": "SUP-005",
+    "commodity": "Cocoa",
+    "area_ha": 4.88,
+    "geometry_type": "polygon"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -1.519528,
+       6.389504
+      ],
+      [
+       -1.520316,
+       6.390395
+      ],
+      [
+       -1.521737,
+       6.390374
+      ],
+      [
+       -1.522616,
+       6.389504
+      ],
+      [
+       -1.521766,
+       6.388598
+      ],
+      [
+       -1.520349,
+       6.388654
+      ],
+      [
+       -1.519528,
+       6.389504
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "plot_id": "PLT-005-03",
+    "supplier_id": "SUP-005",
+    "commodity": "Cocoa",
+    "area_ha": 3.03,
+    "geometry_type": "point"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.573363,
+     6.477942
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "plot_id": "PLT-006-01",
+    "supplier_id": "SUP-006",
+    "commodity": "Cocoa",
+    "area_ha": 1.41,
+    "geometry_type": "point"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -6.556594,
+     5.807991
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "plot_id": "PLT-006-02",
+    "supplier_id": "SUP-006",
+    "commodity": "Cocoa",
+    "area_ha": 6.15,
+    "geometry_type": "polygon"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -6.554397,
+       5.794014
+      ],
+      [
+       -6.557954,
+       5.795325
+      ],
+      [
+       -6.558067,
+       5.792562
+      ],
+      [
+       -6.554397,
+       5.794014
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "plot_id": "PLT-006-03",
+    "supplier_id": "SUP-006",
+    "commodity": "Cocoa",
+    "area_ha": 7.74,
+    "geometry_type": "polygon"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -6.571742,
+       5.746613
+      ],
+      [
+       -6.572354,
+       5.747833
+      ],
+      [
+       -6.57426,
+       5.74776
+      ],
+      [
+       -6.575355,
+       5.746613
+      ],
+      [
+       -6.574266,
+       5.745459
+      ],
+      [
+       -6.57247,
+       5.745537
+      ],
+      [
+       -6.571742,
+       5.746613
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "plot_id": "PLT-007-01",
+    "supplier_id": "SUP-007",
+    "commodity": "Coffee",
+    "area_ha": 1.88,
+    "geometry_type": "point"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     38.240362,
+     6.1606
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "plot_id": "PLT-007-02",
+    "supplier_id": "SUP-007",
+    "commodity": "Coffee",
+    "area_ha": 11.89,
+    "geometry_type": "polygon"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       38.200714,
+       6.123279
+      ],
+      [
+       38.199927,
+       6.124577
+      ],
+      [
+       38.19797,
+       6.12488
+      ],
+      [
+       38.196372,
+       6.124006
+      ],
+      [
+       38.196609,
+       6.122633
+      ],
+      [
+       38.197993,
+       6.121749
+      ],
+      [
+       38.199776,
+       6.122115
+      ],
+      [
+       38.200714,
+       6.123279
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "plot_id": "PLT-007-03",
+    "supplier_id": "SUP-007",
+    "commodity": "Coffee",
+    "area_ha": 1.95,
+    "geometry_type": "point"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     38.247856,
+     6.141714
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "plot_id": "PLT-008-01",
+    "supplier_id": "SUP-008",
+    "commodity": "Coffee",
+    "area_ha": 3.27,
+    "geometry_type": "point"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     38.447506,
+     6.794377
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "plot_id": "PLT-008-02",
+    "supplier_id": "SUP-008",
+    "commodity": "Coffee",
+    "area_ha": 12.46,
+    "geometry_type": "polygon"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       38.377535,
+       6.907186
+      ],
+      [
+       38.377126,
+       6.90863
+      ],
+      [
+       38.375029,
+       6.908708
+      ],
+      [
+       38.373293,
+       6.907951
+      ],
+      [
+       38.373251,
+       6.906406
+      ],
+      [
+       38.375046,
+       6.905717
+      ],
+      [
+       38.376801,
+       6.906033
+      ],
+      [
+       38.377535,
+       6.907186
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "plot_id": "PLT-008-03",
+    "supplier_id": "SUP-008",
+    "commodity": "Coffee",
+    "area_ha": 8.2,
+    "geometry_type": "polygon"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       38.383942,
+       6.896926
+      ],
+      [
+       38.383116,
+       6.897887
+      ],
+      [
+       38.381669,
+       6.898104
+      ],
+      [
+       38.380269,
+       6.897538
+      ],
+      [
+       38.380467,
+       6.896383
+      ],
+      [
+       38.381589,
+       6.8955
+      ],
+      [
+       38.383201,
+       6.895889
+      ],
+      [
+       38.383942,
+       6.896926
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "plot_id": "PLT-009-01",
+    "supplier_id": "SUP-009",
+    "commodity": "Coffee",
+    "area_ha": 2.52,
+    "geometry_type": "point"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -75.625686,
+     2.233389
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "plot_id": "PLT-009-02",
+    "supplier_id": "SUP-009",
+    "commodity": "Coffee",
+    "area_ha": 9.75,
+    "geometry_type": "polygon"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -75.622785,
+       2.168874
+      ],
+      [
+       -75.623584,
+       2.169777
+      ],
+      [
+       -75.624839,
+       2.17037
+      ],
+      [
+       -75.62614,
+       2.16981
+      ],
+      [
+       -75.626792,
+       2.168874
+      ],
+      [
+       -75.626261,
+       2.16785
+      ],
+      [
+       -75.624839,
+       2.16737
+      ],
+      [
+       -75.623466,
+       2.167885
+      ],
+      [
+       -75.622785,
+       2.168874
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "plot_id": "PLT-009-02",
+    "supplier_id": "SUP-009",
+    "commodity": "Coffee",
+    "area_ha": 4.06,
+    "geometry_type": "polygon"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -75.642928,
+       2.158605
+      ],
+      [
+       -75.643781,
+       2.159387
+      ],
+      [
+       -75.645109,
+       2.159479
+      ],
+      [
+       -75.645613,
+       2.158605
+      ],
+      [
+       -75.645064,
+       2.157788
+      ],
+      [
+       -75.643758,
+       2.157794
+      ],
+      [
+       -75.642928,
+       2.158605
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "plot_id": "PLT-010-01",
+    "supplier_id": "SUP-010",
+    "commodity": "Coffee",
+    "area_ha": 3.17,
+    "geometry_type": "point"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -75.554566,
+     5.922248
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "plot_id": "PLT-010-03",
+    "supplier_id": "SUP-010",
+    "commodity": "Coffee",
+    "area_ha": 8.05,
+    "geometry_type": "polygon"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -75.622022,
+       5.878157
+      ],
+      [
+       -75.623035,
+       5.879023
+      ],
+      [
+       -75.624436,
+       5.879531
+      ],
+      [
+       -75.625843,
+       5.878794
+      ],
+      [
+       -75.625678,
+       5.877578
+      ],
+      [
+       -75.624381,
+       5.876956
+      ],
+      [
+       -75.622955,
+       5.87722
+      ],
+      [
+       -75.622022,
+       5.878157
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "plot_id": "PLT-011-01",
+    "supplier_id": "SUP-011",
+    "commodity": "Coffee",
+    "area_ha": 3.75,
+    "geometry_type": "point"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     38.201618,
+     6.06353
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "plot_id": "PLT-011-02",
+    "supplier_id": "SUP-011",
+    "commodity": "Coffee",
+    "area_ha": 7.55,
+    "geometry_type": "polygon"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       38.25941,
+       6.057439
+      ],
+      [
+       38.258675,
+       6.05858
+      ],
+      [
+       38.256926,
+       6.058468
+      ],
+      [
+       38.255827,
+       6.057439
+      ],
+      [
+       38.256825,
+       6.056285
+      ],
+      [
+       38.258732,
+       6.056227
+      ],
+      [
+       38.25941,
+       6.057439
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "plot_id": "PLT-011-03",
+    "supplier_id": "SUP-011",
+    "commodity": "Coffee",
+    "area_ha": 10.4,
+    "geometry_type": "polygon"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       38.167365,
+       6.113631
+      ],
+      [
+       38.166796,
+       6.114694
+      ],
+      [
+       38.165313,
+       6.114982
+      ],
+      [
+       38.164063,
+       6.114527
+      ],
+      [
+       38.163366,
+       6.113631
+      ],
+      [
+       38.163777,
+       6.112532
+      ],
+      [
+       38.165313,
+       6.112006
+      ],
+      [
+       38.16681,
+       6.112559
+      ],
+      [
+       38.167365,
+       6.113631
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "plot_id": "PLT-012-01",
+    "supplier_id": "SUP-012",
+    "commodity": "Coffee",
+    "area_ha": 3.47,
+    "geometry_type": "point"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -77.267629,
+     1.440059
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "plot_id": "PLT-012-02",
+    "supplier_id": "SUP-012",
+    "commodity": "Coffee",
+    "area_ha": 13.64,
+    "geometry_type": "polygon"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -77.3263,
+       1.384702
+      ],
+      [
+       -77.327075,
+       1.386384
+      ],
+      [
+       -77.329751,
+       1.386358
+      ],
+      [
+       -77.330517,
+       1.384702
+      ],
+      [
+       -77.329722,
+       1.383082
+      ],
+      [
+       -77.327213,
+       1.383193
+      ],
+      [
+       -77.3263,
+       1.384702
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "plot_id": "PLT-012-03",
+    "supplier_id": "SUP-012",
+    "commodity": "Coffee",
+    "area_ha": 8.84,
+    "geometry_type": "polygon"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -77.329367,
+       1.371901
+      ],
+      [
+       -77.330158,
+       1.372894
+      ],
+      [
+       -77.331694,
+       1.373277
+      ],
+      [
+       -77.332832,
+       1.372447
+      ],
+      [
+       -77.333135,
+       1.37125
+      ],
+      [
+       -77.331723,
+       1.370434
+      ],
+      [
+       -77.330139,
+       1.370891
+      ],
+      [
+       -77.329367,
+       1.371901
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "plot_id": "PLT-013-01",
+    "supplier_id": "SUP-013",
+    "commodity": "Cocoa",
+    "area_ha": 2.22,
+    "geometry_type": "point"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.433429,
+     6.648941
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "plot_id": "PLT-013-02",
+    "supplier_id": "SUP-013",
+    "commodity": "Cocoa",
+    "area_ha": 6.12,
+    "geometry_type": "polygon"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       0.459243,
+       6.629886
+      ],
+      [
+       0.458186,
+       6.630784
+      ],
+      [
+       0.456756,
+       6.630759
+      ],
+      [
+       0.45567,
+       6.629886
+      ],
+      [
+       0.456569,
+       6.62878
+      ],
+      [
+       0.45826,
+       6.628895
+      ],
+      [
+       0.459243,
+       6.629886
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "plot_id": "PLT-013-03",
+    "supplier_id": "SUP-013",
+    "commodity": "Cocoa",
+    "area_ha": 6.02,
+    "geometry_type": "polygon"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       0.510372,
+       6.640817
+      ],
+      [
+       0.509984,
+       6.641794
+      ],
+      [
+       0.508501,
+       6.64205
+      ],
+      [
+       0.507631,
+       6.641252
+      ],
+      [
+       0.507324,
+       6.640276
+      ],
+      [
+       0.508595,
+       6.639878
+      ],
+      [
+       0.509895,
+       6.63992
+      ],
+      [
+       0.510372,
+       6.640817
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "plot_id": "PLT-014-01",
+    "supplier_id": "SUP-014",
+    "commodity": "Coffee",
+    "area_ha": 3.12,
+    "geometry_type": "point"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     36.83457,
+     7.63467
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "plot_id": "PLT-014-02",
+    "supplier_id": "SUP-014",
+    "commodity": "Coffee",
+    "area_ha": 4.53,
+    "geometry_type": "polygon"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       36.779926,
+       7.651914
+      ],
+      [
+       36.779065,
+       7.652747
+      ],
+      [
+       36.777646,
+       7.652836
+      ],
+      [
+       36.77703,
+       7.651914
+      ],
+      [
+       36.777678,
+       7.651033
+      ],
+      [
+       36.779048,
+       7.651102
+      ],
+      [
+       36.779926,
+       7.651914
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "plot_id": "PLT-014-03",
+    "supplier_id": "SUP-014",
+    "commodity": "Coffee",
+    "area_ha": 3.44,
+    "geometry_type": "point"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     36.81516,
+     7.668191
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "plot_id": "PLT-015-01",
+    "supplier_id": "SUP-015",
+    "commodity": "Cocoa",
+    "area_ha": 3.38,
+    "geometry_type": "point"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -6.937265,
+     4.606427
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "plot_id": "PLT-015-02",
+    "supplier_id": "SUP-015",
+    "commodity": "Cocoa",
+    "area_ha": 9.46,
+    "geometry_type": "polygon"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -6.909151,
+       4.64175
+      ],
+      [
+       -6.909576,
+       4.642738
+      ],
+      [
+       -6.910953,
+       4.643298
+      ],
+      [
+       -6.912185,
+       4.642634
+      ],
+      [
+       -6.913169,
+       4.64175
+      ],
+      [
+       -6.912466,
+       4.640664
+      ],
+      [
+       -6.910953,
+       4.640468
+      ],
+      [
+       -6.909717,
+       4.640862
+      ],
+      [
+       -6.909151,
+       4.64175
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "plot_id": "PLT-015-03",
+    "supplier_id": "SUP-015",
+    "commodity": "Cocoa",
+    "area_ha": 5.55,
+    "geometry_type": "polygon"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -6.918798,
+       4.693425
+      ],
+      [
+       -6.919452,
+       4.694328
+      ],
+      [
+       -6.920759,
+       4.694382
+      ],
+      [
+       -6.921843,
+       4.693905
+      ],
+      [
+       -6.921895,
+       4.692927
+      ],
+      [
+       -6.920771,
+       4.692431
+      ],
+      [
+       -6.919583,
+       4.69264
+      ],
+      [
+       -6.918798,
+       4.693425
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

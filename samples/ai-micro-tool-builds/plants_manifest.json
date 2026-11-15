@@ -1,0 +1,16 @@
+{
+  "data_rows_in": 20,
+  "exact_duplicate_rows_in_input": 1,
+  "fully_empty_rows_in_input": 2,
+  "invalid_emails_in_input": 3,
+  "non_iso_dates_in_input": 14,
+  "date_formats_present": [
+    "D Month YYYY",
+    "DD-MM-YYYY",
+    "DD/MM/YYYY",
+    "Month D, YYYY",
+    "YYYY-MM-DD",
+    "YYYY/MM/DD"
+  ],
+  "note": "One further row (the cleaned-form copy of data row 1) is not a raw duplicate but becomes a duplicate after cleaning; the tool dedupes on cleaned values, so duplicates_removed in the report is 2 while exact raw duplicates planted are 1."
+}

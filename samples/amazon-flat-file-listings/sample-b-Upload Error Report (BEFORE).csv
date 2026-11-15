@@ -1,0 +1,12 @@
+SAMPLE — fictional Amazon processing report (BEFORE): 10 listings failed upload,,,
+SKU,Error Code,Error Message (as reported),Root Cause
+NP-TMBLR-BLK-20,8541,The Standard Product ID value does not match any catalog ASIN,UPC mistyped (check digit wrong)
+NP-TMBLR-TEAL-30,8560,Required attribute 'size_name' is missing,Child row missing its Size value
+NP-CUTBOARD-LG,8058,The field 'material' contains a value that is not in the valid list,Free-text material instead of valid value
+NP-DRYRACK-2T,20009,The main image failed to upload,Image URL returns 404 (file moved)
+NP-KNIFESET-6,8560,Required attribute 'number_of_items' is missing,Set size not declared
+NP-SILICONE-12,181207,The value for 'unit_count' is invalid for this category,"Unit count given as text, needs number + unit"
+NP-STORAGE-8,8541,The Standard Product ID value does not match any catalog ASIN,UPC belongs to a different (older) pack size
+NP-CASTIRON-10,8058,The field 'special_feature' exceeds the allowed value count,"6 special features listed, max 5 allowed"
+NP-TEAKETTLE-2L,8566,The SKU already exists with a different product type,SKU reused from a deleted listing of another type
+NP-TMBLR-BLK-30,99010,A value is missing from one or more required columns,Child row missing Parent SKU (orphan child)

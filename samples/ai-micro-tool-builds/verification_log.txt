@@ -1,0 +1,38 @@
+verify_sample.py — independent verification of sample #6
+1. [PASS] Input data rows match manifest — file 20, manifest 20
+2. [PASS] Planted raw exact duplicates match manifest — recomputed 1, manifest 1
+3. [PASS] Planted fully empty rows match manifest — recomputed 2, manifest 2
+4. [PASS] Planted invalid emails match manifest — recomputed 3, manifest 3
+5. [PASS] Planted non-ISO dates match manifest — recomputed 14, manifest 14
+6. [PASS] Node harness runs the shared logic without error
+7. [PASS] Shared logic reproduces demo-cleaned.csv byte-for-byte
+8. [PASS] Shared logic reproduces demo-report.json byte-for-byte
+9. [PASS] Shared logic reproduces demo-report.txt byte-for-byte
+10. [PASS] Report count 'rows_in' equals independent recomputation — report 20, recomputed 20
+11. [PASS] Report count 'rows_out' equals independent recomputation — report 16, recomputed 16
+12. [PASS] Report count 'headers_changed' equals independent recomputation — report 6, recomputed 6
+13. [PASS] Report count 'cells_trimmed' equals independent recomputation — report 9, recomputed 9
+14. [PASS] Report count 'empty_rows_removed' equals independent recomputation — report 2, recomputed 2
+15. [PASS] Report count 'dates_standardized' equals independent recomputation — report 14, recomputed 14
+16. [PASS] Report count 'dates_already_iso' equals independent recomputation — report 4, recomputed 4
+17. [PASS] Report count 'dates_unparseable' equals independent recomputation — report 0, recomputed 0
+18. [PASS] Report count 'emails_lowercased' equals independent recomputation — report 4, recomputed 4
+19. [PASS] Report count 'invalid_emails' equals independent recomputation — report 3, recomputed 3
+20. [PASS] Report count 'duplicates_removed' equals independent recomputation — report 2, recomputed 2
+21. [PASS] Report invalid_email_rows equals independent recomputation — report [5, 9, 16], recomputed [5, 9, 16]
+22. [PASS] Independent Python pipeline reproduces demo-cleaned.csv byte-for-byte
+23. [PASS] Cleaned output has zero exact duplicate rows — 16 rows, 16 unique
+24. [PASS] Cleaned output has zero fully empty rows
+25. [PASS] Cleaned headers are the standardized forms + email_valid — found ['first_name', 'last_name', 'email', 'signup_date', 'city', 'plan', 'email_valid']
+26. [PASS] Every output email is lowercase and valid-or-flagged correctly
+27. [PASS] Every output date is ISO YYYY-MM-DD
+28. [PASS] No output cell carries leading/trailing whitespace
+29. [PASS] Text report figures agree with JSON report
+30. [PASS] HTML tool loads the same shared logic file (csv-clean.js)
+31. [PASS] HTML tool contains no external URLs — no http/https strings anywhere in the file
+32. [PASS] HTML tool references only local files — references: ['csv-clean.js']
+33. [PASS] Shared logic file itself makes no network calls
+34. [PASS] Edge paths behave per spec (unparseable dates, hyphen-edge domains, quote round-trip, dedupe off) — AUX OK
+35. [PASS] All deliverable files exist and are non-empty — 10 files
+36. [PASS] README states the exact-duplicate-only limitation honestly
+SCORE: 36/36

@@ -1,0 +1,18 @@
+Summary — formula-driven (SUMIFS / COUNTIFS / AVERAGEIFS),,,
+,,,
+Revenue by Product,,,
+Product,Revenue,Orders,Avg Order Value
+Aurora Desk Lamp,"=SUMIFS(Data!$G$3:$G$50,Data!$C$3:$C$50,$A5)","=COUNTIFS(Data!$C$3:$C$50,$A5)","=AVERAGEIFS(Data!$G$3:$G$50,Data!$C$3:$C$50,$A5)"
+Nimbus Office Chair,"=SUMIFS(Data!$G$3:$G$50,Data!$C$3:$C$50,$A6)","=COUNTIFS(Data!$C$3:$C$50,$A6)","=AVERAGEIFS(Data!$G$3:$G$50,Data!$C$3:$C$50,$A6)"
+Vertex Standing Desk,"=SUMIFS(Data!$G$3:$G$50,Data!$C$3:$C$50,$A7)","=COUNTIFS(Data!$C$3:$C$50,$A7)","=AVERAGEIFS(Data!$G$3:$G$50,Data!$C$3:$C$50,$A7)"
+Echo Wireless Speaker,"=SUMIFS(Data!$G$3:$G$50,Data!$C$3:$C$50,$A8)","=COUNTIFS(Data!$C$3:$C$50,$A8)","=AVERAGEIFS(Data!$G$3:$G$50,Data!$C$3:$C$50,$A8)"
+Pulse Fitness Tracker,"=SUMIFS(Data!$G$3:$G$50,Data!$C$3:$C$50,$A9)","=COUNTIFS(Data!$C$3:$C$50,$A9)","=AVERAGEIFS(Data!$G$3:$G$50,Data!$C$3:$C$50,$A9)"
+TOTAL,=SUM(B5:B9),=SUM(C5:C9),=B10/C10
+,,,
+Revenue by Region,,,
+Region,Revenue,Orders,Avg Order Value
+North,"=SUMIFS(Data!$G$3:$G$50,Data!$D$3:$D$50,$A14)","=COUNTIFS(Data!$D$3:$D$50,$A14)","=AVERAGEIFS(Data!$G$3:$G$50,Data!$D$3:$D$50,$A14)"
+South,"=SUMIFS(Data!$G$3:$G$50,Data!$D$3:$D$50,$A15)","=COUNTIFS(Data!$D$3:$D$50,$A15)","=AVERAGEIFS(Data!$G$3:$G$50,Data!$D$3:$D$50,$A15)"
+East,"=SUMIFS(Data!$G$3:$G$50,Data!$D$3:$D$50,$A16)","=COUNTIFS(Data!$D$3:$D$50,$A16)","=AVERAGEIFS(Data!$G$3:$G$50,Data!$D$3:$D$50,$A16)"
+West,"=SUMIFS(Data!$G$3:$G$50,Data!$D$3:$D$50,$A17)","=COUNTIFS(Data!$D$3:$D$50,$A17)","=AVERAGEIFS(Data!$G$3:$G$50,Data!$D$3:$D$50,$A17)"
+TOTAL,=SUM(B14:B17),=SUM(C14:C17),=B18/C18

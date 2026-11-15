@@ -1,0 +1,24 @@
+measure,value,definition
+Gross revenue (USD),9824.97,Sum of quantity x unit_price over orders.csv (120 orders)
+True net profit (USD),313.68,Revenue - refunds - COGS - scheduled fees - ad spend - shipping
+Net profit margin (%),3.19,Net profit / gross revenue x 100
+Orders reconciled,120,Rows in orders.csv
+Units sold,189,Sum of quantity in orders.csv
+Average order value (USD),81.87,Gross revenue / orders
+Refunds (USD),666.93,Revenue of orders with status Refunded
+Refunded orders,7,Count of orders with status Refunded
+Refund rate by value (%),6.79,Refunds / gross revenue x 100
+Expected payouts (USD),7897.58,"Sum of revenue - scheduled fees - refunds, per fee_schedule.md"
+Actual payouts (USD),7628.69,Sum of payout_amount in settlement_amazon.csv + shopify_payouts.csv
+Net leakage (USD),268.89,Expected payouts - actual payouts
+Leakage as % of expected payouts,3.4,Net leakage / expected payouts x 100
+Exceptions found,14,Orders whose settlement deviates from the fee schedule
+Gross discrepancy value (USD),589.25,Sum of |actual - expected| over the 14 exception orders
+Orders matched exactly,106,Orders - exceptions
+Settlement match rate (%),88.33,Matched orders / orders x 100
+Amazon net profit (USD),-309.56,"Sum of per-order net profit, channel = Amazon"
+Shopify net profit (USD),623.24,"Sum of per-order net profit, channel = Shopify"
+Amazon leakage (USD),128.99,"-(sum of exception diffs, channel = Amazon)"
+Shopify leakage (USD),139.9,"-(sum of exception diffs, channel = Shopify)"
+Most profitable SKU,NHG-003,Linen Throw Blanket — highest total net profit
+Least profitable SKU,NHG-005,Scented Candle Trio — lowest total net profit
